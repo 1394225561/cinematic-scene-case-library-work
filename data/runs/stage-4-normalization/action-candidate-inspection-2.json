@@ -1,0 +1,727 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-16T11:33:28.940624+00:00",
+  "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+  "records": [
+    {
+      "prompt_sha256": "008ef905adb66ea09090473e657b5fac02dec16372a08c4a02dc0a12b109a8ec",
+      "prompt_text": "<<<dca95e60-10ce-4c7c-ad53-256fc6dd0ea7>>> — Photoreal character ref. Brown short wavy hair, chain earrings, black wide choker, blue denim crop vest over fishnet top, orange belt, black crossbody strap, dark grey wide cargo pants, black-white canvas shoes, fingerless gloves, tattoos. Character appearance only.\n<<<287782af-5af5-4ae2-a7a8-b8573e475b46>>> — Photoreal character ref. Black messy long hair, small mustache, red bandana wraps on wrists, dark red wide jeans, black-white sneakers, grey tank top, tattoos. Character appearance only.\n<<<aec0018e-5788-4d0c-bec2-5ba44bc45883>>> — Photoreal character ref. Dark skin, short bleached yellow hair, spiked sunglasses on forehead, grey-yellow work jacket, baggy grey cargo pants, grey sneakers, black leather gloves, grey sling bag. Strictly on skateboard. Character appearance only.\n<<<0f0bb756-9eef-474f-b3ed-31105ac9320b>>> — Photoreal character ref. Straight silver-grey short bob with darker black tips, sharp red scar across right temple, oversized purple zip hoodie worn open over sheer grey graphic mesh crop top, flat midriff, black slim bootcut low-rise jeans, low-top black-and-white canvas sneakers. No bag. Always on @skate, never touching the floor. Character appearance only.\n@skate — Prop ref from uploaded image. A hovering flying board. NOT A SKATEBOARD. ZERO WHEELS. ZERO TRUCKS. ZERO ROLLING PARTS OF ANY KIND. TOP SIDE: worn purple wooden deck, scorched black toward tail, two flush-mounted rectangular circuit board panels near nose and tail each with glowing blue LED. BOTTOM SIDE: worn purple deck with Einstein portrait and stickers — exactly two large circular disc thruster units bolted directly to bare wood, one at nose end and one at tail end, each a wide flat scorched dark steel disc with a deep concave center from which a bright glowing blue plasma ring nozzle radiates downward — single straight metal rod connecting both discs nose to tail — red yellow black wiring along the rod with ribbed spring sheath — small green circuit board at midpoint. FLIES SOLELY ON DOWNWARD THRUST OF THESE TWO DISCS. NO WHEELS. NO TRUCKS. NO AXLES. Prop only.\n<<<bd49a7ca-5e48-4ff2-aba8-9da3b9dc2832>>> — Brutalist concrete museum atrium, ground floor only, high vertical space above, thick vertical columns, clerestory windows high above, cold blue-grey daylight from above, debris and glass on polished floor, deep shadows, sealed metal security doors. Environment only.\n<<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> — 350cm tall demon, reddish-brown cracked skin, long black greasy hair, skeletal grinning face, yellow teeth, green-yellow eyes, bone spikes on shoulders and spine, oversized muscular arms, torn loincloth, clawed feet. Right arm ends in a long exposed bone blade. Cunning and intelligent. Speaks Japanese only. Creature appearance only.\n\nScene context: <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> has been knocked down by <<<287782af-5af5-4ae2-a7a8-b8573e475b46>>>. The four characters are scattered. <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> begins laughing creepily on the ground as all four converge simultaneously into a tight group. Then <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> rises and delivers a threatening monologue in Japanese. <<<aec0018e-5788-4d0c-bec2-5ba44bc45883>>> breaks the tension. <<<0f0bb756-9eef-474f-b3ed-31105ac9320b>>> always hovering on @skate, never on the floor.\n\n8K IMAX ultra-detailed. 16mm Kodak 500T. Heavy grain. Hyper-realistic. No cloning. Strictly 5 characters only. Bags always on body. Columns strictly vertical. Natural light + display case lights only. Fast-action motion blur. Camera always moving. Hollywood acting.\n\nCUT — low angle wide, camera tilted upward — <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> face down in the debris ahead, shoulders beginning to shake, a thin high-pitched creeping laughter rising from it, completely wrong for something its size — and simultaneously from every direction the four converge: <<<aec0018e-5788-4d0c-bec2-5ba44bc45883>>> carving in hard from the right on his skateboard scraping to a stop beside <<<287782af-5af5-4ae2-a7a8-b8573e475b46>>> — <<<0f0bb756-9eef-474f-b3ed-31105ac9320b>>> descending on @skate from above, the two blue plasma disc rings blazing downward as she slows, hovering inches above the floor — <<<dca95e60-10ce-4c7c-ad53-256fc6dd0ea7>>> stepping in from the left — all four closing ranks into a tight cluster instinctively, nobody directing it, just four people choosing the same spot while the wrongness of that laughter fills the atrium —\n\nCUT — rapid close-up reactions in sequence: <<<dca95e60-10ce-4c7c-ad53-256fc6dd0ea7>>>'s expression hardening, something cold moving through it — <<<287782af-5af5-4ae2-a7a8-b8573e475b46>>> absolutely still, jaw locked, watching — <<<0f0bb756-9eef-474f-b3ed-31105ac9320b>>> on @skate hovering, eyes fixed, one hand tightening slightly — <<<aec0018e-5788-4d0c-bec2-5ba44bc45883>>> watching with his head tilted, the way you watch something you cannot categorize —\n\nCUT — medium shot <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> on the ground, laughter stopping cold. One clean beat of silence. The massive body begins moving, hands pressing to the floor, pushing itself upright in one slow deliberate motion — debris falling off its shoulders — the full 350cm frame rising to standing, unhurried — bone blade arm rising last — green-yellow eyes finding the four of them —\n\nCUT — medium close-up <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> standing, looking down at them — voice low, speaking Japanese, tone conversational and intimate: \"まず、お前の頭を食べる。\" — eyes moving — \"次に、心臓を引きちぎる。\" — bone blade arm flexing slowly — \"お前は誰も食べたがらないだろう—\" — eyes shifting to the next one, almost warmly — \"でも、お前は...\" — leaving it hanging —\n\nCUT — low angle medium shot, camera slow push — all four in a line, backs to camera, facing <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> — <<<287782af-5af5-4ae2-a7a8-b8573e475b46>>> center left, <<<dca95e60-10ce-4c7c-ad53-256fc6dd0ea7>>> beside him, <<<0f0bb756-9eef-474f-b3ed-31105ac9320b>>> hovering on @skate to her right, <<<aec0018e-5788-4d0c-bec2-5ba44bc45883>>> on his board at the far right — cold light backlighting all four — a long beat of stillness — <<<287782af-5af5-4ae2-a7a8-b8573e475b46>>>'s shoulders settle, jaw sets — the line holds —\n\nCUT — close-up <<<aec0018e-5788-4d0c-bec2-5ba44bc45883>>> on his board, turning his head slowly toward the others, expression completely flat — then quiet and genuine, not performing: \"wait—\" — beat — \"what the fack we even digging what he's saying.\" — holds it — dead serious — the most reasonable thing anyone has said —\n\nPhotoreal. NON-IP. 16:9. 10s. SFX only. NO CGI. Cinematic.",
+      "source_prompt_chars": 6687,
+      "analysis_prompt_chars": 6687,
+      "url_redaction_count": 0,
+      "first_asset_id": "e4dff367-ca6a-46fe-abfe-11367743f80f",
+      "assets": [
+        {
+          "asset_id": "0a734168-8424-48a7-8070-0087f5e8e6fe",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 753
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 753,
+          "source_item_index": 43
+        },
+        {
+          "asset_id": "291f8d8a-9363-4f0a-9422-9c83756b931d",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 1069
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 1069,
+          "source_item_index": 29
+        },
+        {
+          "asset_id": "32745761-953c-4b4e-bd8c-668082c418e8",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 582
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 582,
+          "source_item_index": 42
+        },
+        {
+          "asset_id": "3b6dc418-7f4d-4fca-a8e8-199ba15469d4",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 598
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 598,
+          "source_item_index": 59
+        },
+        {
+          "asset_id": "512de9b0-a110-4b64-bca6-4c79685300f2",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 1153
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 1153,
+          "source_item_index": 88
+        },
+        {
+          "asset_id": "8a5392dd-2528-4d64-aecd-5d53a159e412",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 1133
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 1133,
+          "source_item_index": 22
+        },
+        {
+          "asset_id": "d090b411-ee1b-4274-af62-0680b8e3fe40",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 859
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 859,
+          "source_item_index": 3
+        },
+        {
+          "asset_id": "d2a93950-be29-4867-b970-4694607cb305",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 676
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 676,
+          "source_item_index": 16
+        },
+        {
+          "asset_id": "d8f39fe3-e62f-47a4-903c-904bcb537d2d",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 241
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 241,
+          "source_item_index": 60
+        },
+        {
+          "asset_id": "db07c75b-567e-4909-993f-c6b577535a8a",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 349
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 349,
+          "source_item_index": 79
+        },
+        {
+          "asset_id": "e1f2d790-5d87-40c8-aa79-7161d0152e6f",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 385
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 385,
+          "source_item_index": 6
+        },
+        {
+          "asset_id": "e4dff367-ca6a-46fe-abfe-11367743f80f",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 81
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 81,
+          "source_item_index": 49
+        },
+        {
+          "asset_id": "febe212d-a728-4b55-a27b-fe2a0117b91a",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 368
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 368,
+          "source_item_index": 46
+        }
+      ]
+    },
+    {
+      "prompt_sha256": "07742db1c447fd803906b6000e9e0121fc7a8855e06c55881da5124008f39058",
+      "prompt_text": "<<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> — Photoreal character ref from uploaded image. Black messy medium-length hair damp and disheveled, small mustache, red paint mark across nose bridge, cuts and blood splatter across face neck chest and arms, grey tank top torn and stained with blood, dark red wide ripped jeans, black-white sneakers, black crossbody sling bag, tattoos on arms. Character appearance only.\n\n<<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> — Photoreal character ref from uploaded image. Short wavy dark brown hair, small stud and hoop earrings, red scratch marks on face and shoulder, black wide choker, blue denim crop vest over fishnet layer, orange horizontal belt stripe, black crossbody strap, dark grey wide cargo pants heavily worn, black-white canvas Vans sneakers, black fingerless gloves, tattoos on arms. Bone blade entered from her back — the tip of the bone blade protruding out through her front abdomen, actively bleeding, blood spreading across the fishnet layer and orange belt and down her clothing. Character appearance only.\n\n<<<2525a57c-2006-429e-8455-bbb6a7e9212a>>> — Environment ref from uploaded image. Brutalist circular concrete atrium, curved smooth concrete walls, large rectangular clerestory windows high above letting in cold flat grey daylight, thick concrete columns rising from the floor, polished grey concrete floor scattered with debris, broken glass — bare dead trees near the walls, extremely dark and cold atmosphere. Environment only.\n\n<<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> — 350cm tall demon, reddish-brown cracked skin, long black greasy hair, skeletal grinning face, yellow teeth, green-yellow eyes, bone spikes on shoulders and spine, oversized muscular arms, torn loincloth, clawed feet. Right arm: reddish-brown deeply cracked and veined skin, the clawed fingers gripping the base of the bone blade at the wrist joint, the blade extending forward as one long continuous ivory-pale bone structure tapered to a sharp point. Cunning and intelligent. Speaks Japanese only. Creature appearance only.\n\nScene context: <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> lifts <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> on the blade then throws her aside. <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> watches, recently cried, now rage building through wet eyes. <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> delivers its mocking line. <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> on the left, <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> and <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> on the right.\n\n8K IMAX ultra-detailed. 16mm Kodak 500T. Heavy grain. Hyper-realistic. No cloning. Bags always on body. Columns strictly vertical. Camera always moving. Hollywood acting. Strictly natural light only — overcast gray sky — absolutely no artificial light sources — no spotlights, no fill lights, no LEDs — the only light source is cold gray daylight from the clerestory windows. The camera is always oriented toward the windows — contre-jour — characters are backlit — faces remain in shadow — frontal lighting is strictly prohibited. A light atmospheric haze fills the air — window light passes through the haze, creating soft diffused light beams — dust particles float within the light.\n\nCUT — low angle profile medium shot, normal speed — camera on the side axis oriented toward the clerestory windows, contre-jour — <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> on the left, body locked, watching — <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> on the right, its massive right arm extended forward, the ivory-pale bone blade driven through <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> from behind, entering through her back and the tip protruding out through her front abdomen — <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> between them, her back to <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> facing left toward <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>, both hands gripping the bone tip coming out of her front, the wound bleeding actively — <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s arm lifting upward, <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>>'s body rising off the ground with it, feet leaving the floor, body jerking with involuntary spasms — all three backlit by cold grey daylight from the clerestory above, faces in shadow, atmospheric haze and dust particles drifting through the light beams around them —\n\nCUT — extreme close-up <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> alone in frame, normal speed — her body hitting the ground floor hard after being thrown, the impact sending debris scattering outward — her face and shoulder taking the fall first, cheek pressing into the cold concrete — the wound on her abdomen visible and bleeding, blood spreading across the fishnet and orange belt, pooling on the concrete beneath her — blood at her mouth and running down her chin, lips stained red — hair across her face, one hand reaching instinctively toward the wound — backlit from the clerestory above, face in shadow, dust particles settling around her —\n\nCUT — close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> alone in frame, normal speed — eyes on <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> off frame — his eyes wet, reddened from recent tears, the trace of the tear still visible on his cheek — and through those wet eyes the grief breaks completely and something else takes over — raw and volcanic surfacing all at once — his whole face changing, jaw and neck muscles tightening to the point of visible strain — a breath punched out through his nose — eyes going hard and dark despite the wetness — chest lurching forward, shoulders drawing back, entire body loading — fists white-knuckled at his sides, arms beginning to shake — not screaming, not moving yet — the rage fully present and building — backlit, face in shadow, haze around him —\n\nCUT — extreme close-up <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s face alone in frame, normal speed — looking across at where <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> landed off frame — the grin still present, green-yellow eyes bright — voice dropping low, mocking, conversational Japanese with satisfaction underneath it: \"あら、痛かった？\" — the tone of something that finds its own cruelty genuinely amusing — a beat of silence after the words, the grin holding — backlit from the clerestory above, the massive skull-head in shadow —\n\nPhotoreal. NON-IP. 16:9. 10s. SFX only. NO CGI. Cinematic.",
+      "source_prompt_chars": 6397,
+      "analysis_prompt_chars": 6397,
+      "url_redaction_count": 0,
+      "first_asset_id": "2fa29649-75b4-4dd0-9e21-8f71ea009419",
+      "assets": [
+        {
+          "asset_id": "2dd3a9a2-bdea-4429-8884-33e84af5b3e2",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 1154
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 1154,
+          "source_item_index": 67
+        },
+        {
+          "asset_id": "2fa29649-75b4-4dd0-9e21-8f71ea009419",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 182
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 182,
+          "source_item_index": 71
+        },
+        {
+          "asset_id": "821cdea4-b66e-4f6d-aeef-06b4746b315b",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 546
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 546,
+          "source_item_index": 93
+        },
+        {
+          "asset_id": "87c9266c-db40-4e63-96ed-49e836e59ab4",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 409
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 409,
+          "source_item_index": 67
+        },
+        {
+          "asset_id": "8e8eaf6d-a75d-43ac-8b8b-bee82dfedbc4",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 766
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 766,
+          "source_item_index": 0
+        },
+        {
+          "asset_id": "d1b62a82-f468-41f5-acc7-782eaa6108aa",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 432
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 432,
+          "source_item_index": 89
+        }
+      ]
+    },
+    {
+      "prompt_sha256": "166a0440f6f01e02419b42f47d088e1919dedd1800b62b4b632e0047cb446ba0",
+      "prompt_text": "<<<2525a57c-2006-429e-8455-bbb6a7e9212a>>> — Environment ref from uploaded image. Brutalist circular concrete atrium, curved smooth concrete walls, large rectangular clerestory windows high above letting in cold flat grey daylight, thick concrete columns rising from the floor, polished grey concrete floor scattered with debris, broken glass — bare dead trees near the walls, extremely dark and cold atmosphere. Environment only.\n\n<<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>> — <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s entire body fully encased in dense deep crimson-red crystal armor — head to toe, no skin visible — full crystal helmet with narrow visor slit, massive sharp crystal shoulder pauldrons with blade-like spike protrusions, crystal chest plate, crystal arms with large angular blade formations along the forearms, crystal legs and feet — all surfaces dense sharp-edged faceted red crystal, translucent deep crimson-red with internal light refraction and prismatic chromatic aberration at facet edges. No bag. Character transformation only.\n\n<<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> — 350cm tall demon, reddish-brown cracked skin, long black greasy hair, skeletal grinning face, yellow teeth, green-yellow eyes, bone spikes on shoulders and spine, oversized muscular arms, torn loincloth, clawed feet. Right arm ends in a long exposed bone blade. Strictly 350cm tall — towering over <<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>> by a full head and shoulders in every shot. Cunning and intelligent. Speaks Japanese only. Creature appearance only.\n\nScene context: <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> in <<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>> and <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> fight across the atrium ground floor. <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> on the left, <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> on the right throughout. <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> significantly larger than <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> in every shot. Normal speed throughout — slow motion only on the final uppercut and <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> falling. No environmental destruction — floor and walls remain intact throughout. After the final blow <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> gets up and smiles, delivers its line in Japanese.\n\n8K IMAX ultra-detailed. 16mm Kodak 500T. Heavy grain. Hyper-realistic. No cloning. Columns strictly vertical. Prioritize close-ups and medium close-ups — no wide shots. Camera always moving. Fast-action motion blur. Hollywood acting. Strictly natural light only — cold gray daylight from clerestory windows — contre-jour — characters backlit — faces in shadow. Light atmospheric haze fills the air — dust particles float within the light.\n\nCUT — medium close-up <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s bone blade arm alone in frame, normal speed — swinging hard toward something off frame right — the full force of the 350cm creature behind it —\n\nCUT — medium close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> in <<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>>, normal speed — both crystal forearms snapping up to block, the bone blade slamming into them with a hard impact — <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s feet sliding back on the concrete from the sheer weight — holding but pushed —\n\nCUT — close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s crystal forearms locked against the bone blade, normal speed — the two surfaces grinding — then <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> wrenching his forearms sideways in one sharp rotation, redirecting the blade past him —\n\nCUT — medium close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> alone in frame, normal speed — immediately driving his crystal shoulder hard into <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s exposed ribs off frame — the impact sound heavy and solid —\n\nCUT — close-up <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s torso at <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s height, normal speed — the shoulder hit landing — the 350cm mass barely moving but registering it — one massive clawed hand swinging down to shove <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> back —\n\nCUT — medium close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> alone in frame, normal speed — shoved back hard, skidding on the floor — catching himself, planting, reading <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s position off frame —\n\nCUT — close-up <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s face, normal speed — pressing the advantage, reading <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> off frame — bone blade arm drawing back for a full forward thrust —\n\nCUT — medium close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> alone in frame, normal speed — sidestepping hard as the thrust arrives, the bone blade passing inches from his crystal chest — grabbing <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s extended bone blade arm with both crystal hands — using the creature's own forward momentum, pulling it further forward and off balance —\n\nCUT — close-up <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s face, normal speed — balance gone, skull-head dropping involuntarily, green-yellow eyes registering the loss of control for the first time —\n\nCUT — close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s crystal fist, normal speed — pulling all the way back, shoulder rotating, hips loading, everything in the <<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>> coiling —\n\nCUT — extreme close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s crystal fist, slow motion — driving upward in one full-force uppercut toward <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s jaw, the crystal forearm catching cold grey backlight, chromatic aberration bleeding at every edge —\n\nCUT — extreme close-up the contact point, slow motion — <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s crystal fist connecting with <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s jaw — <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>'s head snapping violently upward, long black hair whipping, the grin gone for one frame —\n\nCUT — medium shot <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> alone in frame, slow motion — the full 350cm body lifting slightly off the ground from the force, then coming down onto its back on the polished concrete floor — landing hard, the massive frame lying still for one beat — no craters, no cracks, the floor intact — just the enormous body flat on the ground —\n\nCUT — medium close-up <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> alone in frame, normal speed — on its back, one massive hand pressing to the floor — then the other — the enormous frame rising deliberately and unhurried, pushing itself upright section by section — dust settling from the haze around it — rising to its full 350cm height — then its head turning toward <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> off frame — the grin returning slow and wide, green-yellow eyes fully alive — voice dropping deep and resonant, Japanese, genuinely amused: \"ほう...少しだけ、感じたぞ。\" — a long beat — the grin holding —\n\nPhotoreal. NON-IP. 16:9. 10s. SFX only. NO CGI. Cinematic.",
+      "source_prompt_chars": 7080,
+      "analysis_prompt_chars": 7080,
+      "url_redaction_count": 0,
+      "first_asset_id": "ce965f96-ed45-4f84-9b70-c2250f05e652",
+      "assets": [
+        {
+          "asset_id": "03e3df36-ed69-4763-8468-860c66273efe",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 767
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 767,
+          "source_item_index": 47
+        },
+        {
+          "asset_id": "0fb56227-2114-4175-9747-85d6e6e18c85",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 1121
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 1121,
+          "source_item_index": 2
+        },
+        {
+          "asset_id": "1283024d-a673-4609-83bb-16644b3ea4d8",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 767
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 767,
+          "source_item_index": 48
+        },
+        {
+          "asset_id": "19ed3420-b25c-474f-8083-2a8e4a2f8ece",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 324
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 324,
+          "source_item_index": 78
+        },
+        {
+          "asset_id": "1e298bb3-70c2-4e13-83a2-3f57ca6886a4",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 370
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 370,
+          "source_item_index": 92
+        },
+        {
+          "asset_id": "4d714516-5dbf-457b-b605-f4a75aaa258d",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 767
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 767,
+          "source_item_index": 46
+        },
+        {
+          "asset_id": "675ecc62-b57f-48e8-84ae-193c98c57c1a",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 376
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 376,
+          "source_item_index": 64
+        },
+        {
+          "asset_id": "91e6cf9b-97a7-42e5-bc4b-4f28827f3024",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 268
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 268,
+          "source_item_index": 59
+        },
+        {
+          "asset_id": "9eb7fe17-2c6c-4386-8699-47517a7e89d5",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 1004
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 1004,
+          "source_item_index": 96
+        },
+        {
+          "asset_id": "a3bc7729-8b6e-4b9a-9db5-b7c7a46cde4f",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 568
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 568,
+          "source_item_index": 18
+        },
+        {
+          "asset_id": "ce965f96-ed45-4f84-9b70-c2250f05e652",
+          "primary_folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+          "primary_folder_name": "Roko Fight",
+          "folder_memberships": [
+            {
+              "folder_id": "566dab07-9081-430e-a0d1-470b642302e9",
+              "folder_name": "Roko Fight",
+              "first_seen_page": 12
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 12,
+          "source_item_index": 38
+        }
+      ]
+    }
+  ]
+}

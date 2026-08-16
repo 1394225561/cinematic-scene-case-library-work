@@ -1,0 +1,1325 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-16T11:04:10.629662+00:00",
+  "status": "passed_with_audited_source_issues",
+  "project_id": "3caa2f3a-52b5-4293-9237-0c8f76c7158a",
+  "expected_api_occurrences": 115451,
+  "api_occurrences": 115451,
+  "unique_assets": 115446,
+  "duplicate_asset_occurrences": 4,
+  "unsupported_item_occurrences": 1,
+  "accounted_occurrences": 115451,
+  "assets_with_non_empty_prompt": 115309,
+  "assets_without_prompt": 137,
+  "unique_prompts": 7517,
+  "exact_duplicate_prompt_extra_records": 107792,
+  "format_normalized_candidate_groups": 75,
+  "numeric_normalized_candidate_groups": 81,
+  "sqlite_integrity_check": "ok",
+  "raw_page_count": 1155,
+  "raw_bytes": 1838878093,
+  "event_code_counts": {
+    "http_request": 1155,
+    "http_success": 1155,
+    "project_crawl_invocation_finished": 5,
+    "project_crawl_invocation_started": 5
+  },
+  "issues": [
+    {
+      "issue_id": 1,
+      "page_number": 8,
+      "item_index": 24,
+      "asset_id": "d2eab1c6-59f7-4f4e-8874-841cefbaf711",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 2,
+      "page_number": 36,
+      "item_index": 3,
+      "asset_id": "c2b24e3d-ed89-4327-83d6-d78dbd32c625",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 3,
+      "page_number": 41,
+      "item_index": 22,
+      "asset_id": "e4469fbf-d5bf-443d-bb2d-55a742faae1a",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 4,
+      "page_number": 50,
+      "item_index": 65,
+      "asset_id": "30000507-1a00-41a3-8ebe-c2a0e12e4d70",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 5,
+      "page_number": 59,
+      "item_index": 48,
+      "asset_id": "49beb1a4-07ca-4fa6-9651-1ae392e62906",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 6,
+      "page_number": 81,
+      "item_index": 62,
+      "asset_id": "6065d688-f2ff-4018-a024-3cabc2703cc6",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 7,
+      "page_number": 86,
+      "item_index": 95,
+      "asset_id": "c293d6a1-8f8d-4952-9bf8-127dee6ecd67",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 8,
+      "page_number": 104,
+      "item_index": 58,
+      "asset_id": "d5687c50-6fb5-45e4-8cbe-4bae6147de7d",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 9,
+      "page_number": 119,
+      "item_index": 27,
+      "asset_id": "9664a67f-52ff-44f2-a542-e45853a1777f",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 10,
+      "page_number": 123,
+      "item_index": 51,
+      "asset_id": "3e7ef0a6-8bc8-4d87-8e0a-1e328da7798e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 11,
+      "page_number": 136,
+      "item_index": 36,
+      "asset_id": "ac44ddfc-9fa4-40f2-8727-8e94a3e4927a",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 12,
+      "page_number": 136,
+      "item_index": 56,
+      "asset_id": "864dd6d4-91ab-40e1-8f4d-484abaa770cd",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 13,
+      "page_number": 142,
+      "item_index": 6,
+      "asset_id": "fba08e5a-7bb5-41a0-a437-b48333d47271",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 14,
+      "page_number": 144,
+      "item_index": 86,
+      "asset_id": "280a2d33-110c-4fbd-a844-4cffb49417e6",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 15,
+      "page_number": 152,
+      "item_index": 73,
+      "asset_id": "f1837482-2171-460a-8e0c-0194c958e48e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 16,
+      "page_number": 164,
+      "item_index": 65,
+      "asset_id": "80ba345a-8a79-4db5-a5bb-c14b94c85e90",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 17,
+      "page_number": 165,
+      "item_index": 47,
+      "asset_id": "65f967c6-5e95-4764-91dd-e1ec2f5ffe46",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 18,
+      "page_number": 169,
+      "item_index": 56,
+      "asset_id": "3c642379-4544-455f-806d-565e334f1761",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 19,
+      "page_number": 176,
+      "item_index": 78,
+      "asset_id": "05a528be-a75d-4f1d-8193-53363ffb8e07",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 20,
+      "page_number": 183,
+      "item_index": 0,
+      "asset_id": "9121eaa5-b88d-4037-8a58-1614a07cdfcc",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 21,
+      "page_number": 185,
+      "item_index": 84,
+      "asset_id": "d193c286-1cf0-4d1d-a169-78578d6d740e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 22,
+      "page_number": 186,
+      "item_index": 25,
+      "asset_id": "d855181b-d8db-4d3d-bcd1-a8598ab97d2e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 23,
+      "page_number": 187,
+      "item_index": 79,
+      "asset_id": "ad7d3834-1ed8-4ed0-96bc-04b3f552d160",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 24,
+      "page_number": 189,
+      "item_index": 79,
+      "asset_id": "abe1b626-9f37-4479-847f-88fde35601d8",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 25,
+      "page_number": 202,
+      "item_index": 91,
+      "asset_id": "824e1c20-d9de-4794-9521-a20198b8cf86",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 26,
+      "page_number": 207,
+      "item_index": 63,
+      "asset_id": "53548c68-6f83-4a3e-9643-2d083776ccce",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 27,
+      "page_number": 215,
+      "item_index": 88,
+      "asset_id": "9bd4dd00-28c1-404d-9aae-b18f922ba695",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 28,
+      "page_number": 224,
+      "item_index": 43,
+      "asset_id": "bf54ffb4-56fa-4045-bebb-5f1fe06c7cf7",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 29,
+      "page_number": 233,
+      "item_index": 51,
+      "asset_id": "6ff12b76-0326-427b-8311-e1d9b9f64dd7",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 30,
+      "page_number": 234,
+      "item_index": 29,
+      "asset_id": "d4cc6198-2e30-4404-8cb6-331b695ee945",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 31,
+      "page_number": 236,
+      "item_index": 97,
+      "asset_id": "bb0dc003-49a4-47f7-8190-01417c38e26d",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 32,
+      "page_number": 238,
+      "item_index": 63,
+      "asset_id": "66d5f743-c5ef-446c-ab76-645490e05720",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 33,
+      "page_number": 254,
+      "item_index": 99,
+      "asset_id": "016e2c46-68ee-443c-9d44-fd9db3e5478c",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 34,
+      "page_number": 256,
+      "item_index": 51,
+      "asset_id": "95a4943e-cce9-47d7-9f57-925b4905c3f2",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 35,
+      "page_number": 269,
+      "item_index": 82,
+      "asset_id": "68f05a6b-c10a-4db3-8274-f262c83ed618",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 36,
+      "page_number": 276,
+      "item_index": 10,
+      "asset_id": "f39bf9a2-fd07-4f41-9939-99da2046c70b",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 37,
+      "page_number": 293,
+      "item_index": 55,
+      "asset_id": "9fce706f-7f23-46f9-88d9-37c1106b0981",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 38,
+      "page_number": 305,
+      "item_index": 65,
+      "asset_id": "18c65386-246a-4359-b9c0-6192a8652c89",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 39,
+      "page_number": 324,
+      "item_index": 58,
+      "asset_id": "4fd21474-6825-4faa-88fe-cb83df4328d1",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 40,
+      "page_number": 328,
+      "item_index": 30,
+      "asset_id": "d032cc9f-57d4-42f1-9662-5aab8fa99a1d",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 41,
+      "page_number": 329,
+      "item_index": 71,
+      "asset_id": "086f5e3c-5b4c-4bfa-a8aa-138b7b2025c2",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 42,
+      "page_number": 338,
+      "item_index": 57,
+      "asset_id": null,
+      "severity": "error",
+      "code": "unsupported_item_type",
+      "details_json": "{\"item_type\":\"video_input\"}"
+    },
+    {
+      "issue_id": 43,
+      "page_number": 348,
+      "item_index": 94,
+      "asset_id": "b7640872-fb8b-4525-a0e7-95580790c00e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 44,
+      "page_number": 357,
+      "item_index": 90,
+      "asset_id": "c2bb8d16-6084-47ce-bd51-438b5c235561",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 45,
+      "page_number": 369,
+      "item_index": 32,
+      "asset_id": "e1b91969-173c-489d-a306-fdbcde760a96",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 46,
+      "page_number": 375,
+      "item_index": 9,
+      "asset_id": "ebd20f62-5d89-4050-8746-8edb0d1e9a8e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 47,
+      "page_number": 383,
+      "item_index": 6,
+      "asset_id": "abf35442-2e79-4153-a0f7-4d3076740d84",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 48,
+      "page_number": 391,
+      "item_index": 65,
+      "asset_id": "9c105739-ec19-40a1-b9aa-c872b4d88b99",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 49,
+      "page_number": 398,
+      "item_index": 18,
+      "asset_id": "a2fcaafe-62b9-4fbf-a6a5-5e2f5b95fd82",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 50,
+      "page_number": 398,
+      "item_index": 76,
+      "asset_id": "7d767c2f-6cdb-4cc6-b30c-ad12d51239dd",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 51,
+      "page_number": 403,
+      "item_index": 60,
+      "asset_id": "b08874f6-82fb-44c4-bcb4-cdd2856fc705",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 52,
+      "page_number": 404,
+      "item_index": 87,
+      "asset_id": "243f8990-4c7b-47d1-8b17-8e572a88f18d",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 53,
+      "page_number": 409,
+      "item_index": 53,
+      "asset_id": "30c743ef-98ee-47b9-916d-29d34d75331d",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 54,
+      "page_number": 414,
+      "item_index": 66,
+      "asset_id": "e92068a9-610f-4ff9-a483-781bacf82824",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 55,
+      "page_number": 415,
+      "item_index": 28,
+      "asset_id": "2b2af785-16ad-4041-90d8-7b40289494e5",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 56,
+      "page_number": 423,
+      "item_index": 26,
+      "asset_id": "bca7b370-0b41-46e1-9d94-cd25df0203c3",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 57,
+      "page_number": 425,
+      "item_index": 30,
+      "asset_id": "88314f5c-18c0-4afc-b707-573ffce1b35b",
+      "severity": "error",
+      "code": "duplicate_asset_id",
+      "details_json": "{\"duplicate_page\":425}"
+    },
+    {
+      "issue_id": 58,
+      "page_number": 425,
+      "item_index": 90,
+      "asset_id": "7499f583-ac28-4905-9c4d-8e690fd5ff94",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 59,
+      "page_number": 433,
+      "item_index": 73,
+      "asset_id": "bd1df7a5-1ead-4293-b3ce-e443074064ff",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 60,
+      "page_number": 437,
+      "item_index": 86,
+      "asset_id": "7ad2802e-e9c3-450c-8b9a-1c54b5054b49",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 61,
+      "page_number": 444,
+      "item_index": 54,
+      "asset_id": "3c20263d-af61-465c-8fd1-65cfaca06f1a",
+      "severity": "error",
+      "code": "duplicate_asset_id",
+      "details_json": "{\"duplicate_page\":444}"
+    },
+    {
+      "issue_id": 62,
+      "page_number": 447,
+      "item_index": 10,
+      "asset_id": "be41bca6-a49b-4cc9-b273-6f36b6d518ae",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 63,
+      "page_number": 452,
+      "item_index": 37,
+      "asset_id": "5684e576-c943-4bff-b7b5-b06ab91dbb5e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 64,
+      "page_number": 453,
+      "item_index": 48,
+      "asset_id": "fc8f2e26-5dbf-4f96-bf49-91b4b07eb74e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 65,
+      "page_number": 457,
+      "item_index": 55,
+      "asset_id": "8801a1f6-ce06-4d87-8ae6-0c15e254e8ad",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 66,
+      "page_number": 462,
+      "item_index": 73,
+      "asset_id": "e131d86b-9dd8-467c-9ccc-b5257261278e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 67,
+      "page_number": 466,
+      "item_index": 27,
+      "asset_id": "0e81a659-c8d9-45b3-92b0-3f3c96de1d98",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 68,
+      "page_number": 486,
+      "item_index": 30,
+      "asset_id": "c3d97d74-a945-4dce-a97c-0c209f017483",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 69,
+      "page_number": 488,
+      "item_index": 70,
+      "asset_id": "40dbd1a7-881c-448a-996f-affa77d9e39f",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 70,
+      "page_number": 490,
+      "item_index": 59,
+      "asset_id": "c6601923-f330-45f8-a60a-894a1a1f69cd",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 71,
+      "page_number": 494,
+      "item_index": 89,
+      "asset_id": "f3a3e050-39de-4ceb-bfd6-9e142094e3f4",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 72,
+      "page_number": 500,
+      "item_index": 90,
+      "asset_id": "c384101a-bd14-487c-95bb-82ae4b61ebee",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 73,
+      "page_number": 502,
+      "item_index": 69,
+      "asset_id": "ff745d48-49d9-4ee4-b4c6-ff547b9c2c1e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 74,
+      "page_number": 504,
+      "item_index": 15,
+      "asset_id": "6944a21d-cdfb-49a3-bc22-73e8efdaac16",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 75,
+      "page_number": 513,
+      "item_index": 56,
+      "asset_id": "b7c112de-b0d6-4c25-bb42-2d346a3cc6d3",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 76,
+      "page_number": 518,
+      "item_index": 49,
+      "asset_id": "dd051f50-2622-4692-b9db-2581cf90c37e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 77,
+      "page_number": 518,
+      "item_index": 56,
+      "asset_id": "a2ffd950-9fa7-4c3b-a85d-35f824e08cc1",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 78,
+      "page_number": 521,
+      "item_index": 42,
+      "asset_id": "38f8f174-df7b-4889-9ed8-b439562504d5",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 79,
+      "page_number": 522,
+      "item_index": 39,
+      "asset_id": "d8c26d9d-710b-470f-8251-d23f3e24d4a8",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 80,
+      "page_number": 532,
+      "item_index": 51,
+      "asset_id": "320a8cd5-c9bd-4524-a381-0b61b05b071c",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 81,
+      "page_number": 534,
+      "item_index": 68,
+      "asset_id": "5723ed0d-2af6-4af6-8e65-5aa462c76453",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 82,
+      "page_number": 540,
+      "item_index": 24,
+      "asset_id": "eae0db05-4c1a-4731-835e-86ee10a903b1",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 83,
+      "page_number": 541,
+      "item_index": 27,
+      "asset_id": "918329bc-8d07-454a-8685-a8d43fb61e05",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 84,
+      "page_number": 555,
+      "item_index": 37,
+      "asset_id": "c46f7b6f-4c46-4854-ae90-6b7a65b34eb5",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 85,
+      "page_number": 566,
+      "item_index": 69,
+      "asset_id": "d973150a-f635-4b5f-91e7-0bbf8e20ec37",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 86,
+      "page_number": 597,
+      "item_index": 1,
+      "asset_id": "264262cf-1aac-4c8f-b51e-212f3f9481e6",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 87,
+      "page_number": 597,
+      "item_index": 33,
+      "asset_id": "8d4c417e-0e0a-4511-b7a1-6e0715aaba34",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 88,
+      "page_number": 602,
+      "item_index": 60,
+      "asset_id": "1ef858dd-05b9-44c7-8c00-86338dc9e522",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 89,
+      "page_number": 603,
+      "item_index": 34,
+      "asset_id": "19a9fe79-0ebd-4536-aca6-24d04f57369a",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 90,
+      "page_number": 617,
+      "item_index": 82,
+      "asset_id": "f499646e-857e-4993-9747-5238f804de05",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 91,
+      "page_number": 648,
+      "item_index": 37,
+      "asset_id": "0fc990e5-f4b0-4dbe-b9c0-5030ab399c48",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 92,
+      "page_number": 663,
+      "item_index": 58,
+      "asset_id": "bcb6de11-ba7a-4136-a581-e515c40d3afd",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 93,
+      "page_number": 664,
+      "item_index": 48,
+      "asset_id": "6bfc3131-f251-47bf-b95e-e51957f87a90",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 94,
+      "page_number": 675,
+      "item_index": 0,
+      "asset_id": "3a03d278-06d0-4853-8864-1fbc4b28c56e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 95,
+      "page_number": 681,
+      "item_index": 51,
+      "asset_id": "efab32b1-f56e-4442-a8ec-1b559c57482a",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 96,
+      "page_number": 704,
+      "item_index": 40,
+      "asset_id": "7ab45a4b-58fa-4946-be16-7a8fb15f61b5",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 97,
+      "page_number": 706,
+      "item_index": 25,
+      "asset_id": "19277b2a-d75f-49e9-8311-82e2452abefc",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 98,
+      "page_number": 714,
+      "item_index": 66,
+      "asset_id": "871498d2-2c27-411a-a16c-21cfa66a1e65",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 99,
+      "page_number": 714,
+      "item_index": 80,
+      "asset_id": "68750b6e-44ec-4d41-950c-09fdbcc247ae",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 100,
+      "page_number": 715,
+      "item_index": 39,
+      "asset_id": "38b96aca-555b-49d0-a062-b50a5802de7f",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 101,
+      "page_number": 715,
+      "item_index": 43,
+      "asset_id": "b8f7642d-c26c-4d2f-9354-58576c7ed375",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 102,
+      "page_number": 715,
+      "item_index": 97,
+      "asset_id": "7076f3ca-07da-4ccc-9081-2745536c95cb",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 103,
+      "page_number": 716,
+      "item_index": 7,
+      "asset_id": "ac094e58-a152-4984-b917-6c8481ccebb2",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 104,
+      "page_number": 726,
+      "item_index": 54,
+      "asset_id": "8972aabf-1fa3-4636-8234-24fb6a58e106",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 105,
+      "page_number": 726,
+      "item_index": 55,
+      "asset_id": "da743b41-0509-4c14-8126-01885cba8490",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 106,
+      "page_number": 726,
+      "item_index": 56,
+      "asset_id": "535dc0f1-80fe-4284-adbc-7477252465c1",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 107,
+      "page_number": 829,
+      "item_index": 26,
+      "asset_id": "6079225d-798f-4935-82dd-a125baf79b88",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 108,
+      "page_number": 829,
+      "item_index": 27,
+      "asset_id": "1060d0ff-e43c-4a00-b232-da5e88cc54af",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 109,
+      "page_number": 829,
+      "item_index": 28,
+      "asset_id": "2be09b0d-6143-4cd9-94b8-7470bfcfd97c",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 110,
+      "page_number": 829,
+      "item_index": 29,
+      "asset_id": "b84e173a-6172-4509-83e7-ddbacdcaa467",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 111,
+      "page_number": 829,
+      "item_index": 30,
+      "asset_id": "1d73e725-d346-432b-96c1-56411328be68",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 112,
+      "page_number": 830,
+      "item_index": 76,
+      "asset_id": "521df534-0c61-4b69-abff-8b4c89a8eecc",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 113,
+      "page_number": 830,
+      "item_index": 77,
+      "asset_id": "2e620765-df64-4fa2-8e81-1de1849a4c4e",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 114,
+      "page_number": 861,
+      "item_index": 76,
+      "asset_id": "03947c9e-7dc3-47ef-98e8-88518adfcf4d",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 115,
+      "page_number": 861,
+      "item_index": 77,
+      "asset_id": "4f039dd7-1aab-4d55-9919-103f99a32410",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 116,
+      "page_number": 861,
+      "item_index": 78,
+      "asset_id": "251db892-f5ac-44f7-ac56-3e87a776c588",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 117,
+      "page_number": 865,
+      "item_index": 85,
+      "asset_id": "39fa2e40-0418-4a76-b790-f16d6ee3b37a",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 118,
+      "page_number": 898,
+      "item_index": 41,
+      "asset_id": "21b36a44-708a-4b05-b81d-c99f5a4dc752",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 119,
+      "page_number": 951,
+      "item_index": 56,
+      "asset_id": "db2d9f8e-0d00-4816-80dc-15e3888ecb83",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 120,
+      "page_number": 960,
+      "item_index": 12,
+      "asset_id": "1f15accf-d4d2-400f-8b76-8c2558800ec7",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 121,
+      "page_number": 965,
+      "item_index": 94,
+      "asset_id": "19376e3b-cffa-455f-a00d-1cc62269bf9b",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 122,
+      "page_number": 980,
+      "item_index": 33,
+      "asset_id": "b1228b2d-8569-4908-a5b4-75d2010ebb00",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 123,
+      "page_number": 984,
+      "item_index": 83,
+      "asset_id": "edf9c18a-3d45-486e-b454-da6dfd2d834b",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 124,
+      "page_number": 985,
+      "item_index": 26,
+      "asset_id": "26186aff-1c1b-4717-8c78-9f873f7d4cec",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 125,
+      "page_number": 986,
+      "item_index": 92,
+      "asset_id": "6e4d2b0e-69b4-4efd-ba42-6ce013c6e620",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 126,
+      "page_number": 991,
+      "item_index": 88,
+      "asset_id": "30963f77-08a2-47a2-a2da-c5d74b83ab89",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 127,
+      "page_number": 1046,
+      "item_index": 96,
+      "asset_id": "8fc2d2c4-d24d-49ae-a539-77306ce3a323",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 128,
+      "page_number": 1050,
+      "item_index": 72,
+      "asset_id": "1626ee9b-df9a-456b-9698-76d57b24c867",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 129,
+      "page_number": 1073,
+      "item_index": 97,
+      "asset_id": "d0dd8150-283d-4434-a671-93d201359847",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 130,
+      "page_number": 1077,
+      "item_index": 46,
+      "asset_id": "5138f66a-f7cf-4cf3-8a5f-d05352e29fd3",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 131,
+      "page_number": 1095,
+      "item_index": 87,
+      "asset_id": "f83ece74-038e-4cdd-9895-a0307febc7cf",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 132,
+      "page_number": 1096,
+      "item_index": 47,
+      "asset_id": "38de5854-c7bf-42fc-8ced-707c19b97660",
+      "severity": "error",
+      "code": "duplicate_asset_id",
+      "details_json": "{\"duplicate_page\":1096}"
+    },
+    {
+      "issue_id": 133,
+      "page_number": 1101,
+      "item_index": 64,
+      "asset_id": "1c90518c-410e-4048-9a55-16e694966b26",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 134,
+      "page_number": 1109,
+      "item_index": 7,
+      "asset_id": "c2ae80e4-5582-4c62-b97d-e3c56473f1ae",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 135,
+      "page_number": 1111,
+      "item_index": 6,
+      "asset_id": "4f608a49-7ba5-4400-b382-0c5c68619640",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 136,
+      "page_number": 1112,
+      "item_index": 13,
+      "asset_id": "ba2c7673-1374-477d-ae97-3398926ef87b",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 137,
+      "page_number": 1118,
+      "item_index": 90,
+      "asset_id": "bd59fab1-9dce-46dc-9746-39f69ab48767",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 138,
+      "page_number": 1124,
+      "item_index": 20,
+      "asset_id": "2c26bb26-3cbd-4c2f-9609-82405f03f32a",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 139,
+      "page_number": 1126,
+      "item_index": 14,
+      "asset_id": "cccf24c8-c922-4845-b463-0feca3bb92ca",
+      "severity": "error",
+      "code": "duplicate_asset_id",
+      "details_json": "{\"duplicate_page\":1126}"
+    },
+    {
+      "issue_id": 140,
+      "page_number": 1128,
+      "item_index": 19,
+      "asset_id": "5e08a646-a73d-47d8-b7f2-b3a057fed19b",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 141,
+      "page_number": 1129,
+      "item_index": 83,
+      "asset_id": "80b4ee66-5898-41dc-b3c9-5a0cbdd3551f",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    },
+    {
+      "issue_id": 142,
+      "page_number": 1142,
+      "item_index": 79,
+      "asset_id": "ad68132d-1ea3-4808-b54a-a1b9c6d615a9",
+      "severity": "error",
+      "code": "empty_prompt",
+      "details_json": "{}"
+    }
+  ],
+  "raw_page_mismatches": [],
+  "event_log_errors": [],
+  "checks": {
+    "sqlite_integrity": true,
+    "checkpoint_complete": true,
+    "api_item_count": true,
+    "item_occurrence_count": true,
+    "accounted_occurrence_count": true,
+    "page_sequence_contiguous": true,
+    "requested_cursors_unique": true,
+    "last_cursor_is_null": true,
+    "raw_page_count_matches": true,
+    "raw_page_hashes_match": true,
+    "event_log_parses": true,
+    "stored_prompt_urls_absent": true,
+    "unknown_folder_assets_absent": true
+  },
+  "all_checks_passed": true
+}

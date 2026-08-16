@@ -1,0 +1,810 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/cinematic-scene-case-library/normalization-schema-v1.json",
+  "title": "Cinematic scene case normalization record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_id",
+    "category",
+    "source_layer",
+    "material_reference_layer",
+    "model_neutral_scene_layer",
+    "adaptation_decisions",
+    "seedance_adapter_layer",
+    "h3_adapter_layer",
+    "cross_model_validation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "record_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "category": {
+      "enum": [
+        "dialogue_performance",
+        "action_fight",
+        "environment_establishing"
+      ]
+    },
+    "source_layer": {
+      "$ref": "#/$defs/sourceLayer"
+    },
+    "material_reference_layer": {
+      "$ref": "#/$defs/materialReferenceLayer"
+    },
+    "model_neutral_scene_layer": {
+      "$ref": "#/$defs/modelNeutralSceneLayer"
+    },
+    "adaptation_decisions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/adaptationDecision"
+      }
+    },
+    "seedance_adapter_layer": {
+      "$ref": "#/$defs/seedanceAdapterLayer"
+    },
+    "h3_adapter_layer": {
+      "$ref": "#/$defs/h3AdapterLayer"
+    },
+    "cross_model_validation": {
+      "$ref": "#/$defs/crossModelValidation"
+    }
+  },
+  "$defs": {
+    "nullableNumber": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "nullableString": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sourcePointer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "file",
+        "prompt_sha256"
+      ],
+      "properties": {
+        "file": {
+          "const": "selected-source-records.json"
+        },
+        "prompt_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "declaredSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "duration_seconds",
+        "aspect_ratio",
+        "generation_mode"
+      ],
+      "properties": {
+        "duration_seconds": {
+          "$ref": "#/$defs/nullableNumber"
+        },
+        "aspect_ratio": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "generation_mode": {
+          "$ref": "#/$defs/nullableString"
+        }
+      }
+    },
+    "assetMetadataObservations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "asset_count",
+        "duration_seconds_values",
+        "model_values",
+        "resolution_values"
+      ],
+      "properties": {
+        "asset_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "duration_seconds_values": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nullableNumber"
+          }
+        },
+        "model_values": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nullableString"
+          }
+        },
+        "resolution_values": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nullableString"
+          }
+        }
+      }
+    },
+    "sourceConflict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "observed_values",
+        "resolution"
+      ],
+      "properties": {
+        "field": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observed_values": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source",
+              "value"
+            ],
+            "properties": {
+              "source": {
+                "type": "string"
+              },
+              "value": {}
+            }
+          }
+        },
+        "resolution": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "selected_value",
+            "authority",
+            "rationale"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "resolved",
+                "unresolved"
+              ]
+            },
+            "selected_value": {},
+            "authority": {
+              "type": "string"
+            },
+            "rationale": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "sourceLayer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_record",
+        "source_prompt_chars",
+        "first_asset_id",
+        "folder_names",
+        "prompt_declared_settings",
+        "asset_metadata_observations",
+        "source_conflicts",
+        "selection_rationale",
+        "selection_policy"
+      ],
+      "properties": {
+        "source_record": {
+          "$ref": "#/$defs/sourcePointer"
+        },
+        "source_prompt_chars": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "first_asset_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "folder_names": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "prompt_declared_settings": {
+          "$ref": "#/$defs/declaredSettings"
+        },
+        "asset_metadata_observations": {
+          "$ref": "#/$defs/assetMetadataObservations"
+        },
+        "source_conflicts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sourceConflict"
+          }
+        },
+        "selection_rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "selection_policy": {
+          "const": "Selected by prompt-content quality and cross-model test value; generation frequency is audit metadata only and never a quality score."
+        }
+      }
+    },
+    "materialReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reference_id",
+        "source_label",
+        "role",
+        "source_description",
+        "portable_description",
+        "active_in_scene",
+        "binding_status"
+      ],
+      "properties": {
+        "reference_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "source_label": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "role": {
+          "enum": [
+            "character_identity",
+            "character_transformation",
+            "environment",
+            "prop",
+            "style"
+          ]
+        },
+        "source_description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "portable_description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "active_in_scene": {
+          "type": "boolean"
+        },
+        "binding_status": {
+          "enum": [
+            "described_only",
+            "real_media_available"
+          ]
+        }
+      }
+    },
+    "materialReferenceLayer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "references",
+        "binding_policy"
+      ],
+      "properties": {
+        "references": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/materialReference"
+          }
+        },
+        "binding_policy": {
+          "const": "Source labels are provenance only. Activate model-specific labels only when the current user supplies accessible media."
+        }
+      }
+    },
+    "duration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value_seconds",
+        "provenance",
+        "prompt_declared_seconds",
+        "asset_metadata_seconds"
+      ],
+      "properties": {
+        "value_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "provenance": {
+          "enum": [
+            "prompt_and_asset_agree",
+            "asset_metadata_only",
+            "user_resolved_source_conflict"
+          ]
+        },
+        "prompt_declared_seconds": {
+          "$ref": "#/$defs/nullableNumber"
+        },
+        "asset_metadata_seconds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/nullableNumber"
+          }
+        }
+      }
+    },
+    "actionBeat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "beat_id",
+        "time_range_seconds",
+        "description",
+        "causal_link",
+        "source_derivation"
+      ],
+      "properties": {
+        "beat_id": {
+          "type": "string",
+          "pattern": "^beat-[1-9][0-9]*$"
+        },
+        "time_range_seconds": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "number",
+              "minimum": 0
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "causal_link": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_derivation": {
+          "enum": [
+            "direct",
+            "consolidated"
+          ]
+        }
+      }
+    },
+    "soundLayer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dialogue",
+        "ambience",
+        "effects",
+        "non_diegetic_music"
+      ],
+      "properties": {
+        "dialogue": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "speaker",
+              "language",
+              "line",
+              "delivery"
+            ],
+            "properties": {
+              "speaker": {
+                "type": "string"
+              },
+              "language": {
+                "type": "string"
+              },
+              "line": {
+                "type": "string"
+              },
+              "delivery": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "ambience": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "effects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "non_diegetic_music": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "modelNeutralSceneLayer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "objective",
+        "duration",
+        "aspect_ratio",
+        "format_mode",
+        "subjects",
+        "spatial_layout",
+        "action_beats",
+        "performance",
+        "camera_intent",
+        "physics",
+        "lighting",
+        "sound",
+        "continuity",
+        "constraints",
+        "unknowns"
+      ],
+      "properties": {
+        "objective": {
+          "type": "string",
+          "minLength": 1
+        },
+        "duration": {
+          "$ref": "#/$defs/duration"
+        },
+        "aspect_ratio": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "format_mode": {
+          "enum": [
+            "single_continuous_take",
+            "controlled_multi_shot"
+          ]
+        },
+        "subjects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "subject_id",
+              "description",
+              "initial_state"
+            ],
+            "properties": {
+              "subject_id": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "initial_state": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "spatial_layout": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "action_beats": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/actionBeat"
+          }
+        },
+        "performance": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "camera_intent": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "framing",
+            "viewpoint",
+            "movement",
+            "optical_outcome"
+          ],
+          "properties": {
+            "framing": {
+              "type": "string"
+            },
+            "viewpoint": {
+              "type": "string"
+            },
+            "movement": {
+              "type": "string"
+            },
+            "optical_outcome": {
+              "type": "string"
+            }
+          }
+        },
+        "physics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lighting": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sound": {
+          "$ref": "#/$defs/soundLayer"
+        },
+        "continuity": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unknowns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "adaptationDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_id",
+        "scope",
+        "operation",
+        "source_fact",
+        "adapted_result",
+        "reason",
+        "authority"
+      ],
+      "properties": {
+        "decision_id": {
+          "type": "string"
+        },
+        "scope": {
+          "enum": [
+            "normalization",
+            "seedance",
+            "h3",
+            "both_adapters"
+          ]
+        },
+        "operation": {
+          "enum": [
+            "preserve",
+            "reencode",
+            "consolidate",
+            "omit",
+            "resolve_conflict",
+            "add_adapter_lock"
+          ]
+        },
+        "source_fact": {
+          "type": "string"
+        },
+        "adapted_result": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "authority": {
+          "enum": [
+            "source",
+            "user_approved",
+            "model_contract",
+            "normalization_policy"
+          ]
+        }
+      }
+    },
+    "adapterValidation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "checks",
+        "notes"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pass",
+            "blocked",
+            "fail"
+          ]
+        },
+        "checks": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "adapterSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "duration_seconds",
+        "aspect_ratio"
+      ],
+      "properties": {
+        "duration_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "aspect_ratio": {
+          "$ref": "#/$defs/nullableString"
+        }
+      }
+    },
+    "seedanceAdapterLayer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_model",
+        "binding_mode",
+        "settings",
+        "prompt",
+        "validation"
+      ],
+      "properties": {
+        "target_model": {
+          "const": "Seedance 2.0"
+        },
+        "binding_mode": {
+          "const": "text_only_validation"
+        },
+        "settings": {
+          "$ref": "#/$defs/adapterSettings"
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "validation": {
+          "$ref": "#/$defs/adapterValidation"
+        }
+      }
+    },
+    "h3AdapterLayer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_model",
+        "prompt_mode",
+        "runtime_task",
+        "reference_binding",
+        "settings",
+        "prompt",
+        "validation"
+      ],
+      "properties": {
+        "target_model": {
+          "const": "MiniMax H3"
+        },
+        "prompt_mode": {
+          "const": "T2VA"
+        },
+        "runtime_task": {
+          "const": "t2va"
+        },
+        "reference_binding": {
+          "const": "none"
+        },
+        "settings": {
+          "$ref": "#/$defs/adapterSettings"
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "validation": {
+          "$ref": "#/$defs/adapterValidation"
+        }
+      }
+    },
+    "crossModelValidation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "preserved",
+        "model_specific_reencoding",
+        "known_losses",
+        "blocked_items"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pass",
+            "partial",
+            "blocked"
+          ]
+        },
+        "preserved": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "model_specific_reencoding": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "known_losses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "blocked_items": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

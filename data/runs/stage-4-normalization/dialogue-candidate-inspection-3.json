@@ -1,0 +1,543 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-16T11:31:23.558298+00:00",
+  "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+  "records": [
+    {
+      "prompt_sha256": "086a04b7f0f8e168bfcbf3183684e1cf275d57e59a3c639dbdabc0713867d658",
+      "prompt_text": "JAX SIDE-OF-ARENA SARCASTIC LOOKBACK — \"Are you kidding me?\"\nAspect: 16:9. Duration: 4s. Mode: R2V.\nFormat D — emotional single shot. ONE camera. ONE line.\n============================================================\n \nREFERENCES:\n<<<image_1>>> — Jax: young Black male, early-mid 20s, 182cm, lean athletic build. Deep dark-brown skin (Fitzpatrick V–VI) with subtle warm undertones, peach fuzz on cheeks/jaw, asymmetric small moles (one near right cheekbone, one along left jawline), faint healed scratch on left brow ridge. Super short bleached buzz cut (~3mm, platinum-blond tips fading to dark roots). Dark brown eyes with subtle yellow-amber tint, wet living eyes. Black wraparound tactical safety glasses worn on eyes (single curved clear polycarbonate lens, matte-black temples). Black tight tactical compression T-shirt, olive-drab/khaki tactical cargo pants with thigh pockets, black fingerless tactical gloves, black combat boots.\n<<<image_2>>> — Octagonal training arena: brutalist concrete hall, Ø52m, 8 walls, dome ceiling ~22m, raised octagonal platform Ø45m at center (lighter machine-troweled concrete, satin sheen). Around the platform's perimeter lip runs a continuous warm amber LED light strip (~3000K, recessed). Walls: dark charcoal-grey concrete with formwork tie-hole pattern. Warm amber industrial wall sconces (steel cage, frosted incandescent bulb, ~3000K) mounted at ~6m height every 8m around perimeter. Thin warm-grey atmospheric haze in the volume.\n \nANCHOR (front-loaded, first 30 words):\n<<<image_1>>> stands off to the side of <<<image_2>>> platform, weight settled on his right hip, turns his head toward camera and delivers a flat dry sarcastic \"Are you kidding me?\"\n \n────────────────────────────────────────────────────────────\n \nSHOT — JAX SIDE-OF-ARENA SARCASTIC LOOKBACK:\nclose-up <<<image_1>>> standing OFF TO THE SIDE of <<<image_2>>> — on the WEST apron of the octagonal platform near a wall sconce, NOT at platform center, weight settled on his right hip, chest open, arms loose at his sides. Head turns slowly toward the lens — slight chin lift. Half eye-roll up. Right eyebrow lifts. Asymmetric himbo smirk twitches the right corner of his mouth. Dry sarcastic, conversational-quiet, exasperated:\n\"Are you kidding me?\"\nFaint head-shake on \"kidding\". Slow blink after. Camera: anamorphic 50mm at his E/W 3/4 angle (NEVER head-on N frontal), eye-level handheld, subtle micro-drift, 180° shutter.\n \n────────────────────────────────────────────────────────────\n \nDIALOGUE LOCK:\nOne spoken line — <<<image_1>>>'s warm baritone, dry sarcastic, conversational-quiet, exasperated himbo register (slightly amused under the irritation): \"Are you kidding me?\" Tongue/teeth visible at correct phonemes (\"k\" plosive, \"ng\" nasal, \"m\" lip-close). Mouth shapes natural, no lip-sync mismatch.\n \nLIGHTING:\nPracticals only — warm amber wall sconces (~3000K) on the perimeter wall + warm amber perimeter LED strip on the platform edge. Camera on <<<image_1>>>'s SHADOW SIDE — face naturally lit from the practicals on the far side, framed from the darker side. Natural rim light + eye catchlight from the closest sconce + perimeter LED. No fill, no front light, no off-camera fixtures, no neon, no toplight. Thin atmospheric haze for aerial depth, NO god rays.\n \nCOLOR GRADE (60:30:10):\nCool blue-grey concrete walls + dome shadows + ambient haze (60) + mid-tone concrete grey platform/apron (30) + warm red-amber sconces + LED strip + capillary flush in skin (10). Restrained naturalistic palette, true black point in shadows.\n \nSTYLE:\n8K IMAX photoreal. Subtle organic 35mm-style grain. Cinematography: Emmanuel Lubezki × Roger Deakins (natural light, controlled contrast, precise composition). Lens: physical anamorphic-leaning cinema glass (Cooke S5/i or Master Anamorphic vibe — creamy bokeh, subtle horizontal flare on hot points, slight focus breathing). 60fps base, 180° shutter natural motion blur. Skin: pore-level realism (peach fuzz, asymmetric moles, capillary flush, subsurface scattering at thin areas, fine glistening sweat film). Performance: Hollywood A-grade — micro-pauses, precise eyeline, wet eyes with catchlights, visible breath, small involuntary blinks.\n \nHARD LOCKS:\n- ONE character in frame: <<<image_1>>>. No clones, no extras, no other figures.\n- <<<image_1>>> positioned OFF TO THE SIDE of <<<image_2>>> — on the WEST apron near a wall sconce, NOT at center, NOT on any painted floor mark.\n- Camera always 3/4 from his EAST/WEST/SOUTH side — NEVER flat NORTH frontal head-on portrait.\n- Identity per <<<image_1>>>: same buzz cut length, same mole positions, same eye color (dark brown with subtle yellow-amber tint), same scratch on left brow, same wardrobe, tactical safety glasses worn ON eyes.\n- Environment per <<<image_2>>>: same wall pattern, same sconce spacing, same warm amber LED strip on platform edge. No fictional features, no drift.\n- Performance register: himbo-cocky + dry sarcasm, NEVER stoic-action-hero, NEVER Marvel-dramatic, NEVER neutral.\n- No CGI / no 3D render / no game-engine aesthetic.\n \nAUDIO (SFX only, no music, no subtitles, no voiceover):\nDistant HVAC rumble in the dome + faint 60Hz electrical hum from the wall sconce + light fabric rustle of <<<image_1>>>'s T-shirt and cargo pants + small leather creak of gloves + slow audible breath + <<<image_1>>>'s dry sarcastic \"Are you kidding me?\" at ~1.2s (FG, clear, his voice).",
+      "source_prompt_chars": 5413,
+      "analysis_prompt_chars": 5413,
+      "url_redaction_count": 0,
+      "first_asset_id": "ec7ed73d-0594-40fd-97f4-682c2896e876",
+      "assets": [
+        {
+          "asset_id": "0bc9a181-c0b3-4a45-aae8-8452391eacb5",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 591
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 591,
+          "source_item_index": 16
+        },
+        {
+          "asset_id": "0c285bd0-6659-43ef-baae-bfe4d14615af",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 551
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 551,
+          "source_item_index": 38
+        },
+        {
+          "asset_id": "120e580c-b6f7-4f58-9c5c-8a5938bdbe50",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 897
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 897,
+          "source_item_index": 5
+        },
+        {
+          "asset_id": "2e764244-2b2d-4912-933c-8a30fc9a16df",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 677
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 677,
+          "source_item_index": 44
+        },
+        {
+          "asset_id": "56917931-b5cd-4b10-8ad1-ec07ae188e3c",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 897
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 897,
+          "source_item_index": 7
+        },
+        {
+          "asset_id": "5a12e2cb-54e2-4b81-92b2-ce24a1a353ca",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 404
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 404,
+          "source_item_index": 9
+        },
+        {
+          "asset_id": "6251882c-1057-4b8b-9088-f4bb80a848d7",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 897
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 897,
+          "source_item_index": 4
+        },
+        {
+          "asset_id": "688c048e-c071-4f85-95a3-6f6106a21493",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 897
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 897,
+          "source_item_index": 8
+        },
+        {
+          "asset_id": "91eea4b5-2582-4313-8ac4-625cca7f30a2",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 897
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 897,
+          "source_item_index": 6
+        },
+        {
+          "asset_id": "c778c766-2fc9-4682-aea7-53dd25f5fa73",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 419
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 419,
+          "source_item_index": 16
+        },
+        {
+          "asset_id": "ea35fa56-2cc3-42bd-9b85-30a3bc3b9d5e",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 392
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 392,
+          "source_item_index": 22
+        },
+        {
+          "asset_id": "ec7ed73d-0594-40fd-97f4-682c2896e876",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 250
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 250,
+          "source_item_index": 74
+        }
+      ]
+    },
+    {
+      "prompt_sha256": "01c0ee0068a3fa35e6cab84689670319ff3b95547be9e15625562e79f13c5efa",
+      "prompt_text": "<<<image_1>>> character sheet of Roco\ncontinue <<<video_1>>> with Roco, slowly raising his gaze towards somewhere far, and says, sadly, with a forced smile: \"It's going to be okay\". No other voices or lines\n\nStyle: 8K IMAX. Photorealistic — no 3D render, no game engine, no game-cutscene aesthetic.\nCinematography: Emmanuel Lubezki × Roger Deakins.\nLighting: Natural light only — contre-jour backlight, camera on shadow side, atmospheric haze throughout. Key light from sky and windows only.\nColor: 60:30:10 — dominant / secondary / accent.\nCamera: Physical cine lens. 180° shutter motion blur.\nSkin: Pore-level realism — vellus hair, asymmetric moles, capillary flush, pore-shadow matching on-set light.\nActing: Hollywood — micro-pauses before reactions, precise eye-line, wet living eyes with catch-lights, visible breath and chest rise.\nPhysics: Gravity and inertia respected — mass has real weight, correct contact shadows. No floating props.\nComposition: Rule of thirds + golden ratio. Every person moving from frame one.\nContinuity: Characters, props, environment identical across every cut. No identity drift.\nTechnical: 24fps smooth motion. 8K detail. No jitter.\nAudio: Environmental SFX only. No music. No subtitles.",
+      "source_prompt_chars": 1225,
+      "analysis_prompt_chars": 1225,
+      "url_redaction_count": 0,
+      "first_asset_id": "144f4527-4591-4ee9-b52b-64f65cbb9d7a",
+      "assets": [
+        {
+          "asset_id": "144f4527-4591-4ee9-b52b-64f65cbb9d7a",
+          "primary_folder_id": "40d30727-7317-4459-b073-1a3234f81333",
+          "primary_folder_name": "Scene 72",
+          "folder_memberships": [
+            {
+              "folder_id": "40d30727-7317-4459-b073-1a3234f81333",
+              "folder_name": "Scene 72",
+              "first_seen_page": 618
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 618,
+          "source_item_index": 95
+        },
+        {
+          "asset_id": "354d9de9-b264-4292-b94c-9a69ba8fe7b2",
+          "primary_folder_id": "40d30727-7317-4459-b073-1a3234f81333",
+          "primary_folder_name": "Scene 72",
+          "folder_memberships": [
+            {
+              "folder_id": "40d30727-7317-4459-b073-1a3234f81333",
+              "folder_name": "Scene 72",
+              "first_seen_page": 1152
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 1152,
+          "source_item_index": 83
+        }
+      ]
+    },
+    {
+      "prompt_sha256": "0aa30b19f0a364e3ee3390318248460f75778f95b2976701355729dd9b964f7d",
+      "prompt_text": "[CINEMATIC SPECIFICATION]\nSingle continuous handheld close-up shot, 5 seconds, anamorphic 2.39:1, \n35mm film grain, shot on Arri Alexa with anamorphic lenses, very \nshallow depth of field with creamy neon bokeh in background, \ncinematography in the style of Wong Kar-wai's \"Fallen Angels\" and \n\"Chungking Express\", Christopher Doyle handheld energy.\n\n[CAMERA]\nActive alive handheld camera close to Lulu's face, running alongside \nher, breathing with the motion. Operator visibly chasing her — slight \nweight, slight bounce, occasional motion blur. The camera is barely \nkeeping up with her. NOT smooth gimbal, NOT stabilized — alive and \nhuman. Frame: tight close-up, Lulu's face fills most of the frame, \nher shoulder visible, everything behind her dissolved into colored \nneon bokeh.\n\n[LIGHT & ATMOSPHERE]\nLate night Asian megacity backstreet, recently rained. Neon signs \nabove and behind her — pink, red, electric blue — splashing colored \nlight across her face as she runs through them. Each step she takes \ncatches a different colored beam. Wet asphalt reflections of neon \nvisible at edges of frame. Streetlamps overhead. Misty air. \nAnamorphic lens flares streaking horizontally when bright signs pass \nbehind her.\n\n[CHARACTER — Lulu, 17 years old]\nLulu, 17, dark brown shoulder-length hair flying behind her as she \nruns, side-swept fringe falling across her forehead, pale skin \nflushed pink from running, bright eyes gleaming with neon reflections, \nmouth open in a wild laugh. Wearing a light wash denim jacket covered \nin vintage embroidered patches (aviation, retro, badges) over a \nwhite cropped t-shirt, thin black velvet choker around her neck \nvisible at her collarbone. The choker and patches catch light as she \nmoves.\n\n[ACTION]\nLulu is mid-run, looking forward, hair flying. She glances over her \nshoulder, looking BACK toward the camera (toward where Roco is, \nchasing her), grinning wildly — eyes alive, completely free. She \nshouts something playful to him over the city noise, laughs at her \nown shout, then turns her face forward again and keeps running. The \nneon behind her shifts as she runs through different signs. Her hair \ncatches a beam of red light, then pink, then blue.\n\n[SOUND — DIEGETIC ONLY]\nNo music, no instruments. Her fast running footsteps on wet asphalt, \nher breathless laughter, the rustle of her denim jacket, distant city \nhum, faint car horns, the soft hiss of mist on pavement.\n\n[NEGATIVE]\nno music, no score, no instruments, no slow motion, no smooth gimbal, \nno static camera, no stabilization, no full body shot, no wide shot, \nno other people in frame, no cars in foreground, no rain falling, \nno melancholy, no fear, no sadness, no extra limbs, no facial morphing, \nno character identity drift, no posed running, no fake laughter, no \nlooking directly into camera lens, no sharp focus on background, no \ndeep depth of field, no children, no adults, no text, no captions.",
+      "source_prompt_chars": 2927,
+      "analysis_prompt_chars": 2927,
+      "url_redaction_count": 0,
+      "first_asset_id": "2e0802d1-c584-4436-af08-001fb9b29368",
+      "assets": [
+        {
+          "asset_id": "10abca96-b407-4f94-9bac-c6c6d7ec8506",
+          "primary_folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+          "primary_folder_name": "Flashback 2",
+          "folder_memberships": [
+            {
+              "folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+              "folder_name": "Flashback 2",
+              "first_seen_page": 753
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 753,
+          "source_item_index": 93
+        },
+        {
+          "asset_id": "1bd25149-e9f9-4563-b2ec-b2a0ec1651a5",
+          "primary_folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+          "primary_folder_name": "Flashback 2",
+          "folder_memberships": [
+            {
+              "folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+              "folder_name": "Flashback 2",
+              "first_seen_page": 411
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 411,
+          "source_item_index": 4
+        },
+        {
+          "asset_id": "2e0802d1-c584-4436-af08-001fb9b29368",
+          "primary_folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+          "primary_folder_name": "Flashback 2",
+          "folder_memberships": [
+            {
+              "folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+              "folder_name": "Flashback 2",
+              "first_seen_page": 34
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 34,
+          "source_item_index": 4
+        },
+        {
+          "asset_id": "36b69e28-b9a5-4e50-bb7f-7ec6e97dd68d",
+          "primary_folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+          "primary_folder_name": "Flashback 2",
+          "folder_memberships": [
+            {
+              "folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+              "folder_name": "Flashback 2",
+              "first_seen_page": 696
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 6.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 696,
+          "source_item_index": 65
+        },
+        {
+          "asset_id": "46530b58-7a12-4e4c-93a9-fc3062bbaeeb",
+          "primary_folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+          "primary_folder_name": "Flashback 2",
+          "folder_memberships": [
+            {
+              "folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+              "folder_name": "Flashback 2",
+              "first_seen_page": 603
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 6.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 603,
+          "source_item_index": 84
+        },
+        {
+          "asset_id": "7652e404-f7c9-4306-a50f-fee22dea3628",
+          "primary_folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+          "primary_folder_name": "Flashback 2",
+          "folder_memberships": [
+            {
+              "folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+              "folder_name": "Flashback 2",
+              "first_seen_page": 330
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 6.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 330,
+          "source_item_index": 82
+        },
+        {
+          "asset_id": "cb753b8b-ca9c-4b63-9c04-0f067ec857d6",
+          "primary_folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+          "primary_folder_name": "Flashback 2",
+          "folder_memberships": [
+            {
+              "folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+              "folder_name": "Flashback 2",
+              "first_seen_page": 955
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 955,
+          "source_item_index": 41
+        },
+        {
+          "asset_id": "fd264f0c-9b21-48fc-a4b1-f8f6c4a49347",
+          "primary_folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+          "primary_folder_name": "Flashback 2",
+          "folder_memberships": [
+            {
+              "folder_id": "d966159c-31fe-42f7-9d70-19bccf8768b2",
+              "folder_name": "Flashback 2",
+              "first_seen_page": 247
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 6.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 247,
+          "source_item_index": 74
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "batch_id": "8a21cd175e914dfc0fcaa776",
+  "batch_name": "stage-4b-1-approved-sample",
+  "manifest_sha256": "8a21cd175e914dfc0fcaa7769e10f89f74b78a7a9d0574d485323712ebd9c4d7",
+  "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+  "target_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-sample\\preprocessed.sqlite3",
+  "source_snapshot_sha256": "47f0a9452293a931c3a9448244fdf929d70e4588b510924cae48811ce3b2acd3",
+  "source_completion": {
+    "status": "completed_with_issues",
+    "checkpoint_complete": true,
+    "pages_committed": 1155,
+    "unique_prompt_count": 7517
+  },
+  "source_state_unchanged": true,
+  "source_file_state_before": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+        "exists": true,
+        "size": 174342144,
+        "mtime_ns": 1786878207995969200,
+        "sha256": "963171a416dfd8ef6acd433d9538b428186bcda28a66309d9c7ec35b20e10aad"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-wal",
+        "exists": true,
+        "size": 0,
+        "mtime_ns": 1786879203761838900,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
+        "exists": true,
+        "size": 32768,
+        "mtime_ns": 1786894525611158600,
+        "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+      }
+    ]
+  },
+  "source_file_state_after": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+        "exists": true,
+        "size": 174342144,
+        "mtime_ns": 1786878207995969200,
+        "sha256": "963171a416dfd8ef6acd433d9538b428186bcda28a66309d9c7ec35b20e10aad"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-wal",
+        "exists": true,
+        "size": 0,
+        "mtime_ns": 1786879203761838900,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
+        "exists": true,
+        "size": 32768,
+        "mtime_ns": 1786894552837308400,
+        "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+      }
+    ]
+  },
+  "video_unique_prompt_count": 6555,
+  "excluded_empty_video_asset_count": 2,
+  "selected_prompt_count": 10,
+  "selected_asset_count": 206,
+  "selected_occurrence_count": 207,
+  "selected_membership_count": 207,
+  "processed": 0,
+  "skipped": 10,
+  "failed": 0,
+  "processing_status_counts": {
+    "completed": 4,
+    "completed_with_issues": 6
+  },
+  "fact_kind_counts": {
+    "audio": 22,
+    "cut_marker": 32,
+    "declared_aspect_ratio": 6,
+    "declared_duration": 4,
+    "dialogue": 11,
+    "entity_reference_span": 10,
+    "generation_mode": 2,
+    "heading": 18,
+    "language": 7,
+    "reference_block": 13,
+    "reference_tag": 302,
+    "shot_marker": 29,
+    "take_declaration": 18,
+    "timestamp": 18
+  },
+  "fact_prompt_coverage": {
+    "audio": 8,
+    "cut_marker": 4,
+    "declared_aspect_ratio": 5,
+    "declared_duration": 4,
+    "dialogue": 3,
+    "entity_reference_span": 5,
+    "generation_mode": 1,
+    "heading": 4,
+    "language": 3,
+    "reference_block": 5,
+    "reference_tag": 7,
+    "shot_marker": 4,
+    "take_declaration": 5,
+    "timestamp": 3
+  },
+  "processing_issue_code_counts": {
+    "audio_dialogue_scope_ambiguity": 3,
+    "duration_metadata_conflict": 3,
+    "take_structure_conflict": 1,
+    "unicode_replacement_character": 1,
+    "unresolved_reference_occurrence": 3
+  },
+  "logical_target_digest": "6ab517c8a1a87d57499438b276ae0dcea7a6780fa4de440b97d2dc1d3616f18e",
+  "checks": {
+    "video_universe_expected": true,
+    "target": {
+      "integrity_check": "ok",
+      "foreign_key_error_count": 0,
+      "evidence_error_count": 0,
+      "evidence_errors": [],
+      "passed": true
+    },
+    "source_unchanged": true
+  },
+  "selected_prompts": [
+    {
+      "prompt_sha256": "001974c55eb04ce39405bc668773ab703c6e6d493061d995719ca9239b53e77f",
+      "reasons": [
+        "multi-duration"
+      ]
+    },
+    {
+      "prompt_sha256": "00e4c15e723379bb862770bb9c4a46093978048a29e2426de31e3c39fb512c89",
+      "reasons": [
+        "approved-environment-sample"
+      ]
+    },
+    {
+      "prompt_sha256": "06dd14a0547f35ba2821a3f6e49214cf499335b7c981559cc33e0687557e6d26",
+      "reasons": [
+        "null-model"
+      ]
+    },
+    {
+      "prompt_sha256": "084f62c9a2c6aa19f0058be94c38c00275ac194ca3e8ffeb35384f7a89f83757",
+      "reasons": [
+        "unicode-replacement"
+      ]
+    },
+    {
+      "prompt_sha256": "086a04b7f0f8e168bfcbf3183684e1cf275d57e59a3c639dbdabc0713867d658",
+      "reasons": [
+        "approved-dialogue-sample"
+      ]
+    },
+    {
+      "prompt_sha256": "166a0440f6f01e02419b42f47d088e1919dedd1800b62b4b632e0047cb446ba0",
+      "reasons": [
+        "approved-action-sample"
+      ]
+    },
+    {
+      "prompt_sha256": "4b03eb316c71b5651f9729e9e35afdcb6f1533a25036885c21991f62dded35fd",
+      "reasons": [
+        "mixed-image-video"
+      ]
+    },
+    {
+      "prompt_sha256": "6fa9b80340f7687453c55a0ea663414aaf63fb04b2f5a04066d9481527716095",
+      "reasons": [
+        "short-prompt"
+      ]
+    },
+    {
+      "prompt_sha256": "875fd06de19abfc521f9d176224cc51be08f6b6ee4c8df5e9ce1b3c4c880fd0a",
+      "reasons": [
+        "multi-folder"
+      ]
+    },
+    {
+      "prompt_sha256": "c5fd19556a918b65ba0fd4a44fdcb27321e60391b54c56351ee756753ee395a6",
+      "reasons": [
+        "long-prompt"
+      ]
+    }
+  ]
+}

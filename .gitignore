@@ -1,0 +1,22 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Local browser and runtime state
+tmp/
+logs/
+
+# Raw discovery and network captures
+data/raw/
+data/reports/
+
+# Full source corpus payloads; keep derived audit metadata and stage outputs
+data/runs/project-corpus/pages/
+data/runs/project-corpus/corpus.sqlite3*
+data/runs/project-corpus/events.jsonl
+
+# Intermediate inventory and focused-crawl payloads
+data/runs/project-inventory/raw/
+data/runs/project-inventory/normalized/
+data/runs/project-inventory/events.jsonl
+data/runs/scene-69-fight/

@@ -1,0 +1,796 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-16T11:32:32.288513+00:00",
+  "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+  "records": [
+    {
+      "prompt_sha256": "4e0925c338079ac3959eb3db7c7c395cd93739f851b9599a97649d91880ce1e5",
+      "prompt_text": "\n<<<9771d7f3-0c4f-4896-b821-50d025a597a7>>>\n <<<8204fa1d-fbb4-4eb7-b32b-37aecbd0add0>>>\n\n<<<image_1>>>= Roco position (don't use as start frame)\n \n<<<a0ec4ee5-7ab9-4ce3-99f1-55f820d4bf89>>>= 350cm tall demon. bone blade instead of right arm. Right arm is a sharp bone itself. Left arm only clawed hand.\n\n<<<daab4912-1a99-4b00-b0c3-25e533cb9dad>>> Location Museum \n\n\nSTYLE PREFIX : 8K IMAX ultra-detailed. 16mm Kodak 500T film grain. Hyper-realistic cinematic. Natural skin tones. heavy grain. No cloning. Strictly only 4 characters — Roko, Lulu, Rein, Jax — no other people no extras no bystanders. Fast-action motion blur. Cinematic composition: rule of thirds, golden ratio, golden spiral. Leading lines and depth layers. Character bags always on body — no loose bags on floor. All architectural columns strictly vertical 90° perpendicular to ground — no tilt no bend no curve. Strictly only natural light + display case built-in lights — no spotlights no beam lights no other additional light sources. Lens against main light source (contre-jour), backlight never frontal. NO SUBTITLE ON FRAME.\n\nscene promt: \nSCENE CONTEXT: After Lulu's teleport save, the four heroes regroup. They find Roco beaten face-down on the ground, struggle to lift him up. He is barely conscious and slow to recover. They talk right there — no hiding, no plan, just a desperate whispered decision while the monster watches from across the atrium.\n\n[attach: all 4 chars + museum]  [STYLE LINE]\n\nCUT — <<<9771d7f3-0c4f-4896-b821-50d025a597a7>>> and <<<8204fa1d-fbb4-4eb7-b32b-37aecbd0add0>>> on the ground after the teleport. <<<8204fa1d-fbb4-4eb7-b32b-37aecbd0add0>>> looks at <<<9771d7f3-0c4f-4896-b821-50d025a597a7>>> — disbelief. <<<9771d7f3-0c4f-4896-b821-50d025a597a7>>> stares at her own trembling hands.\n\nCUT — <<<64f26b6d-7e29-4a04-adde-9567721ae290>>> runs over, skids to his knees beside them.\n\nJAX: \"You good? Rein — you good?\"\n\nREIN (touching her stomach wound, wincing): \"...yeah.\"\n\nCUT — MCU all three look across the atrium — <<<e10a62b4-fd96-4438-8174-21fdf9a4b05e>>> is on the ground at the base of a concrete column near the side wall. He is lying face-down on the concrete floor, dust and smoke still hanging in the air around him from the wall impact. Broken display case nearby. Not moving.\n\nCUT — the three of them move toward <<<e10a62b4-fd96-4438-8174-21fdf9a4b05e>>> — <<<9771d7f3-0c4f-4896-b821-50d025a597a7>>> pulling <<<8204fa1d-fbb4-4eb7-b32b-37aecbd0add0>>>'s arm over her shoulder, <<<64f26b6d-7e29-4a04-adde-9567721ae290>>> leading.\n\nCUT — they reach <<<e10a62b4-fd96-4438-8174-21fdf9a4b05e>>>. Face-down at the column base. Grey tank top shredded. Arms sprawled. <<<64f26b6d-7e29-4a04-adde-9567721ae290>>> kneels, shakes his shoulder.\n\nJAX: \"Bro. Bro! Come on man, wake up.\"\n\nNo response. <<<64f26b6d-7e29-4a04-adde-9567721ae290>>> shakes harder. <<<9771d7f3-0c4f-4896-b821-50d025a597a7>>> kneels on the other side.\n\nLULU (quiet, scared): \"Roco... please...\"\n\nCUT — ECU <<<e10a62b4-fd96-4438-8174-21fdf9a4b05e>>>'s face on the concrete. Eyes CLOSED. Beat. Then — a faint groan. His eyelids FLUTTER. Half-open. Unfocused. He's looking at the concrete an inch from his nose. Doesn't know where he is.\n\nROCO (barely audible, slurred, still face-down): \"...wha... what happened...\"\n\nJAX: \"You got thrown into a wall is what happened. Can you move?\"\n\n<<<64f26b6d-7e29-4a04-adde-9567721ae290>>> and <<<9771d7f3-0c4f-4896-b821-50d025a597a7>>> pull <<<e10a62b4-fd96-4438-8174-21fdf9a4b05e>>>'s arms over their shoulders. They LIFT him — it takes effort. <<<e10a62b4-fd96-4438-8174-21fdf9a4b05e>>>'s legs barely work. He sways, head hanging forward. <<<8204fa1d-fbb4-4eb7-b32b-37aecbd0add0>>> steadies him from behind.\n\nCUT — <<<e10a62b4-fd96-4438-8174-21fdf9a4b05e>>> on his feet, held up between <<<64f26b6d-7e29-4a04-adde-9567721ae290>>> and <<<9771d7f3-0c4f-4896-b821-50d025a597a7>>>. Head down. Breathing heavy. Slowly raises his head — blinks — tries to focus. Sees the destroyed atrium. Sees the monster in the distance. Memory comes back in pieces. His face changes — groggy confusion becoming grim understanding.\n\nROCO (voice hoarse, exhausted, barely above a whisper): \"...did anyone... get a hit on it?\"\n\nSilence. Nobody answers. That's the answer.\n\nROCO (same whisper, eyes half-closed): \"...alone doesn't work... we each went... got destroyed...\"\n\nHe swallows. Forces his eyes open. Looks at each of them — <<<64f26b6d-7e29-4a04-adde-9567721ae290>>> holding him up, <<<9771d7f3-0c4f-4896-b821-50d025a597a7>>> holding him up, <<<8204fa1d-fbb4-4eb7-b32b-37aecbd0add0>>> behind clutching her stomach. All beaten. All still here.\n\nROCO (whisper, with whatever strength he has left): \"Together. All of us... at once. One shot... that's all we get.\"\n\nThey look at each other. Scared. Hurt. But nodding.\n\nCUT TO BLACK.\n\nPhotoreal. NON-IP. 16:9. 10s. SFX only. NO CGI. Cinematic.\n",
+      "source_prompt_chars": 4888,
+      "analysis_prompt_chars": 4888,
+      "url_redaction_count": 0,
+      "first_asset_id": "0391d433-732b-4981-ad5c-d1d3d662095f",
+      "assets": [
+        {
+          "asset_id": "0391d433-732b-4981-ad5c-d1d3d662095f",
+          "primary_folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+          "primary_folder_name": "Dagon Attacks",
+          "folder_memberships": [
+            {
+              "folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+              "folder_name": "Dagon Attacks",
+              "first_seen_page": 251
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 251,
+          "source_item_index": 74
+        },
+        {
+          "asset_id": "09a6fde0-8ae3-4568-ba6d-2a312c3cb3e4",
+          "primary_folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+          "primary_folder_name": "Dagon Attacks",
+          "folder_memberships": [
+            {
+              "folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+              "folder_name": "Dagon Attacks",
+              "first_seen_page": 967
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 967,
+          "source_item_index": 27
+        },
+        {
+          "asset_id": "169e28be-8301-4c6b-aea3-0c1530f0a084",
+          "primary_folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+          "primary_folder_name": "Dagon Attacks",
+          "folder_memberships": [
+            {
+              "folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+              "folder_name": "Dagon Attacks",
+              "first_seen_page": 368
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 368,
+          "source_item_index": 64
+        },
+        {
+          "asset_id": "1d6746dd-e936-407e-a107-e14fb9dcb4d4",
+          "primary_folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+          "primary_folder_name": "Dagon Attacks",
+          "folder_memberships": [
+            {
+              "folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+              "folder_name": "Dagon Attacks",
+              "first_seen_page": 751
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 751,
+          "source_item_index": 43
+        },
+        {
+          "asset_id": "2255542f-f4a0-4f80-91e1-d140c765f299",
+          "primary_folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+          "primary_folder_name": "Dagon Attacks",
+          "folder_memberships": [
+            {
+              "folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+              "folder_name": "Dagon Attacks",
+              "first_seen_page": 406
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 406,
+          "source_item_index": 12
+        },
+        {
+          "asset_id": "5622001f-f8f7-4a82-ac0f-8f05c0e9f3c5",
+          "primary_folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+          "primary_folder_name": "Dagon Attacks",
+          "folder_memberships": [
+            {
+              "folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+              "folder_name": "Dagon Attacks",
+              "first_seen_page": 481
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 481,
+          "source_item_index": 27
+        },
+        {
+          "asset_id": "583cb5c5-09bc-4db8-9345-5362269ea9ec",
+          "primary_folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+          "primary_folder_name": "Dagon Attacks",
+          "folder_memberships": [
+            {
+              "folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+              "folder_name": "Dagon Attacks",
+              "first_seen_page": 624
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 624,
+          "source_item_index": 64
+        },
+        {
+          "asset_id": "9936ab42-ffa2-463b-8b39-a44f72d27251",
+          "primary_folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+          "primary_folder_name": "Dagon Attacks",
+          "folder_memberships": [
+            {
+              "folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+              "folder_name": "Dagon Attacks",
+              "first_seen_page": 294
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 294,
+          "source_item_index": 98
+        },
+        {
+          "asset_id": "d91012b3-a045-421b-a4aa-4cf38ddea7e2",
+          "primary_folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+          "primary_folder_name": "Dagon Attacks",
+          "folder_memberships": [
+            {
+              "folder_id": "7da6f3d1-9a3f-4a53-ae44-249a6c2b4bb0",
+              "folder_name": "Dagon Attacks",
+              "first_seen_page": 1069
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 1069,
+          "source_item_index": 19
+        }
+      ]
+    },
+    {
+      "prompt_sha256": "4c015c955cda9949aa8b04ebd9b273f944234a9dc6f1eb923e0da2826fac68c4",
+      "prompt_text": "<<<image_1>>> — The crystal sword tip — long jagged crystal sword, the blade dense deep crimson-red crystal, faceted and angular, tapering to a sharp point, translucent deep crimson-red with internal light refraction and prismatic chromatic aberration at facet edges. Weapon detail only.\n\n<<<image_2>>> — Brutalist concrete museum atrium polished grey concrete floor with debris and small fragments. Environment only.\n\nScene context: A crystal sword has just been driven into the concrete floor at full force from a downward leap attack. The tip is buried deep into the concrete at a sharp acute angle, the impact moment frozen.\n\n8K IMAX ultra-detailed. 16mm Kodak 500T. Heavy grain. Hyper-realistic. Photoreal. NON-IP. 16:9. 4s. NO CGI. Cinematic.\n\nCUT — extreme macro close-up of the sword tip embedded in the concrete floor, slow motion, Arcane-style impact freeze with motion resuming — camera positioned EXTREMELY LOW at floor level pressed close to the impact point, the macro framing showing only the lower portion of the <<<image_1>>> crystal blade entering the concrete floor — the SHARP TAPERED TIP of the crystal blade DRIVEN DEEP into the polished concrete at a SHARP ACUTE ANGLE approximately 25 to 35 degrees from horizontal, the blade lying nearly LOW along the floor surface, the angle ACUTE and SHALLOW like a sword that struck while the warrior was traveling almost horizontally forward through the air — the blade entering the concrete at this low shallow angle, the embedded portion of the tip plunged into the floor, the visible portion of the blade rising from the concrete at the acute shallow angle extending forward and upward across the frame at a low diagonal close to the floor surface.\n\nAround the entry point on the concrete floor: fine SPIDER-WEB CRACKS racing outward across the polished concrete surface from the impact point, the cracks visible in extreme detail across the grey concrete texture, dark fissures spreading radially from where the blade entered the floor. Small concrete fragments and DUST PARTICLES suspended mid-flight in slow motion around the impact point, the debris caught in the moment of explosive scattering outward from the strike. The polished concrete floor surface visible in extreme texture detail — the slight sheen of the polish, the speckled aggregate of the concrete material, micro-cracks where the impact has compromised the surface.\n\nRED PRISMATIC ARCANE LIGHT bursting radially from the impact point along the floor — the light pooling outward across the concrete in a glowing red wash, the prismatic chromatic aberration spreading across the surrounding surface, the dense crimson-red glow strongest at the immediate base of the embedded blade and fading outward, the internal red light of the crystal blade illuminating the concrete around the entry point.\n\nThe dense deep crimson-red faceted crystal of the blade tip catching the cold ambient light, the internal red glow visible through the translucent crystal, facets sharply defined at the tip. The frozen impact freeze held for one painted beat at the peak moment of penetration, then motion resuming slightly — the dust particles continuing slow outward arcs, the prismatic light beginning to fade slightly, the embedded blade settling into its lodged position.\n\nCold blue-grey ambient daylight in the deeper background completely out of focus, the atrium space heavily blurred in dark bokeh behind the impact, only the immediate floor surface and the embedded blade tip in sharp focus.\n\nCRITICAL: this is a MACRO DETAIL SHOT of only the BLADE TIP and the IMPACT POINT — no character in frame, no upper portion of sword in frame, only the tip embedded in the concrete with the radiating impact effects. The blade enters at a SHARP ACUTE ANGLE 25-35 degrees from horizontal, the blade laying nearly LOW along the floor surface — NOT 60 degrees, NOT vertical, NOT steep — this is a SHALLOW ACUTE angle close to the floor.\n\nPhotoreal. NON-IP. 16:9. 4s. NO CGI. Cinematic.",
+      "source_prompt_chars": 3996,
+      "analysis_prompt_chars": 3996,
+      "url_redaction_count": 0,
+      "first_asset_id": "08bdb967-b1f3-404d-b381-387cac388cc4",
+      "assets": [
+        {
+          "asset_id": "08bdb967-b1f3-404d-b381-387cac388cc4",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 121
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 121,
+          "source_item_index": 76
+        },
+        {
+          "asset_id": "0c672429-1925-4e35-88f1-542fd8eeff89",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 135
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 135,
+          "source_item_index": 99
+        },
+        {
+          "asset_id": "13e1c7b5-8f8f-41f7-9ea3-f61f8c977338",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 345
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 345,
+          "source_item_index": 36
+        },
+        {
+          "asset_id": "179be5ef-2d34-4884-be11-317cb85131ed",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 560
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 560,
+          "source_item_index": 8
+        },
+        {
+          "asset_id": "197695c2-022b-4cd1-992d-91ba9e0f7af6",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 752
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 752,
+          "source_item_index": 12
+        },
+        {
+          "asset_id": "1dced1cd-2ecc-467b-973d-c5e2870bf7e9",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 630
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 630,
+          "source_item_index": 86
+        },
+        {
+          "asset_id": "4fa28a93-4737-4683-9cd5-4932b9fbf03f",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 676
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 676,
+          "source_item_index": 15
+        },
+        {
+          "asset_id": "5d1cb10a-c362-48f2-8f9a-8f6edf12bc69",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 1096
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 1096,
+          "source_item_index": 88
+        },
+        {
+          "asset_id": "8222abc0-0646-4a09-afba-279e1bf269a5",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 752
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 752,
+          "source_item_index": 13
+        },
+        {
+          "asset_id": "944fe774-de8a-4e23-88d9-38ed48d1df33",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 272
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 272,
+          "source_item_index": 66
+        },
+        {
+          "asset_id": "94c4acb7-391c-4b08-8419-9282805ad50f",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 1062
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 1062,
+          "source_item_index": 37
+        },
+        {
+          "asset_id": "9a2f3094-2b4f-494d-996f-c211a2d99a2c",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 945
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 945,
+          "source_item_index": 21
+        },
+        {
+          "asset_id": "b3d8f285-1802-46b0-8725-519a5104e6f3",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 439
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 439,
+          "source_item_index": 77
+        },
+        {
+          "asset_id": "b73b814f-dee1-4f4d-b28b-e2a9f24dec24",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 951
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 951,
+          "source_item_index": 8
+        },
+        {
+          "asset_id": "d2883ac3-d6ab-438b-a1eb-458f88439f83",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 640
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 640,
+          "source_item_index": 19
+        },
+        {
+          "asset_id": "ddd81da7-1546-40f7-ab4b-df37ed938da5",
+          "primary_folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+          "primary_folder_name": "Scene Roko vs Dagon",
+          "folder_memberships": [
+            {
+              "folder_id": "406a1925-7f08-4393-8a24-3782ca63c808",
+              "folder_name": "Scene Roko vs Dagon",
+              "first_seen_page": 753
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 4.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 753,
+          "source_item_index": 57
+        }
+      ]
+    },
+    {
+      "prompt_sha256": "2c3d0217656bc7d3bc71387f984fd64e1c39bb3d00a6995bc97f18ca36a3390e",
+      "prompt_text": "<<<image_1>>>— underground concrete dome, octagonal arena w/ white border, dim lamps.\n<<<image_3>>> — Roko BEFORE left-arm transform: shirtless w/ scars+blood, RIGHT crystal fist oversized 2x jagged red, crystal mass upper-left head, LEFT crystal foot/lower-leg knee-down jagged red, RIGHT in black boot, LEFT arm NORMAL, black tactical pants.\n<<<image_2>>> — Roko AFTER left-arm transform: like image_2 but LEFT arm now FULLY CRYSTAL shoulder-to-fingertips jagged red, NORMAL HUMAN ARM SIZE (NOT oversized like right fist).\n<<<image_4>>> — WEDA UNIT 07 bot: dark grey segmented armor, blue horizontal visor, mechanical joints, armored boots. 10 IDENTICAL bots. Black fuel when damaged.\n\nCamera Settings: Arri Alexa 35. 35mm. f/2.8.\nCamera Style: aggressive handheld, alive camera, sharp jolts on impact, off-center.\nLight: dim overhead practical dome lamps, hard contrast, haze.\nStyle & Mood: cool desaturated, oppressive concrete acoustics, mineral crystal sonics, blade-shear, hydraulic gushing, no music. Reference: John Wick × The Raid.\nNarrative Summary: a fighter encircled by ten bots takes hits, lands hits, his left arm transforms early, then he tears through the rest — bots land solid blows throughout, ~2-to-1 in his favor, all ten destroyed.\nStarting Composition: Roko frame center on a flat metal disc (crushed head of an earlier-killed bot), 10 bots ringed at 5m closing inward, fuel pools at his feet.\n\nRoko <<>> on the metal disc — bots <<>> close in. Bots SWARM, Roko hooks one bot's helmet w/ RIGHT crystal fist (sparks, helmet caves), simultaneously a bot's gauntlet drives into his ribs (Roko exhales sharp, blood spits). His LEFT shoulder ERUPTS — jagged red crystal bursts from under the skin and races shoulder→elbow→wrist→fingertips. Final: LEFT arm FULLY CRYSTAL per <<>>, NORMAL HUMAN ARM SIZE (NOT oversized). Damage signals (CRITICAL): every Roko crystal-fist/elbow/foot strike on a bot → bright METALLIC SPARKS burst at impact + black fuel sprays. Every bot strike on Roko → BLOOD SPRAYS from his face/mouth, head snaps. Pacing: ~2 Roko hits per 1 bot hit, bot hits real and bloody — brutal exchange Roko wins. Bots: sharp/mechanical/heavy. Roko: kinetic aggression/pivots/charges/lunges.\n\nRoko TEARS THROUGH bots — RIGHT crystal fist STRAIGHT-PUNCHES through one bot's chest, fist emerging between shoulder blades, BLACK FUEL gushing entry+exit; LEFT crystal elbows CRACK helmets. He grabs one bot's head w/ BOTH crystal hands and CRUSHES — helmet COLLAPSING, visor exploding. Between kills, bots land counters — heavy fist on Roko's face (blood arc), gauntlet to ribs (Roko folds, recovers). → Hard cut.\n\nA bot RUSHES Roko from BEHIND, locks BEAR-HUG (upper arms pinned, forearms free). Another bot CHARGES from the front. Roko BENDS both crystal forearms UP-AND-BACK over his head, both crystal hands CLAMPING the bear-grabber's helmet from above-behind — ONE SHARP YANK UP-AND-FORWARD, head TEARS OFF in cabling, sparks, fuel. He swings the severed head FORWARD and HURLS it at the front-charging bot, slamming into its torso. Finishes the last bot w/ a hammer-fist crystal strike. → Hard cut.\n\nWide low-angle, locked. All 10 destroyed bots scattered around Roko on dark concrete — bodies face-up, severed heads, chest holes, glass shards. BLACK FUEL pools spread. Roko stands center on the original flattened head — RIGHT crystal fist clenched, LEFT crystal arm at his side, LEFT crystal foot on disc, RIGHT in black boot. Body battered, blood streaming, chest heaving.\n\nSedance directs all shot sizes, angles, timing, choreography, intermediate kills, hard cuts only.\n\nStatic Description: underground dome, octagonal arena w/ white border, dark concrete, destroyed bots, fuel pools, dim haze.\nNegative: no subtitles, no text overlay, no cross-dissolve, no transparency, no wipes, no mirror reflections, no doubled characters, no music, no smooth glide, no centered framing — hard cuts only.",
+      "source_prompt_chars": 3927,
+      "analysis_prompt_chars": 3927,
+      "url_redaction_count": 0,
+      "first_asset_id": "627baece-f141-483e-92e6-0510ba80c54d",
+      "assets": [
+        {
+          "asset_id": "1cbd1863-9af2-4de5-a0a7-40bbef4dc6a0",
+          "primary_folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+          "primary_folder_name": "Scene 25 Roko vs Robots",
+          "folder_memberships": [
+            {
+              "folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+              "folder_name": "Scene 25 Roko vs Robots",
+              "first_seen_page": 629
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 629,
+          "source_item_index": 50
+        },
+        {
+          "asset_id": "627baece-f141-483e-92e6-0510ba80c54d",
+          "primary_folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+          "primary_folder_name": "Scene 25 Roko vs Robots",
+          "folder_memberships": [
+            {
+              "folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+              "folder_name": "Scene 25 Roko vs Robots",
+              "first_seen_page": 468
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 468,
+          "source_item_index": 88
+        },
+        {
+          "asset_id": "6dfc7604-08fb-49b6-9406-8b3088d541b4",
+          "primary_folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+          "primary_folder_name": "Scene 25 Roko vs Robots",
+          "folder_memberships": [
+            {
+              "folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+              "folder_name": "Scene 25 Roko vs Robots",
+              "first_seen_page": 508
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 508,
+          "source_item_index": 86
+        },
+        {
+          "asset_id": "776f779a-2e83-47b2-aa3d-bbc7ff7b3ead",
+          "primary_folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+          "primary_folder_name": "Scene 25 Roko vs Robots",
+          "folder_memberships": [
+            {
+              "folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+              "folder_name": "Scene 25 Roko vs Robots",
+              "first_seen_page": 645
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 645,
+          "source_item_index": 78
+        },
+        {
+          "asset_id": "96892469-19ae-41bb-95f4-ffddef4361ca",
+          "primary_folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+          "primary_folder_name": "Scene 25 Roko vs Robots",
+          "folder_memberships": [
+            {
+              "folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+              "folder_name": "Scene 25 Roko vs Robots",
+              "first_seen_page": 531
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 531,
+          "source_item_index": 63
+        },
+        {
+          "asset_id": "98687c19-e39d-4355-8662-7e0729a29885",
+          "primary_folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+          "primary_folder_name": "Scene 25 Roko vs Robots",
+          "folder_memberships": [
+            {
+              "folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+              "folder_name": "Scene 25 Roko vs Robots",
+              "first_seen_page": 802
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 802,
+          "source_item_index": 63
+        },
+        {
+          "asset_id": "b65a08a5-73c0-4ddd-a490-617189cb46ee",
+          "primary_folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+          "primary_folder_name": "Scene 25 Roko vs Robots",
+          "folder_memberships": [
+            {
+              "folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+              "folder_name": "Scene 25 Roko vs Robots",
+              "first_seen_page": 802
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 802,
+          "source_item_index": 62
+        },
+        {
+          "asset_id": "ffc5c153-d212-4119-8b91-4391e6108f2c",
+          "primary_folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+          "primary_folder_name": "Scene 25 Roko vs Robots",
+          "folder_memberships": [
+            {
+              "folder_id": "b830683a-818e-44ba-8d2f-269d03b1a011",
+              "folder_name": "Scene 25 Roko vs Robots",
+              "first_seen_page": 661
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 661,
+          "source_item_index": 2
+        }
+      ]
+    }
+  ]
+}

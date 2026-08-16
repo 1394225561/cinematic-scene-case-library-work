@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-16T11:27:50.469645+00:00",
+  "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+  "records": [
+    {
+      "prompt_sha256": "00385601b6cc047da0179889ce1fbe76eb57c64238df490e344b524d8f04c1a8",
+      "prompt_text": "<<<image_1>>> (Jax — main character) — Young Black male in his 20s, 182cm tall, lean athletic build, super short bleached buzz cut, dark skin, sharp features, focused intense gaze, iris with subtle yellow-amber tint. Black wraparound tactical safety glasses worn ON his eyes (single curved clear lens, black temples — Oakley-style sport tactical eyewear). Black tight tactical compression T-shirt, olive/khaki tactical cargo pants (belt + side pockets), black fingerless tactical gloves, black military combat boots (high-top).\n\n<<<image_2>>> (Training arena) — Massive concrete octagonal training hall, octagonal walls + triangular faceted dome ceiling, Ø52m. Central area = octagonal training platform Ø45m (raised ~10cm step above outer floor). <<<image_3>>> (Metal Table) is positioned EXACTLY at the geometric CENTER of the octagonal training platform. Outer floor = darker weathered concrete with dormant mechanical arms along walls + distant entrance door on back wall. Walls = dark charcoal-gray concrete with warm amber practical wall lamps.\n\n<<<image_3>>> (Metal Table) — Heavy industrial brutalist welded-steel test table, 3-slab inverted-U (top + 2 end-wall slabs, NOT 4 legs). Dimensions: ~180cm × ~90cm × 70cm tall. Top slab and end-wall slabs are 5cm-thick solid stainless steel plates. Underside between end-walls is open (no front/back — see-through sideways). Visible weld seams along corners. Brushed weathered stainless, gray-silver with mottled darker oxidation patches, grime, smudges, scratches, dents, aged patina. Looks like polished concrete cast in steel.\n\nSTYLE: 8K IMAX cinematic, multi-shot edit. Hyper-realistic — NO 3D rendering, NO game engine, NO game-CG cutscene look. Cinematography: Emmanuel Lubezki × Roger Deakins.\nLIGHTING: STRICTLY only practicals existing in the scene. NO cinematic fill of any kind — no front fill, no side fill, no toplight, no underlight, no bounce boards, no softboxes, no LED strips, no neon, no off-camera light sources whatsoever. Camera is always on the subject's shadow side — face is naturally lit but framed from the darker side; practicals provide rim and eye-light. Atmospheric haze throughout for aerial depth — NO visible light shafts (no god rays).\nCOLOR: 60:30:10 — cool blue / concrete gray / red accent.\nLENS: physical cinema glass. 180° shutter motion blur.\nSKIN: pore-level realism — peach fuzz, asymmetric moles, capillary flush, pore shadows matching on-set lighting.\nPERFORMANCE: Hollywood grade — micro-pauses before reactions, precise eyelines, wet living eyes with catchlights, visible breathing and chest rise/fall.\nPHYSICS: real gravity and inertia — mass carries real weight, correct contact shadows. NO floating props.\nCOMPOSITION: rule of thirds + golden ratio. Every person is moving from frame one. Avoid central compositions.\nCONTINUITY: characters, props and environment fully consistent across every shot. No identity drift.\nSCENE/ENVIRONMENT: strictly replicate the architecture, materials, lighting and spatial layout of the <<<image_2>>> reference — do NOT drift from the reference into a different style of interior.\nTECHNICAL: 60fps smooth motion. 8K detail. No jitter.\nAUDIO: ambient SFX only. NO music. NO subtitles.\n\nJAX CHARACTER — Slightly dumb himbo + jokester + cocky bro Black male. Sometimes uses AAVE slang. All emotions slightly comedic — overreacts, dumb-funny takes, himbo energy, NOT serious-dramatic. Expression tendencies: exaggerated but not cartoonish, often a smirk / cocky half-smile, dumb-founded blank stare when confused, cocky + self-pleased when satisfied, himbo-style complaining when frustrated. He's a goofy bro with laughs, not a serious hero.\n\nSCENE: Training 3 — Situation 4 · 6 of 4cm (ping-pong sized) BLACK clay bombs · vertical upward throws to 30-40m + 40-50m apex · \"I FUCKIN HATE CLOWNS!!!!\" + \"Iced coffee!!\" + \"I fuckin hate---TRAININGS!!!!\".\n\n═══ COMPASS (Scene 3 final):\n  NORTH=back wall+door, SOUTH=opposite wall, EAST/WEST=sides.\n  Jax: ON the table at platform CENTER, facing UP toward dome ceiling.\n  Camera: orbits around Jax in 3/4.\n═══\n\nSCENE STAGING — Jax stands ON <<<image_3>>> at platform CENTER (head height = 252cm above floor). Jax ALONE.\n\n【SHOT 1】 — [Jax on table; cam orbits] WS establishing Jax climbs onto <<<image_3>>> in 3/4 angle on Jax (side/behind-side, never frontal), rule-of-thirds framing, 12mm wide, shaky handheld camera motion + tracks Jax climbing up.  Jax <<<image_1>>> walks to the table with all 6 4cm BLACK clay bombs in his left palm, climbs up (clumsy himbo climb), straightens centered on top, right hand free. Cocky himbo posture.\n\n【SHOT 2】 — [Jax on table; cam orbits] MS Jax <<<image_1>>> + WS up-track + apex explosion → CU Jax face descend in 3/4 angle on Jax (side/behind-side, never frontal), rule-of-thirds framing, 35mm → 12mm wide → 85mm, shaky handheld camera motion + tracks Jax's right-hand uppercut throw + whip-pan UP tracking the ball + camera snap-jolt at apex explosion + camera physically descends back DOWN to Jax's face. Jax takes one ball into his right, uppercut-style straight up vertical throw (~25-28m/s), ball flies up ~5-6s to ~30-40m apex. Jax tilts head up watching the ball + yells: JAX (loud raw shout looking up): \"I FUCKIN HATE CLOWNS!!!!\" At \"CLOWNS\" the ball at ~30-40m apex detonates. Camera physically descends from sky-tracking back DOWN to Jax's face: charging-up optimism — eyes glinting, smile growing.\n\n【SHOT 3】 — [Jax on table; cam orbits] MS Jax <<<image_1>>> + WS up-track + apex explosion → Jax happy in 3/4 angle on Jax (side/behind-side, never frontal), rule-of-thirds framing, 35mm → 12mm wide, shaky handheld camera motion + tracks Jax's second uppercut throw + whip-pan UP. Jax takes second black 4cm ball, uppercut-style straight up throw (~25-28m/s, ~30-40m apex), tilts head up + yells: JAX (loud shout, in English): \"Iced coffee!!\" At \"coffee\" the second ball detonates at ~30-40m apex. Jax: real growing joy + accumulating delight, almost laughing.\n\n【SHOT 4】 — [Jax on table; cam orbits] MS Jax crouch + WS up-track + 4-bomb sync explosion in 3/4 angle on Jax (side/behind-side, never frontal), rule-of-thirds framing, 35mm → 12mm wide, shaky handheld camera motion + tracks Jax's bigger windup + double-handed throw + whip-pan UP + multi-jolt as 4 explosions sync. Jax bends down low (knees bend deep for bigger windup), starts through clenched teeth: JAX (low setup voice): \"I fuckin hate---\" Then uncoils explosively — both hands throw the remaining 4 black 4cm balls STRAIGHT UP (~30-32m/s, ~6-7s flight to 40-50m apex), arms thrust upward. As the balls leave his hands and arms shoot up, Jax tilts head up and yells the rest (in English): JAX (loud raw shout, arms up, in English): \"---TRAININGS!!!!\" At the moment he yells \"TRAININGS\" all 4 balls at ~40-50m apex detonate IMMEDIATELY simultaneously (4 fireballs synchronously bloom at ~40-50m height, shockwaves descend toward Jax).\n\n【SHOT 5】 — [Jax on table; cam orbits] slow-mo orbital CU portrait + high-G face deformation, 85mm F2.0, slow-mo ~1000fps + camera orbits Jax's side/three-quarter view (on top of <<<image_3>>>). Jax's head tilts up looking at sky + both arms raised + 4 explosion fireballs above/behind him. Shockwave hits face VERTICALLY FROM ABOVE since Jax looks up. 3-PHASE HIGH-G FACE DEFORMATION (positive G's, all soft tissue pulled DOWNWARD): [P1 0-50ms] head up, buzz cut flat, forehead skin stretched DOWN, brows down, eyelids droop. [P2 50-200ms PEAK] cheeks pulled DOWN like melting wax, lower eyelids DOWN exposing white sclera, mouth corners DOWN into inverted-U sad-mask, lower lip DOWN exposing teeth, mouth in inverted-trapezoid, chin forming triple chin, heavy jowls — G-LOC face — entire face stretched DOWN. Sweat drops fly DOWN. [P3 200-500ms recovery] skin bounces back, jowls dissolve, Jax opens eyes, recovers to relaxed joyful smile. SFX only, no music, no subtitles.",
+      "source_prompt_chars": 7903,
+      "analysis_prompt_chars": 7903,
+      "url_redaction_count": 0,
+      "first_asset_id": "a8ae5166-25e5-457f-b3ec-76eb31be3020",
+      "assets": [
+        {
+          "asset_id": "0113a3fc-e6dd-4c77-9857-f36fcbdfddc7",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 1032
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 1032,
+          "source_item_index": 53
+        },
+        {
+          "asset_id": "1f318fe3-2f36-4323-9705-f2518b7d92e9",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 904
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 904,
+          "source_item_index": 2
+        },
+        {
+          "asset_id": "28f1d6c3-78ee-4436-af42-27989cbc257c",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 1024
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 1024,
+          "source_item_index": 57
+        },
+        {
+          "asset_id": "a8ae5166-25e5-457f-b3ec-76eb31be3020",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 361
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 361,
+          "source_item_index": 59
+        },
+        {
+          "asset_id": "c0b2d686-1947-400f-bece-8d7f7250341b",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 444
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 444,
+          "source_item_index": 95
+        },
+        {
+          "asset_id": "ebc1e612-e227-4cba-9d27-d6ef9a969d0b",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 624
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 624,
+          "source_item_index": 59
+        }
+      ]
+    },
+    {
+      "prompt_sha256": "0041c788507faf3fe442e96939c0f045f8d87e06280eb02b87238e148804fbc4",
+      "prompt_text": "<<<image_1>>> (Jax — main character) — Young Black male in his 20s, 182cm tall, lean athletic build, super short bleached buzz cut, dark skin, sharp features, focused gaze. Black wraparound tactical sport safety glasses (Oakley-style) pushed up onto his forehead — sitting on the forehead just above the eyebrows / on the lower edge of his buzz cut hair, lenses still in normal forward-facing orientation, NOT covering eyes (eyes fully exposed below the glasses). Black tight tactical compression T-shirt, olive/khaki tactical cargo pants (belt + side pockets), black fingerless tactical gloves, black military combat boots (high-top).\n\n<<<image_2>>> (Indoor water facility) — Massive concrete domed water training facility, Ø60m diameter, with a triangular faceted brutalist concrete dome ceiling. Most of the floor is a giant calm BLACK water pool (mirror-flat surface). Exactly ONE T-shaped concrete pier extends FROM the back wall door into the water (like a fishing dock from shore) — stem 2m × 10m × 25cm thick (perpendicular to back wall, 10m into water, elevated 30cm above surface) + T-head crossbar 4m × 2m × 25cm at far end. Jax walks from back wall door along stem to T-head. Distance Jax → door = 12m. Lighting: warm amber practical wall-mounted vertical light fixtures evenly spaced along the walls + small floor-level perimeter accent lights at the wall base — NO central light pole. Walls have white markings/striped patterns painted vertically along them (NO numbers, just plain white tick marks). Top-down view: the dome is a CIRCULAR cylindrical chamber with a faceted octagonal ceiling apex visible at center, the pier is at the back-wall position (NOT in the center), water surrounds the pier on 3 sides.\n\nSTYLE: 8K IMAX cinematic, multi-shot edit. Hyper-realistic — NO 3D rendering, NO game engine, NO game-CG cutscene look. Cinematography: Emmanuel Lubezki × Roger Deakins.\nLIGHTING: STRICTLY only practicals existing in the scene. NO cinematic fill of any kind — no front fill, no side fill, no toplight, no underlight, no bounce boards, no softboxes, no LED strips, no neon, no off-camera light sources whatsoever. Camera is always on the subject's shadow side — face is naturally lit but framed from the darker side; practicals provide rim and eye-light. Atmospheric haze throughout for aerial depth — NO visible light shafts (no god rays).\nWATER CAUSTICS: Water-surface caustics projected on walls as warm amber wave-shaped light patterns. They MUST realistically react in real time to every change of the water surface — calm water = slow gentle ripples; disturbed water (impact, splash, wave, explosion) = caustics instantly distort, intensify, swirl and ripple chaotically following the water's actual motion at that exact moment. Caustics always live with the water, never static.\nCOLOR: 60:30:10 — cool blue / concrete gray / red accent.\nLENS: physical cinema glass. 180° shutter motion blur.\nSKIN: pore-level realism — peach fuzz, asymmetric moles, capillary flush, pore shadows matching on-set lighting.\nPERFORMANCE: Hollywood grade — micro-pauses before reactions, precise eyelines, wet living eyes with catchlights, visible breathing and chest rise/fall.\nPHYSICS: real gravity and inertia — mass carries real weight, correct contact shadows. NO floating props.\nCOMPOSITION: rule of thirds + golden ratio. Every person is moving from frame one. Avoid central compositions.\nCONTINUITY: characters, props and environment fully consistent across every shot. No identity drift.\nSCENE/ENVIRONMENT: strictly replicate the architecture, materials, lighting and spatial layout of the <<<image_2>>> reference — do NOT drift from the reference into a different style of interior.\nTECHNICAL: 60fps smooth motion. 8K detail. No jitter.\nAUDIO: ambient SFX only. NO music. NO subtitles.\n\nJAX CHARACTER — Slightly dumb himbo + jokester + cocky bro Black male. Sometimes uses AAVE slang. All emotions slightly comedic — overreacts, dumb-funny takes, himbo energy, NOT serious-dramatic. Expression tendencies: exaggerated but not cartoonish, often a smirk / cocky half-smile, dumb-founded blank stare when confused, cocky + self-pleased when satisfied, himbo-style complaining when frustrated. He's a goofy bro with laughs, not a serious hero.\n\nSCENE: Training 2 — Situation 2 · 5cm (ping-pong sized) dark-gray clay bomb · medium wave · \"Still not it, fuck\".\n\nSCENE STAGING — Jax stands strictly at the front edge of the T-head 4m platform, with his BACK to the stem (the narrow part of the pier connecting to the back-wall door) and FACING FORWARD toward the CENTER of the dome / the open water. Distance back-wall door → Jax = 12m along stem path. ALL shots of Jax framed in 3/4 view or profile (camera positioned to his side or behind-side, NEVER straight-on frontal). Central compositions are reserved ONLY for showing the explosion aftermath or the underwater explosion itself. Arena is empty except Jax — NO bystanders, NO other figures.\n\n【SHOT 1】 — CU combined vomit+form+examine, 50mm macro+85mm F2.0, shaky handheld camera motion. Operator orbits from Jax's <<<image_1>>> side-back around to his front to a multi-layered composition of his hands+face+throat. Jax tightens his cheekbones+jaw, throat visibly strains+bulges, vomits a shapeless dark-gray clay-textured mass into his right palm, then both hands work it — rotating, squeezing, smoothing — to form it into a 5cm (ping-pong sized) darker-gray clay ball, then he raises his head and looks toward the water area, jaw set in concentration. NO dialogue this shot.\n\n【SHOT 2】 — WS Jax <<<image_1>>> throwing, 12mm wide, shaky handheld camera motion + handheld track + whip-pan following the ball's arc. Jax winds up with greater force, shifts weight back, then forcefully throws the 5cm dark-gray ball toward the CENTER of the dome (~18m). Ball traces a steeper parabolic arc.\n\n【SHOT 3】 — CU water + WS underwater explosion, 50mm macro → 12mm wide, shaky handheld camera motion. Camera settles WS, then snaps moderately + slight push-from-shockwave at the underwater blast. Ball strikes the water at dome center (impact point=CENTER, ~18m from T-head), splashes a bigger ~2m water plume → ball sinks into central water. Underwater muffled stronger explosion + brighter underwater light from center ~18m. A medium-sized circular wave radiates outward from center toward the T-bridge.\n\n【SHOT 4】 — MS Jax <<<image_1>>> feet + water, 35mm-85mm, shaky handheld camera motion + slight tilt-down as water surges up the walkway edge. The medium wave reaches the T-bridge edge and rolls up the walkway, splashing on the concrete around Jax's boots, soaking the bottom of his pants but Jax stays standing. Jax watches the wave hit, expression: real frustration analyzing what's wrong.\n\n【SHOT 5】 — tight CU Jax <<<image_1>>>, 85mm F2.0, shaky handheld camera motion + slight push-in. Jax: real frustrated analytical face trying to figure out what's missing — slight grimace + lip bite + brow furrow + slow exhale. Jax mutters with low frustration, then holds a beat — a real thinking pause (~1s) where his brow furrows, eyes drift slightly off as he processes what's missing, jaw works once — then drops the curse word with low resignation (in English): JAX (real frustrated mutter with a thinking pause before \"fuck\", in English): \"Still not it... fuck.\" SFX only, no music, no subtitles.",
+      "source_prompt_chars": 7359,
+      "analysis_prompt_chars": 7359,
+      "url_redaction_count": 0,
+      "first_asset_id": "76e3d890-1ef0-41b7-9894-f61728ef0515",
+      "assets": [
+        {
+          "asset_id": "096eb3e1-f0bb-44b6-a346-36f3dec73302",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 330
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 330,
+          "source_item_index": 10
+        },
+        {
+          "asset_id": "44073d25-d578-41f6-9e85-1b9aafbc03fe",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 611
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 611,
+          "source_item_index": 67
+        },
+        {
+          "asset_id": "4c13fd97-dd9b-455e-91d0-5c48952e0b27",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 904
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 904,
+          "source_item_index": 56
+        },
+        {
+          "asset_id": "76e3d890-1ef0-41b7-9894-f61728ef0515",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 52
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 52,
+          "source_item_index": 5
+        },
+        {
+          "asset_id": "7daec381-7215-4017-ae6d-1e93dd9f747c",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 1107
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 1107,
+          "source_item_index": 31
+        },
+        {
+          "asset_id": "c51fac62-9a27-40a3-a155-eb323c30455a",
+          "primary_folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+          "primary_folder_name": "Scene 22",
+          "folder_memberships": [
+            {
+              "folder_id": "d926cc4f-dd0b-4dfe-9ff4-00c1ba5f7bb9",
+              "folder_name": "Scene 22",
+              "first_seen_page": 563
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 563,
+          "source_item_index": 80
+        }
+      ]
+    },
+    {
+      "prompt_sha256": "00eb18e37cb630a050d40ea1527aa871d70a1dada7ac9adaafc6cd3e497a3211",
+      "prompt_text": "<<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> — Photoreal character ref from uploaded image. Black messy medium-length hair damp and disheveled, small mustache, red paint mark across nose bridge, cuts and blood splatter across face neck chest and arms, grey tank top torn and stained with blood, dark red wide ripped jeans, black-white sneakers, black crossbody sling bag, tattoos on arms. Character appearance only.\n\n<<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> — Photoreal character ref from uploaded image. Short wavy dark brown hair, small stud and hoop earrings, red scratch marks on face and shoulder, black wide choker, blue denim crop vest over fishnet layer, orange horizontal belt stripe, black crossbody strap, dark grey wide cargo pants heavily worn, black-white canvas Vans sneakers, black fingerless gloves, tattoos on arms. Wound on abdomen actively bleeding, blood at mouth, unconscious. Character appearance only.\n\n<<<2525a57c-2006-429e-8455-bbb6a7e9212a>>> — Environment ref from uploaded image. Brutalist circular concrete atrium, curved smooth concrete walls, large rectangular clerestory windows high above letting in cold flat grey daylight, thick concrete columns rising from the floor, polished grey concrete floor scattered with debris, broken glass — bare dead trees near the walls, extremely dark and cold atmosphere. Environment only.\n\n<<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>> — Character transformation ref from uploaded image. <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s entire body fully encased in dense deep crimson-red crystal armor — head to toe, no skin visible anywhere — full crystal helmet with a narrow visor slit, massive sharp crystal shoulder pauldrons with large blade-like spike protrusions extending outward, crystal chest plate, crystal arms with large angular blade formations along the forearms, crystal legs and feet — all surfaces covered in dense sharp-edged faceted red crystal formations, translucent deep crimson-red with internal light refraction and prismatic chromatic aberration at facet edges. Character transformation only.\n\n<<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> — 350cm tall demon, reddish-brown cracked skin, long black greasy hair, skeletal grinning face, yellow teeth, green-yellow eyes, bone spikes on shoulders and spine, oversized muscular arms, torn loincloth, clawed feet. Right arm ends in a long exposed bone blade. Cunning and intelligent. Speaks Japanese only. Creature appearance only.\n\nScene context: <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> just threw <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> to the ground unconscious. <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> drops into a heroic stance and transforms violently into <<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>>. <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> crouches beside the unconscious <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> and mocks <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>.\n\n8K IMAX ultra-detailed. 16mm Kodak 500T. Heavy grain. Hyper-realistic. No cloning. Bags always on body. Columns strictly vertical. No wide shots. Camera always moving. Hollywood acting. Strictly natural light only — overcast gray sky — absolutely no artificial light sources — the only light source is cold gray daylight from the clerestory windows — contre-jour — characters backlit — faces in shadow. Light atmospheric haze fills the air — dust particles float within the light.\n\nCUT — low angle medium close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> alone in frame, normal speed — dropping into a low heroic fighting stance, one knee almost to the ground, both fists driving into the concrete floor, head down — a beat of stillness — then his head snaps up, jaw set, wet eyes burning —\n\nCUT — supermacro extreme close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s fists on the concrete, slow motion — the knuckles pressing into the floor — then deep crimson-red crystal erupting from the knuckles in one violent crack, jagged facets splitting outward and spreading fast across both hands —\n\nCUT — supermacro extreme close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s shoulder, slow motion — crystal formations detonating outward from the shoulder joint, massive blade-like spike protrusions cracking and locking into place, prismatic red light scattering off every facet, chromatic aberration bleeding violet and orange at every edge —\n\nCUT — supermacro extreme close-up <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s chest, slow motion — the crystal armor plates slamming into place across the chest one by one, each impact sending red light fracturing outward —\n\nCUT — supermacro extreme close-up the crystal helmet forming over <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s face from jaw upward, slow motion — the visor slit sealing last — nothing of the man visible beneath —\n\nCUT — low angle medium shot <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> alone in frame, slow motion — <<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>> complete, fully encased, rising from the low stance to full height — the massive shoulder pauldrons rimlit by cold grey daylight from the clerestory above — dust particles drifting through the haze around him — a beat of complete stillness — the most dangerous stillness —\n\nCUT — medium shot <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> alone in frame, normal speed — crouched low beside the unconscious <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> on the ground floor, one massive clawed hand resting on her shoulder almost casually — looking across at <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> in <<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>> — then a thin high falsetto laugh beginning, the grin spreading — voice dropping low, mocking Japanese: \"かわいいね。それで私を怖がらせるつもり？\" — still looking at <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>, the clawed hand patting <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>>'s shoulder once, slowly —\n\nPhotoreal. NON-IP. 16:9. 10s. SFX only. NO CGI. Cinematic.ё",
+      "source_prompt_chars": 5937,
+      "analysis_prompt_chars": 5937,
+      "url_redaction_count": 0,
+      "first_asset_id": "7cc38097-8c27-407d-83c3-0349214a262f",
+      "assets": [
+        {
+          "asset_id": "1d18088c-86e7-4949-808d-35988630d8f3",
+          "primary_folder_id": "d0e85eba-b9cb-48cb-8aad-2e586a0e7166",
+          "primary_folder_name": "Lulu Death",
+          "folder_memberships": [
+            {
+              "folder_id": "d0e85eba-b9cb-48cb-8aad-2e586a0e7166",
+              "folder_name": "Lulu Death",
+              "first_seen_page": 712
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 712,
+          "source_item_index": 76
+        },
+        {
+          "asset_id": "7cc38097-8c27-407d-83c3-0349214a262f",
+          "primary_folder_id": "d0e85eba-b9cb-48cb-8aad-2e586a0e7166",
+          "primary_folder_name": "Lulu Death",
+          "folder_memberships": [
+            {
+              "folder_id": "d0e85eba-b9cb-48cb-8aad-2e586a0e7166",
+              "folder_name": "Lulu Death",
+              "first_seen_page": 191
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 191,
+          "source_item_index": 68
+        },
+        {
+          "asset_id": "d14baf41-0b78-461f-a4de-27a954669796",
+          "primary_folder_id": "d0e85eba-b9cb-48cb-8aad-2e586a0e7166",
+          "primary_folder_name": "Lulu Death",
+          "folder_memberships": [
+            {
+              "folder_id": "d0e85eba-b9cb-48cb-8aad-2e586a0e7166",
+              "folder_name": "Lulu Death",
+              "first_seen_page": 413
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 15.0,
+          "width": 1280,
+          "height": 720,
+          "resolution": "720p",
+          "source_page": 413,
+          "source_item_index": 28
+        }
+      ]
+    }
+  ]
+}

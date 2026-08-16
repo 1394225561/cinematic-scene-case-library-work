@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-16T11:35:39.771906+00:00",
+  "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+  "records": [
+    {
+      "prompt_sha256": "4cc914cfc71002094477dc6d2af542ae71fcede9fb57aacf5ad8a5a97e8698ab",
+      "prompt_text": "— a corner pizzeria storefront with red-and-white checkerboard awning on a rainy Bangkok-style night avenue, surrounded by an elevated concrete skytrain viaduct on tall stained piers and a weather-stained apartment block with large red painted side-wall lettering, cool desaturated palette with red signage accents. Used strictly as neighborhood and atmosphere reference — the pizzeria storefront itself does NOT appear in frame; render only the surrounding city from the same world. Camera Settings: aerial cinema drone with gimbal-stabilized digital cinema body, anamorphic glass, 24mm, T2.8, 2.39:1 cinemascope, fine grain, low contrast filmic emulation, ARRI color science. Camera Style: smooth gimbal-stabilized aerial descent from high-altitude near-overhead view down to street level, continuous downward glide with subtle forward translation, camera angle gradually rotating from near-overhead at the start toward forward-leaning eye-level at the end, slow steady drift, one continuous take, single uninterrupted shot, no cuts. Light: practical sources only — vast city grid of warm sodium streetlamps and scattered apartment window lights visible from altitude, neon storefronts pricking the wet darkness from above, headlight streaks threading through avenues, distant building lights softened by atmospheric haze and rain mist, no key light from camera. Style & Mood: heavily desaturated cool palette, teal-blue shadows with red signage accents bleeding through the rain veil, low contrast, urban grime texture, soft anamorphic streak on every bright source, atmospheric layering of rain and haze between altitude bands; ambient steady rainfall, distant traffic drone rising as the camera descends, faint mechanical rumble of a passing metro train mid-descent, no drone propeller sound, no music. Narrative Summary: a single continuous drone descent from a high-altitude bird's-eye view over a Bangkok-style megacity avenue at night down to street level, a metro train crossing the elevated viaduct mid-descent through the rain. Starting Composition: high-altitude near-overhead aerial view from approximately 150 meters, camera looking down at a slight forward tilt over a Bangkok-style night megacity, frame filled with a dense grid of glistening wet avenues, rivers of car headlights and motorbike lights threading through streets, the elevated concrete skytrain viaduct slicing diagonally across the lower-left portion of frame on tall stained piers, weather-stained 12-story apartment towers rising in clusters with scattered lit windows and one large red painted side-wall lettering visible deep in frame-right, scattered neon storefronts as faint pricks of color, dense rain veil between camera and city softening every light into halos, low atmospheric haze layered above the rooftops, no foreground figures. Dynamic Description: the drone holds altitude for one breath, looking down through the rain veil at the city grid, raindrops streaking past the lens in long diagonals, the viaduct glowing faintly from streetlamps below it. The drone begins a smooth steady drop, camera angle gradually flattening from overhead toward the horizon as the city expands upward in frame, rooftops growing closer, the geometry of the avenue becoming legible — rows of sodium streetlamps, glistening tire-ruts on wet asphalt, the apartment tower with red painted side-wall lettering rising into clearer view at frame-right. As the camera passes the upper floors of surrounding towers, on the elevated skytrain viaduct at frame-left a metro train glides along the rails left-to-right across the frame, passenger windows stuttering past the stained concrete piers, soft mechanical rumble briefly rising over the rain — one continuous take, the descent does not pause. The drone continues downward, the train clearing the right edge of the viaduct, headlight cones from a passing sedan cutting white through rain mist at midground, taillights smearing red into puddle reflections, a hooded motorbike rider weaving through the wake. The drone settles to street level on the flooded avenue corner, camera now angled forward down the wet four-lane road, weak neon storefronts glowing at far frame-right behind the rain — descent ends in a held wide shot, camera has not cut. Static Description: Bangkok-style night megacity grid under heavy rain, weather-stained concrete apartment towers with large red painted side-wall lettering, elevated skytrain viaduct on tall stained concrete piers running diagonally through the neighborhood, four-lane wet asphalt avenues with standing water, scattered sodium streetlamps and weak neon storefronts. Negative: no subtitles, no captions, no text overlay, no on-screen text, no burned-in text, no cross-dissolve, no fade-to-transparent, no transparency transitions, no wipes, no match-dissolves, no mirror reflections of subjects, no visible crew, no visible drone, no drone shadow on streets, no drone reflection in puddles, no drone propeller sound, no drone motor sound, no cuts, no hard cuts, no edits — single uninterrupted take, no zoom, no rotation, no shake, no camera pause mid-descent, no camera reversal, no music swell, no foreground characters, no character-as-subject, no pizzeria storefront, no checkerboard awning, no \"PIZZA SOUL\" signage, no readable English brand logos, no inverted full-mirror reflections of buildings in puddles, no pre-reveal of street-level subject, no second train within the same shot.",
+      "source_prompt_chars": 5464,
+      "analysis_prompt_chars": 5464,
+      "url_redaction_count": 0,
+      "first_asset_id": "81851c6b-4877-4c25-801d-07aad1d6a5d4",
+      "assets": [
+        {
+          "asset_id": "1704fc7f-47be-490d-a9ca-27b7ef296619",
+          "primary_folder_id": "a02fdc20-1af0-4017-8022-a804f84175e3",
+          "primary_folder_name": "Scene Pizza Aerial",
+          "folder_memberships": [
+            {
+              "folder_id": "a02fdc20-1af0-4017-8022-a804f84175e3",
+              "folder_name": "Scene Pizza Aerial",
+              "first_seen_page": 713
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 6.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 713,
+          "source_item_index": 80
+        },
+        {
+          "asset_id": "81851c6b-4877-4c25-801d-07aad1d6a5d4",
+          "primary_folder_id": "a02fdc20-1af0-4017-8022-a804f84175e3",
+          "primary_folder_name": "Scene Pizza Aerial",
+          "folder_memberships": [
+            {
+              "folder_id": "a02fdc20-1af0-4017-8022-a804f84175e3",
+              "folder_name": "Scene Pizza Aerial",
+              "first_seen_page": 276
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 6.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 276,
+          "source_item_index": 6
+        },
+        {
+          "asset_id": "9c74ab24-0f28-4df4-b1f3-1373a840ad29",
+          "primary_folder_id": "a02fdc20-1af0-4017-8022-a804f84175e3",
+          "primary_folder_name": "Scene Pizza Aerial",
+          "folder_memberships": [
+            {
+              "folder_id": "a02fdc20-1af0-4017-8022-a804f84175e3",
+              "folder_name": "Scene Pizza Aerial",
+              "first_seen_page": 713
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 6.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 713,
+          "source_item_index": 81
+        },
+        {
+          "asset_id": "c5ec05e8-bd4c-48e7-9a36-669fce91c41c",
+          "primary_folder_id": "a02fdc20-1af0-4017-8022-a804f84175e3",
+          "primary_folder_name": "Scene Pizza Aerial",
+          "folder_memberships": [
+            {
+              "folder_id": "a02fdc20-1af0-4017-8022-a804f84175e3",
+              "folder_name": "Scene Pizza Aerial",
+              "first_seen_page": 713
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 6.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 713,
+          "source_item_index": 79
+        },
+        {
+          "asset_id": "e6f0056e-ceef-4f8e-82e0-c88988b6a836",
+          "primary_folder_id": "a02fdc20-1af0-4017-8022-a804f84175e3",
+          "primary_folder_name": "Scene Pizza Aerial",
+          "folder_memberships": [
+            {
+              "folder_id": "a02fdc20-1af0-4017-8022-a804f84175e3",
+              "folder_name": "Scene Pizza Aerial",
+              "first_seen_page": 485
+            }
+          ],
+          "item_type": "job",
+          "asset_type": "video",
+          "status": "completed",
+          "job_set_type": "seedance_2_0",
+          "model": "seedance_2_0",
+          "duration_seconds": 6.0,
+          "width": 2016,
+          "height": 864,
+          "resolution": "1080p",
+          "source_page": 485,
+          "source_item_index": 7
+        }
+      ]
+    }
+  ]
+}

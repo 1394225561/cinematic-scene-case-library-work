@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-16T11:03:27.900879+00:00",
+  "status": "completed_with_issues",
+  "project_id": "3caa2f3a-52b5-4293-9237-0c8f76c7158a",
+  "expected_asset_count": 115451,
+  "page_size": 100,
+  "include_subfolders": true,
+  "pages_committed": 1155,
+  "received_items": 115451,
+  "item_occurrence_count": 115451,
+  "unique_asset_count": 115446,
+  "duplicate_asset_occurrence_count": 4,
+  "unsupported_item_occurrence_count": 1,
+  "accounted_occurrence_count": 115451,
+  "assets_with_non_empty_prompt": 115309,
+  "assets_without_prompt": 137,
+  "unique_prompt_count": 7517,
+  "exact_duplicate_prompt_groups": 7305,
+  "exact_duplicate_prompt_extra_records": 107792,
+  "unknown_folder_asset_count": 0,
+  "error_issue_count": 142,
+  "warning_issue_count": 0,
+  "issue_types": {
+    "duplicate_asset_id": 4,
+    "empty_prompt": 137,
+    "unsupported_item_type": 1
+  },
+  "distributions": {
+    "asset_type": {
+      "image": 12970,
+      "video": 102476
+    },
+    "job_set_type": {
+      "cinematic_studio_3_0": 28,
+      "cinematic_studio_image": 70,
+      "cinematic_studio_soul_cast": 16,
+      "cinematic_studio_video_3_5": 592,
+      "gpt_image_2": 1015,
+      "image_auto": 456,
+      "imagegen_2_0": 1625,
+      "nano_banana_2": 6746,
+      "nano_banana_flash": 424,
+      "qwen_camera_control": 1,
+      "seedance_2_0": 101856,
+      "seedream_v4_5": 6,
+      "seedream_v5_lite": 5,
+      "soul_cinema_studio": 74,
+      "soul_cinematic": 2337,
+      "text2image_soul_v2": 195
+    },
+    "model": {
+      "<null>": 10950,
+      "seedance_2_0": 101856,
+      "videotape-alpha": 2640
+    },
+    "status": {
+      "completed": 115446
+    }
+  },
+  "network_requests_this_invocation": 0,
+  "checks": {
+    "crawl_complete": {
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    "api_item_count": {
+      "actual": 115451,
+      "expected": 115451,
+      "passed": true
+    },
+    "item_occurrence_count": {
+      "actual": 115451,
+      "expected": 115451,
+      "passed": true
+    },
+    "accounted_occurrence_count": {
+      "actual": 115451,
+      "expected": 115451,
+      "passed": true
+    },
+    "stored_prompt_url_count": {
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    }
+  },
+  "coverage_checks_passed": true,
+  "checkpoint_complete": true,
+  "fatal_error": null,
+  "last_error": null,
+  "database_path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+  "raw_pages_path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\pages\\raw"
+}

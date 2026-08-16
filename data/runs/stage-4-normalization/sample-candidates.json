@@ -1,0 +1,788 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-16T11:26:54.627667+00:00",
+  "policy": "Candidates are ranked only by semantic coverage dimensions and prompt hash. asset_count_audit_only is never used for ranking or quality inference.",
+  "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+  "video_unique_prompt_count": 6555,
+  "character_bounds": {
+    "minimum": 500,
+    "maximum": 30000
+  },
+  "limit_per_category": 12,
+  "categories": {
+    "action_fight": [
+      {
+        "prompt_sha256": "008ef905adb66ea09090473e657b5fac02dec16372a08c4a02dc0a12b109a8ec",
+        "source_prompt_chars": 6687,
+        "first_asset_id": "e4dff367-ca6a-46fe-abfe-11367743f80f",
+        "asset_count_audit_only": 13,
+        "folder_names": [
+          "Scene Roko vs Dagon"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<dca95e60-10ce-4c7c-ad53-256fc6dd0ea7>>> — Photoreal character ref. Brown short wavy hair, chain earrings, black wide choker, blue denim crop vest over fishnet top, orange belt, black crossbody strap, dark grey wide cargo pants, black-white canvas shoes, fingerless gloves, tattoos. Character appearance only. <<<287782af-5af5-4ae2-a7a8-b8573e475b46>>> — Photoreal character ref. Black messy long hair, small mustache, red bandana wraps on wrists, dark red wide jeans, black-white sneakers, grey tank top, tattoos. Character appearance only. <<<aec0018e-5788-4d0c-bec2-5ba44bc45883>>> — Photoreal character ref. Dark skin, short bleached yellow hair, spiked sunglasses on forehead, grey-yellow work jacket, baggy grey cargo pants, grey sneakers, black leather gloves, grey sling bag. Strictly on skateboard. Character appearance only. <<<0f0bb756-9eef-474f-b3ed-31105ac9320b>>> — Photoreal character ref. Straight silver-grey short bob with darker black tips, sharp red scar across right temple, oversized purple zip hoodie worn open over sheer grey graphic mesh crop top, flat midriff, black slim bootcut low-rise jeans, low-top black-and-white canvas sneakers. No bag. Always on @skate, never tou"
+      },
+      {
+        "prompt_sha256": "07179f9085f42043eb1752713635a6aa29203c943e3f75417cc038f28fe65bc3",
+        "source_prompt_chars": 13129,
+        "first_asset_id": "fd39ad81-8170-43ac-9c35-35f6eca14598",
+        "asset_count_audit_only": 21,
+        "folder_names": [
+          "Scene 72: Roko vs Dagon"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "SCENE NOTE 5-cut cinematic sequence — Roko vs Monster in the arena ring of dead. The undead army of samurai zombies and dead cavalry forms a 20-30m diameter living ring around the fight. The army all raises heads to the sky for a frozen moment, then the frenzy resumes — clashing weapons, straining horses. Inside the ring, <<<f8389670-88c9-40c2-bb73-d5bffcdd59f5>>> exploits the moment: rolls sharply, grips <<<b6d09361-1e89-4fe2-ab5e-45a794ea8e2c>>>, performs a sliding slide-pass beneath <<<05cc6fa9-6b0d-4285-ad98-cabf92e5daca>>>, blade dragging low through the snow, cutting the monster's thigh wide open. ~17 seconds total. Real-time + slow-mo mix. Cinematic anamorphic battlefield epic with chaos-frenzy accents. LOOK PRESET Vinterberg-handheld doc-style meets Akira Kurosawa battlefield epic. Lubezki × Deakins reference. Kodak 500T daylight stock pushed cool with strong contrast. 60:30:10 — cold blue-grey snow + dark stormy sky tones (60), warm crystal-red of armor + warm orange of distant fires/explosions (30), bone-white + black accents + rust-iron armor of dead samurai (10). 180° shutter natural motion blur. Practical overcast winter daylight, slight underexposure. Heavy fog and sn"
+      },
+      {
+        "prompt_sha256": "07742db1c447fd803906b6000e9e0121fc7a8855e06c55881da5124008f39058",
+        "source_prompt_chars": 6397,
+        "first_asset_id": "2fa29649-75b4-4dd0-9e21-8f71ea009419",
+        "asset_count_audit_only": 6,
+        "folder_names": [
+          "Roko Fight"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> — Photoreal character ref from uploaded image. Black messy medium-length hair damp and disheveled, small mustache, red paint mark across nose bridge, cuts and blood splatter across face neck chest and arms, grey tank top torn and stained with blood, dark red wide ripped jeans, black-white sneakers, black crossbody sling bag, tattoos on arms. Character appearance only. <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> — Photoreal character ref from uploaded image. Short wavy dark brown hair, small stud and hoop earrings, red scratch marks on face and shoulder, black wide choker, blue denim crop vest over fishnet layer, orange horizontal belt stripe, black crossbody strap, dark grey wide cargo pants heavily worn, black-white canvas Vans sneakers, black fingerless gloves, tattoos on arms. Bone blade entered from her back — the tip of the bone blade protruding out through her front abdomen, actively bleeding, blood spreading across the fishnet layer and orange belt and down her clothing. Character appearance only. <<<2525a57c-2006-429e-8455-bbb6a7e9212a>>> — Environment ref from uploaded image. Brutalist circular concrete atrium, curved smooth concre"
+      },
+      {
+        "prompt_sha256": "087f3dc23c0bb2ec9d1371332c254fe84ad13995839339e1b414f45c38c28484",
+        "source_prompt_chars": 9407,
+        "first_asset_id": "17cf5323-5320-4bfb-94b6-ba4944a32b79",
+        "asset_count_audit_only": 14,
+        "folder_names": [
+          "Scene Roko vs Dagon"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<2525a57c-2006-429e-8455-bbb6a7e9212a>>> — Environment ref from uploaded image. Brutalist circular concrete atrium, curved smooth concrete walls, large rectangular clerestory windows high above letting in cold flat grey daylight, thick concrete columns rising from the floor, polished grey concrete floor scattered with debris, broken glass — bare dead trees near the walls, extremely dark and cold atmosphere. Environment only. <<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>> — <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s entire body fully encased in dense deep crimson-red crystal armor — head to toe, no skin visible anywhere, no face visible anywhere — full crystal helmet completely sealing the head with only a narrow visor slit — massive sharp crystal shoulder pauldrons with blade-like spike protrusions, crystal chest plate, crystal arms with large angular blade formations along the forearms, crystal legs and feet — all surfaces dense sharp-edged faceted red crystal, translucent deep crimson-red with internal light refraction and prismatic chromatic aberration at facet edges. No bag. The human inside completely invisible. Character transformation only. <<<5502264c-e9c6-438c-bd4b-5b2f84f"
+      },
+      {
+        "prompt_sha256": "0aa8fb99f6efb773e4344aa608d0163a58ce0a674a66112bf72d3abe7b559574",
+        "source_prompt_chars": 10704,
+        "first_asset_id": "17123bfc-fa01-4716-8d81-9fa36b201a28",
+        "asset_count_audit_only": 12,
+        "folder_names": [
+          "Museum Roko vs Dagon"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<image_1>>> — Environment ref from uploaded image. Brutalist circular concrete atrium, curved smooth concrete walls, large rectangular clerestory windows high above letting in cold flat grey daylight, thick concrete columns rising from the floor, polished grey concrete floor scattered with debris, broken glass — bare dead trees near the walls, extremely dark and cold atmosphere. Environment only. <<<image_2>>> — <<<image_3>>>'s entire body fully encased in dense deep crimson-red crystal armor — head to toe, no skin visible anywhere — full crystal helmet completely sealing the head with only a narrow visor slit — massive sharp crystal shoulder pauldrons with blade-like spike protrusions, crystal chest plate, crystal arms with large angular blade formations along the forearms, crystal legs and feet — all surfaces dense sharp-edged faceted red crystal, translucent deep crimson-red with internal light refraction and prismatic chromatic aberration at facet edges. No bag. Character transformation only. <<<image_3>>> — Photoreal character ref. Black messy long hair, small mustache, red paint mark across nose bridge, cuts and blood splatter on face, grey tank top torn and stained with bl"
+      },
+      {
+        "prompt_sha256": "0def90453c04e5d7cdf8a0a0bddcb496edea26824ad389d4f0e637a2001f31d5",
+        "source_prompt_chars": 5619,
+        "first_asset_id": "2197590a-c930-4936-ae14-2e0fc451739c",
+        "asset_count_audit_only": 12,
+        "folder_names": [
+          "Museum Roko vs Dagon"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<image_1>>> — Photoreal character ref. Brown short wavy hair, chain earrings, black wide choker, blue denim crop vest over fishnet top, orange belt, black crossbody strap, dark grey wide cargo pants, black-white canvas shoes, fingerless gloves, tattoos. Character appearance only. <<<image_2>>> — Photoreal character ref. Black messy long hair, small mustache, red bandana wraps on wrists, dark red wide jeans, black-white sneakers, grey tank top, tattoos. Character appearance only. <<<image_3>>> — Photoreal character ref. Dark brown skin, short bleached bright yellow hair, black spiked sunglasses pushed up on forehead, dirty olive-yellow bomber jacket with patches and stickers, baggy ripped dirty cargo pants, grey sneakers, black leather gloves, grey crossbody sling bag with tool pouches and carabiner clips. Lying on the ground behind a concrete column throughout every shot — never in the open atrium floor. Character appearance only. <<<image_4>>> — Photoreal character ref. Grey-silver short bob with darker black tips, sharp red scar across right temple, oversized purple zip hoodie worn open over sheer grey graphic mesh crop top, flat midriff, black slim bootcut low-rise jeans, low-"
+      },
+      {
+        "prompt_sha256": "0e12b2ee776256b653edef29f8e6b303c56e25a305944b298008d700cee019b2",
+        "source_prompt_chars": 2884,
+        "first_asset_id": "a33fc882-d07a-45e1-87c4-a5b68192dea8",
+        "asset_count_audit_only": 13,
+        "folder_names": [
+          "Roko Fight"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<2525a57c-2006-429e-8455-bbb6a7e9212a>>> — Environment ref from uploaded image. Brutalist circular concrete atrium, curved smooth concrete walls, large rectangular clerestory windows high above letting in cold flat grey daylight, thick concrete columns rising from the floor, polished grey concrete floor scattered with debris, broken glass — bare dead trees near the walls, extremely dark and cold atmosphere. Environment only. <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> — 350cm tall demon, reddish-brown cracked deeply veined skin, long black greasy hair, skeletal grinning face, yellow teeth, green-yellow eyes, bone spikes on shoulders and spine, oversized muscular arms, torn loincloth, clawed feet. Right arm ref strictly from uploaded image: the forearm is reddish-brown cracked and veined skin with sparse dark coarse hair — at the wrist the clawed fingers of the hand curl tightly around the base of two long diverging ivory-pale bone extensions, the fingers gripping the bone junction where they emerge — one bone extension angling upward and one angling downward — both bone surfaces yellowed and mottled, smooth and tapering to sharp points — the hand and bone are one unified structure"
+      },
+      {
+        "prompt_sha256": "113e42e75812823073c0e5372ded3507a700e56fe07c60f6d8f35417882c03c4",
+        "source_prompt_chars": 12085,
+        "first_asset_id": "65638df9-2b8a-4085-82ca-b967354c4a3c",
+        "asset_count_audit_only": 11,
+        "folder_names": [
+          "Scene Roko vs Dagon"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<2525a57c-2006-429e-8455-bbb6a7e9212a>>> — Environment ref from uploaded image. Brutalist circular concrete atrium, curved smooth concrete walls, large rectangular clerestory windows high above letting in cold flat grey daylight, thick concrete columns rising from the floor, polished grey concrete floor scattered with debris, broken glass — bare dead trees near the walls, extremely dark and cold atmosphere. Environment only. <<<fcea0342-3d11-48ce-9d95-d41d82766464>>> — Photoreal character ref from uploaded image. <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s entire body fully encased in dense deep crimson-red crystal armor — head to toe, no skin visible anywhere, no face visible anywhere — full crystal helmet completely sealing the head with only a narrow visor slit — massive sharp crystal shoulder pauldrons with blade-like spike protrusions, crystal chest plate, crystal arms with large angular blade formations along the forearms, crystal legs and feet — all surfaces dense sharp-edged faceted red crystal, translucent deep crimson-red with internal light refraction and prismatic chromatic aberration at facet edges — LEFT hand gripping a long jagged crystal sword, the blade dense de"
+      },
+      {
+        "prompt_sha256": "154620b78ec3cf08e9faac23b4cae40ebab1b213df44e49c0d339d39bfdd9524",
+        "source_prompt_chars": 20388,
+        "first_asset_id": "c44a7c85-0a92-4faf-bd9e-92747612db32",
+        "asset_count_audit_only": 4,
+        "folder_names": [
+          "Scene 69 - Fight"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<7c7ea71a-bcc1-44fe-8fb2-a09e3a16d444>>> [image1] - 20yo male, lean athletic build. Long messy black hair to shoulders. Thin mustache. Red cloth bandage diagonally across the bridge of his nose. Dark brown eyes, intense and focused. Pale skin, dark circles, thin scratches on cheek. Tight black short-sleeve tactical t-shirt (darker at shoulders/chest from melted snow). Dark olive-black tactical cargo pants with thigh holster rig. Red bandana on right wrist. Black fingerless gloves. Worn brown combat boots. Small red toy-bear keychain on right hip. His RIGHT forearm and hand are translucent deep blood-red crystal - raw geode, faceted, internal crimson glow. Two faint crimson veins glow under the skin of his chest through his shirt. Visible breath vapor. Snow accumulates on hair and shoulders. Character appearance only. <<<e396547e-df91-4ae5-b2b7-b730eb86f7b3>>> [image14] - Translucent deep blood-red crystal sword, ~1m long (extends to katana size when wielded by the Crystal Knight). Raw geode, faceted, jagged crystalline edge, internal crimson glow. Hilt fused directly to wielder's right crystal hand - no separate handle, crystal flows up from the wrist. Same material as Roco's cry"
+      },
+      {
+        "prompt_sha256": "15e6e0bc342eb1bfb69def2e761f94d4ccc360e60e24b2f28ad4b87ce0c79fa0",
+        "source_prompt_chars": 10559,
+        "first_asset_id": "22308d33-4667-449f-a010-67569da4ff0a",
+        "asset_count_audit_only": 20,
+        "folder_names": [
+          "Museum Roko vs Dagon"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "🔥 SHOT — FRONTAL CLOSE-UP ON ROKO: STRAIN, GIVING UP, LOOKING UP IN ACCEPTANCE 🔥 Duration: 6 seconds. Aspect ratio: 16:9. One continuous shot. Mode: image-to-video using <<<image_1>>> as character identity reference. ⚠️ CHARACTER ANCHOR — <<<image_1>>>: Use <<<image_1>>> as the identity reference. Roko has black messy medium-length hair damp and disheveled, small dark mustache, multiple cuts and dirt/blood smudges across his face from earlier in the fight. He wears a grey tank top torn and dirty. The face matches <<<image_1>>> exactly. He is the only character visible in this shot. 🔥 LOOK 🔥 8K IMAX ultra-detailed. Photoreal Kodak 500T 16mm filmstock, heavy film grain. Hyper-realistic skin rendering. Cinematic Lubezki × Villeneuve cold cinematography. Pore-level skin realism — every pore visible, fine vellus hair, capillary detail, individual eyelashes, sweat texture. NO LUT, no oversharpening. Optics clean — no flares, no bloom. 🔥 LIGHTING 🔥 Cold soft directional daylight from above and slightly to the side, providing dimensional cool light on his face — soft cool top-light catching his forehead, the bridge of his nose, his cheekbones, with cool shadows in the recesses. Atmospheric"
+      },
+      {
+        "prompt_sha256": "166a0440f6f01e02419b42f47d088e1919dedd1800b62b4b632e0047cb446ba0",
+        "source_prompt_chars": 7080,
+        "first_asset_id": "ce965f96-ed45-4f84-9b70-c2250f05e652",
+        "asset_count_audit_only": 11,
+        "folder_names": [
+          "Roko Fight"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<2525a57c-2006-429e-8455-bbb6a7e9212a>>> — Environment ref from uploaded image. Brutalist circular concrete atrium, curved smooth concrete walls, large rectangular clerestory windows high above letting in cold flat grey daylight, thick concrete columns rising from the floor, polished grey concrete floor scattered with debris, broken glass — bare dead trees near the walls, extremely dark and cold atmosphere. Environment only. <<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>> — <<<86b1c21d-6a3f-438c-959d-6809a877ce57>>>'s entire body fully encased in dense deep crimson-red crystal armor — head to toe, no skin visible — full crystal helmet with narrow visor slit, massive sharp crystal shoulder pauldrons with blade-like spike protrusions, crystal chest plate, crystal arms with large angular blade formations along the forearms, crystal legs and feet — all surfaces dense sharp-edged faceted red crystal, translucent deep crimson-red with internal light refraction and prismatic chromatic aberration at facet edges. No bag. Character transformation only. <<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>> — 350cm tall demon, reddish-brown cracked skin, long black greasy hair, skeletal grinning face, yello"
+      },
+      {
+        "prompt_sha256": "16c71155afb5fd275dd6e20987c342cc35c0fcf9a8ad153fbf3fb9fac0be72f3",
+        "source_prompt_chars": 8916,
+        "first_asset_id": "ae5d7782-6c4e-4613-9d6a-edf4f458027d",
+        "asset_count_audit_only": 10,
+        "folder_names": [
+          "Museum Roko vs Dagon"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "action",
+          "action_folder",
+          "camera",
+          "physics",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "Duration: 6 seconds. Aspect ratio: 16:9. One continuous shot. Mode: image-to-video using Image 1 as character identity reference and Image 3 as environment reference. Images 2 and 4 not visible in this shot — off-frame only. ⚠️ CHARACTER ANCHOR — <<<image_1>>>: Use <<<image_1>>> as the identity reference. Roko has black messy medium-length hair damp and disheveled, small dark mustache, red paint mark across the bridge of his nose, multiple cuts and blood splatter across his face, neck, chest, and arms from earlier in the fight. He wears a grey tank top torn and stained with old blood. Black crossbody sling bag visible on his shoulder. Tattoos on arms. The face matches <<<image_1>>> exactly. He is the only character visible in this shot. 🔥 LOOK 🔥 8K IMAX ultra-detailed. Photoreal Kodak 500T 16mm filmstock pushed cold, heavy film grain. Hyper-realistic skin and material rendering. Cinematic style of Emmanuel Lubezki crossed with Denis Villeneuve cold cinematography. Strictly natural light only — cold flat grey daylight from clerestory windows above as the only light source, contre-jour backlit composition with face in soft ambient shadow. Light atmospheric haze fills the air, soft di"
+      }
+    ],
+    "dialogue_performance": [
+      {
+        "prompt_sha256": "00385601b6cc047da0179889ce1fbe76eb57c64238df490e344b524d8f04c1a8",
+        "source_prompt_chars": 7903,
+        "first_asset_id": "a8ae5166-25e5-457f-b3ec-76eb31be3020",
+        "asset_count_audit_only": 6,
+        "folder_names": [
+          "Scene 22"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<image_1>>> (Jax — main character) — Young Black male in his 20s, 182cm tall, lean athletic build, super short bleached buzz cut, dark skin, sharp features, focused intense gaze, iris with subtle yellow-amber tint. Black wraparound tactical safety glasses worn ON his eyes (single curved clear lens, black temples — Oakley-style sport tactical eyewear). Black tight tactical compression T-shirt, olive/khaki tactical cargo pants (belt + side pockets), black fingerless tactical gloves, black military combat boots (high-top). <<<image_2>>> (Training arena) — Massive concrete octagonal training hall, octagonal walls + triangular faceted dome ceiling, Ø52m. Central area = octagonal training platform Ø45m (raised ~10cm step above outer floor). <<<image_3>>> (Metal Table) is positioned EXACTLY at the geometric CENTER of the octagonal training platform. Outer floor = darker weathered concrete with dormant mechanical arms along walls + distant entrance door on back wall. Walls = dark charcoal-gray concrete with warm amber practical wall lamps. <<<image_3>>> (Metal Table) — Heavy industrial brutalist welded-steel test table, 3-slab inverted-U (top + 2 end-wall slabs, NOT 4 legs). Dimensions: "
+      },
+      {
+        "prompt_sha256": "00399ee9a8baa41f8c2bf599756f1fbeaf187e6bf2c1b44357f182159b1551d5",
+        "source_prompt_chars": 19981,
+        "first_asset_id": "ed6cada5-eb48-47fa-97b0-dd2155eb6678",
+        "asset_count_audit_only": 16,
+        "folder_names": [
+          "Scene 73.2B"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<90724bfd-1a23-4312-8193-24f498ab7206>>> [ after high-velocity crash landing in 73.5d, suit destroyed, body battered]: Same identity as (19yo female, slim athletic, silver-grey asymmetric bob now wind-blown messy with darker brown/charcoal undertones from dirt, smoky kohl makeup smudged from tears, thin red vertical scar on right cheek). ARMOR DAMAGE - SUIT RIPPED OPEN AND BROKEN: - Right CHEST PLATE: large diagonal CRACK with major chunk TORN AWAY on right side - jagged edges, exposed skin with reddish bruising visible. - Right SHOULDER pauldron: SHATTERED into fragments, bare upper arm visible with red/purple BRUISE. - Left SHOULDER cracked but mostly intact, scuffed. - Right LOWER ABDOMEN/hip: armor torn open exposing skin/bruise. - Right THIGH (front and back): tears in armor, holes exposing bare skin with bruising. - Right BUTTOCK/lower back: large rip exposing skin with deep red/purple bruise. - Both knees: armor cracked and chipped. - Surface: scuffed with dirt, snow, dust, abrasion marks, scratches, char marks. CABLES: Several DARK CABLES hanging loose at right hip, right wrist, rear/back near waist - snapped cybernetic connections, silent dead. LUMBAR THRUSTERS on lower "
+      },
+      {
+        "prompt_sha256": "0041c788507faf3fe442e96939c0f045f8d87e06280eb02b87238e148804fbc4",
+        "source_prompt_chars": 7359,
+        "first_asset_id": "76e3d890-1ef0-41b7-9894-f61728ef0515",
+        "asset_count_audit_only": 6,
+        "folder_names": [
+          "Scene 22"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<image_1>>> (Jax — main character) — Young Black male in his 20s, 182cm tall, lean athletic build, super short bleached buzz cut, dark skin, sharp features, focused gaze. Black wraparound tactical sport safety glasses (Oakley-style) pushed up onto his forehead — sitting on the forehead just above the eyebrows / on the lower edge of his buzz cut hair, lenses still in normal forward-facing orientation, NOT covering eyes (eyes fully exposed below the glasses). Black tight tactical compression T-shirt, olive/khaki tactical cargo pants (belt + side pockets), black fingerless tactical gloves, black military combat boots (high-top). <<<image_2>>> (Indoor water facility) — Massive concrete domed water training facility, Ø60m diameter, with a triangular faceted brutalist concrete dome ceiling. Most of the floor is a giant calm BLACK water pool (mirror-flat surface). Exactly ONE T-shaped concrete pier extends FROM the back wall door into the water (like a fishing dock from shore) — stem 2m × 10m × 25cm thick (perpendicular to back wall, 10m into water, elevated 30cm above surface) + T-head crossbar 4m × 2m × 25cm at far end. Jax walks from back wall door along stem to T-head. Distance Jax "
+      },
+      {
+        "prompt_sha256": "00600fe4a49e34ba22f6061cb7f3724455d136602e3d512e3694ccbc0108b470",
+        "source_prompt_chars": 4835,
+        "first_asset_id": "4a9d7498-a6b1-4364-83ec-3ef88c8c705a",
+        "asset_count_audit_only": 9,
+        "folder_names": [
+          "Scene 28"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "Style: 8K IMAX. Photorealistic — no 3D render, no game engine, no game-cutscene aesthetic. Cinematography: Emmanuel Lubezki × Roger Deakins. Lighting: Natural light only — contre-jour backlight, camera on shadow side, atmospheric haze throughout. Key light from sky and windows only. Color: 60:30:10 — dominant / secondary / accent. Camera: Physical cine lens. 180° shutter motion blur. Skin: Pore-level realism — vellus hair, asymmetric moles, capillary flush, pore-shadow matching on-set light. Acting: Hollywood — micro-pauses before reactions, precise eye-line, wet living eyes with catch-lights, visible breath and chest rise. Physics: Gravity and inertia respected — mass has real weight, correct contact shadows. No floating props. Composition: Rule of thirds + golden ratio. Every person moving from frame one. Continuity: Characters, props, environment identical across every cut. No identity drift. Technical: 24fps smooth motion. 8K detail. No jitter. Audio: Environmental SFX only. No music. No subtitles. CHARACTERS: <<<image_1>>> — Grey-silver short bob with dark tips, single scar on left eye only, black sleeveless cropped halter-neck top, brown leather belt, black wide-cut cargo pan"
+      },
+      {
+        "prompt_sha256": "0062e75cb08cca73c4f4fe66d79036264e8badd7cfba1a2b3884744660a3cfb0",
+        "source_prompt_chars": 22706,
+        "first_asset_id": "33e8a99e-89ca-42b3-b735-9effa9f61694",
+        "asset_count_audit_only": 25,
+        "folder_names": [
+          "Scene 70C"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "— TREE SIDE of the battlefield. Snow-covered Japanese battlefield in the aftermath of a fierce battle. Dark grey-brown stormy overcast sky, intense unrelenting blizzard with fierce gusting wind (snow streaks across the lens, accumulates on subjects, hair / fabric whipping horizontally), heavy drifting fog and mist at multiple depths, black battlefield smoke saturating the atmosphere. Scattered fire pits in middle and deep background only — each pit a pile of broken weapons (snapped katanas, broken yari, splintered hafts) and scorched lacquered armor fragments under live orange-red flame, columns of black smoke rising. White snow ground with dry brown grass patches and old crimson blood stains. Distinguished by ONE LIVING JAPANESE MOMIJI TREE — a TOWERING gnarled silver-grey trunk ~80cm thick at the base and ~12-14m tall, with a broad sweeping canopy of deep crimson and frost-white snow-covered leaves spreading wide above. The tree is the dominant vertical element of the layout — significantly TALLER and LARGER than any human or 4m demonic figure standing under it. Roots grip a slight rise of mossy grey rock outcrops half-buried in snow. Fallen red leaves on the snow around the base"
+      },
+      {
+        "prompt_sha256": "006ee37cd27f3f2eb1d7e55dc67871e667c1b20c33ea81405f2e36405c015f8a",
+        "source_prompt_chars": 20066,
+        "first_asset_id": "1484aa53-ea49-47da-93f9-131fc227fac8",
+        "asset_count_audit_only": 7,
+        "folder_names": [
+          "Scene 50"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "EXACT 3 CHARACTERS + 1 PROP-INLINE (Roco's board, described inline). All three pinned flat to the corridor floor throughout. ⚠️ Single Seedance prompt with 5 internal hard cuts, ~15s total. <<<f9494978-d014-4701-820c-3b9a4e88c56e>>> [img_jaxx_dirty] — 20yo dark-skinned young man, short BLEACHED YELLOW BUZZ CUT (very short, near-shaved on sides). CLEAR WRAPAROUND TACTICAL SAFETY GLASSES sitting ASKEW on his face (knocked off true alignment, one earpiece higher than the other, transparent lenses smeared with sweat-dust film, thin grey frame). Face is exhausted and bloodied — fine dust film coating his skin, sweat tracks cutting through the dust on cheeks and brow, fresh small cuts on forehead and lip with traces of dried blood at the corner of his mouth, jaw set hard. WARDROBE: dark cropped hooded tactical bomber jacket — waist-length with elastic hem, dark grey panel inserts on shoulders and chest, hood is DOWN (knocked off in the action). Black inner crew-neck shirt visible at the open zipper, also dust-coated. OLIVE-GREEN tactical cargo pants with side cargo pockets. BLACK FINGERLESS tactical gloves. Black lace-up combat boots, soaked dark from the wet stone floor. NO WEAPONS visi"
+      },
+      {
+        "prompt_sha256": "007b9ee3756e0c63275c579675028cf218b4223bd5fef67ca9ae7628ce725426",
+        "source_prompt_chars": 11571,
+        "first_asset_id": "75637618-9957-45c4-b2b1-0730a2ffa5b8",
+        "asset_count_audit_only": 4,
+        "folder_names": [
+          "Scene 35D"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<38053738-2003-461a-8083-165d70506e43>>> [img_roco] — Lean figure, dark messy medium hair, thin mustache, red bandage across nose bridge, black tactical hoodie jacket with dark-grey circular panel details, black cargo pants with tactical thigh rigs, fingerless gloves, red bandana at wrist, small red devil plush clipped to rear belt. CHARACTER REF — appearance only. <<<34f5047f-7ec8-496f-922e-38a9916a5a5a>>> [img_rein] — Figure with silver-grey short straight bob, scar on left eye, dark grey multi-pocket tactical jacket over black turtleneck, black wide-leg cargo pants, tan tactical thigh pouch right leg, brown belt with purple accent pull, light grey sneakers. CHARACTER REF — appearance only. <<<2d94adc2-a686-424a-b4dd-b03644450630>>> [img_warrior_red] — Muscular figure, red hooded sleeveless wrap top, deep red fabric face mask covering nose and mouth, wide flowing crimson pants, worn fabric belt with gold accent strip, red leg wraps, open sandals. Hood always up, face always masked. CHARACTER REF — appearance only. [img_loc_corr] — Extremely long stone monastery corridor — approximately 200 meters end to end, full depth visible in a single perspective shot. FRONT end: dark, no a"
+      },
+      {
+        "prompt_sha256": "007d7703c1742e04f7a54da4067c430e0b3e8b53cbb289d50892926cdf1c601c",
+        "source_prompt_chars": 10171,
+        "first_asset_id": "09b2e113-65b8-42e1-adb3-99c7e7bd3408",
+        "asset_count_audit_only": 7,
+        "folder_names": [
+          "Scene 64"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<image_1>>> (Roco) — 同前. <<<image_2>>> (Young Roco · 小Roco约10岁, 身高150cm) — 10-12岁版本, 身高约150厘米(height ~150cm / 4'11\" — small child stature), 混血亚白男孩, 深色中长乱发垂在前额, 苍白皮肤+童年光泽, 棕色眼睛. 服装: 深红色带兜帽羽绒服+浅蓝色直筒牛仔裤+白色运动鞋. 没有伤痕. 神态: 真诚、关切、温和. <<<image_3>>> (Deep snow-covered cedar/bamboo forest section · 深雪覆盖的杉树/竹林地段 — 与64.3D末尾相同的地点 / SAME location as the END of 64.3D) — 阴暗潮湿的青木原杉树林深入的雪覆盖地段, 完全冷蓝灰色调, 厚雪覆盖. 画面: 多棵纤细到中等粗细的暗色直立日本杉树/松树干. 画面左下: 一棵较大的暗色杉树+扭曲裸露的盘根. 画面左侧: 大量绿色竹叶/竹竿垂下. 中景中段一块大的暗色苔藓覆盖巨石坐在雪地上. 多棵纤细暗色杉树干在中景渐隐入雾. 画面右上: 浓厚的冷蓝灰雾扩散填满, 雾中暗示一片稍微更亮的开口. 整片地面被白色雪覆盖, 雪上散落: 暗色苔藓覆盖的岩石+扭曲裸露的暗色树根+大量暗色枯枝倒在雪上+少量暗红色枫叶+黑色枝条堆积+一些干枯的草. 雪花穿过画面飘落. 整体阴森、潮湿、寒冷、压抑(visibility 5-10m). <<<image_4>>> (Forest boundary · 森林边界 / END OF THE FOREST — 与参考图完全匹配 / matches reference photo exactly — 64.4A+64.4B他们的最终位置 / final position for 64.4A and 64.4B) — 阴暗冷蓝灰色调的森林末端景观. 这是从森林内部向外看的视角——森林在画面中段突然结束, 前方延展出一片巨大的白色雪原一直消失在远方雾中(VIEW FROM INSIDE THE DARK FOREST LOOKING OUT — forest abruptly ENDS in middle plane, vast white snow plain extending to fog-swallowed horizon ahead). <<<image_5>>> - pose reference, do not use it as frame. only information about poses of both characters. 【前景 / FOREGROUND】: 画面左侧+右侧有几棵高大暗色树干, 一些树枝上仍挂着深红色/暗红色干枯的"
+      },
+      {
+        "prompt_sha256": "008ef905adb66ea09090473e657b5fac02dec16372a08c4a02dc0a12b109a8ec",
+        "source_prompt_chars": 6687,
+        "first_asset_id": "e4dff367-ca6a-46fe-abfe-11367743f80f",
+        "asset_count_audit_only": 13,
+        "folder_names": [
+          "Scene Roko vs Dagon"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<dca95e60-10ce-4c7c-ad53-256fc6dd0ea7>>> — Photoreal character ref. Brown short wavy hair, chain earrings, black wide choker, blue denim crop vest over fishnet top, orange belt, black crossbody strap, dark grey wide cargo pants, black-white canvas shoes, fingerless gloves, tattoos. Character appearance only. <<<287782af-5af5-4ae2-a7a8-b8573e475b46>>> — Photoreal character ref. Black messy long hair, small mustache, red bandana wraps on wrists, dark red wide jeans, black-white sneakers, grey tank top, tattoos. Character appearance only. <<<aec0018e-5788-4d0c-bec2-5ba44bc45883>>> — Photoreal character ref. Dark skin, short bleached yellow hair, spiked sunglasses on forehead, grey-yellow work jacket, baggy grey cargo pants, grey sneakers, black leather gloves, grey sling bag. Strictly on skateboard. Character appearance only. <<<0f0bb756-9eef-474f-b3ed-31105ac9320b>>> — Photoreal character ref. Straight silver-grey short bob with darker black tips, sharp red scar across right temple, oversized purple zip hoodie worn open over sheer grey graphic mesh crop top, flat midriff, black slim bootcut low-rise jeans, low-top black-and-white canvas sneakers. No bag. Always on @skate, never tou"
+      },
+      {
+        "prompt_sha256": "00d6f5567a6f1250c802bf6d0341dae8ab6d23b360f6a5ff93efddcdf7a9b273",
+        "source_prompt_chars": 28159,
+        "first_asset_id": "a9f30b46-115b-4e2d-b96e-de9ad0e83277",
+        "asset_count_audit_only": 4,
+        "folder_names": [
+          "Scene 73.1D"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<63357702-c3af-430d-9c35-42a520c9c993>>> [10-year-old version of for childhood flashback shots, per LOCKED reference image]: A 10-year-old boy, mixed Asian-Latino heritage, lean child build. SHAGGY MEDIUM-LENGTH BLACK HAIR - tousled and messy, falling just past the ears and slightly into his eyes, natural dark almost-black tone, layered cut. Brown-hazel eyes - thoughtful, intense, quietly fierce. Smooth pre-pubescent skin. Defined dark eyebrows. Soft full lips, generally serious-quiet expression that breaks into determined grins when playing. SIGNATURE DETAIL - on the bridge of his nose: TWO HORIZONTAL SMALL RED PAINT/MAKEUP STRIPES (crimson-red, slightly textured like dried face paint or red watercolor, painted across the bridge of the nose - the child version of his adult signature paint stripes). Stripe shape is the small \"war paint\" mark - this is HIS signature even at 10. Wearing a layered casual outfit: A faded olive-green cotton T-SHIRT with a small white printed graphic logo at the chest (slightly faded, lived-in). A SILVER BEADED NECKLACE / pearl-bead chain around his neck with a small silver pendant. Over the t-shirt: a worn DARK GREY-CHARCOAL ZIP-UP HOODIE (slightly fa"
+      },
+      {
+        "prompt_sha256": "00eb18e37cb630a050d40ea1527aa871d70a1dada7ac9adaafc6cd3e497a3211",
+        "source_prompt_chars": 5937,
+        "first_asset_id": "7cc38097-8c27-407d-83c3-0349214a262f",
+        "asset_count_audit_only": 3,
+        "folder_names": [
+          "Lulu Death"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<86b1c21d-6a3f-438c-959d-6809a877ce57>>> — Photoreal character ref from uploaded image. Black messy medium-length hair damp and disheveled, small mustache, red paint mark across nose bridge, cuts and blood splatter across face neck chest and arms, grey tank top torn and stained with blood, dark red wide ripped jeans, black-white sneakers, black crossbody sling bag, tattoos on arms. Character appearance only. <<<24d22d02-f98e-46ba-af37-ea1b9951dd34>>> — Photoreal character ref from uploaded image. Short wavy dark brown hair, small stud and hoop earrings, red scratch marks on face and shoulder, black wide choker, blue denim crop vest over fishnet layer, orange horizontal belt stripe, black crossbody strap, dark grey wide cargo pants heavily worn, black-white canvas Vans sneakers, black fingerless gloves, tattoos on arms. Wound on abdomen actively bleeding, blood at mouth, unconscious. Character appearance only. <<<2525a57c-2006-429e-8455-bbb6a7e9212a>>> — Environment ref from uploaded image. Brutalist circular concrete atrium, curved smooth concrete walls, large rectangular clerestory windows high above letting in cold flat grey daylight, thick concrete columns rising from the floo"
+      },
+      {
+        "prompt_sha256": "0114df6d664f4141baeb8e6f5e6c44f78aac9aa5624752d2e4e1133140f80c90",
+        "source_prompt_chars": 7589,
+        "first_asset_id": "e826e022-8c7b-448d-9b4b-b73822458a8e",
+        "asset_count_audit_only": 6,
+        "folder_names": [
+          "Scene 22"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "camera",
+          "dialogue",
+          "performance",
+          "quoted_speech",
+          "spatial"
+        ],
+        "coverage_dimension_count": 5,
+        "prompt_excerpt": "<<<image_1>>> (Jax — main character) — Young Black male in his 20s, 182cm tall, lean athletic build, super short bleached buzz cut, dark skin, sharp features, focused intense gaze, iris/eye color has a subtle yellow-amber tint (eyes look slightly yellow, like a faint glow). Black wraparound tactical safety glasses worn ON his eyes (single curved clear lens, black temples — Oakley-style sport tactical eyewear). Black tight tactical compression T-shirt, olive/khaki tactical cargo pants (belt + side pockets), black fingerless tactical gloves, black military combat boots (high-top). <<<image_2>>> (Training arena) — Massive concrete octagonal training hall, octagonal walls + triangular faceted dome ceiling, Ø52m diameter overall. Central area = octagonal raised training platform Ø45m (slightly raised ~10cm step above the outer floor). Around the platform's perimeter lip runs a warm amber LED light strip. <<<image_3>>> (Metal Table) is positioned EXACTLY at the geometric CENTER of the octagonal training platform. Outer floor = darker weathered concrete with dormant mechanical arms along the walls and a distant entrance door on the back wall. Walls are dark charcoal-gray concrete with war"
+      }
+    ],
+    "environment_establishing": [
+      {
+        "prompt_sha256": "00e4c15e723379bb862770bb9c4a46093978048a29e2426de31e3c39fb512c89",
+        "source_prompt_chars": 8034,
+        "first_asset_id": "8f8bdecd-b250-4e26-9b40-29d8e918bea1",
+        "asset_count_audit_only": 17,
+        "folder_names": [
+          "Scene Pizza Aerial"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "— reference image showing a corner pizzeria storefront on a rainy Bangkok-style night avenue with elevated concrete skytrain viaduct on stained piers and a weather-stained apartment block carrying large red painted side-wall lettering. Used STRICTLY as neighborhood, palette, and architectural reference for the wider city look — render the surrounding central Bangkok-style megacity neighborhood from this world. The pizzeria storefront, its red-and-white checkerboard awning, its corner, its signage are NOT present in this shot; from 600m altitude no individual storefront is visible at all — only rooftops, viaducts, and avenue grids. Camera Settings: digital cinema body on stabilized aerial mount, anamorphic glass, 21mm, T2.8, 2.39:1 cinemascope, fine grain, low contrast filmic emulation, ARRI color science. Camera Style: locked bird's-eye aerial frame at approximately 600 meters altitude, gimbal stabilized, motionless frame, no descent, no ascent, no push-in, no drift, no zoom, no rotation, no shake, no movement of any kind, one continuous take, single uninterrupted shot, no cuts. Light: practical sources only at ground level — warm sodium streetlamps lining wet avenues, scattered ap"
+      },
+      {
+        "prompt_sha256": "01adc45ff7d4c08d2d50d9c2769697c5f6ba721e086543e804f58284f09df955",
+        "source_prompt_chars": 3733,
+        "first_asset_id": "fabf06ff-ae3c-4b5b-be4c-77165f52e88c",
+        "asset_count_audit_only": 16,
+        "folder_names": [
+          "Flashback Orphanage 2"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "⚠️ IMAGE REFERENCES — STRICT ⚠️ <<<image_1>>> = LOCATION Cracked grey asphalt forest road, leafless deciduous + dark conifers, overcast sky, late autumn. <<<image_2>>> = CAR Weathered silver minivan, dirty matte, tinted windows. <<<image_3>>> = FATHER Middle-aged, salt-pepper hair, grey beard, dark olive sweater, driving. <<<image_4>>> = MOTHER Middle-aged, auburn ponytail, tan cardigan, cream top, front passenger. ⚠️ ACTING PREFIX ⚠️ Hollywood A-list dramatic acting, Oscar-tier emotional craft. ⚠️ CONTEXT ⚠️ Context: A middle-aged couple drives in shared silent dread through the autumn forest, the weight of something irrevocable they have just done settling between them. ⚠️ STYLE ⚠️ Camera: Arri Alexa 35, anamorphic, f/2.8. 85mm. SHOT/REVERSE OVER-THE-SHOULDER (OTS) EIGHTBALL — both shots LOCKED STATIC TRIPOD, foreground shoulder mass ~1/3 of frame for strong sense of presence. Light: ONLY NATURAL LIGHT — cool overcast daylight from windshield (key) + side windows. SHADOW-SIDE COVERAGE on both. Sound: cabin hum, tires on damp asphalt, cold wind, father's heavy ragged audible exhale into beard in Shot B. NO music. NO dialogue. Tone: cinematic photoreal, 60:30:10 (cool grey dominant"
+      },
+      {
+        "prompt_sha256": "040fabe5db1303f407baf4744a59ae290e0246bc32b0b8154acd63e0f5557794",
+        "source_prompt_chars": 24630,
+        "first_asset_id": "43a64b56-278f-4af4-87cc-91be04fef00d",
+        "asset_count_audit_only": 48,
+        "folder_names": [
+          "Museum Lulu"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "[REFERENCES + IDENTITY ANCHORS] <<<e92f3ea2-1332-4d0f-b95b-b99280a663f5>>> — man ~30s (~1.8m tall), mid-length wet-disheveled black hair across forehead, faint upper-lip mustache, slim wiry build, olive-tan skin. Multiple small bloodied cuts and red blood streaks on face/shoulders/arms. Small horizontal RED medical nose-tape across bridge of nose. Grey ribbed sleeveless tank-top with blood spatter and small tears, dark crossbody sling-bag with diagonal strap, red plush-bear keychain. Dark crimson distressed wide-leg jeans, dark belt with circular buckle, white-grey low-top sneakers. Visible arm tattoos. Lock: face + mustache + wet messy black hair + red nose-tape + tank-top + sling-bag + red plush-bear keychain + outfit. <<<image_1>>> — woman ~20s, slim athletic build, pale skin with light freckles. Short dark brown chin-length bob with side-swept bangs, slightly tousled/messy. Faint red scratch/cut on her right cheek. Multiple silver earrings on left ear (5+ small piercings). Black thick choker necklace. Sleeveless blue denim cropped halter top, weathered with small tears and dirt smudges, utility-style straps. ORANGE waistband/elastic band visible at the bottom of the halter top."
+      },
+      {
+        "prompt_sha256": "043c6739e6369d19d6b2472767ec65dd9323eaf93fa6b4368cf27c80465ed46b",
+        "source_prompt_chars": 9173,
+        "first_asset_id": "239f6584-1b88-4687-af52-cac5106507c2",
+        "asset_count_audit_only": 21,
+        "folder_names": [
+          "Flashback Roof"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "═══════════════════════════════════════ ROOFTOP SCENE — INTIMATE LIVE HANDHELD SINGLE CUT — FOUR KIDS ON DISH RIM + ROKO'S OATH TWICE (REAL-TIME 24fps) — 14s LOCATION: — rooftop of old industrial/communications building at DEEP FULL NIGHT, dominated by massive abandoned SATELLITE DISH (red-and-white armature, white parabolic dish ~8-10m diameter, weathered, mounted on heavy red pedestal structure with access stairs), the dish's upper rim being the seat of the four kids. Dense night cityscape stretching below in all directions (warm amber field of apartment window glow). Cool deep blue-black night sky with stars above. Light atmospheric haze. ALL FOUR VISIBLE in cut: <<<ebe48b03-cc7b-4d37-a57c-2109842423f6>>> (ROKO), <<<9d67d3b8-14ec-4067-b1e2-075554f1d20c>>> (LULU), <<<0c9ca387-df27-44c3-a263-afc2a9f0f6d0>>> (JAX), <<<0e1fc7da-294e-470b-847a-dc18c4fb4d68>>> (REIN). ⚠️ ONE CONTINUOUS HANDHELD TAKE on. Camera lives with them on the dish rim throughout. Organic operator-driven reframes shift focus between wider group framing and closer on Roko as he speaks. NOT split into segments — ONE single live take with documentary-handheld natural movement. ⚠️ CAMERA ENERGY — INTIMATE LIVE HANDH"
+      },
+      {
+        "prompt_sha256": "059ff6b5f4dcf0c42970d10bc33a5d67f9d4774d42d6a21d27cd268c02b1ae51",
+        "source_prompt_chars": 27516,
+        "first_asset_id": "ea11f223-9f86-4f6a-bf84-db23dd63ae3e",
+        "asset_count_audit_only": 36,
+        "folder_names": [
+          "Scene Orphanage"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "Duration: 15 seconds. Aspect ratio: 16:9. Mode: R2V. 4 blocks separated by 3 HARD CUTs. SECOND HALF of the <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> + <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> parallel arc — direct continuation from A20 (which ended on <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>>'s hand hovering above the chocolates on <<<067b4940-af70-49c7-9fce-1647c5696ae9>>>'s palm). This shot is about <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> (per <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> reference image) finishing the chocolate exchange with <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> and doing the brotherly hair-ruffle. <<<6b8e81c5-7a3e-484b-a180-575218269c25>>> is NOT in this shot. Anchor: <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> (per <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> reference image — his exact face, hair, skin tone, clothing, build — NOT <<<6b8e81c5-7a3e-484b-a180-575218269c25>>>) is sitting beside <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> on the boy's bed (2nd bed from the right of ) with <<<fe89430e-794f-42fa-a0a8-dc32fa30a952>>> (per reference) on his open palm. <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> takes ONE chocolate from the palm + freezes + shy smi"
+      },
+      {
+        "prompt_sha256": "07f755577c7c18df8db4c714d55bd597312650d5a3f8706bf1bf04436fb342aa",
+        "source_prompt_chars": 26377,
+        "first_asset_id": "0d2242e1-7c36-4acf-a0fd-78c4f0390f44",
+        "asset_count_audit_only": 20,
+        "folder_names": [
+          "Scene Orphanage"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "Duration: 15 seconds. Aspect ratio: 16:9. Mode: R2V. 4 blocks separated by 3 HARD CUTs — ALL TIGHT CUs. SECOND HALF of the <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> + <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> parallel arc — direct continuation from A20 (which ended on <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>>'s hand hovering above <<<fe89430e-794f-42fa-a0a8-dc32fa30a952>>> on <<<067b4940-af70-49c7-9fce-1647c5696ae9>>>'s palm). Anchor: <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> (per <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> reference image) sits beside <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> on the boy's bed (2nd bed from the right of ) with <<<fe89430e-794f-42fa-a0a8-dc32fa30a952>>> (per reference) on his open palm. <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> takes ONE wrapped item from <<<fe89430e-794f-42fa-a0a8-dc32fa30a952>>> + freezes + shy smile blooms inside-out + starts unwrapping that same item; <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> places remaining items from <<<fe89430e-794f-42fa-a0a8-dc32fa30a952>>> on the blanket beside <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>>'s leg and says hushed warm \"Don't worry — they're good kids, promise.\"; brotherly hair-ruffle + he"
+      },
+      {
+        "prompt_sha256": "091b0c768cfb56691005b0d91be4c245aa90b38c729a914a68acf539c9d456b8",
+        "source_prompt_chars": 3824,
+        "first_asset_id": "e5bca6db-bf95-401b-b253-6ab97fe2a8a7",
+        "asset_count_audit_only": 4,
+        "folder_names": [
+          "Flashback Orphanage 2"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "⚠️ IMAGE REFERENCES — STRICT ⚠️ <<<image_1>>> = LOCATION Cracked grey asphalt forest road in profile, leafless deciduous + dark conifers, low overcast sky, late autumn. <<<image_2>>> = CAR Weathered silver minivan, dirty matte, tinted rear windows. <<<image_3>>> = FATHER Middle-aged, salt-and-pepper hair, grey beard, dark olive sweater. <<<image_4>>> = MOTHER Middle-aged, auburn ponytail, tan cardigan over cream top. <<<image_5>>> = LULU YOUNG Girl ~12, dark brown bob w/ bangs, pale blue cardigan over cream turtleneck, dark indigo jeans, grieving. ⚠️ STYLE ⚠️ Camera: Arri Alexa 35, anamorphic, f/2.8. ONLY 50-100mm. SHOTS 1 & 3 LOCKED STATIC. SHOT 2 fluid head tripod, slow smooth horizontal pan tracking car. Light: ONLY NATURAL LIGHT — cool overcast daylight, soft diffuse, no sun, no practicals. SHADOW-SIDE ONLY. Sound: cabin hum, tires on damp asphalt, cold wind. Lulu's crying SILENT — no audible sob. NO music. NO dialogue. Tone: cinematic photoreal, 60:30:10 (cool grey dominant, muted forest green, warm wet tear tracks accent). Late autumn loneliness. [SHOT 1] CU INTERIOR — FOREST PROFILE THROUGH INVISIBLE WINDOW CU 50mm anamorphic LOCKED inside car at Lulu's <<<image_5>>> shoulde"
+      },
+      {
+        "prompt_sha256": "091e9de281662423c32ed2031db6050cf0963598dbb515ba0dbba435e316b1e5",
+        "source_prompt_chars": 26326,
+        "first_asset_id": "bbbe24ce-61ab-40ec-95fe-396c32639222",
+        "asset_count_audit_only": 8,
+        "folder_names": [
+          "Scene Orphanage Window Arrival"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "Duration: 15 seconds. Aspect ratio: 16:9. Mode: R2V. 4 blocks separated by 3 HARD CUTs. FIRST HALF of the Roko + <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> parallel arc (A22 will be the second half — boy takes chocolate + smile + Roko places 2 + ruffle). <<<6b8e81c5-7a3e-484b-a180-575218269c25>>> + <<<933885c3-eb80-4854-a2d2-5eed2405617a>>> visible in SOFT-FOCUS BG at the candy bed throughout doing things — eating chocolate, laughing, digging through the pile — but do not become the focus. Anchor: BLOCK 0 — establish flash wide showing <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> approaching <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> in FG + <<<6b8e81c5-7a3e-484b-a180-575218269c25>>> + <<<933885c3-eb80-4854-a2d2-5eed2405617a>>> visible at candy bed in BG; HARD CUT; BLOCK 1 — Roko reaches the bed, soft \"Hey... haven't seen you before. New around here?\" + <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> shy nod + hand quietly turns the page of <<<image_1>>> to hide the drawing; HARD CUT; BLOCK 2 — CU <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> fond, \"Don't worry — they're good kids, promise.\"; HARD CUT; BLOCK 3 — palm extends with 3 chocolates + <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>>'s ey"
+      },
+      {
+        "prompt_sha256": "0a93307b69028968d8ddc75a1e39aa60518c08eddd0b45045a439d8d2836cd14",
+        "source_prompt_chars": 2451,
+        "first_asset_id": "42a7513b-1872-4a27-af72-313a33ee8827",
+        "asset_count_audit_only": 3,
+        "folder_names": [
+          "Museum Heist"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "35mm Kodak 500T. Emanuel Lubezki handheld dynamic cinematography. Soft diffused daylight, gentle fill on faces, warm skin tones. Backlit, cinematic lighting. Hollywood acting. Realistic athletic movement. No oversharpening. Crazy camera angles. SFX only no music. No subtitles. Scene context: Practical stunt pyrotechnic sequence filmed on a real film set. Diversionary explosion number one. A small handmade charge is taped to the front tire of a parked police car. Two cops in the background casually eating donuts and drinking coffee, unaware. <<<13154896-0437-46f1-ac99-d64e1421618b>>> [image1] — small handmade charge taped directly to a car tire with masking tape, cardboard casing, red and white wires, small circuit board with red LED glowing, sick face emoji drawn on tape. Appearance and placement reference. <<<1355cf69-0fae-4efc-ba5a-b4b13dac0c54>>> [image2] — dark grey SCPD police vehicles with red light bar, eagle badge logo, SOUL CITY POLICE DEPARTMENT text. Appearance reference only. <<<cd2555c7-2ea2-4185-88b0-b2e1d4cf189b>>> [image3] — SCPD police officers in dark grey uniforms, black caps with eagle badge, black duty belt with holster, black boots. Appearance reference only. "
+      },
+      {
+        "prompt_sha256": "0b92cfff5a149b1c53d36670009ea3ac3980f09f7c84507551a1906472d25436",
+        "source_prompt_chars": 22188,
+        "first_asset_id": "2ebb3d35-b88e-4015-8b48-183d4b852a70",
+        "asset_count_audit_only": 32,
+        "folder_names": [
+          "Scene Orphanage Window Arrival"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "Duration: 15 seconds. Aspect ratio: 16:9. Mode: I2V. References used as definitive identity: <<<067b4940-af70-49c7-9fce-1647c5696ae9>>>, <<<6b8e81c5-7a3e-484b-a180-575218269c25>>>, <<<933885c3-eb80-4854-a2d2-5eed2405617a>>>, <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>>,, <<<image_1>>>. One continuous take with three internal hard cuts. REFERENCES: <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> [roko.png] — 20yo young man. Identity, face, hair, skin tone, clothing, and build EXACTLY per <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> reference image — match the reference at every framing (wide, medium, close-up). At wide or distant framings, identity is carried by his clothing colour and silhouette per the reference; face must still resolve to the same person when the camera pushes in. <<<6b8e81c5-7a3e-484b-a180-575218269c25>>> [jax.png] — 20yo young man. Identity, face, hair, skin tone, clothing, and build EXACTLY per <<<6b8e81c5-7a3e-484b-a180-575218269c25>>> reference image — match the reference at every framing (wide, medium, close-up). At wide or distant framings, identity is carried by his clothing colour and silhouette per the reference; face must still resolve to the same person when t"
+      },
+      {
+        "prompt_sha256": "0c7dde089215d68ad36335a4995eed8c73d99d0fcec529157ecb1df517fef675",
+        "source_prompt_chars": 25601,
+        "first_asset_id": "7808c5ab-78cc-402a-9308-b220a9c9ce68",
+        "asset_count_audit_only": 24,
+        "folder_names": [
+          "Scene Orphanage Window Arrival"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "Duration: 15 seconds. Aspect ratio: 16:9. Mode: I2V using <<<067b4940-af70-49c7-9fce-1647c5696ae9>>>, <<<6b8e81c5-7a3e-484b-a180-575218269c25>>> and <<<933885c3-eb80-4854-a2d2-5eed2405617a>>> images for identity references; <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> visible in BG. COMBINED MONTAGE merging former A8 + A10 + A11 — 4 blocks separated by 3 hard cuts. Anchor: brief establish flash of the boys' room with all four characters in their positions → HARD CUT → CU on <<<933885c3-eb80-4854-a2d2-5eed2405617a>>> in candy-shock on the LEFT candy bed with <<<6b8e81c5-7a3e-484b-a180-575218269c25>>> grabbing a chocolate beside him in frame and <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> visible in BG drawing on his bed (Jax's muffled \"...damn, that's actually good\" line over) → HARD CUT → Roko walks past the candy bed toward the door saying \"Hey hey, easy... others need some too, alright?\" with a glance at <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> in passing, reaches the door, peeks corridor → HARD CUT → Roko closes the door, turns back, says \"Five minutes, guys. Keep it down, yeah?\", his eye-line lands on <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> with a soft decision-forming flicke"
+      },
+      {
+        "prompt_sha256": "0d58498a954b6d9aa9d61911b7c1d97ce3eee3482d377f1d9f4f1510430d2eda",
+        "source_prompt_chars": 17240,
+        "first_asset_id": "f87cf3e2-e016-4c14-9d71-662199ccd3ab",
+        "asset_count_audit_only": 36,
+        "folder_names": [
+          "Scene Orphanage Window Arrival"
+        ],
+        "models": [
+          "seedance_2_0"
+        ],
+        "coverage_dimensions": [
+          "atmosphere",
+          "camera",
+          "environment",
+          "environment_folder",
+          "lighting",
+          "spatial"
+        ],
+        "coverage_dimension_count": 6,
+        "prompt_excerpt": "Duration: 15 seconds. Aspect ratio: 16:9. Mode: R2V. Format E — montage sequence, three shots separated by [CUT] markers. Direct continuation of A0 — the knock has just landed off-frame; both boys are frozen. Anchor: a sunlit orphanage boys' room — a man's hand grips the windowsill from outside and softly raps the wooden frame; <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> (blue) frozen on his bed mid-drawing tenses; <<<933885c3-eb80-4854-a2d2-5eed2405617a>>> (yellow) on the rug locks his gaze on the hand, his eyes ignite with recognition, and he bolts upward toward the window. REFERENCES: <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> [boy2.png] — 8yo orphan boy in BLUE clothing per <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> reference image. Identity, face, hair, skin tone, clothing and build EXACTLY per <<<c234452c-eb22-4d04-9f2a-4456b72bb944>>> reference image — match the reference at every framing. At wide framings, identity is carried by the blue clothing block and his small child silhouette on the bed per the reference. NEW arrival at the orphanage — does NOT yet know <<<067b4940-af70-49c7-9fce-1647c5696ae9>>> or <<<6b8e81c5-7a3e-484b-a180-575218269c25>>>. Shy, withdrawn into himsel"
+      }
+    ]
+  }
+}

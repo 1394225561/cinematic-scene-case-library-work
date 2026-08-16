@@ -1,0 +1,869 @@
+{
+  "schema_version": 1,
+  "normalization_schema": "normalization-schema.json",
+  "source_records": "selected-source-records.json",
+  "policy": "These records separate source facts, normalization decisions, and model-specific adapters. Source reference labels are never treated as accessible media unless the current user supplies the media.",
+  "records": [
+    {
+      "schema_version": 1,
+      "record_id": "dialogue-sarcastic-lookback",
+      "category": "dialogue_performance",
+      "source_layer": {
+        "source_record": {
+          "file": "selected-source-records.json",
+          "prompt_sha256": "086a04b7f0f8e168bfcbf3183684e1cf275d57e59a3c639dbdabc0713867d658"
+        },
+        "source_prompt_chars": 5413,
+        "first_asset_id": "ec7ed73d-0594-40fd-97f4-682c2896e876",
+        "folder_names": [
+          "Scene 22"
+        ],
+        "prompt_declared_settings": {
+          "duration_seconds": 4,
+          "aspect_ratio": "16:9",
+          "generation_mode": "R2V"
+        },
+        "asset_metadata_observations": {
+          "asset_count": 12,
+          "duration_seconds_values": [
+            4
+          ],
+          "model_values": [
+            "seedance_2_0"
+          ],
+          "resolution_values": [
+            "1080p"
+          ]
+        },
+        "source_conflicts": [],
+        "selection_rationale": "A compact four-second single take with one exact spoken line, readable eyeline and body behavior, precise performance beats, controlled camera side, practical lighting, and a deliberate sound mix. No unresolved source contradiction affects the scene.",
+        "selection_policy": "Selected by prompt-content quality and cross-model test value; generation frequency is audit metadata only and never a quality score."
+      },
+      "material_reference_layer": {
+        "references": [
+          {
+            "reference_id": "jax",
+            "source_label": "<<<image_1>>>",
+            "role": "character_identity",
+            "source_description": "Young Black man in his early-to-mid 20s with a short bleached buzz cut, tactical glasses, black compression shirt, olive cargo pants, gloves, and boots.",
+            "portable_description": "A lean young Black man with a very short bleached buzz cut, black wraparound tactical glasses, a fitted black tactical shirt, olive cargo pants, fingerless gloves, and combat boots.",
+            "active_in_scene": true,
+            "binding_status": "described_only"
+          },
+          {
+            "reference_id": "training-arena",
+            "source_label": "<<<image_2>>>",
+            "role": "environment",
+            "source_description": "Large brutalist octagonal training arena with a raised concrete platform, warm amber perimeter LED, wall sconces, dark concrete walls, and thin haze.",
+            "portable_description": "A brutalist octagonal concrete training arena with a raised central platform, a warm amber perimeter light strip, spaced industrial wall sconces, and light atmospheric haze.",
+            "active_in_scene": true,
+            "binding_status": "described_only"
+          }
+        ],
+        "binding_policy": "Source labels are provenance only. Activate model-specific labels only when the current user supplies accessible media."
+      },
+      "model_neutral_scene_layer": {
+        "objective": "Show a young man standing away from the center of an arena, turning back toward the camera, and delivering one dry, exasperated sarcastic question through restrained micro-performance.",
+        "duration": {
+          "value_seconds": 4,
+          "provenance": "prompt_and_asset_agree",
+          "prompt_declared_seconds": 4,
+          "asset_metadata_seconds": [
+            4
+          ]
+        },
+        "aspect_ratio": "16:9",
+        "format_mode": "single_continuous_take",
+        "subjects": [
+          {
+            "subject_id": "jax",
+            "description": "Lean young Black man with a bleached buzz cut, tactical glasses, fitted black tactical clothing, olive cargo pants, gloves, and boots.",
+            "initial_state": "Standing on the west apron beside the platform rather than at its center, weight settled on his right hip, arms loose."
+          }
+        ],
+        "spatial_layout": [
+          "Jax remains on the west apron of the platform near one wall sconce and never moves to the center.",
+          "The camera observes him at eye level from an east-west-south three-quarter side, never as a flat north-facing portrait.",
+          "The platform edge light and nearest wall sconce remain readable environmental anchors behind and beside him."
+        ],
+        "action_beats": [
+          {
+            "beat_id": "beat-1",
+            "time_range_seconds": [
+              0,
+              1.2
+            ],
+            "description": "He slowly turns his head toward the lens, lifts his chin slightly, lets one eyebrow rise, and begins a restrained half eye-roll.",
+            "causal_link": "The off-center resting pose establishes casual confidence before the lookback reveals irritation.",
+            "source_derivation": "direct"
+          },
+          {
+            "beat_id": "beat-2",
+            "time_range_seconds": [
+              1.2,
+              3.2
+            ],
+            "description": "An asymmetric smirk touches the right corner of his mouth as he asks, 'Are you kidding me?' in a quiet, warm baritone with dry exasperation.",
+            "causal_link": "The facial preparation and fixed eyeline motivate the line rather than presenting it as detached voice audio.",
+            "source_derivation": "direct"
+          },
+          {
+            "beat_id": "beat-3",
+            "time_range_seconds": [
+              3.2,
+              4
+            ],
+            "description": "A faint head shake resolves the word 'kidding,' followed by a slow blink while the smirk holds briefly.",
+            "causal_link": "The delayed physical reaction completes the sarcastic thought after the spoken line.",
+            "source_derivation": "direct"
+          }
+        ],
+        "performance": [
+          "Keep the register conversational, dry, mildly amused, and exasperated rather than heroic or melodramatic.",
+          "Use a half eye-roll, one eyebrow lift, an asymmetric smirk, a small head shake, and one slow blink as distinct readable beats.",
+          "Keep the gaze on the lens once the head turn completes and move the lips only for the scripted line."
+        ],
+        "camera_intent": {
+          "framing": "Close-up that retains enough arena context to prove the subject stands at the side of the platform.",
+          "viewpoint": "Eye-level three-quarter side view, never flat frontal.",
+          "movement": "Subtle human handheld micro-drift without reframing or a second camera position.",
+          "optical_outcome": "Natural perspective with shallow separation, soft background highlights, restrained flare, and stable facial detail."
+        },
+        "physics": [
+          "Weight remains visibly settled on the right hip while the head turns independently.",
+          "Fabric, glove leather, breath, eyelids, jaw, lips, and cheek movement remain small and physically continuous."
+        ],
+        "lighting": [
+          "Use only the warm amber arena sconces and platform perimeter light as visible practical sources.",
+          "Photograph from the shadow side so the closest sconce gives a small catchlight and edge separation without frontal fill.",
+          "Retain cool concrete and haze against warm practical highlights."
+        ],
+        "sound": {
+          "dialogue": [
+            {
+              "speaker": "jax",
+              "language": "English",
+              "line": "Are you kidding me?",
+              "delivery": "Warm baritone, dry sarcasm, conversationally quiet, slightly amused beneath the irritation."
+            }
+          ],
+          "ambience": [
+            "Distant HVAC rumble in the arena dome",
+            "Faint electrical hum from the nearby wall sconce"
+          ],
+          "effects": [
+            "Light shirt and cargo-fabric rustle",
+            "Small glove creak",
+            "Slow audible breath"
+          ],
+          "non_diegetic_music": null
+        },
+        "continuity": [
+          "One character remains in frame for the entire take.",
+          "The west-apron position, three-quarter camera side, gaze, practical-light direction, wardrobe, and glasses state do not change."
+        ],
+        "constraints": [
+          "No additional people, duplicates, subtitles, voiceover, or music.",
+          "Do not move the subject to the center of the arena.",
+          "Do not flatten the lighting into a frontal beauty key.",
+          "Do not shift the performance into stoic action-hero or exaggerated comic delivery."
+        ],
+        "unknowns": [
+          "The original image pixels are not part of this text-only case record, so exact identity matching remains unavailable until real media is supplied."
+        ]
+      },
+      "adaptation_decisions": [
+        {
+          "decision_id": "dialogue-reference-reencoding",
+          "scope": "both_adapters",
+          "operation": "reencode",
+          "source_fact": "The source Prompt uses <<<image_1>>> and <<<image_2>>> labels for uploaded character and environment media.",
+          "adapted_result": "Both validation prompts use concise text descriptions and no active media labels.",
+          "reason": "No media was downloaded or supplied to the current task, so neither Seedance tags nor H3 media labels can be truthfully activated.",
+          "authority": "model_contract"
+        },
+        {
+          "decision_id": "dialogue-technical-compression",
+          "scope": "both_adapters",
+          "operation": "omit",
+          "source_fact": "The source includes brand-name camera comparisons, 8K/IMAX language, skin-rendering detail, and 60 fps wording.",
+          "adapted_result": "The validation prompts retain observable framing, camera behavior, texture, light direction, and performance but omit redundant prestige and implementation labels.",
+          "reason": "The portable case should preserve controllable visual outcomes rather than model-specific or decorative quality stacking.",
+          "authority": "normalization_policy"
+        }
+      ],
+      "seedance_adapter_layer": {
+        "target_model": "Seedance 2.0",
+        "binding_mode": "text_only_validation",
+        "settings": {
+          "duration_seconds": 4,
+          "aspect_ratio": "16:9"
+        },
+        "prompt": "SCENE CONTEXT\nA lean young Black man with a very short bleached buzz cut and black wraparound tactical glasses stands off to the side of a brutalist octagonal training arena. He turns back toward the lens and delivers one dry, exasperated question.\n\nFIRST FRAME AND SPATIAL BLOCKING\nThe first visible frame already contains him in close-up on the west apron beside the raised platform, near one warm wall sconce, never at platform center. His weight rests on his right hip, chest open, arms loose. The camera is at eye level on his east-west-south three-quarter side, never flat north-frontal. The platform-edge light remains visible as a location anchor.\n\nFORMAT MODE\nSINGLE CONTINUOUS TAKE. One camera, one character, one spoken line, no cuts.\n\nOPTICS\nNatural 50mm anamorphic close-up character with shallow separation, soft practical bokeh, restrained flare, stable facial detail, and natural motion blur.\n\nCAMERA\nEye-level handheld with only subtle human micro-drift; no reframing, orbit, push, or second angle.\n\nACTION TIMING\n0:00-0:01.20 — He slowly turns his head to the lens, lifts his chin slightly, begins a half eye-roll, and raises his right eyebrow.\n0:01.20-0:03.20 — An asymmetric smirk touches the right corner of his mouth. Maintaining eye contact, he asks in a warm baritone, conversationally quiet and dry: \"Are you kidding me?\" His lips move only for this exact line.\n0:03.20-0:04.00 — A faint head shake resolves \"kidding,\" followed by one slow blink while the smirk holds briefly.\n\nPHYSICS\nHis weight stays settled on the right hip while the head and face move independently. Preserve continuous breath, jaw, lip, eyelid, cheek, fabric, and glove motion.\n\nLIGHTING\nUse only warm amber wall sconces and the platform perimeter light. Photograph him from the shadow side; the nearest sconce gives a small catchlight and rim without frontal fill. Cool concrete and haze remain behind the warm practicals.\n\nAUDIO\nWarm baritone dialogue at about 0:01.20, exactly: \"Are you kidding me?\" Under it, distant HVAC rumble, faint sconce hum, light fabric rustle, a small glove creak, and slow breath. No music, subtitles, or voiceover.\n\nPOSITIVE CONSTRAINTS\nKeep one character, one continuous take, the west-apron position, the three-quarter camera side, tactical glasses on his eyes, and restrained sarcastic performance throughout. No duplicate or extra person; no flat frontal portrait or frontal beauty light.",
+        "validation": {
+          "status": "pass",
+          "checks": {
+            "source_labels_removed_without_media": true,
+            "first_frame_occupied": true,
+            "spatial_blocking_explicit": true,
+            "dialogue_exact": true,
+            "timing_within_duration": true,
+            "audio_explicit": true
+          },
+          "notes": [
+            "This is a legal text-only Seedance validation prompt. Replace descriptive identities with real current @tags only when the user supplies those assets."
+          ]
+        }
+      },
+      "h3_adapter_layer": {
+        "target_model": "MiniMax H3",
+        "prompt_mode": "T2VA",
+        "runtime_task": "t2va",
+        "reference_binding": "none",
+        "settings": {
+          "duration_seconds": 4,
+          "aspect_ratio": "16:9"
+        },
+        "prompt": "integrated_multimodal_description: [Shot 1] Live-action, cinematic, a close-up frames a lean young Black man with a very short bleached buzz cut, black wraparound tactical glasses, a fitted black tactical shirt, olive cargo pants, fingerless gloves, and combat boots. He stands on the west apron beside the raised platform of a brutalist octagonal concrete arena, near one warm wall sconce rather than at the center. The eye-level camera holds his three-quarter side with subtle handheld micro-drift while the platform-edge light remains visible behind him. His weight rests on his right hip. He slowly turns his head toward the lens, lifts his chin slightly, begins a half eye-roll, raises his right eyebrow, and lets an asymmetric smirk touch the right corner of his mouth. At about 00:01.200, the young man with a warm baritone voice (S1) maintains eye contact and says quietly with dry, mildly amused exasperation: <d>[English] Are you kidding me?</d> His lips move only for this line. He gives a faint head shake on the final word and then one slow blink while the smirk briefly holds. Warm amber arena practicals create a small eye catchlight and restrained rim on his shadow-side face against cool concrete and thin haze.\n\noverall_soundscape: Distant HVAC rumble and a faint electrical hum fill the arena. Light fabric rustle, a small glove creak, and his slow breath remain audible beneath the spoken line.\n\nnon_diegetic_music: N/A",
+        "validation": {
+          "status": "pass",
+          "checks": {
+            "official_base_structure": true,
+            "t2va_matches_no_media_input": true,
+            "no_fabricated_media_labels": true,
+            "speaker_id_stable": true,
+            "dialogue_block_exact": true,
+            "duration_within_4_to_15_seconds": true,
+            "settings_outside_prompt": true
+          },
+          "notes": [
+            "The source Prompt is not a media input. With no accessible media supplied, T2VA and descriptive identity are required."
+          ]
+        }
+      },
+      "cross_model_validation": {
+        "status": "pass",
+        "preserved": [
+          "Four-second duration",
+          "Single-take close-up",
+          "West-apron blocking and three-quarter camera side",
+          "Exact English dialogue",
+          "Sarcastic micro-performance",
+          "Practical shadow-side lighting",
+          "Ambient sound and no music"
+        ],
+        "model_specific_reencoding": [
+          "Seedance uses sectioned spatial and local failure locks.",
+          "H3 uses T2VA Context-IR fields, speaker ID (S1), and a <d>[English]> dialogue block."
+        ],
+        "known_losses": [
+          "Exact reference-image identity cannot be validated without the original media.",
+          "Decorative prestige and hardware language was intentionally not treated as scene meaning."
+        ],
+        "blocked_items": []
+      }
+    },
+    {
+      "schema_version": 1,
+      "record_id": "action-crystal-fighter-versus-demon",
+      "category": "action_fight",
+      "source_layer": {
+        "source_record": {
+          "file": "selected-source-records.json",
+          "prompt_sha256": "166a0440f6f01e02419b42f47d088e1919dedd1800b62b4b632e0047cb446ba0"
+        },
+        "source_prompt_chars": 7080,
+        "first_asset_id": "ce965f96-ed45-4f84-9b70-c2250f05e652",
+        "folder_names": [
+          "Roko Fight"
+        ],
+        "prompt_declared_settings": {
+          "duration_seconds": 10,
+          "aspect_ratio": "16:9",
+          "generation_mode": null
+        },
+        "asset_metadata_observations": {
+          "asset_count": 11,
+          "duration_seconds_values": [
+            15
+          ],
+          "model_values": [
+            "seedance_2_0"
+          ],
+          "resolution_values": [
+            "720p"
+          ]
+        },
+        "source_conflicts": [
+          {
+            "field": "duration_seconds",
+            "observed_values": [
+              {
+                "source": "prompt_text",
+                "value": 10
+              },
+              {
+                "source": "asset_metadata_all_11_assets",
+                "value": 15
+              }
+            ],
+            "resolution": {
+              "status": "resolved",
+              "selected_value": 15,
+              "authority": "user approval on 2026-08-16",
+              "rationale": "Use the consistent actual generation duration and provide enough time for the approved five-beat adaptation; retain the 10-second Prompt declaration as a conflicting source fact."
+            }
+          }
+        ],
+        "selection_rationale": "A complete fight exchange with explicit attack, block, displacement, redirect, counter, thrust avoidance, momentum transfer, decisive impact, fall, recovery, and reaction. Its excessive source cutting is a useful stress test for transparent cross-model consolidation rather than a quality signal.",
+        "selection_policy": "Selected by prompt-content quality and cross-model test value; generation frequency is audit metadata only and never a quality score."
+      },
+      "material_reference_layer": {
+        "references": [
+          {
+            "reference_id": "concrete-atrium",
+            "source_label": "<<<2525a57c-2006-429e-8455-bbb6a7e9212a>>>",
+            "role": "environment",
+            "source_description": "Dark brutalist circular concrete atrium with curved walls, high clerestory windows, thick columns, debris, broken glass, dead trees, polished floor, and cold grey daylight.",
+            "portable_description": "A dark circular brutalist concrete atrium with high clerestory windows, vertical columns, scattered debris and broken glass, bare dead trees, and a polished intact floor under cold grey daylight.",
+            "active_in_scene": true,
+            "binding_status": "described_only"
+          },
+          {
+            "reference_id": "crystal-fighter",
+            "source_label": "<<<b8e57bfb-c73f-4f0e-b77b-3abf15dbee15>>>",
+            "role": "character_transformation",
+            "source_description": "A human fighter completely encased head to toe in dense deep-crimson faceted crystal armor with a full helmet, narrow visor, spiked pauldrons, angular forearm blades, and no visible skin.",
+            "portable_description": "A human-scale fighter fully enclosed in dense, sharp-edged, translucent deep-crimson crystal armor, including a full helmet, narrow visor, spiked shoulders, angular forearms, armored legs, and no visible skin.",
+            "active_in_scene": true,
+            "binding_status": "described_only"
+          },
+          {
+            "reference_id": "bone-blade-demon",
+            "source_label": "<<<5502264c-e9c6-438c-bd4b-5b2f84fb1d9c>>>",
+            "role": "character_identity",
+            "source_description": "A 350-centimeter demon with cracked reddish-brown skin, greasy black hair, a skeletal grin, yellow teeth, green-yellow eyes, bone spikes, oversized arms, clawed feet, and a long exposed bone blade replacing its right forearm.",
+            "portable_description": "A 3.5-meter demon with cracked reddish-brown skin, long greasy black hair, a skeletal face, green-yellow eyes, bone spikes, oversized arms, clawed feet, a torn loincloth, and a long bone blade in place of its right forearm.",
+            "active_in_scene": true,
+            "binding_status": "described_only"
+          }
+        ],
+        "binding_policy": "Source labels are provenance only. Activate model-specific labels only when the current user supplies accessible media."
+      },
+      "model_neutral_scene_layer": {
+        "objective": "Stage a legible five-beat fight in which a smaller crystal-armored fighter survives a much larger demon's power, redirects its momentum, lands an uppercut, and discovers the demon can rise amused after the fall.",
+        "duration": {
+          "value_seconds": 15,
+          "provenance": "user_resolved_source_conflict",
+          "prompt_declared_seconds": 10,
+          "asset_metadata_seconds": [
+            15
+          ]
+        },
+        "aspect_ratio": "16:9",
+        "format_mode": "controlled_multi_shot",
+        "subjects": [
+          {
+            "subject_id": "crystal-fighter",
+            "description": "Human-scale fighter fully enclosed in deep-crimson faceted crystal armor with a helmet, narrow visor, spiked shoulders, and angular forearm armor.",
+            "initial_state": "Screen-right, grounded and ready to receive the demon's attack."
+          },
+          {
+            "subject_id": "bone-blade-demon",
+            "description": "A 3.5-meter demon with cracked reddish-brown skin, long black hair, green-yellow eyes, massive arms, and a long right-arm bone blade.",
+            "initial_state": "Screen-left, visibly taller and heavier, driving a bone-blade swing toward the fighter."
+          }
+        ],
+        "spatial_layout": [
+          "The demon remains screen-left and the crystal fighter remains screen-right across every cut.",
+          "The demon is consistently a full head and shoulders taller, with visibly greater reach and mass.",
+          "Both fight on the atrium ground floor among vertical columns; the polished concrete floor, walls, and columns remain intact.",
+          "Tight and medium coverage preserves left-to-right attack direction and matched eyelines without a geography reset."
+        ],
+        "action_beats": [
+          {
+            "beat_id": "beat-1",
+            "time_range_seconds": [
+              0,
+              3
+            ],
+            "description": "The demon swings its bone blade from screen-left. The fighter snaps both crystal forearms up to block and slides backward under the larger body's force while remaining upright.",
+            "causal_link": "The attack establishes the demon's reach and mass; the fighter's slide proves the block absorbs force rather than ignoring it.",
+            "source_derivation": "consolidated"
+          },
+          {
+            "beat_id": "beat-2",
+            "time_range_seconds": [
+              3,
+              5.5
+            ],
+            "description": "The fighter rotates the locked forearms to redirect the blade, drives a crystal shoulder into the demon's exposed ribs, and is immediately shoved back by one massive clawed hand.",
+            "causal_link": "The redirect creates a brief opening; the weak displacement of the larger body motivates its overpowering shove in reply.",
+            "source_derivation": "consolidated"
+          },
+          {
+            "beat_id": "beat-3",
+            "time_range_seconds": [
+              5.5,
+              8.5
+            ],
+            "description": "The demon commits to a forward bone-blade thrust. The fighter sidesteps by inches, catches the extended arm with both hands, and pulls along the thrust path until the demon pitches forward off balance.",
+            "causal_link": "The demon's committed forward momentum becomes the force that breaks its own balance.",
+            "source_derivation": "consolidated"
+          },
+          {
+            "beat_id": "beat-4",
+            "time_range_seconds": [
+              8.5,
+              11.5
+            ],
+            "description": "With the demon's head lowered, the fighter plants both feet, loads hips and shoulder, and drives one full uppercut into the jaw. Brief slow motion isolates contact, hair whip, lift, and the demon's heavy fall onto the intact floor.",
+            "causal_link": "The previous off-balance posture exposes the jaw; visible ground loading supplies the uppercut's force and the fall resolves its consequence.",
+            "source_derivation": "consolidated"
+          },
+          {
+            "beat_id": "beat-5",
+            "time_range_seconds": [
+              11.5,
+              15
+            ],
+            "description": "Normal speed returns. The demon plants both hands, rises section by section to full height, turns toward the fighter off frame, lets its grin return, and says in genuinely amused Japanese, 'ほう...少しだけ、感じたぞ。'",
+            "causal_link": "The deliberate recovery overturns the apparent victory and reveals that the decisive-looking blow only impressed the demon slightly.",
+            "source_derivation": "consolidated"
+          }
+        ],
+        "performance": [
+          "The fighter reads force and timing rather than trading equal power; each reaction follows the opponent's committed movement.",
+          "The demon begins confident, registers surprise only when balance breaks, then recovers with slow, intelligent amusement.",
+          "The final Japanese line is delivered deep and resonant with a returning grin, not anger or pain."
+        ],
+        "camera_intent": {
+          "framing": "Prioritize medium and tight action coverage; show both bodies whenever geography or force transfer must remain legible.",
+          "viewpoint": "Maintain demon-left/fighter-right screen direction and use low or side angles that retain the demon's larger scale.",
+          "movement": "Controlled moving camera within each beat, with four explicit hard cuts and no random montage.",
+          "optical_outcome": "Gritty close-range perspective, natural fast-action blur, visible crystal refraction at bright edges, and stable vertical architecture."
+        },
+        "physics": [
+          "A block transmits the demon's greater force into the fighter's backward foot slide.",
+          "Blade redirection follows a rotational path rather than teleporting past the guard.",
+          "The shoulder strike barely displaces the 3.5-meter demon; its shove displaces the smaller fighter substantially.",
+          "The arm pull follows the demon's existing thrust momentum and visibly removes its balance.",
+          "The uppercut begins with planted feet, hip load, shoulder rotation, contact, head snap, brief lift, gravity-driven fall, and heavy landing.",
+          "No impact breaks the floor, walls, or columns."
+        ],
+        "lighting": [
+          "Use only cold grey daylight entering from high clerestory windows.",
+          "Keep both fighters backlit or edge-lit with their camera-facing planes in shadow.",
+          "Light haze and dust reveal the window light without adding artificial fill."
+        ],
+        "sound": {
+          "dialogue": [
+            {
+              "speaker": "bone-blade-demon",
+              "language": "Japanese",
+              "line": "ほう...少しだけ、感じたぞ。",
+              "delivery": "Deep, resonant, genuinely amused, with a slow returning grin."
+            }
+          ],
+          "ambience": [
+            "Cold atrium room tone",
+            "Faint high-window wind",
+            "Dust settling in the open volume"
+          ],
+          "effects": [
+            "Bone blade cutting air",
+            "Crystal-on-bone block and grinding contact",
+            "Boot slide and floor friction",
+            "Shoulder strike and body shove",
+            "Uppercut impact, hair whip, heavy body fall, and hand pressure during recovery"
+          ],
+          "non_diegetic_music": null
+        },
+        "continuity": [
+          "Demon-left/fighter-right direction, relative scale, damage state, light direction, and intact environment persist across all five beats.",
+          "The bone blade stays on the demon's right arm and the fighter remains fully enclosed in crystal armor.",
+          "Slow motion occurs only during the uppercut contact and fall; normal speed returns for recovery and dialogue."
+        ],
+        "constraints": [
+          "No extra fighters, clones, detached limbs, weapon swaps, or screen-direction reversal.",
+          "No environmental destruction, craters, cracked floor, or leaning columns.",
+          "No frontal fill, artificial key light, music, subtitles, or non-Japanese dialogue.",
+          "Do not portray the two characters as equal in height or mass."
+        ],
+        "unknowns": [
+          "The original media references are unavailable, so exact identity and armor matching cannot be validated from text alone.",
+          "The source does not specify an exact distance between fighters at the opening beyond attack reach."
+        ]
+      },
+      "adaptation_decisions": [
+        {
+          "decision_id": "action-duration-resolution",
+          "scope": "normalization",
+          "operation": "resolve_conflict",
+          "source_fact": "The Prompt text declares 10 seconds while all 11 asset records declare 15 seconds.",
+          "adapted_result": "The normalized scene and both validation adapters use 15 seconds; the 10-second declaration remains preserved in the source conflict record.",
+          "reason": "The user explicitly approved 15 seconds on 2026-08-16.",
+          "authority": "user_approved"
+        },
+        {
+          "decision_id": "action-five-beat-consolidation",
+          "scope": "both_adapters",
+          "operation": "consolidate",
+          "source_fact": "The source presents approximately 14 cut-separated coverage fragments for one exchange.",
+          "adapted_result": "The validation sequence uses five causal beats and four explicit cuts: block, redirect/counter, thrust redirect, uppercut/fall, and recovery/dialogue.",
+          "reason": "The user explicitly approved five-beat consolidation so each beat has setup, action, consequence, and continuity within 15 seconds.",
+          "authority": "user_approved"
+        },
+        {
+          "decision_id": "action-first-frame-geography",
+          "scope": "seedance",
+          "operation": "add_adapter_lock",
+          "source_fact": "The source opens on the demon's bone-blade arm alone and declares demon-left/fighter-right globally.",
+          "adapted_result": "The first Seedance frame contains both fighters in their locked left-right relationship before the swing completes.",
+          "reason": "Seedance requires immediately readable occupancy and geography to reduce later side swaps; the attack direction and story action remain unchanged.",
+          "authority": "model_contract"
+        },
+        {
+          "decision_id": "action-reference-reencoding",
+          "scope": "both_adapters",
+          "operation": "reencode",
+          "source_fact": "The source uses UUID-like reference labels for the atrium, transformation, and demon.",
+          "adapted_result": "The validation prompts use text descriptions with no active Seedance or H3 media labels.",
+          "reason": "No source media was downloaded or supplied, and H3 labels may only bind real accessible media.",
+          "authority": "model_contract"
+        }
+      ],
+      "seedance_adapter_layer": {
+        "target_model": "Seedance 2.0",
+        "binding_mode": "text_only_validation",
+        "settings": {
+          "duration_seconds": 15,
+          "aspect_ratio": "16:9"
+        },
+        "prompt": "SCENE CONTEXT\nInside a dark circular brutalist concrete atrium, a human-scale fighter fully enclosed in deep-crimson faceted crystal armor fights a 3.5-meter demon with cracked reddish-brown skin, long black hair, green-yellow eyes, massive arms, and a long bone blade replacing its right forearm. The smaller fighter redirects the demon's power, lands one uppercut, and discovers the demon can rise amused.\n\nLOCATION MAP\nCold grey daylight enters through high clerestory windows. Thick concrete columns remain vertical around a polished intact floor scattered with debris and broken glass. The demon stays screen-left; the crystal fighter stays screen-right. The demon remains a full head and shoulders taller in every shot.\n\nFIRST FRAME AND SPATIAL BLOCKING\nThe first visible frame already contains both fighters at close attack range: demon screen-left driving its right-arm bone blade toward screen-right; crystal fighter screen-right with both feet planted and forearms ready. Their scale, attack direction, and eyelines are readable immediately.\n\nFORMAT MODE\nCONTROLLED FIVE-SHOT SEQUENCE with HARD CUTS at 0:03.00, 0:05.50, 0:08.50, and 0:11.50. Normal speed except brief slow motion during uppercut contact and the fall.\n\nOPTICS\nMedium and tight close-range action coverage with natural perspective, fast-action motion blur, heavy organic grain, and visible deep-red crystal refraction at bright edges. No wide establishing shot.\n\nCAMERA\nThe camera moves with controlled handheld energy inside each beat while preserving demon-left/fighter-right direction, matched eyelines, relative scale, cold backlight direction, and vertical columns across every cut.\n\nACTION TIMING\nSHOT A — 0:00-0:03.00: In a medium two-shot, the demon swings its bone blade from screen-left. The crystal fighter snaps both forearms up to block. Bone strikes crystal; the fighter's boots slide backward under the larger body's force while he remains upright.\nHARD CUT.\nSHOT B — 0:03.00-0:05.50: Tight side coverage. The fighter rotates the locked forearms and redirects the blade past his body, drives one crystal shoulder into the demon's exposed ribs, then receives a massive clawed-hand shove and skids back. The demon barely shifts from the shoulder hit.\nHARD CUT.\nSHOT C — 0:05.50-0:08.50: The demon commits to a straight bone-blade thrust. The fighter sidesteps by inches, catches the extended arm with both hands, and pulls along the thrust path until the demon pitches forward off balance.\nHARD CUT.\nSHOT D — 0:08.50-0:11.50: The fighter plants both feet, loads hips and shoulder, and drives one full uppercut into the lowered jaw. Brief slow motion isolates crystal-to-jaw contact, head snap, black hair whip, slight body lift, and the demon's gravity-driven fall onto its back. The floor stays intact.\nHARD CUT.\nSHOT E — 0:11.50-0:15.00: Normal speed returns. The demon presses both hands to the floor, rises section by section to its full 3.5-meter height, turns toward the fighter off frame, and lets its grin return. In a deep resonant voice, genuinely amused, it says exactly in Japanese: \"ほう...少しだけ、感じたぞ。\" Its lips move only for this line.\n\nPHYSICS\nEvery contact transfers weight visibly: the block causes boot slide, the redirect follows a rotational path, the smaller shoulder hit barely displaces the demon, the shove displaces the fighter, the arm pull follows existing thrust momentum, and the uppercut begins from planted feet through hip and shoulder rotation before contact and fall. No floating movement or impact without recoil.\n\nLIGHTING\nNatural cold grey clerestory daylight only. Keep both fighters backlit or edge-lit with camera-facing planes in shadow. Haze and dust reveal window light; no frontal fill or artificial key.\n\nAUDIO\nAtrium room tone, faint high-window wind, bone blade air movement, crystal-on-bone impact and grind, boot friction, body impacts, the uppercut, heavy fall, recovery hand pressure, settling dust, and the final Japanese line. SFX only; no music, subtitles, or voiceover.\n\nPOSITIVE CONSTRAINTS\nMaintain demon-left/fighter-right direction, 3.5-meter-to-human scale, right-arm bone blade, full crystal enclosure, intact floor and architecture, and the same damage state across all cuts. No extra fighters, clones, side swap, weapon swap, crater, or broken column.",
+        "validation": {
+          "status": "pass",
+          "checks": {
+            "source_labels_removed_without_media": true,
+            "first_frame_geography_explicit": true,
+            "five_beats_exact": true,
+            "cut_times_within_duration": true,
+            "screen_direction_locked": true,
+            "physics_causal": true,
+            "dialogue_exact": true,
+            "audio_explicit": true
+          },
+          "notes": [
+            "The five-shot structure is an approved adapter decision, not the source Prompt's original coverage count.",
+            "The 15-second setting comes from all 11 asset records and explicit user resolution of the Prompt's conflicting 10-second declaration."
+          ]
+        }
+      },
+      "h3_adapter_layer": {
+        "target_model": "MiniMax H3",
+        "prompt_mode": "T2VA",
+        "runtime_task": "t2va",
+        "reference_binding": "none",
+        "settings": {
+          "duration_seconds": 15,
+          "aspect_ratio": "16:9"
+        },
+        "prompt": "integrated_multimodal_description: [Shot 1] Live-action, cinematic, cold grey clerestory daylight backlights a fight on the intact polished floor of a dark circular brutalist concrete atrium. A 3.5-meter demon (S1) with cracked reddish-brown skin, long black hair, green-yellow eyes, massive arms, and a long bone blade replacing its right forearm stands screen-left, visibly a full head and shoulders taller than a human-scale fighter fully enclosed in deep-crimson faceted crystal armor at screen-right. In a moving medium two-shot, the demon swings the bone blade toward screen-right. The fighter snaps both crystal forearms up; bone strikes crystal and grinds while the fighter's boots slide backward under the demon's greater force. [Shot 2] At 00:03.000, the camera cuts to tight side coverage that preserves the same left-right direction. The fighter rotates the locked forearms to redirect the blade past his body, drives one crystal shoulder into the demon's exposed ribs, and barely moves the larger torso. The demon immediately shoves him back with one massive clawed hand, making him skid across the floor. [Shot 3] At 00:05.500, the camera cuts to a close two-shot as the demon commits to a straight bone-blade thrust. The fighter sidesteps by inches, catches the extended arm with both hands, and pulls along the thrust path; the demon's existing forward momentum pitches its head and shoulders down off balance. [Shot 4] At 00:08.500, the camera cuts tighter as the fighter plants both feet, loads his hips and shoulder, and drives one full uppercut into the lowered jaw. Brief slow motion isolates crystal-to-jaw contact, the demon's head snapping up, long hair whipping, a slight body lift, and its gravity-driven fall onto its back. The floor, walls, and vertical columns remain intact. [Shot 5] At 00:11.500, normal speed returns in a low medium close-up. The demon presses both hands into the floor, rises section by section to its full 3.5-meter height, turns toward the fighter off frame, and lets its skeletal grin return. The demon with a deep, resonant voice (S1) says in genuinely amused Japanese: <d>[Japanese] ほう...少しだけ、感じたぞ。</d> Its lips move only for this line. Across every shot the demon remains screen-left, the fighter remains screen-right, their scale and damage state remain stable, the bone blade remains on the demon's right arm, and cold natural backlight leaves their camera-facing planes in shadow.\n\noverall_soundscape: Cold atrium room tone and faint high-window wind continue across the cuts. Bone blade movement, crystal-on-bone impact and grinding, boot friction, the shoulder strike, heavy shove, arm strain, uppercut impact, hair whip, body fall, recovery hand pressure, and settling dust follow each visible contact.\n\nnon_diegetic_music: N/A",
+        "validation": {
+          "status": "pass",
+          "checks": {
+            "official_base_structure": true,
+            "t2va_matches_no_media_input": true,
+            "no_fabricated_media_labels": true,
+            "five_shots_exact": true,
+            "cut_times_strictly_increasing": true,
+            "speaker_id_stable": true,
+            "dialogue_block_exact": true,
+            "duration_within_4_to_15_seconds": true,
+            "settings_outside_prompt": true
+          },
+          "notes": [
+            "Fifteen seconds is the H3 maximum and leaves no spare time; any added action or dialogue requires another generation.",
+            "The source's approximately 14 coverage fragments were consolidated into five approved shots to keep cause and consequence legible."
+          ]
+        }
+      },
+      "cross_model_validation": {
+        "status": "pass",
+        "preserved": [
+          "Fifteen-second resolved duration",
+          "Demon-left/fighter-right geography and scale asymmetry",
+          "Five causal action beats",
+          "Weight transfer, momentum redirection, impact, fall, and recovery",
+          "Cold natural backlight and intact environment",
+          "Exact Japanese dialogue and SFX-only mix"
+        ],
+        "model_specific_reencoding": [
+          "Seedance adds an occupied first-frame lock and section-local continuity constraints.",
+          "H3 encodes five shots with strict increasing cut timestamps, speaker ID (S1), and a <d>[Japanese]> block."
+        ],
+        "known_losses": [
+          "Approximately 14 original coverage fragments are represented as five approved causal shots rather than preserved one-for-one.",
+          "Exact visual identity and material response from unavailable media cannot be validated."
+        ],
+        "blocked_items": []
+      }
+    },
+    {
+      "schema_version": 1,
+      "record_id": "environment-static-rainy-megacity",
+      "category": "environment_establishing",
+      "source_layer": {
+        "source_record": {
+          "file": "selected-source-records.json",
+          "prompt_sha256": "00e4c15e723379bb862770bb9c4a46093978048a29e2426de31e3c39fb512c89"
+        },
+        "source_prompt_chars": 8034,
+        "first_asset_id": "8f8bdecd-b250-4e26-9b40-29d8e918bea1",
+        "folder_names": [
+          "Scene Pizza Aerial"
+        ],
+        "prompt_declared_settings": {
+          "duration_seconds": null,
+          "aspect_ratio": "2.39:1",
+          "generation_mode": null
+        },
+        "asset_metadata_observations": {
+          "asset_count": 17,
+          "duration_seconds_values": [
+            10
+          ],
+          "model_values": [
+            "seedance_2_0"
+          ],
+          "resolution_values": [
+            "1080p"
+          ]
+        },
+        "source_conflicts": [],
+        "selection_rationale": "A physically feasible static establishing shot whose interest comes from layered weather, sparse city traffic, practical light, depth, and one crossing train rather than camera movement. It replaced a rejected 6-second 150-meter descent candidate whose distance and stated slow speed conflicted.",
+        "selection_policy": "Selected by prompt-content quality and cross-model test value; generation frequency is audit metadata only and never a quality score."
+      },
+      "material_reference_layer": {
+        "references": [
+          {
+            "reference_id": "rainy-megacity-neighborhood",
+            "source_label": null,
+            "role": "environment",
+            "source_description": "An implicit uploaded neighborhood reference described as a rainy Bangkok-style avenue with stained concrete apartments, red side-wall lettering, elevated skytrain viaducts, wet roads, sodium lamps, and scattered neon; the referenced pizzeria itself must not appear.",
+            "portable_description": "A dense tropical Southeast-Asian-inspired megacity neighborhood of stained mid-rise concrete apartments, rooftop equipment, diagonal elevated metro viaducts, wet avenue grids, sparse sodium streetlights, scattered neon, and heavy overnight rain. Exclude the originating pizzeria storefront and branding.",
+            "active_in_scene": true,
+            "binding_status": "described_only"
+          }
+        ],
+        "binding_policy": "Source labels are provenance only. Activate model-specific labels only when the current user supplies accessible media."
+      },
+      "model_neutral_scene_layer": {
+        "objective": "Establish a vast sleeping tropical megacity at dead of night through a locked high-altitude composition whose scale and atmosphere emerge from torrential rain, sparse ground traffic, scattered practical light, and one metro train crossing the frame.",
+        "duration": {
+          "value_seconds": 10,
+          "provenance": "asset_metadata_only",
+          "prompt_declared_seconds": null,
+          "asset_metadata_seconds": [
+            10
+          ]
+        },
+        "aspect_ratio": "2.39:1",
+        "format_mode": "single_continuous_take",
+        "subjects": [],
+        "spatial_layout": [
+          "A locked bird's-eye aerial viewpoint sits at approximately 600 meters with a roughly 40-degree forward tilt.",
+          "Dense apartment blocks, rooftop tanks, air-conditioning units, wet avenue grids, and several elevated metro viaducts fill the lower two-thirds.",
+          "A uniformly black sky with no visible horizon glow fills the upper third.",
+          "One active viaduct crosses diagonally through the city grid; sparse vehicles remain small ground-level motion cues."
+        ],
+        "action_beats": [
+          {
+            "beat_id": "beat-1",
+            "time_range_seconds": [
+              0,
+              3
+            ],
+            "description": "The completely locked frame establishes dense rain curtains, isolated sodium pools, faint neon, mostly empty streets, and a city fading into black distance.",
+            "causal_link": "The lack of camera movement lets layered weather, lighting, and scale define the location immediately.",
+            "source_derivation": "direct"
+          },
+          {
+            "beat_id": "beat-2",
+            "time_range_seconds": [
+              3,
+              7
+            ],
+            "description": "A metro train glides left-to-right along one elevated viaduct while one or two cars and a single motorbike trace brief light paths through the wet grid below.",
+            "causal_link": "Sparse coordinated motion proves the city is inhabited without turning the sleeping-night atmosphere into busy traffic.",
+            "source_derivation": "direct"
+          },
+          {
+            "beat_id": "beat-3",
+            "time_range_seconds": [
+              7,
+              10
+            ],
+            "description": "The train clears the viaduct; rain density and intermittent ground movement continue as the city holds its quiet rhythm into darkness.",
+            "causal_link": "The departure of the strongest moving element returns attention to the persistent environment rather than escalating the scene.",
+            "source_derivation": "direct"
+          }
+        ],
+        "performance": [],
+        "camera_intent": {
+          "framing": "Extreme high-altitude aerial wide with the urban grid below and pitch-black sky above.",
+          "viewpoint": "Approximately 600 meters high at a 40-degree forward tilt, without a named landmark or character focal point.",
+          "movement": "Completely locked and stabilized for one uninterrupted take; all motion occurs inside the frame.",
+          "optical_outcome": "Very wide natural aerial coverage with fine urban detail, low contrast, restrained anamorphic streaks on ground practicals, and no miniature or fisheye appearance."
+        },
+        "physics": [
+          "Rain moves in consistent wind-driven diagonal sheets across near, middle, and far depth layers.",
+          "Vehicle light paths follow visible roads at sparse intervals.",
+          "The metro train remains constrained to the elevated rails and exits frame at a steady speed.",
+          "The locked camera produces no parallax, drift, descent, rotation, or zoom."
+        ],
+        "lighting": [
+          "The sky remains uniformly black with no moon, stars, horizon glow, cloud illumination, or ambient light from above.",
+          "All visible illumination comes from ground-level sodium streetlamps, apartment windows, sparse neon, vehicle lights, and train windows.",
+          "Keep the palette cool and heavily desaturated with isolated sodium orange and red accents diffused by rain."
+        ],
+        "sound": {
+          "dialogue": [],
+          "ambience": [
+            "Torrential rain striking rooftops, roads, and concrete",
+            "Faint intermittent distant traffic",
+            "Quiet overnight city room tone"
+          ],
+          "effects": [
+            "A metro train's soft mechanical rumble rising and receding during its crossing"
+          ],
+          "non_diegetic_music": null
+        },
+        "continuity": [
+          "The camera, altitude, tilt, exposure, rain direction, black sky, city layout, and practical-light distribution remain fixed for the full take.",
+          "Only one metro train crosses; sparse traffic never becomes a continuous stream."
+        ],
+        "constraints": [
+          "No pizzeria storefront, checkerboard awning, pizza signage, readable English brand logo, or foreground character.",
+          "No camera movement, cut, transition, shake, parallax, drone shadow, drone reflection, or drone sound.",
+          "No daylight, twilight, illuminated clouds, moon, stars, lightning, thunder, fire, explosion, or music.",
+          "No toy-town compression, fisheye distortion, traffic jam, or second train."
+        ],
+        "unknowns": [
+          "The Prompt does not declare duration; 10 seconds comes only from all 17 asset metadata records.",
+          "The original neighborhood reference image is unavailable, so exact architecture and palette matching cannot be validated."
+        ]
+      },
+      "adaptation_decisions": [
+        {
+          "decision_id": "environment-sample-replacement",
+          "scope": "normalization",
+          "operation": "preserve",
+          "source_fact": "The initially considered environment sample required an approximately 150-meter slow descent in six seconds.",
+          "adapted_result": "This physically feasible 10-second locked aerial source was selected instead; the rejected source remains in candidate audit records.",
+          "reason": "The user approved the replacement on 2026-08-16 after the speed-distance conflict was surfaced.",
+          "authority": "user_approved"
+        },
+        {
+          "decision_id": "environment-duration-provenance",
+          "scope": "normalization",
+          "operation": "preserve",
+          "source_fact": "The source Prompt omits duration while all 17 asset metadata records report 10 seconds.",
+          "adapted_result": "Both validation adapters use 10 seconds and label the provenance as asset_metadata_only.",
+          "reason": "Asset metadata is an observed source fact, but it must not be rewritten as a Prompt-declared fact.",
+          "authority": "normalization_policy"
+        },
+        {
+          "decision_id": "environment-reference-reencoding",
+          "scope": "both_adapters",
+          "operation": "reencode",
+          "source_fact": "The source refers to an uploaded neighborhood image through prose but provides no active reference label in the Prompt text.",
+          "adapted_result": "The validation prompts use a portable environment description and exclude the source storefront without creating any media label.",
+          "reason": "No accessible media was supplied to the current task.",
+          "authority": "model_contract"
+        },
+        {
+          "decision_id": "environment-negative-compression",
+          "scope": "both_adapters",
+          "operation": "omit",
+          "source_fact": "The source ends with a long negative list containing repeated camera, transition, sky, and content exclusions.",
+          "adapted_result": "The adapters retain only local high-risk locks: locked camera, black sky, sparse traffic, one train, excluded storefront, no drone artifacts, and no music.",
+          "reason": "Compact positive state definitions and local failure locks carry the same controllable intent with less prompt pollution.",
+          "authority": "normalization_policy"
+        }
+      ],
+      "seedance_adapter_layer": {
+        "target_model": "Seedance 2.0",
+        "binding_mode": "text_only_validation",
+        "settings": {
+          "duration_seconds": 10,
+          "aspect_ratio": "2.39:1"
+        },
+        "prompt": "SCENE CONTEXT\nA vast tropical Southeast-Asian-inspired megacity sleeps under torrential rain at dead of night. The location is established through a completely locked high-altitude frame, sparse ground traffic, and one metro train crossing an elevated viaduct.\n\nLOCATION MAP\nFrom approximately 600 meters at a 40-degree forward tilt, dense weather-stained mid-rise concrete apartment blocks, rooftop water tanks, wall-mounted air conditioners, wet avenue grids, and several elevated metro viaducts fill the lower two-thirds. A uniformly pitch-black sky with no visible horizon glow fills the upper third. One active viaduct cuts diagonally through the grid.\n\nFIRST FRAME AND SPATIAL BLOCKING\nThe first visible frame already presents the complete city geography: dark apartment clusters, diagonal viaducts, mostly empty wet roads, isolated sodium pools, scattered window lights and neon, layered rain, and black distance. No foreground person or storefront dominates the frame.\n\nFORMAT MODE\nSINGLE CONTINUOUS TAKE. Completely locked stabilized aerial camera; no cuts or transitions.\n\nOPTICS\nVery wide natural aerial coverage with fine urban detail, low contrast, restrained anamorphic streaks on bright ground practicals, and no fisheye or miniature appearance.\n\nCAMERA\nThe camera remains motionless for all 10 seconds: no descent, ascent, push, drift, zoom, rotation, shake, parallax, or reframing. All movement occurs inside the frame.\n\nACTION TIMING\n0:00-0:03.00 — Dense diagonal rain curtains sweep across near, middle, and far depth layers. Mostly empty wet avenues sit between isolated streetlamp pools; one or two distant vehicles appear at long intervals.\n0:03.00-0:07.00 — One metro train glides left-to-right along the diagonal elevated viaduct. Its windows stutter past stained piers while one car and one motorbike trace brief light paths through the road grid below.\n0:07.00-0:10.00 — The train clears frame-right. Rain density holds and sparse ground movement continues without escalation as the city fades into black distance.\n\nPHYSICS\nRain direction stays consistent across all depth layers. Vehicles remain on visible roads. The train remains on its rails at a steady speed. The locked camera creates no parallax or platform motion.\n\nLIGHTING\nThe sky remains uniformly black with no moon, stars, horizon glow, or illuminated clouds. All light comes from ground-level sodium streetlamps, apartment windows, sparse neon, vehicle lights, and train windows. Keep cool desaturated darkness with isolated sodium-orange and red accents diffused by rain.\n\nAUDIO\nTorrential rain strikes rooftops, roads, and concrete. Faint intermittent traffic and quiet overnight city ambience remain distant. The metro train's soft mechanical rumble rises during the crossing and recedes after it exits. No drone sound, thunder, dialogue, or music.\n\nPOSITIVE CONSTRAINTS\nKeep the camera, altitude, tilt, city layout, exposure, rain direction, and black sky fixed throughout. Show only one train and sparse traffic. Exclude the originating pizzeria storefront, checkerboard awning, pizza signage, readable English brand logos, foreground characters, visible drone, drone shadow, and drone reflection.",
+        "validation": {
+          "status": "pass",
+          "checks": {
+            "source_labels_removed_without_media": true,
+            "environment_visible_in_first_frame": true,
+            "single_take_locked": true,
+            "internal_motion_only": true,
+            "timing_within_duration": true,
+            "lighting_sources_explicit": true,
+            "audio_explicit": true
+          },
+          "notes": [
+            "Ten seconds is sourced from all 17 asset metadata records, not from the Prompt text.",
+            "The static camera case demonstrates that an establishing shot can remain dynamic through weather, traffic, and transit motion."
+          ]
+        }
+      },
+      "h3_adapter_layer": {
+        "target_model": "MiniMax H3",
+        "prompt_mode": "T2VA",
+        "runtime_task": "t2va",
+        "reference_binding": "none",
+        "settings": {
+          "duration_seconds": 10,
+          "aspect_ratio": "2.39:1"
+        },
+        "prompt": "integrated_multimodal_description: [Shot 1] Live-action, cinematic, an extreme high-altitude aerial wide holds completely static for the full shot, looking from approximately 600 meters at a 40-degree forward tilt over a tropical Southeast-Asian-inspired megacity at dead of night. Dense weather-stained mid-rise concrete apartments, rooftop water tanks, wall-mounted air conditioners, wet avenue grids, and several elevated metro viaducts fill the lower two-thirds; a uniformly pitch-black sky with no horizon glow fills the upper third. Torrential rain moves in consistent diagonal curtains across near, middle, and far depth layers. The cool desaturated city is lit only by isolated sodium streetlamps, scattered apartment windows and neon, sparse vehicle lights, and train windows. During the opening three seconds, mostly empty wet roads sit between small practical-light pools while one or two distant vehicles appear at long intervals. From about 00:03.000, one metro train glides left-to-right along a diagonal elevated viaduct, its lit windows stuttering past stained concrete piers as one car and one motorbike trace brief light paths through the grid below. By about 00:07.000, the train clears frame-right; rain density and sparse ground movement continue without escalation until the end. The camera never descends, ascends, pushes, drifts, zooms, rotates, shakes, reframes, or creates parallax. No pizzeria storefront, checkerboard awning, pizza signage, readable English brand logo, foreground character, visible drone, drone shadow, or drone reflection appears.\n\noverall_soundscape: Torrential rain strikes rooftops, roads, and concrete above faint intermittent traffic and quiet overnight city ambience. The metro train's soft mechanical rumble rises during its crossing and recedes after it exits. No drone sound or thunder is heard.\n\nnon_diegetic_music: N/A",
+        "validation": {
+          "status": "pass",
+          "checks": {
+            "official_base_structure": true,
+            "t2va_matches_no_media_input": true,
+            "no_fabricated_media_labels": true,
+            "single_shot_no_cut_timestamp_required": true,
+            "duration_within_4_to_15_seconds": true,
+            "settings_outside_prompt": true,
+            "internal_motion_preserved": true
+          },
+          "notes": [
+            "The H3 Prompt uses one Shot 1 and embeds approximate event timing without creating cuts.",
+            "Exact environment matching requires real media and would change the mode from T2VA to Ref2VA."
+          ]
+        }
+      },
+      "cross_model_validation": {
+        "status": "pass",
+        "preserved": [
+          "Ten-second asset-metadata duration with explicit provenance",
+          "Locked 600-meter aerial composition",
+          "Layered torrential rain and ground-practical lighting",
+          "Sparse vehicles and one train as internal motion",
+          "Pitch-black sky and excluded pizzeria",
+          "Rain, traffic, and train sound with no music"
+        ],
+        "model_specific_reencoding": [
+          "Seedance uses first-frame geography and local no-movement locks.",
+          "H3 uses one T2VA Shot 1 with approximate event timing inside the continuous shot and separate runtime settings."
+        ],
+        "known_losses": [
+          "Exact palette and architecture from the unavailable neighborhood image cannot be validated.",
+          "The long source negative wall is compressed into a smaller set of high-risk local constraints."
+        ],
+        "blocked_items": []
+      }
+    }
+  ]
+}
