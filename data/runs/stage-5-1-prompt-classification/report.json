@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "taxonomy_version": "stage5-scene-taxonomy-v1",
+  "scoring_version": "stage5-prompt-content-score-v2",
+  "status": "pass",
+  "review_mode": "prompt_only",
+  "exact_prompt_cluster_count": 6555,
+  "classified_count": 6494,
+  "manual_review_count": 61,
+  "excluded_count": 0,
+  "case_tier_counts": {
+    "core_pattern": 1351,
+    "effective_variant": 4560,
+    "special_scene": 583
+  },
+  "primary_scene_tag_counts": {
+    "action_interaction": 5615,
+    "character_performance": 5348,
+    "environment_establishing": 6098,
+    "mixed_scene": 5877,
+    "unspecified_scene": 202
+  },
+  "pattern_family_counts": {
+    "action_choreography": 5599,
+    "action_in_environment": 5487,
+    "camera_control": 6421,
+    "character_performance": 5348,
+    "dialogue_performance": 1977,
+    "environment_establishing": 6098,
+    "mixed_scene": 5877,
+    "physics_continuity": 6047,
+    "unspecified_scene": 15
+  },
+  "score_band_counts": {
+    "0-7": 188,
+    "16-23": 534,
+    "24-32": 5443,
+    "8-15": 329
+  },
+  "dimension_score_totals": {
+    "action_causality": 23728,
+    "camera_control": 24745,
+    "continuity_control": 18614,
+    "performance_detail": 13478,
+    "physics_plausibility": 23413,
+    "reusability": 22032,
+    "shootability": 25455,
+    "spatial_clarity": 23655
+  },
+  "score_penalty_counts": {
+    "0": 3472,
+    "1": 1467,
+    "2": 820,
+    "3": 382,
+    "4": 353
+  },
+  "shared_evidence_field_counts": {
+    "action_summary": 897,
+    "camera_result": 425,
+    "constraints": 335,
+    "continuity": 1930,
+    "performance_dialogue_reaction": 1174,
+    "physics": 739,
+    "spatial_relations": 533
+  },
+  "candidate_counts_by_family": {
+    "action_choreography": 20,
+    "action_in_environment": 20,
+    "camera_control": 20,
+    "character_performance": 20,
+    "dialogue_performance": 20,
+    "environment_establishing": 20,
+    "mixed_scene": 20,
+    "physics_continuity": 20,
+    "unspecified_scene": 15
+  },
+  "near_duplicate_candidate_groups": {
+    "format_normalized_groups": 75,
+    "numeric_normalized_groups": 81
+  },
+  "near_duplicate_prompt_membership_count": 114,
+  "source_mapping_error_count": 0,
+  "source_snapshot_sha256": "47f0a9452293a931c3a9448244fdf929d70e4588b510924cae48811ce3b2acd3",
+  "stratification_snapshot_sha256": "ca982ab70a486bf6cf8b717a7f5fd12d9e43f10edf0c4ec58369f0820cb20e86",
+  "normalization_snapshot_sha256": "c099b18f34adf3928e7ea4826ae7c722a93bc2c5feca39b9154e0ae68ebc4904",
+  "source_state_unchanged": true,
+  "stratification_state_unchanged": true,
+  "normalization_state_unchanged": true,
+  "input_checkpoint_digest": "e0f1011ebd3e8981cafa78412bcd84db44be9b578954e2a1c7dc322ded290d4c",
+  "classification_digest": "4a1eccc87b0733c29fc3536035996f10ebd54829ccce9bed7af6f8f33f65dd07",
+  "candidate_digest": "bfcfbe680c377444f0f4240d3cdee4c0b68e88c439950081cea4e1fc1c7caba9",
+  "taxonomy_digest": "ded2c8ddc8ce8ce69ceccdba3f1afde960e1711af48fa556b4277f0bee0f3e90",
+  "candidate_limit_per_family": 20,
+  "checks": {
+    "checkpoint_pass": true,
+    "full_universe_closure": true,
+    "normalized_count": true,
+    "manual_review_not_scored": true,
+    "excluded_records_preserved": true,
+    "strata_closure": true,
+    "source_asset_mapping": true,
+    "no_near_duplicate_merge": true,
+    "no_frequency_scoring": true,
+    "prompt_only_review": true,
+    "no_final_prompt_generated": true,
+    "score_quality_adjustment_bounded": true,
+    "input_states_unchanged": true
+  },
+  "artifacts": {
+    "taxonomy_and_scoring": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-1-prompt-classification\\taxonomy-and-scoring.json",
+    "classified_records": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-1-prompt-classification\\classified-records.json",
+    "selection_candidates": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-1-prompt-classification\\selection-candidates.json",
+    "manifest": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-1-prompt-classification\\manifest.json",
+    "report": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-1-prompt-classification\\report.json"
+  },
+  "stage5_1_digest": "0cb7777403a23c193ac8e702fd0bcea54d9391f29f5bd692c318032b9c740aed"
+}

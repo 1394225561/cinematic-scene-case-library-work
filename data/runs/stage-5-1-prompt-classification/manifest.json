@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "taxonomy_version": "stage5-scene-taxonomy-v1",
+  "scoring_version": "stage5-prompt-content-score-v2",
+  "checkpoint_digest": "e0f1011ebd3e8981cafa78412bcd84db44be9b578954e2a1c7dc322ded290d4c",
+  "checkpoint_manifest_sha256": "d442b95f0104393039b6c6d3acbfdf28d72e17029414ffafc3e9a191e6f8c96c",
+  "source_snapshot_sha256": "47f0a9452293a931c3a9448244fdf929d70e4588b510924cae48811ce3b2acd3",
+  "stratification_snapshot_sha256": "ca982ab70a486bf6cf8b717a7f5fd12d9e43f10edf0c4ec58369f0820cb20e86",
+  "normalization_snapshot_sha256": "c099b18f34adf3928e7ea4826ae7c722a93bc2c5feca39b9154e0ae68ebc4904",
+  "exact_prompt_cluster_count": 6555,
+  "classified_count": 6494,
+  "manual_review_count": 61,
+  "excluded_count": 0,
+  "classification_digest": "4a1eccc87b0733c29fc3536035996f10ebd54829ccce9bed7af6f8f33f65dd07",
+  "candidate_digest": "bfcfbe680c377444f0f4240d3cdee4c0b68e88c439950081cea4e1fc1c7caba9",
+  "taxonomy_digest": "ded2c8ddc8ce8ce69ceccdba3f1afde960e1711af48fa556b4277f0bee0f3e90",
+  "stage5_1_digest": "0cb7777403a23c193ac8e702fd0bcea54d9391f29f5bd692c318032b9c740aed"
+}

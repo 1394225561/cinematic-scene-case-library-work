@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "taxonomy": {
+    "version": "stage5-scene-taxonomy-v1",
+    "review_mode": "prompt_only",
+    "primary_scene_tags": {
+      "action_interaction": "Observable physical interaction or action progression.",
+      "character_performance": "Observable acting, reaction, gaze, gesture, or embodied performance.",
+      "environment_establishing": "Observable location, atmosphere, architecture, or environmental state used to establish a scene.",
+      "mixed_scene": "The source combines two or more primary scene intents; this tag is retained as a source-derived signal.",
+      "unspecified_scene": "The source does not provide enough scene evidence for a more specific primary tag."
+    },
+    "derived_pattern_families": {
+      "action_choreography": "Action interaction with one or more explicit action beats.",
+      "action_in_environment": "Action interaction and environment establishing signals co-occur.",
+      "character_performance": "Character performance signal without requiring dialogue.",
+      "dialogue_performance": "At least one explicit dialogue line or detected dialogue scope with performance evidence.",
+      "environment_establishing": "Environment establishing signal with observable environment or lighting structure.",
+      "camera_control": "Camera result evidence is a reusable part of the scene pattern.",
+      "physics_continuity": "Physics or continuity evidence is a reusable part of the scene pattern.",
+      "mixed_scene": "Mixed-scene source tag is retained as a review family.",
+      "unspecified_scene": "No derived family can be supported without inventing scene meaning."
+    },
+    "selection_policy": "Score Prompt construction only; asset counts, duplicate frequency, model frequency, and uninspected media are never quality evidence."
+  },
+  "scoring": {
+    "version": "stage5-prompt-content-score-v2",
+    "max_score_per_dimension": 4,
+    "dimensions": {
+      "shootability": "objective plus subjects or environment, spatial layout, camera result, and continuity or constraints; capped at 4",
+      "spatial_clarity": "spatial relations are required before placement, scene content, camera viewpoint, and continuity can add evidence",
+      "action_causality": "action beats are required before multiple beats, causal links, physics, and continuity can add evidence",
+      "performance_detail": "performance segments, multiple performance segments, dialogue lines, and detected dialogue scope",
+      "camera_control": "camera segments are required before multiple camera segments, spatial layout, and continuity or constraints can add evidence",
+      "physics_plausibility": "physics segments are required before multiple physics segments, action evidence, constraints, and continuity can add evidence",
+      "continuity_control": "continuity segments are required before multiple continuity segments, constraints, and declared take structure can add evidence",
+      "reusability": "portable scene intent, critical-field coverage, no unresolved source conflict, and a scene-pattern anchor"
+    },
+    "tier_rules": {
+      "core_pattern": "total >= 24, no source conflict, no critical missing field, and no cross-field-only evidence penalty",
+      "effective_variant": "total >= 18 and not core_pattern",
+      "special_scene": "total < 18",
+      "manual_review": "Source status is needs_manual_review; no automatic score is assigned."
+    },
+    "evidence_quality_gate": "When every extracted value for a normalized field is duplicated in another scored field, that field is recorded as cross-field-only evidence and applies one point of noise penalty, capped at four points per Prompt."
+  },
+  "classification_policy": "Only normalized records receive automatic Prompt Content Scores; manual-review records remain unscored and excluded records remain explicit.",
+  "asset_policy": "asset_count_audit_only is retained for source mapping and never enters score or ordering.",
+  "near_duplicate_policy": "Near-duplicate groups remain candidate-only relationships; no records are merged or removed."
+}
