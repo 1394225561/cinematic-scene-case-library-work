@@ -13,7 +13,7 @@ SCRIPTS_DIR = Path(__file__).resolve().parents[1] / "scripts"
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
-from preprocess_video_prompt_sample import extract_prompt, preprocess, source_snapshot_sha256
+from preprocess_video_prompt_sample import extract_prompt, preprocess, select_sample_hashes, source_snapshot_sha256
 
 
 SOURCE_SCHEMA = """
@@ -189,6 +189,25 @@ class PreprocessVideoPromptSampleTests(unittest.TestCase):
         self.assertEqual(source_snapshot_sha256(before), source_snapshot_sha256(mtime_only))
         self.assertNotEqual(source_snapshot_sha256(before), source_snapshot_sha256(different_size))
         self.assertNotEqual(source_snapshot_sha256(before), source_snapshot_sha256(different_hash))
+
+    def test_all_video_selection_is_deterministic_and_excludes_no_video_prompts(self) -> None:
+        connection = sqlite3.connect(f"file:{self.source}?mode=ro", uri=True)
+        try:
+            hashes, reasons = select_sample_hashes(connection, None, all_video_prompts=True)
+        finally:
+            connection.close()
+
+        self.assertEqual(hashes, sorted(self.hashes.values()))
+        self.assertEqual(set(reasons), set(hashes))
+        self.assertTrue(all(reason == ["full-video-universe"] for reason in reasons.values()))
+
+    def test_all_video_selection_cannot_be_combined_with_explicit_hashes(self) -> None:
+        connection = sqlite3.connect(f"file:{self.source}?mode=ro", uri=True)
+        try:
+            with self.assertRaisesRegex(ValueError, "cannot be combined"):
+                select_sample_hashes(connection, [self.hashes["dialogue"]], all_video_prompts=True)
+        finally:
+            connection.close()
 
     def test_realistic_batch_is_auditable_and_idempotent(self) -> None:
         hashes = [self.hashes[name] for name in ("dialogue", "action", "environment", "short", "mixed")]

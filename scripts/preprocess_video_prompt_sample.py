@@ -843,16 +843,29 @@ def validate_target(target: sqlite3.Connection, records: dict[str, dict[str, Any
     return {"integrity_check": integrity, "foreign_key_error_count": int(foreign_keys), "evidence_error_count": len(evidence_errors), "evidence_errors": evidence_errors[:20], "passed": integrity == "ok" and foreign_keys == 0 and not evidence_errors}
 
 
-def select_sample_hashes(connection: sqlite3.Connection, explicit: Sequence[str] | None) -> tuple[list[str], dict[str, list[str]]]:
+def select_sample_hashes(connection: sqlite3.Connection, explicit: Sequence[str] | None, all_video_prompts: bool = False) -> tuple[list[str], dict[str, list[str]]]:
+    if explicit and all_video_prompts:
+        raise ValueError("--all-video-prompts cannot be combined with --prompt-sha256")
     if explicit:
         hashes = sorted(set(explicit))
         reasons = {prompt_hash: ["explicit_cli"] for prompt_hash in hashes}
+    elif all_video_prompts:
+        hashes = [
+            row[0]
+            for row in connection.execute(
+                "SELECT DISTINCT p.prompt_sha256 FROM prompts p JOIN assets a ON a.prompt_sha256=p.prompt_sha256 WHERE a.asset_type='video' ORDER BY p.prompt_sha256"
+            )
+        ]
+        reasons = {prompt_hash: ["full-video-universe"] for prompt_hash in hashes}
     else:
         hashes = sorted(REGRESSION_SAMPLE_HASHES)
         reasons = {prompt_hash: [reason] for prompt_hash, reason in REGRESSION_SAMPLE_HASHES.items()}
-    marks = placeholders(hashes)
-    rows = connection.execute(f"SELECT DISTINCT p.prompt_sha256 FROM prompts p JOIN assets a ON a.prompt_sha256=p.prompt_sha256 WHERE a.asset_type='video' AND p.prompt_sha256 IN ({marks}) ORDER BY p.prompt_sha256", hashes).fetchall()
-    found = {row[0] for row in rows}
+    if all_video_prompts:
+        found = set(hashes)
+    else:
+        marks = placeholders(hashes)
+        rows = connection.execute(f"SELECT DISTINCT p.prompt_sha256 FROM prompts p JOIN assets a ON a.prompt_sha256=p.prompt_sha256 WHERE a.asset_type='video' AND p.prompt_sha256 IN ({marks}) ORDER BY p.prompt_sha256", hashes).fetchall()
+        found = {row[0] for row in rows}
     missing = [prompt_hash for prompt_hash in hashes if prompt_hash not in found]
     if missing:
         raise ValueError(f"selected prompts are not video-related or missing: {', '.join(missing)}")
@@ -866,6 +879,7 @@ def preprocess(
     *,
     extractor: Callable[[str, dict[str, Any]], dict[str, Any]] = extract_prompt,
     batch_name: str = DEFAULT_BATCH_NAME,
+    all_video_prompts: bool = False,
 ) -> dict[str, Any]:
     source_database = source_database.resolve()
     run_dir = run_dir.resolve()
@@ -881,7 +895,7 @@ def preprocess(
     try:
         target = target_connection(target_path)
         universe_count, empty_video_asset_count = video_universe(source)
-        hashes, reasons = select_sample_hashes(source, prompt_hashes)
+        hashes, reasons = select_sample_hashes(source, prompt_hashes, all_video_prompts)
         records = load_source_records(source, hashes)
         manifest = {"schema_version": 1, "batch_name": batch_name, "prompt_hashes": hashes, "selection_reasons": reasons}
         manifest_sha = sha256_text(canonical_json(manifest))
@@ -1017,7 +1031,9 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build an auditable, deterministic Stage 4B-1 Prompt structure sample.")
     parser.add_argument("--source-database", type=Path, default=DEFAULT_SOURCE_DATABASE)
     parser.add_argument("--run-dir", type=Path, default=DEFAULT_RUN_DIR)
-    parser.add_argument("--prompt-sha256", action="append", dest="prompt_hashes")
+    selection = parser.add_mutually_exclusive_group()
+    selection.add_argument("--prompt-sha256", action="append", dest="prompt_hashes", help="Process only the explicitly listed Prompt hashes.")
+    selection.add_argument("--all-video-prompts", action="store_true", help="Process the complete video-related Prompt universe.")
     parser.add_argument("--batch-name", default=DEFAULT_BATCH_NAME)
     return parser.parse_args()
 
@@ -1025,7 +1041,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     try:
-        report = preprocess(args.source_database, args.run_dir, args.prompt_hashes, batch_name=args.batch_name)
+        report = preprocess(args.source_database, args.run_dir, args.prompt_hashes, batch_name=args.batch_name, all_video_prompts=args.all_video_prompts)
     except Exception as error:
         print(json.dumps({"status": "fail", "error": type(error).__name__, "details": str(error)}, ensure_ascii=False))
         return 2

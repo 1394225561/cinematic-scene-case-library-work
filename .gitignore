@@ -20,3 +20,6 @@ data/runs/project-inventory/raw/
 data/runs/project-inventory/normalized/
 data/runs/project-inventory/events.jsonl
 data/runs/scene-69-fight/
+
+# Regenerable full preprocessing database exceeds GitHub's single-file limit
+data/runs/stage-4b-preprocessing-full/preprocessed.sqlite3

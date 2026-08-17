@@ -309,7 +309,7 @@ cinematic-scene-case-library-work/
 
 ### 阶段 4：语料规范化与跨模型验证
 
-状态：阶段 4B-1 小批次确定性结构预处理已完成，等待用户审核；未运行 6555 条全量或进入 4B-2
+状态：阶段 4B-1 全量确定性结构预处理已完成，等待用户审核；未进入 4B-2
 
 规范化层分为：
 
@@ -378,7 +378,7 @@ cinematic-scene-case-library-work/
 
 阶段 4 小样本审核结论：用户已明确批准 Schema、三个规范化样本、双模型验证稿和跨模型差异报告。该批准只关闭小样本检查点，不等于授权直接执行全量语义处理或进入阶段 5。
 
-#### 阶段 4B：全量语料规范化执行方案（待用户确认）
+#### 阶段 4B：全量语料规范化执行方案（已获用户确认，按检查点执行）
 
 语料边界复核：
 
@@ -501,7 +501,7 @@ cinematic-scene-case-library-work/
 - 用户同意深度处理 6555 个视频相关唯一 Prompt，962 个纯图片 Prompt 只保留来源审计。
 - 用户同意全量只建立轻量模型无关规范化记录，完整五层案例和双模型长稿只为阶段 5 入选案例生成。
 - 用户授权最多 3 个并行子代理处理固定批次和独立抽样审计；仍必须遵守只读来源、固定 Schema、显式问题和主代理合并校验。
-- 当前只执行 4B-1 的脚本、小批次样本和验证，不启动 6555 条全量语义规范化。
+- 4B-1 全量确定性结构预处理已完成；审核前不进入 4B-2 或阶段 5。
 
 阶段 4B-1 小批次实测结果：
 
@@ -513,6 +513,18 @@ cinematic-scene-case-library-work/
 - 显式问题分布：`audio_dialogue_scope_ambiguity=3`、`duration_metadata_conflict=3`、`take_structure_conflict=1`、`unicode_replacement_character=1`、`unresolved_reference_occurrence=3`；没有静默丢弃解析失败记录。
 - 专项测试 6/6、全部测试 33/33、Python 内存编译 19/19 通过。全套测试仍显示 2 条来自既有 `test_export_prompt_sources.py` 未关闭夹具连接的 `ResourceWarning`，不属于本次脚本连接泄漏。
 - 审核产物：`data/runs/stage-4b-preprocessing-sample/manifest.json`、`report.json`、`preprocessed.sqlite3`；脚本与测试分别为 `scripts/preprocess_video_prompt_sample.py` 和 `tests/test_preprocess_video_prompt_sample.py`。
+
+阶段 4B-1 全量实测结果：
+
+- 新增显式 `--all-video-prompts` 选择开关，默认回归样本行为保持不变；专项测试覆盖完整视频选择、确定性排序和与显式哈希参数互斥。
+- 首次全量运行：`selected=6555`、`processed=6555`、`skipped=0`、`failed=0`、`status=pass`；视频 Prompt universe 为 6555，排除 2 个空 Prompt 视频资产。
+- 第二次同参数增量运行：`processed=0`、`skipped=6555`、`failed=0`、`status=pass`；两次逻辑目标摘要一致：`79bb256126f7e87c4e06f2e1192ee59523750f814541a82488c9e5e9b7fbde9c`。
+- 来源内容身份审计：主 DB、WAL、SHM 的存在性、大小和 SHA-256 均一致；仅 SHM mtime 发生 SQLite WAL 协调性漂移，`source_state_unchanged=true`。
+- 选中来源映射：102530 个资产、102532 条 occurrence、102532 条 membership、149 个文件夹；目标表含 6555 个 `source_prompts`、6555 个 `prompt_structure`、256850 个 `extracted_facts` 和 7430 个 `processing_issues`。
+- 处理状态：`completed=1625`、`completed_with_issues=4930`，无静默失败或未处理 Prompt。目标 `integrity_check=ok`、外键错误为 0、证据跨度/哈希错误为 0。
+- 事实数量：`audio=23839`、`cut_marker=14286`、`declared_aspect_ratio=3638`、`declared_duration=3230`、`declared_model=7`、`dialogue=6708`、`entity_reference_span=6432`、`generation_mode=534`、`heading=9840`、`language=1090`、`reference_block=13639`、`reference_tag=127364`、`shot_marker=12464`、`take_declaration=12615`、`timestamp=21164`。
+- 问题分布：`audio_dialogue_scope_ambiguity=1162`、`duration_metadata_conflict=1202`、`multiple_declared_duration_values=188`、`multiple_output_aspect_values=40`、`take_structure_conflict=1951`、`unicode_replacement_character=3`、`unresolved_reference_occurrence=2884`。
+- 全量审计产物为 `data/runs/stage-4b-preprocessing-full/manifest.json` 和 `report.json`；约 201.36MB 的 `preprocessed.sqlite3` 可由脚本再生成，因超过 GitHub 100MB 单文件限制而不纳入版本库。
 
 阶段验收：
 
@@ -680,6 +692,8 @@ cinematic-scene-case-library/
 - 用户批准阶段 4 小样本检查点；新增阶段 4B 全量规范化方案，等待用户确认处理范围、规范化深度和是否允许并行子代理。
 - 用户批准阶段 4B 三项方案：处理 6555 个视频相关 Prompt、全量轻量规范化、最多 3 个并行子代理；开始 4B-1 小批次确定性结构预处理。
 - 完成阶段 4B-1：10 个 Prompt、206 个资产和 207 条 occurrence/membership 已写入独立 SQLite；证据、完整性、外键和来源内容身份检查全部通过，连续增量运行摘要一致；停止等待用户审核。
+- 用户于 2026-08-17 审核通过 4B-1 小批次，批准执行 6555 个视频相关 Prompt 的全量确定性结构预处理；全量结果仍须单独提交审核。
+- 完成阶段 4B-1 全量：6555 个 Prompt 全部处理并通过审计，二次运行全部幂等跳过；已停止在 4B-2 前等待用户审核。
 
 ## 11. 中断恢复说明
 
@@ -694,7 +708,7 @@ cinematic-scene-case-library/
 
 ## 12. 当前下一步
 
-1. 等待用户审核 4B-1 小批次报告、字段覆盖和显式问题分布。
-2. 用户若要求修改，只调整指出的 4B-1 解析或审计规则并重新运行同一固定样本。
-3. 只有用户明确批准 4B-1 后，才运行 6555 条全量结构预处理或进入 4B-2。
-4. 阶段 4B 完成并经用户审核前，不进入阶段 5。
+1. 等待用户审核 4B-1 全量状态对账、字段覆盖、问题分布、失败清单和幂等性报告。
+2. 若全量审核要求修改，只调整指出的 4B-1 解析或审计规则并重跑受影响范围。
+3. 只有用户明确批准全量 4B-1 后，才进入 4B-2 风险和复杂度分层。
+4. 4B-2 完成并经用户审核前，不进入 4B-3 或阶段 5。
