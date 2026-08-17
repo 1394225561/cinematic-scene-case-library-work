@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "batch_id": "d5a1c2483f7757bad773a272",
+  "batch_name": "stage-4b-3-approved-sample-semantic-normalization",
+  "manifest_sha256": "d5a1c2483f7757bad773a2727e03a97f9381dd3aa4b3bfbc6cdd72bf6d74527c",
+  "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+  "preprocessed_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3",
+  "stratification_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3",
+  "target_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-sample\\semantic_normalization.sqlite3",
+  "source_snapshot_sha256": "47f0a9452293a931c3a9448244fdf929d70e4588b510924cae48811ce3b2acd3",
+  "preprocessed_snapshot_sha256": "5e6e593ca365d8ce3d8b6c3181e818b49f9bc3927e7a8055ecbb80450323167f",
+  "stratification_snapshot_sha256": "ca982ab70a486bf6cf8b717a7f5fd12d9e43f10edf0c4ec58369f0820cb20e86",
+  "source_state_unchanged": true,
+  "preprocessed_state_unchanged": true,
+  "stratification_state_unchanged": true,
+  "selected_prompt_count": 10,
+  "processed": 0,
+  "skipped": 10,
+  "failed": 0,
+  "status_counts": {
+    "needs_manual_review": 2,
+    "normalized": 8
+  },
+  "queue_counts": {
+    "complex": 6,
+    "manual_review": 1,
+    "simple": 1,
+    "standard": 2
+  },
+  "risk_flag_counts": {
+    "audio_dialogue_scope_ambiguity": 3,
+    "dense_references": 7,
+    "duration_conflict": 3,
+    "duration_metadata_conflict": 3,
+    "high_marker_density": 3,
+    "missing_asset_duration": 1,
+    "structure_conflict": 1,
+    "take_structure_conflict": 1,
+    "unicode_replacement_character": 1,
+    "unresolved_reference_occurrence": 3,
+    "very_long_prompt": 3
+  },
+  "logical_target_digest": "3b9c0f86bbbe034ade89da7f4130754d256f442f29bf926940961a2bb122fc44",
+  "review_sample": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-sample\\review-sample.json",
+  "checks": {
+    "full_universe": false,
+    "target": {
+      "integrity_check": "ok",
+      "foreign_key_error_count": 0,
+      "validation_error_count": 0,
+      "validation_errors": [],
+      "passed": true
+    }
+  },
+  "source_file_state_before": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+        "exists": true,
+        "size": 174342144,
+        "mtime_ns": 1786878207995969200,
+        "sha256": "963171a416dfd8ef6acd433d9538b428186bcda28a66309d9c7ec35b20e10aad"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-wal",
+        "exists": true,
+        "size": 0,
+        "mtime_ns": 1786879203761838900,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
+        "exists": true,
+        "size": 32768,
+        "mtime_ns": 1786968173602210700,
+        "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+      }
+    ]
+  },
+  "source_file_state_after": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+        "exists": true,
+        "size": 174342144,
+        "mtime_ns": 1786878207995969200,
+        "sha256": "963171a416dfd8ef6acd433d9538b428186bcda28a66309d9c7ec35b20e10aad"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-wal",
+        "exists": true,
+        "size": 0,
+        "mtime_ns": 1786879203761838900,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
+        "exists": true,
+        "size": 32768,
+        "mtime_ns": 1786968459892440300,
+        "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+      }
+    ]
+  },
+  "preprocessed_file_state_before": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3",
+        "exists": true,
+        "size": 211144704,
+        "mtime_ns": 1786964345137441300,
+        "sha256": "a9463f60233bf655deb52a0a76c185cbfdc5312b8e099abbb9b2febdead373a6"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3-wal",
+        "exists": false
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3-shm",
+        "exists": false
+      }
+    ]
+  },
+  "preprocessed_file_state_after": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3",
+        "exists": true,
+        "size": 211144704,
+        "mtime_ns": 1786964345137441300,
+        "sha256": "a9463f60233bf655deb52a0a76c185cbfdc5312b8e099abbb9b2febdead373a6"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3-wal",
+        "exists": false
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3-shm",
+        "exists": false
+      }
+    ]
+  },
+  "stratification_file_state_before": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3",
+        "exists": true,
+        "size": 57839616,
+        "mtime_ns": 1786966506561355200,
+        "sha256": "84e694e52b3ef63405316acbb664e3aadae0a9d958624351638c20bc987cdaa3"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3-wal",
+        "exists": false
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3-shm",
+        "exists": false
+      }
+    ]
+  },
+  "stratification_file_state_after": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3",
+        "exists": true,
+        "size": 57839616,
+        "mtime_ns": 1786966506561355200,
+        "sha256": "84e694e52b3ef63405316acbb664e3aadae0a9d958624351638c20bc987cdaa3"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3-wal",
+        "exists": false
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3-shm",
+        "exists": false
+      }
+    ]
+  }
+}

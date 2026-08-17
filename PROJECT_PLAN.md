@@ -309,7 +309,7 @@ cinematic-scene-case-library-work/
 
 ### 阶段 4：语料规范化与跨模型验证
 
-状态：阶段 4B-2 全量风险和复杂度分层已完成，等待用户审核；未进入 4B-3
+状态：阶段 4B-3 10 条轻量语义规范化样本已完成，等待用户审核；未进入 4B-3 全量
 
 规范化层分为：
 
@@ -461,6 +461,17 @@ cinematic-scene-case-library-work/
 - 每个精确 Prompt 簇只处理一次，结果仍映射回全部来源资产。
 
 验收：6555 条均有状态：`normalized`、`needs_manual_review` 或 `excluded_with_reason`；禁止静默跳过。
+
+阶段 4B-3 样本实测结果：
+
+- 新增 `scripts/normalize_video_prompt_semantics.py`，独立输出 `prompt_normalizations`、`normalization_assets`、`normalization_evidence` 和 `normalization_decisions`；目标库不复制完整 Prompt。
+- 10 条回归样本首次运行 `processed=10`、`failed=0`，二次同参数运行 `processed=0`、`skipped=10`；逻辑摘要保持 `3b9c0f86bbbe034ade89da7f4130754d256f442f29bf926940961a2bb122fc44`。
+- 状态闭合为 `normalized=8`、`needs_manual_review=2`、`excluded_with_reason=0`。人工复核仅包含 24 字的 `connect these two clips` 欠定指令和 Unicode 损坏文本，不把可显式保留的时长、结构、引用或对白问题误判为处理失败。
+- 10 条记录映射回全部 206 个来源资产；14 个素材引用均标记为 `described_only`，因为语料库只有来源元数据而没有可访问媒体字节，没有伪造 Seedance 或 H3 媒体绑定。
+- 5 个来源冲突全部保持未解决：4 个时长冲突或多值观察、1 个单镜头/多镜头结构冲突；未擅自选择时长或镜头结构。
+- 三个已批准样本的关键回归事实保持：对白样本为 4 秒且逐字保留 `Are you kidding me?`；动作样本保留 Prompt 10 秒/资产 15 秒冲突和逐字日语对白；环境样本保留 `asset_metadata_only` 的 10 秒来源和无对白状态。
+- SQLite 含 848 条证据和 848 条变换决策；`integrity_check=ok`、外键错误 0、验证错误 0，源库、4B-1 库和 4B-2 库的内容身份均未改变。
+- 专项测试 5/5、全部测试 44/44、Python 内存编译 23/23 通过。审核产物为 `data/runs/stage-4b-semantic-normalization-sample/manifest.json`、`report.json`、`review-sample.json` 和 `semantic_normalization.sqlite3`。
 
 ##### 4B-4：分层质量审计
 
@@ -715,6 +726,8 @@ cinematic-scene-case-library/
 - 完成阶段 4B-1 全量：6555 个 Prompt 全部处理并通过审计，二次运行全部幂等跳过；已停止在 4B-2 前等待用户审核。
 - 完成阶段 4B-2 小批次：10 条样本完成互斥队列分层、场景多标签和证据校验；全量分层已获批准并开始执行。
 - 完成阶段 4B-2 全量：6555 条全部进入且只进入一个复杂度队列，证据和幂等性通过；已停止在 4B-3 前等待用户审核。
+- 用户审核通过阶段 4B-2 全量队列、场景标签、风险分布和人工复核入口；批准继续 4B-3。
+- 完成阶段 4B-3 10 条样本：8 条规范化、2 条人工复核、0 条排除；资产映射、证据、变换决策、模型语法隔离和幂等性全部通过；已停止在全量运行前等待用户审核。
 
 ## 11. 中断恢复说明
 
@@ -729,7 +742,6 @@ cinematic-scene-case-library/
 
 ## 12. 当前下一步
 
-1. 等待用户审核 4B-2 队列规模、场景标签、风险分布和人工复核入口。
-2. 若全量分层审核要求修改，只调整指出的规则并重跑受影响范围。
-3. 只有用户明确批准全量 4B-2 后，才进入 4B-3 全量轻量语义规范化。
-4. 4B-3 完成并经用户审核前，不进入 4B-4 或阶段 5。
+1. 等待用户审核 4B-3 样本的字段结构、8/2 状态判定、冲突保留、媒体状态和语义摘要。
+2. 若审核要求修改，只调整指出的 4B-3 规则并重跑 10 条样本。
+3. 只有用户明确批准样本后，才运行 6555 条 4B-3 全量语义规范化；不得进入 4B-4 或阶段 5。
