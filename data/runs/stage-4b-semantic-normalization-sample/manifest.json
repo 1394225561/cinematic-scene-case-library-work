@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "batch_name": "stage-4b-3-approved-sample-semantic-normalization",
-  "normalizer_version": "stage4b-light-semantic-normalization-v2",
+  "normalizer_version": "stage4b-light-semantic-normalization-v4",
   "normalizer_config_sha256": "aee54fbae33eb1c6cefba3d590e943f8a57ec219a4231fc954a13e7d88b6e613",
   "prompt_hashes": [
     "001974c55eb04ce39405bc668773ab703c6e6d493061d995719ca9239b53e77f",

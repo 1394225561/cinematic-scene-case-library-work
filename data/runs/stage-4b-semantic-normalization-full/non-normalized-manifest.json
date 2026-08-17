@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "prompt_sha256": "056e03bb940fc00f5664843dbf68ab4280a0094799b2133e2c5a69188d6e8e5b",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "0612a44fd63bb64497bbc84183c0ccbf69fbd10b422cd0788b2846ba235543d1",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "084f62c9a2c6aa19f0058be94c38c00275ac194ca3e8ffeb35384f7a89f83757",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text contains a Unicode replacement character"
+      ]
+    },
+    {
+      "prompt_sha256": "0a9f04830f610ca97ce4f30b9b7094de5716b74a8cc32b4f20a7f9367357d26d",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "14d91617d726f295a84f056a0228ebb4ef0e44c526f696d658cfe2798d380f99",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text contains a Unicode replacement character"
+      ]
+    },
+    {
+      "prompt_sha256": "1c66a39598a14fe4cabb775448cd2afd5b8bce9cee4d9f88f0b5996c451fe344",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "1c89cc304f91a3bbf0066c98c56699be9350f6a3481dca3a5c4081d8ffcac0ff",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "202c5dfc2d99e66c7356c63e9e95775da481fdd45648a52fc0337b03942eb2b7",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "257afe5f9ffe4ec34f5e0126218128205fa67af2a5013000b7d6d5d90dc9fa45",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "2b0752ae24ac9e18d756d66f7cb3d32edcfc890e33effb375e9b0e3bd8dcd0d8",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "2bb4ae1999a3d1944679ccb117482c9c11ea4f17ab6d1d34e8cceddb61ad8909",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "2c131dba397ba5f806d41e5d8c53fc9c772536e56c9473dd74a59ff979d2d43c",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "432709e5b76ea2af51add6ce12995173628f2dd630e79358f50b0f18e25a8b54",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text contains a Unicode replacement character"
+      ]
+    },
+    {
+      "prompt_sha256": "5275b59a5d9928e64b283431c14912775b4f4dc3f7998982345b54e120a2fb4a",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "535d1b0561b1e5c16e3829d783afebb6eb9a201f4ba07fda0ba6686bef33a702",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "5365e50636b54dd1fc25824209112efc7ff8cf435c0b56ed8fe9c59db255533a",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "55a42daa562a0ae446518d0ccafc0b6a016690a67f4cb260413ce42e990c6dbb",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "55fed09084752d725b31f71dabd514024c62d50b0c3d8dba23001a03e8210dde",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "5ec4c3165ced2efd4b5451a23ca8983a435280130b811246aadf945784550bb8",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "6a0d971083940523c1e35e750a2c0152cfd6599ee6ec1438aa7592268cb12c4c",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "6dddc4a0cf26eaeb1c1b0b88d1097f1e54db1e6d30b9c6a256eafc24e1051eb2",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "6fa9b80340f7687453c55a0ea663414aaf63fb04b2f5a04066d9481527716095",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "701a0f24762a3aafec9282d94c90148104203d96ada34e7b76c9afc4306889d5",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "8ae9f0f18bb9fcce40dbae00ea75d9bf4b647189b68e451c04fb173fce08190e",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "942f4513624e6736f3deb1ff63c50348c3370bd0802435de760a7eeac21479ff",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "9d579bdd975f95b66cb1f23bf1ac159e5a272dd4f05cc5951cfecaac34919828",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "aa7589a463f0c4eba39bc4f3cb26bc29e1a8c4bfead1ec24ca862bba560a4ecb",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "b903f19dc4f643aa30cbf59697f39b96f65b7d0bfe5a42873d914f50fd63921d",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "b93bde577e39942765240ebbd5fce63ce6aa806db091cc86f280071a67b42c81",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "bb2e0ede917a4c6d7c966e226b8f40402fa4460a0d6f46a7aaa79060c770b5a3",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "bd9a68683348d18b99c1f6f33c3478e118914e763a6cbcdd06bc01a5e3ada0e5",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "bdb38e4d9af2735a4f091a16ef989ca25e5515f7f69904fbb2dc99fc46c49d7f",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "bfed8bcce8fd07d3df2e4e9902fc17914e39ef7e699f7084174bf9c4e5080ed7",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "cd6e3fb22ad32d3cdd3d15c42ab65b5a48923de85fc2ebbf3ad70cd02cb9b78a",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "d3de1a5610382c7678048e3da8a279e6b84f7c31b7792a6cdaa4f14904b87d70",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "db47d95112569e869f460ec1c49e959d621e1e47c62c53d79a2ffb2d37e31d05",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "e2ab5895055bac5449cedb4ac89079f12226a34faa3b953744d94fa0dc9334ea",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "f3dc9f98e7ad2fc50f810340f427dfa77247fe152058fed94c6498ebc8db9fea",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "f77d22f201025dc71c0592fcc3a979c8df9e2a1993b7fd7d2df06931b374ea24",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    },
+    {
+      "prompt_sha256": "fcd250dae442ae398d3a80e95c9d7818d6e575afe817c3b8c21e7e3963d477a0",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sqlite3
@@ -24,10 +25,11 @@ DEFAULT_PREPROCESSED_DATABASE = WORK_ROOT / "data" / "runs" / "stage-4b-preproce
 DEFAULT_STRATIFICATION_DATABASE = WORK_ROOT / "data" / "runs" / "stage-4b-stratification-final" / "stratification.sqlite3"
 DEFAULT_RUN_DIR = WORK_ROOT / "data" / "runs" / "stage-4b-semantic-normalization-sample"
 DEFAULT_BATCH_NAME = "stage-4b-3-approved-sample-semantic-normalization"
-NORMALIZER_VERSION = "stage4b-light-semantic-normalization-v2"
+NORMALIZER_VERSION = "stage4b-light-semantic-normalization-v4"
 EXPECTED_VIDEO_PROMPTS = 6555
 STATUS_CODES = ("normalized", "needs_manual_review", "excluded_with_reason")
 PROCESSING_CODES = ("completed", "failed")
+QUEUE_CODES = ("simple", "standard", "complex", "manual_review")
 
 MODEL_SYNTAX_RE = re.compile(
     r"<<<[^<>\r\n]{1,150}>>>|<(?:Picture|Subject|Video|Audio)\s+\d+>|"
@@ -227,6 +229,9 @@ def clip_text(value: str, limit: int = 520) -> str:
 
 def clean_model_syntax(value: str) -> str:
     value = MODEL_SYNTAX_RE.sub(" ", value)
+    value = re.sub(r"<<<[^<>\r\n]*$", " ", value)
+    value = re.sub(r"^[^<>\r\n]*>>>", " ", value)
+    value = value.replace("<<<", " ").replace(">>>", " ")
     value = MODEL_NAME_RE.sub(" ", value)
     value = re.sub(r"\b(?:mode|prompt\s*mode|runtime\s*task)\s*[:=]\s*[A-Za-z0-9_-]+", " ", value, flags=re.I)
     value = re.sub(r"\s+", " ", value)
@@ -647,11 +652,17 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
         add_unknown("action_summary", "No source segment met the deterministic action signal rules.")
 
     dialogue_lines: list[dict[str, Any]] = []
+    rejected_dialogue_candidates: list[dict[str, Any]] = []
     seen_lines: set[str] = set()
     for fact in fact_rows(record, "dialogue"):
         value = parse_fact_value(fact) or {}
         line = value.get("line") if isinstance(value, dict) else None
         if not isinstance(line, str) or len(line.strip()) < 2 or line.strip().lower() in {"k", "ng", "m"}:
+            continue
+        if MODEL_SYNTAX_RE.search(line) or "<<<" in line or ">>>" in line:
+            evidence_ordinal = add_evidence("performance_dialogue_reaction", "omit", start=fact.get("evidence_start"), end=fact.get("evidence_end"), fact_kind=fact["fact_kind"], fact_ordinal=fact["ordinal"])
+            add_decision("performance_dialogue_reaction", "omit", "Quoted-line candidate contains model reference syntax and surrounding action prose, so it is retained as an ambiguity rather than asserted as dialogue.", evidence_ordinal)
+            rejected_dialogue_candidates.append({"fact_ordinal": fact["ordinal"], "reason": "model_reference_syntax_inside_dialogue_candidate"})
             continue
         key = line.strip()
         if key.casefold() in seen_lines:
@@ -720,6 +731,8 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
         uncertainties.append({"kind": "processing_issue", "code": issue.get("code"), "details": clean_model_syntax(canonical_json(raw_details))})
     if any(line["speaker"] is None for line in dialogue_lines):
         uncertainties.append({"kind": "dialogue_speaker", "reason": "One or more extracted dialogue lines have no source-proven speaker."})
+    if rejected_dialogue_candidates:
+        uncertainties.append({"kind": "dialogue_candidate_rejected", "candidates": rejected_dialogue_candidates})
     if any(ref["binding_status"] == "described_only" for ref in refs):
         uncertainties.append({"kind": "media_binding", "reason": "Reference roles are described, but no accessible media bytes are bound in this corpus."})
     if strata.get("duration_state") in {"conflict", "multiple_metadata"} and not source_conflicts:
@@ -946,15 +959,33 @@ def insert_result(target: sqlite3.Connection, prompt_hash: str, input_digest: st
 
 def logical_target_digest(target: sqlite3.Connection) -> str:
     tables = [row[0] for row in target.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name")]
-    payload: list[Any] = []
+    digest = hashlib.sha256()
     for table in tables:
         info = list(target.execute(f"PRAGMA table_info({table})"))
         columns = [row[1] for row in info]
         primary = [row[1] for row in info if row[5]]
         order = ",".join(primary or columns)
-        rows = [list(row) for row in target.execute(f"SELECT {','.join(columns)} FROM {table} ORDER BY {order}")]
-        payload.append({"table": table, "columns": columns, "rows": rows})
-    return sha256_text(canonical_json(payload))
+        digest.update(canonical_json({"table": table, "columns": columns}).encode("utf-8"))
+        digest.update(b"\n")
+        for row in target.execute(f"SELECT {','.join(columns)} FROM {table} ORDER BY {order}"):
+            digest.update(canonical_json(list(row)).encode("utf-8"))
+            digest.update(b"\n")
+    return digest.hexdigest()
+
+
+def select_review_rows(rows: Sequence[sqlite3.Row], per_group: int = 10) -> list[sqlite3.Row]:
+    if len(rows) <= 100:
+        return list(rows)
+    selected: dict[str, sqlite3.Row] = {}
+    group_counts: Counter[tuple[str, str]] = Counter()
+    approved_hashes = set(REGRESSION_SAMPLE_HASHES)
+    for row in rows:
+        prompt_hash = row["prompt_sha256"]
+        group = (row["normalization_status"], row["complexity_queue"])
+        if prompt_hash in approved_hashes or group_counts[group] < per_group:
+            selected[prompt_hash] = row
+            group_counts[group] += 1
+    return [selected[prompt_hash] for prompt_hash in sorted(selected)]
 
 
 def validate_target(target: sqlite3.Connection, records: dict[str, dict[str, Any]]) -> dict[str, Any]:
@@ -1020,6 +1051,16 @@ def count_json_values(rows: Iterable[sqlite3.Row], column: str) -> dict[str, int
     counts: Counter[str] = Counter()
     for row in rows:
         counts.update(json_value(row[column], []))
+    return dict(sorted(counts.items()))
+
+
+def count_json_object_values(rows: Iterable[sqlite3.Row], column: str, key: str) -> dict[str, int]:
+    counts: Counter[str] = Counter()
+    for row in rows:
+        for item in json_value(row[column], []):
+            value = item.get(key) if isinstance(item, dict) else None
+            if isinstance(value, str) and value:
+                counts[value] += 1
     return dict(sorted(counts.items()))
 
 
@@ -1103,11 +1144,32 @@ def normalize(
         target.execute("COMMIT")
         validation = validate_target(target, records)
         rows = list(target.execute("SELECT * FROM prompt_normalizations ORDER BY prompt_sha256"))
-        status_counts = dict(target.execute("SELECT normalization_status,count(*) FROM prompt_normalizations GROUP BY normalization_status ORDER BY normalization_status"))
-        queue_counts = dict(target.execute("SELECT complexity_queue,count(*) FROM prompt_normalizations GROUP BY complexity_queue ORDER BY complexity_queue"))
+        status_counts = {
+            status: int(target.execute("SELECT count(*) FROM prompt_normalizations WHERE normalization_status=?", (status,)).fetchone()[0])
+            for status in STATUS_CODES
+        }
+        queue_counts = {
+            queue: int(target.execute("SELECT count(*) FROM prompt_normalizations WHERE complexity_queue=?", (queue,)).fetchone()[0])
+            for queue in QUEUE_CODES
+        }
         risk_counts = count_json_values(rows, "risk_flags_json")
-        review_records = []
+        missing_field_counts = count_json_object_values(rows, "missing_fields_json", "field")
+        source_conflict_counts = count_json_object_values(rows, "source_conflicts_json", "field")
+        reference_role_counts = count_json_object_values(rows, "material_references_json", "role")
+        reference_binding_counts = count_json_object_values(rows, "material_references_json", "binding_status")
+        transferability_counts: dict[str, dict[str, int]] = {"seedance": {}, "h3": {}}
+        final_prompt_generated_count = 0
         for row in rows:
+            transferability = json_value(row["transferability_json"], {})
+            for adapter in ("seedance", "h3"):
+                adapter_data = transferability.get(adapter, {})
+                status = adapter_data.get("status")
+                if isinstance(status, str):
+                    transferability_counts[adapter][status] = transferability_counts[adapter].get(status, 0) + 1
+                final_prompt_generated_count += int(bool(adapter_data.get("final_prompt_generated")))
+        review_rows = select_review_rows(rows)
+        review_records = []
+        for row in review_rows:
             prompt_hash = row["prompt_sha256"]
             review_records.append(
                 {
@@ -1180,8 +1242,16 @@ def normalize(
             "status_counts": status_counts,
             "queue_counts": queue_counts,
             "risk_flag_counts": risk_counts,
+            "missing_field_counts": missing_field_counts,
+            "source_conflict_counts": source_conflict_counts,
+            "reference_role_counts": reference_role_counts,
+            "reference_binding_status_counts": reference_binding_counts,
+            "transferability_status_counts": transferability_counts,
+            "final_prompt_generated_count": final_prompt_generated_count,
             "logical_target_digest": logical_digest,
             "review_sample": str(run_dir / "review-sample.json"),
+            "review_sample_count": len(review_records),
+            "non_normalized_manifest": str(run_dir / "non-normalized-manifest.json"),
             "checks": {"full_universe": universe_check, "target": validation},
             "source_file_state_before": source_before,
             "source_file_state_after": source_after,
@@ -1191,7 +1261,30 @@ def normalize(
             "stratification_file_state_after": stratification_after,
         }
         write_json_atomic(run_dir / "manifest.json", manifest)
-        write_json_atomic(run_dir / "review-sample.json", {"schema_version": 1, "normalizer_version": NORMALIZER_VERSION, "records": review_records})
+        write_json_atomic(
+            run_dir / "review-sample.json",
+            {
+                "schema_version": 1,
+                "normalizer_version": NORMALIZER_VERSION,
+                "selection_policy": "All records when the batch has at most 100 records; otherwise the first 10 Prompt hashes per normalization-status and complexity-queue group plus all fixed regression samples.",
+                "records": review_records,
+            },
+        )
+        write_json_atomic(
+            run_dir / "non-normalized-manifest.json",
+            {
+                "schema_version": 1,
+                "records": [
+                    {
+                        "prompt_sha256": row["prompt_sha256"],
+                        "normalization_status": row["normalization_status"],
+                        "status_reasons": json_value(row["status_reasons_json"], []),
+                    }
+                    for row in rows
+                    if row["normalization_status"] != "normalized"
+                ],
+            },
+        )
         write_json_atomic(run_dir / "report.json", report)
         return report
     finally:

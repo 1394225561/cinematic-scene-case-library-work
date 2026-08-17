@@ -1,89 +1,91 @@
 {
   "schema_version": 1,
   "status": "pass",
-  "batch_id": "5bfab1cb157706832ad5ba86",
-  "batch_name": "stage-4b-3-approved-sample-semantic-normalization",
-  "manifest_sha256": "5bfab1cb157706832ad5ba86c7fe58c5e25471512285acaab88298852a489acd",
+  "batch_id": "f62784a9ed4d8db2431cac0b",
+  "batch_name": "stage-4b-3-full-video-semantic-normalization",
+  "manifest_sha256": "f62784a9ed4d8db2431cac0ba3620937c451e55862634617c62bb7a7cbb20928",
   "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
   "preprocessed_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3",
   "stratification_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3",
-  "target_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-sample\\semantic_normalization.sqlite3",
+  "target_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-full\\semantic_normalization.sqlite3",
   "source_snapshot_sha256": "47f0a9452293a931c3a9448244fdf929d70e4588b510924cae48811ce3b2acd3",
   "preprocessed_snapshot_sha256": "5e6e593ca365d8ce3d8b6c3181e818b49f9bc3927e7a8055ecbb80450323167f",
   "stratification_snapshot_sha256": "ca982ab70a486bf6cf8b717a7f5fd12d9e43f10edf0c4ec58369f0820cb20e86",
   "source_state_unchanged": true,
   "preprocessed_state_unchanged": true,
   "stratification_state_unchanged": true,
-  "selected_prompt_count": 10,
+  "selected_prompt_count": 6555,
   "processed": 0,
-  "skipped": 10,
+  "skipped": 6555,
   "failed": 0,
   "status_counts": {
-    "normalized": 8,
-    "needs_manual_review": 2,
+    "normalized": 6515,
+    "needs_manual_review": 40,
     "excluded_with_reason": 0
   },
   "queue_counts": {
-    "simple": 1,
-    "standard": 2,
-    "complex": 6,
-    "manual_review": 1
+    "simple": 76,
+    "standard": 407,
+    "complex": 6069,
+    "manual_review": 3
   },
   "risk_flag_counts": {
-    "audio_dialogue_scope_ambiguity": 3,
-    "dense_references": 7,
-    "duration_conflict": 3,
-    "duration_metadata_conflict": 3,
-    "high_marker_density": 3,
-    "missing_asset_duration": 1,
-    "structure_conflict": 1,
-    "take_structure_conflict": 1,
-    "unicode_replacement_character": 1,
-    "unresolved_reference_occurrence": 3,
-    "very_long_prompt": 3
+    "audio_dialogue_scope_ambiguity": 1162,
+    "dense_references": 4913,
+    "duration_conflict": 1381,
+    "duration_metadata_conflict": 1202,
+    "high_marker_density": 1984,
+    "missing_asset_duration": 3,
+    "multiple_declared_duration_values": 188,
+    "multiple_output_aspect_values": 40,
+    "structure_conflict": 1951,
+    "take_structure_conflict": 1951,
+    "unicode_replacement_character": 3,
+    "unresolved_reference_occurrence": 2884,
+    "very_long_prompt": 2143
   },
   "missing_field_counts": {
-    "action_summary": 1,
-    "camera_result": 2,
-    "constraints": 2,
-    "continuity": 2,
-    "lighting": 2,
-    "objective": 1,
-    "performance_dialogue_reaction": 2,
-    "physics": 2,
-    "sound": 3,
-    "spatial_relations": 2,
-    "subjects": 1
+    "action_summary": 442,
+    "camera_result": 108,
+    "constraints": 278,
+    "continuity": 811,
+    "lighting": 422,
+    "objective": 3,
+    "performance_dialogue_reaction": 622,
+    "physics": 550,
+    "sound": 536,
+    "spatial_relations": 493,
+    "subjects": 404
   },
   "source_conflict_counts": {
-    "duration": 4,
-    "take_structure": 1
+    "duration": 1657,
+    "take_structure": 1951
   },
   "reference_role_counts": {
-    "character_identity": 7,
-    "environment": 4,
-    "prop": 3
+    "character_identity": 5833,
+    "environment": 5950,
+    "prop": 1112
   },
   "reference_binding_status_counts": {
-    "described_only": 14
+    "described_only": 12895
   },
   "transferability_status_counts": {
     "seedance": {
-      "portable_scene_intent": 8,
-      "blocked_needs_manual_review": 2
+      "portable_scene_intent": 6515,
+      "blocked_needs_manual_review": 40
     },
     "h3": {
-      "portable_scene_intent": 8,
-      "blocked_needs_manual_review": 2
+      "portable_scene_intent": 6515,
+      "blocked_needs_manual_review": 40
     }
   },
   "final_prompt_generated_count": 0,
-  "logical_target_digest": "58e307f0cc8503e5346d81c8d9a11d910bb604e72963c7a302b80f4c302dec8c",
-  "review_sample": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-sample\\review-sample.json",
-  "review_sample_count": 10,
-  "non_normalized_manifest": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-sample\\non-normalized-manifest.json",
+  "logical_target_digest": "6d1caaa0c2c30705e8435eb677cedc5b60014ce8c3355a57f4d733ff91113182",
+  "review_sample": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-full\\review-sample.json",
+  "review_sample_count": 58,
+  "non_normalized_manifest": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-full\\non-normalized-manifest.json",
   "checks": {
-    "full_universe": false,
+    "full_universe": true,
     "target": {
       "integrity_check": "ok",
       "foreign_key_error_count": 0,
@@ -112,7 +114,7 @@
         "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
         "exists": true,
         "size": 32768,
-        "mtime_ns": 1786970107729125500,
+        "mtime_ns": 1786970212252328900,
         "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
       }
     ]
@@ -137,7 +139,7 @@
         "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
         "exists": true,
         "size": 32768,
-        "mtime_ns": 1786970212252328900,
+        "mtime_ns": 1786970221660734300,
         "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
       }
     ]

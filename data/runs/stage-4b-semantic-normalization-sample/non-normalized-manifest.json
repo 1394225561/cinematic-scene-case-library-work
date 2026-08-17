@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "prompt_sha256": "084f62c9a2c6aa19f0058be94c38c00275ac194ca3e8ffeb35384f7a89f83757",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text contains a Unicode replacement character"
+      ]
+    },
+    {
+      "prompt_sha256": "6fa9b80340f7687453c55a0ea663414aaf63fb04b2f5a04066d9481527716095",
+      "normalization_status": "needs_manual_review",
+      "status_reasons": [
+        "source text is too short or semantically underdetermined for a reliable neutral summary"
+      ]
+    }
+  ]
+}

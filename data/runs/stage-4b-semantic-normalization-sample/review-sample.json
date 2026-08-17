@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
-  "normalizer_version": "stage4b-light-semantic-normalization-v2",
+  "normalizer_version": "stage4b-light-semantic-normalization-v4",
+  "selection_policy": "All records when the batch has at most 100 records; otherwise the first 10 Prompt hashes per normalization-status and complexity-queue group plus all fixed regression samples.",
   "records": [
     {
       "prompt_sha256": "001974c55eb04ce39405bc668773ab703c6e6d493061d995719ca9239b53e77f",

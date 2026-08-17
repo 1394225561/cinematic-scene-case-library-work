@@ -123,6 +123,30 @@ class NormalizeVideoPromptSemanticsTests(unittest.TestCase):
         self.assertEqual(result["material_references"][0]["binding_status"], "described_only")
         self.assertFalse(result["transferability"]["seedance"]["final_prompt_generated"])
 
+    def test_split_reference_fragments_are_removed_from_neutral_segments(self) -> None:
+        record = direct_record("A dead body lies still.\nAPPROACH from <<<broken-label-.\n\",\">>> lies across the snow.")
+        result = normalize_record(record)
+        neutral = json.dumps({key: result[key] for key in ("objective", "subjects", "spatial_relations", "action_summary", "performance_dialogue_reaction", "camera_result", "lighting", "sound", "physics", "continuity", "constraints", "uncertainty")}, ensure_ascii=False)
+        self.assertNotIn("<<<", neutral)
+        self.assertNotIn(">>>", neutral)
+
+    def test_dialogue_candidate_with_reference_syntax_is_rejected(self) -> None:
+        text = 'A character listens. DIALOGUE: ". <<<image_1>>> looks at her while she is talking."'
+        record = direct_record(text)
+        start = text.find('". <<<image_1>>>')
+        record["facts"].append(
+            {
+                "ordinal": len(record["facts"]),
+                "fact_kind": "dialogue",
+                "value_json": json.dumps({"line": ". <<<image_1>>> looks at her while she is talking.", "speaker": None}),
+                "evidence_start": start,
+                "evidence_end": len(text),
+            }
+        )
+        result = normalize_record(record)
+        self.assertEqual(result["performance_dialogue_reaction"]["dialogue_lines"], [])
+        self.assertIn("dialogue_candidate_rejected", {item["kind"] for item in result["uncertainty"]})
+
     def test_duration_conflict_is_preserved_without_a_selection(self) -> None:
         record = direct_record(
             "Duration: 4s. A fighter stands screen-left in a concrete atrium, turns toward the locked camera, and raises a sword under cold daylight while room tone remains quiet.",
@@ -153,7 +177,11 @@ class NormalizeVideoPromptSemanticsTests(unittest.TestCase):
             preprocessed_dir = root / "preprocessed"
             stratification_dir = root / "stratification"
             normalization_dir = root / "normalization"
-            text = 'Duration: 4s. SINGLE TAKE. <<<image_1>>> - character Jax stands screen-left. DIALOGUE: "Are you kidding me?" No music.'
+            text = (
+                "Duration: 4s. SINGLE TAKE.\n"
+                "<<<image_1>>> - character Jax stands screen-left.\n"
+                'DIALOGUE: "Are you kidding me?" No music.'
+            )
             prompt_hash = hashlib.sha256(text.encode("utf-8")).hexdigest()
             connection = sqlite3.connect(source)
             connection.executescript(SOURCE_SCHEMA)
@@ -179,7 +207,10 @@ class NormalizeVideoPromptSemanticsTests(unittest.TestCase):
             self.assertEqual(second["status"], "pass")
             self.assertEqual(second["skipped"], 1)
             self.assertEqual(first["logical_target_digest"], second["logical_target_digest"])
+            self.assertEqual(second["final_prompt_generated_count"], 0)
+            self.assertEqual(second["reference_binding_status_counts"], {"described_only": 1})
             self.assertTrue((normalization_dir / "review-sample.json").is_file())
+            self.assertTrue((normalization_dir / "non-normalized-manifest.json").is_file())
             target = sqlite3.connect(normalization_dir / "semantic_normalization.sqlite3")
             self.assertEqual(target.execute("SELECT count(*) FROM prompt_normalizations").fetchone()[0], 1)
             self.assertEqual(target.execute("SELECT count(*) FROM normalization_assets").fetchone()[0], 1)

@@ -309,7 +309,7 @@ cinematic-scene-case-library-work/
 
 ### 阶段 4：语料规范化与跨模型验证
 
-状态：阶段 4B-3 10 条轻量语义规范化样本已完成，等待用户审核；未进入 4B-3 全量
+状态：阶段 4B-3 6555 条全量轻量语义规范化已完成并通过自动审计，等待用户审核；未进入 4B-4
 
 规范化层分为：
 
@@ -465,13 +465,23 @@ cinematic-scene-case-library-work/
 阶段 4B-3 样本实测结果：
 
 - 新增 `scripts/normalize_video_prompt_semantics.py`，独立输出 `prompt_normalizations`、`normalization_assets`、`normalization_evidence` 和 `normalization_decisions`；目标库不复制完整 Prompt。
-- 10 条回归样本首次运行 `processed=10`、`failed=0`，二次同参数运行 `processed=0`、`skipped=10`；逻辑摘要保持 `3b9c0f86bbbe034ade89da7f4130754d256f442f29bf926940961a2bb122fc44`。
+- 10 条回归样本首次运行 `processed=10`、`failed=0`，二次同参数运行 `processed=0`、`skipped=10`；v4 逻辑摘要保持 `58e307f0cc8503e5346d81c8d9a11d910bb604e72963c7a302b80f4c302dec8c`。
 - 状态闭合为 `normalized=8`、`needs_manual_review=2`、`excluded_with_reason=0`。人工复核仅包含 24 字的 `connect these two clips` 欠定指令和 Unicode 损坏文本，不把可显式保留的时长、结构、引用或对白问题误判为处理失败。
 - 10 条记录映射回全部 206 个来源资产；14 个素材引用均标记为 `described_only`，因为语料库只有来源元数据而没有可访问媒体字节，没有伪造 Seedance 或 H3 媒体绑定。
 - 5 个来源冲突全部保持未解决：4 个时长冲突或多值观察、1 个单镜头/多镜头结构冲突；未擅自选择时长或镜头结构。
 - 三个已批准样本的关键回归事实保持：对白样本为 4 秒且逐字保留 `Are you kidding me?`；动作样本保留 Prompt 10 秒/资产 15 秒冲突和逐字日语对白；环境样本保留 `asset_metadata_only` 的 10 秒来源和无对白状态。
 - SQLite 含 848 条证据和 848 条变换决策；`integrity_check=ok`、外键错误 0、验证错误 0，源库、4B-1 库和 4B-2 库的内容身份均未改变。
-- 专项测试 5/5、全部测试 44/44、Python 内存编译 23/23 通过。审核产物为 `data/runs/stage-4b-semantic-normalization-sample/manifest.json`、`report.json`、`review-sample.json` 和 `semantic_normalization.sqlite3`。
+- v4 增加跨行引用残片清理和含模型标签的伪对白候选拒绝，避免模型语法进入中性字段；专项测试 7/7、全部测试 46/46、Python 内存编译 23/23 通过。审核产物为 `data/runs/stage-4b-semantic-normalization-sample/manifest.json`、`report.json`、`review-sample.json`、`non-normalized-manifest.json` 和 `semantic_normalization.sqlite3`。
+
+阶段 4B-3 全量实测结果：
+
+- 使用 `stage4b-light-semantic-normalization-v4` 和固定配置处理全部 6555 条视频相关唯一 Prompt；首跑 `processed=6555`、`failed=0`，二次同参数运行 `processed=0`、`skipped=6555`。
+- 三种终态完整闭合：`normalized=6515`、`needs_manual_review=40`、`excluded_with_reason=0`；人工复核包括 37 条语义欠定或过短来源文本、3 条 Unicode replacement 损坏文本。没有静默跳过或把来源问题伪装成成功摘要。
+- 复杂度队列与 4B-2 闭合：`complex=6069`、`standard=407`、`simple=76`、`manual_review=3`。
+- 目标 SQLite 含 6555 条规范化记录、102530 条来源资产映射、582285 条证据和 582285 条变换决策；`integrity_check=ok`、外键错误 0、验证错误 0，无 `prompt_text` 列。
+- 源库、4B-1 预处理库和 4B-2 分层库的内容身份均未改变；报告逻辑摘要为 `6d1caaa0c2c30705e8435eb677cedc5b60014ce8c3355a57f4d733ff91113182`。
+- 全量审核 JSON 只保留确定性分层样本 58 条；`non-normalized-manifest.json` 保留全部 40 条人工复核哈希与原因。约 594 MB 的 `semantic_normalization.sqlite3` 按 GitHub 单文件限制仅本地保留并可由脚本重建，不纳入版本库。
+- 全量产物为 `data/runs/stage-4b-semantic-normalization-full/manifest.json`、`report.json`、`review-sample.json` 和 `non-normalized-manifest.json`；等待用户审核后再进入 4B-4。
 
 ##### 4B-4：分层质量审计
 
@@ -728,6 +738,8 @@ cinematic-scene-case-library/
 - 完成阶段 4B-2 全量：6555 条全部进入且只进入一个复杂度队列，证据和幂等性通过；已停止在 4B-3 前等待用户审核。
 - 用户审核通过阶段 4B-2 全量队列、场景标签、风险分布和人工复核入口；批准继续 4B-3。
 - 完成阶段 4B-3 10 条样本：8 条规范化、2 条人工复核、0 条排除；资产映射、证据、变换决策、模型语法隔离和幂等性全部通过；已停止在全量运行前等待用户审核。
+- 用户审核通过阶段 4B-3 样本的字段结构、状态判定、冲突保留、媒体状态和语义摘要；批准按同一版本与配置执行 6555 条全量语义规范化。
+- 完成阶段 4B-3 全量：6555 条首跑通过，二次运行全部幂等跳过；三态、资产映射、证据、变换决策、模型语法隔离和三套来源身份校验全部通过；已停止在 4B-4 前等待用户审核。
 
 ## 11. 中断恢复说明
 
@@ -742,6 +754,6 @@ cinematic-scene-case-library/
 
 ## 12. 当前下一步
 
-1. 等待用户审核 4B-3 样本的字段结构、8/2 状态判定、冲突保留、媒体状态和语义摘要。
-2. 若审核要求修改，只调整指出的 4B-3 规则并重跑 10 条样本。
-3. 只有用户明确批准样本后，才运行 6555 条 4B-3 全量语义规范化；不得进入 4B-4 或阶段 5。
+1. 等待用户审核 4B-3 全量三态分布、40 条人工复核入口、审核样本、冲突保留和来源身份校验。
+2. 若审核要求修改，只调整指出的规则并重跑受影响 Prompt；不得直接进入 4B-4。
+3. 用户明确批准全量结果后，才开始 4B-4 分层质量审计；阶段 5 仍保持锁定。
