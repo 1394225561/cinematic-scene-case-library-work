@@ -309,7 +309,7 @@ cinematic-scene-case-library-work/
 
 ### 阶段 4：语料规范化与跨模型验证
 
-状态：阶段 4B-1 全量确定性结构预处理已完成，等待用户审核；未进入 4B-2
+状态：阶段 4B-2 全量风险和复杂度分层已完成，等待用户审核；未进入 4B-3
 
 规范化层分为：
 
@@ -526,6 +526,25 @@ cinematic-scene-case-library-work/
 - 问题分布：`audio_dialogue_scope_ambiguity=1162`、`duration_metadata_conflict=1202`、`multiple_declared_duration_values=188`、`multiple_output_aspect_values=40`、`take_structure_conflict=1951`、`unicode_replacement_character=3`、`unresolved_reference_occurrence=2884`。
 - 全量审计产物为 `data/runs/stage-4b-preprocessing-full/manifest.json` 和 `report.json`；约 201.36MB 的 `preprocessed.sqlite3` 可由脚本再生成，因超过 GitHub 100MB 单文件限制而不纳入版本库。
 
+阶段 4B-2 小批次实测结果：
+
+- 新增 `scripts/stratify_video_prompt_complexity.py`，从 4B-1 结构事实和源 Prompt 证据生成四个互斥队列：`simple`、`standard`、`complex`、`manual_review`；不读取资产数量、occurrence 数量、membership 数量或生成次数。
+- 10 条已批准样本首次分层 `processed=10`、`failed=0`，队列分布为 `complex=6`、`standard=2`、`simple=1`、`manual_review=1`；二次运行 `processed=0`、`skipped=10`，逻辑摘要保持一致。
+- 场景信号使用可并存标签；结构、对白、时长、文本长度、镜头密度、引用密度和问题码均保存规则 ID 与证据跨度。部分资产时长为 `null` 时不参与数值比较，但显式记录 `missing_asset_duration` 风险。
+- 分层输出不复制完整 Prompt；全量输出使用独立 SQLite、manifest 和 report，并保留源库与 4B-1 库内容指纹。
+
+阶段 4B-2 全量实测结果：
+
+- 首次全量运行：`selected=6555`、`processed=6555`、`skipped=0`、`failed=0`、`status=pass`；第二次同参数运行：`processed=0`、`skipped=6555`、`failed=0`、`status=pass`。
+- 四个互斥队列：`complex=6069`、`standard=407`、`simple=76`、`manual_review=3`。人工队列仅包含 3 条 `unicode_replacement_character` 损坏文本；时长冲突、镜头结构冲突、引用未解析和对白范围歧义保留在 complex 队列的风险标签中。
+- 结构状态：`single_take=2074`、`multi_take=1084`、`not_declared=1446`、`conflicted=1951`；对白状态：`detected=817`、`none=4576`、`ambiguous=1162`。
+- 时长状态：`asset_metadata_only=3828`、`conflict=1381`、`consistent=1070`、`multiple_metadata=276`；文本长度：`short=150`、`standard=2546`、`long=1716`、`very_long=2143`。
+- 密度分布：镜头标记 `low=2396 / medium=2175 / high=1984`；引用 `none=1065 / light=577 / dense=4913`。
+- 场景标签可并存：`action_interaction=5635`、`character_performance=5349`、`environment_establishing=6119`、`mixed_scene=5891`、`unspecified_scene=236`。
+- 风险标签：`audio_dialogue_scope_ambiguity=1162`、`dense_references=4913`、`duration_conflict=1381`、`duration_metadata_conflict=1202`、`high_marker_density=1984`、`missing_asset_duration=3`、`multiple_declared_duration_values=188`、`multiple_output_aspect_values=40`、`structure_conflict=1951`、`take_structure_conflict=1951`、`unicode_replacement_character=3`、`unresolved_reference_occurrence=2884`、`very_long_prompt=2143`。
+- 目标 SQLite 含 6555 个 `prompt_strata` 和 138424 条证据记录；`integrity_check=ok`、外键错误为 0、验证错误为 0；源库和 4B-1 库内容指纹均未改变。逻辑摘要为 `19c67470a9c4dc0800559fc511f6f611d27340494861b8a29636827c7e3ed011`。
+- 交付产物：`data/runs/stage-4b-stratification-final/manifest.json`、`report.json`、`stratification.sqlite3`（约 55.32MB，低于 GitHub 单文件限制）。
+
 阶段验收：
 
 - 用户审核 4B-1 小批次的来源审计、字段覆盖、显式问题、幂等性和误报修正
@@ -694,6 +713,8 @@ cinematic-scene-case-library/
 - 完成阶段 4B-1：10 个 Prompt、206 个资产和 207 条 occurrence/membership 已写入独立 SQLite；证据、完整性、外键和来源内容身份检查全部通过，连续增量运行摘要一致；停止等待用户审核。
 - 用户于 2026-08-17 审核通过 4B-1 小批次，批准执行 6555 个视频相关 Prompt 的全量确定性结构预处理；全量结果仍须单独提交审核。
 - 完成阶段 4B-1 全量：6555 个 Prompt 全部处理并通过审计，二次运行全部幂等跳过；已停止在 4B-2 前等待用户审核。
+- 完成阶段 4B-2 小批次：10 条样本完成互斥队列分层、场景多标签和证据校验；全量分层已获批准并开始执行。
+- 完成阶段 4B-2 全量：6555 条全部进入且只进入一个复杂度队列，证据和幂等性通过；已停止在 4B-3 前等待用户审核。
 
 ## 11. 中断恢复说明
 
@@ -708,7 +729,7 @@ cinematic-scene-case-library/
 
 ## 12. 当前下一步
 
-1. 等待用户审核 4B-1 全量状态对账、字段覆盖、问题分布、失败清单和幂等性报告。
-2. 若全量审核要求修改，只调整指出的 4B-1 解析或审计规则并重跑受影响范围。
-3. 只有用户明确批准全量 4B-1 后，才进入 4B-2 风险和复杂度分层。
-4. 4B-2 完成并经用户审核前，不进入 4B-3 或阶段 5。
+1. 等待用户审核 4B-2 队列规模、场景标签、风险分布和人工复核入口。
+2. 若全量分层审核要求修改，只调整指出的规则并重跑受影响范围。
+3. 只有用户明确批准全量 4B-2 后，才进入 4B-3 全量轻量语义规范化。
+4. 4B-3 完成并经用户审核前，不进入 4B-4 或阶段 5。

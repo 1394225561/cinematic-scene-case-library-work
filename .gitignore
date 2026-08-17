@@ -23,3 +23,7 @@ data/runs/scene-69-fight/
 
 # Regenerable full preprocessing database exceeds GitHub's single-file limit
 data/runs/stage-4b-preprocessing-full/preprocessed.sqlite3
+
+# Local 4B-2 validation attempts; final stratification output is versioned
+data/runs/stage-4b-stratification/
+data/runs/stage-4b-stratification-sample/

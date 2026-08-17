@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "batch_id": "700512dd9b3b1826b98b1e01",
+  "batch_name": "stage-4b-2-full-video-stratification-final",
+  "manifest_sha256": "700512dd9b3b1826b98b1e017603b90ef8236de7834b92e9f24187b42e55304e",
+  "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+  "preprocessed_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3",
+  "target_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3",
+  "source_snapshot_sha256": "47f0a9452293a931c3a9448244fdf929d70e4588b510924cae48811ce3b2acd3",
+  "preprocessed_snapshot_sha256": "5e6e593ca365d8ce3d8b6c3181e818b49f9bc3927e7a8055ecbb80450323167f",
+  "source_state_unchanged": true,
+  "preprocessed_state_unchanged": true,
+  "source_file_state_before": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+        "exists": true,
+        "size": 174342144,
+        "mtime_ns": 1786878207995969200,
+        "sha256": "963171a416dfd8ef6acd433d9538b428186bcda28a66309d9c7ec35b20e10aad"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-wal",
+        "exists": true,
+        "size": 0,
+        "mtime_ns": 1786879203761838900,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
+        "exists": true,
+        "size": 32768,
+        "mtime_ns": 1786966417574641100,
+        "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+      }
+    ]
+  },
+  "source_file_state_after": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
+        "exists": true,
+        "size": 174342144,
+        "mtime_ns": 1786878207995969200,
+        "sha256": "963171a416dfd8ef6acd433d9538b428186bcda28a66309d9c7ec35b20e10aad"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-wal",
+        "exists": true,
+        "size": 0,
+        "mtime_ns": 1786879203761838900,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
+        "exists": true,
+        "size": 32768,
+        "mtime_ns": 1786966501583547200,
+        "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+      }
+    ]
+  },
+  "preprocessed_file_state_before": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3",
+        "exists": true,
+        "size": 211144704,
+        "mtime_ns": 1786964345137441300,
+        "sha256": "a9463f60233bf655deb52a0a76c185cbfdc5312b8e099abbb9b2febdead373a6"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3-wal",
+        "exists": false
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3-shm",
+        "exists": false
+      }
+    ]
+  },
+  "preprocessed_file_state_after": {
+    "files": [
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3",
+        "exists": true,
+        "size": 211144704,
+        "mtime_ns": 1786964345137441300,
+        "sha256": "a9463f60233bf655deb52a0a76c185cbfdc5312b8e099abbb9b2febdead373a6"
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3-wal",
+        "exists": false
+      },
+      {
+        "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3-shm",
+        "exists": false
+      }
+    ]
+  },
+  "selected_prompt_count": 6555,
+  "processed": 0,
+  "skipped": 6555,
+  "failed": 0,
+  "queue_counts": {
+    "complex": 6069,
+    "manual_review": 3,
+    "simple": 76,
+    "standard": 407
+  },
+  "structure_state_counts": {
+    "conflicted": 1951,
+    "multi_take": 1084,
+    "not_declared": 1446,
+    "single_take": 2074
+  },
+  "dialogue_state_counts": {
+    "ambiguous": 1162,
+    "detected": 817,
+    "none": 4576
+  },
+  "duration_state_counts": {
+    "asset_metadata_only": 3828,
+    "conflict": 1381,
+    "consistent": 1070,
+    "multiple_metadata": 276
+  },
+  "text_length_band_counts": {
+    "long": 1716,
+    "short": 150,
+    "standard": 2546,
+    "very_long": 2143
+  },
+  "marker_density_band_counts": {
+    "high": 1984,
+    "low": 2396,
+    "medium": 2175
+  },
+  "reference_density_band_counts": {
+    "dense": 4913,
+    "light": 577,
+    "none": 1065
+  },
+  "scene_tag_counts": {
+    "action_interaction": 5635,
+    "character_performance": 5349,
+    "environment_establishing": 6119,
+    "mixed_scene": 5891,
+    "unspecified_scene": 236
+  },
+  "risk_flag_counts": {
+    "audio_dialogue_scope_ambiguity": 1162,
+    "dense_references": 4913,
+    "duration_conflict": 1381,
+    "duration_metadata_conflict": 1202,
+    "high_marker_density": 1984,
+    "missing_asset_duration": 3,
+    "multiple_declared_duration_values": 188,
+    "multiple_output_aspect_values": 40,
+    "structure_conflict": 1951,
+    "take_structure_conflict": 1951,
+    "unicode_replacement_character": 3,
+    "unresolved_reference_occurrence": 2884,
+    "very_long_prompt": 2143
+  },
+  "logical_target_digest": "19c67470a9c4dc0800559fc511f6f611d27340494861b8a29636827c7e3ed011",
+  "checks": {
+    "full_universe": true,
+    "target": {
+      "integrity_check": "ok",
+      "foreign_key_error_count": 0,
+      "validation_error_count": 0,
+      "validation_errors": [],
+      "passed": true
+    }
+  }
+}
