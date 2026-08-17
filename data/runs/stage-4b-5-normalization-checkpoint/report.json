@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "checkpoint_version": "stage4b-normalization-checkpoint-v1",
+  "status": "pass",
+  "selected_prompt_count": 6555,
+  "database_counts": {
+    "prompt_normalizations": 6555,
+    "normalization_assets": 102530,
+    "normalization_evidence": 582306,
+    "normalization_decisions": 582306
+  },
+  "normalization_distribution": {
+    "status": {
+      "needs_manual_review": 61,
+      "normalized": 6494
+    },
+    "processing_status": {
+      "completed": 6555
+    },
+    "complexity_queue": {
+      "complex": 6069,
+      "manual_review": 3,
+      "simple": 76,
+      "standard": 407
+    },
+    "scene_tags": {
+      "action_interaction": 5635,
+      "character_performance": 5349,
+      "environment_establishing": 6119,
+      "mixed_scene": 5891,
+      "unspecified_scene": 236
+    },
+    "risk_flags": {
+      "audio_dialogue_scope_ambiguity": 1162,
+      "dense_references": 4913,
+      "duration_conflict": 1381,
+      "duration_metadata_conflict": 1202,
+      "high_marker_density": 1984,
+      "missing_asset_duration": 3,
+      "multiple_declared_duration_values": 188,
+      "multiple_output_aspect_values": 40,
+      "structure_conflict": 1951,
+      "take_structure_conflict": 1951,
+      "unicode_replacement_character": 3,
+      "unresolved_reference_occurrence": 2884,
+      "very_long_prompt": 2143
+    },
+    "missing_fields": {
+      "action_summary": 442,
+      "camera_result": 108,
+      "constraints": 278,
+      "continuity": 811,
+      "lighting": 422,
+      "objective": 3,
+      "performance_dialogue_reaction": 622,
+      "physics": 550,
+      "sound": 536,
+      "spatial_relations": 493,
+      "subjects": 404
+    },
+    "source_conflicts": {
+      "duration": 1657,
+      "take_structure": 1951
+    }
+  },
+  "stratification_distribution": {
+    "structure_state": {
+      "conflicted": 1951,
+      "multi_take": 1084,
+      "not_declared": 1446,
+      "single_take": 2074
+    },
+    "dialogue_state": {
+      "ambiguous": 1162,
+      "detected": 817,
+      "none": 4576
+    },
+    "duration_state": {
+      "asset_metadata_only": 3828,
+      "conflict": 1381,
+      "consistent": 1070,
+      "multiple_metadata": 276
+    },
+    "text_length_band": {
+      "long": 1716,
+      "short": 150,
+      "standard": 2546,
+      "very_long": 2143
+    },
+    "marker_density_band": {
+      "high": 1984,
+      "low": 2396,
+      "medium": 2175
+    },
+    "reference_density_band": {
+      "dense": 4913,
+      "light": 577,
+      "none": 1065
+    },
+    "scene_tags": {
+      "action_interaction": 5635,
+      "character_performance": 5349,
+      "environment_establishing": 6119,
+      "mixed_scene": 5891,
+      "unspecified_scene": 236
+    },
+    "risk_flags": {
+      "audio_dialogue_scope_ambiguity": 1162,
+      "dense_references": 4913,
+      "duration_conflict": 1381,
+      "duration_metadata_conflict": 1202,
+      "high_marker_density": 1984,
+      "missing_asset_duration": 3,
+      "multiple_declared_duration_values": 188,
+      "multiple_output_aspect_values": 40,
+      "structure_conflict": 1951,
+      "take_structure_conflict": 1951,
+      "unicode_replacement_character": 3,
+      "unresolved_reference_occurrence": 2884,
+      "very_long_prompt": 2143
+    }
+  },
+  "parse_failure_summary": {
+    "processing_status_counts": {
+      "completed": 1625,
+      "completed_with_issues": 4930
+    },
+    "issue_code_counts": {
+      "audio_dialogue_scope_ambiguity": 1162,
+      "duration_metadata_conflict": 1202,
+      "multiple_declared_duration_values": 188,
+      "multiple_output_aspect_values": 40,
+      "take_structure_conflict": 1951,
+      "unicode_replacement_character": 3,
+      "unresolved_reference_occurrence": 2884
+    }
+  },
+  "manual_review_summary": {
+    "count": 61,
+    "reason_counts": {
+      "source text contains a Unicode replacement character": 3,
+      "source text is too short or semantically underdetermined for a reliable neutral summary": 37,
+      "very-long source tail has no retained evidence span for deterministic coverage": 21
+    },
+    "high_value_count": 27
+  },
+  "excluded_summary": {
+    "count": 0,
+    "records": []
+  },
+  "unresolved_issues": {
+    "normalization_source_conflicts": {
+      "duration": 1657,
+      "take_structure": 1951
+    },
+    "manual_review_reason_counts": {
+      "source text contains a Unicode replacement character": 3,
+      "source text is too short or semantically underdetermined for a reliable neutral summary": 37,
+      "very-long source tail has no retained evidence span for deterministic coverage": 21
+    },
+    "preprocessing_issue_code_counts": {
+      "audio_dialogue_scope_ambiguity": 1162,
+      "duration_metadata_conflict": 1202,
+      "multiple_declared_duration_values": 188,
+      "multiple_output_aspect_values": 40,
+      "take_structure_conflict": 1951,
+      "unicode_replacement_character": 3,
+      "unresolved_reference_occurrence": 2884
+    }
+  },
+  "recommendations_for_stage5": [
+    "Use only normalized records as automatic Stage 5 classification inputs until manual-review records are resolved.",
+    "Resolve or explicitly carry the 61 manual-review records; do not silently promote them to normalized.",
+    "Preserve duration and take-structure conflicts as source uncertainties during Stage 5 scoring.",
+    "Keep described_only reference bindings and do not infer media identity without accessible media bytes.",
+    "Do not use duplicate generation counts as a quality score or selection signal.",
+    "Do not generate full Seedance or H3 prompts for the entire corpus before Stage 5 selection."
+  ],
+  "input_reports": {
+    "normalization_logical_target_digest": "7e5cdc959b5102576494bd7c0cee4b032e7a2b92747bc7a5918a75c352740d16",
+    "stratification_logical_target_digest": "19c67470a9c4dc0800559fc511f6f611d27340494861b8a29636827c7e3ed011",
+    "audit_digest": "f2a029ed927193db4d6105a716c5ee511edcfd6c511879097d126684f78d8dd7",
+    "audit_sample_count": 460,
+    "audit_failure_count": 0
+  },
+  "source_snapshot_sha256": "47f0a9452293a931c3a9448244fdf929d70e4588b510924cae48811ce3b2acd3",
+  "preprocessed_snapshot_sha256": "5e6e593ca365d8ce3d8b6c3181e818b49f9bc3927e7a8055ecbb80450323167f",
+  "stratification_snapshot_sha256": "ca982ab70a486bf6cf8b717a7f5fd12d9e43f10edf0c4ec58369f0820cb20e86",
+  "normalization_snapshot_sha256": "c099b18f34adf3928e7ea4826ae7c722a93bc2c5feca39b9154e0ae68ebc4904",
+  "source_state_unchanged": true,
+  "preprocessed_state_unchanged": true,
+  "stratification_state_unchanged": true,
+  "normalization_state_unchanged": true,
+  "hash_mapping_count": 6555,
+  "hash_mapping_sha256": "f0f4eb5bdfc5c7ee342e993ee44a4b199ddf94b7ef65e6bcfe572fb58d4ac263",
+  "checks": {
+    "selected_video_universe": true,
+    "source_prompt_hash_closure": true,
+    "preprocessed_prompt_closure": true,
+    "stratification_prompt_closure": true,
+    "normalization_status_codes": true,
+    "complexity_queue_codes": true,
+    "asset_mapping_closure": true,
+    "source_hashes": true,
+    "source_lengths": true,
+    "target_integrity": true,
+    "normalization_report_pass": true,
+    "stratification_report_pass": true,
+    "audit_report_pass": true,
+    "normalizer_version": true,
+    "normalization_digest_consistency": true,
+    "no_final_prompt_generated": true,
+    "source_states_unchanged": true
+  },
+  "artifacts": {
+    "manifest": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-5-normalization-checkpoint\\manifest.json",
+    "hash_mapping": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-5-normalization-checkpoint\\hash-mapping.json",
+    "issue_register": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-5-normalization-checkpoint\\issue-register.json",
+    "report": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-5-normalization-checkpoint\\report.json"
+  },
+  "checkpoint_digest": "e0f1011ebd3e8981cafa78412bcd84db44be9b578954e2a1c7dc322ded290d4c"
+}

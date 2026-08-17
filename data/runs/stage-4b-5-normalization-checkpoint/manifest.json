@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "checkpoint_version": "stage4b-normalization-checkpoint-v1",
+  "normalizer_version": "stage4b-light-semantic-normalization-v6",
+  "normalizer_config_sha256": "fdef65df637231d51aa9d5f4b5984474c13b4a9be095593952135ca5517c6cf1",
+  "stratifier_config_sha256": "bae8a27ebff38bfd0947d7881b2b3779e08b2703bfb3c38e23954181467ed098",
+  "audit_config_sha256": "e06c58fea3b6d9e54c7133d9ccb4efe3bb2eee3421ccf090c34f80d6fe8ceb7e",
+  "source_snapshot_sha256": "47f0a9452293a931c3a9448244fdf929d70e4588b510924cae48811ce3b2acd3",
+  "preprocessed_snapshot_sha256": "5e6e593ca365d8ce3d8b6c3181e818b49f9bc3927e7a8055ecbb80450323167f",
+  "stratification_snapshot_sha256": "ca982ab70a486bf6cf8b717a7f5fd12d9e43f10edf0c4ec58369f0820cb20e86",
+  "normalization_snapshot_sha256": "c099b18f34adf3928e7ea4826ae7c722a93bc2c5feca39b9154e0ae68ebc4904",
+  "normalization_logical_target_digest": "7e5cdc959b5102576494bd7c0cee4b032e7a2b92747bc7a5918a75c352740d16",
+  "stratification_logical_target_digest": "19c67470a9c4dc0800559fc511f6f611d27340494861b8a29636827c7e3ed011",
+  "audit_digest": "f2a029ed927193db4d6105a716c5ee511edcfd6c511879097d126684f78d8dd7",
+  "selected_prompt_count": 6555,
+  "hash_mapping_sha256": "f0f4eb5bdfc5c7ee342e993ee44a4b199ddf94b7ef65e6bcfe572fb58d4ac263",
+  "issue_register_sha256": "538d5570f3e0ce366818c4398fb0cce2ce58625cd57caf8409e648de310dcc27",
+  "checkpoint_digest": "e0f1011ebd3e8981cafa78412bcd84db44be9b578954e2a1c7dc322ded290d4c"
+}
