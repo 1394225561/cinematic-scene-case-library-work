@@ -12,7 +12,7 @@
   "manual_review_count": 61,
   "excluded_count": 0,
   "classification_digest": "4a1eccc87b0733c29fc3536035996f10ebd54829ccce9bed7af6f8f33f65dd07",
-  "candidate_digest": "bfcfbe680c377444f0f4240d3cdee4c0b68e88c439950081cea4e1fc1c7caba9",
-  "taxonomy_digest": "ded2c8ddc8ce8ce69ceccdba3f1afde960e1711af48fa556b4277f0bee0f3e90",
-  "stage5_1_digest": "0cb7777403a23c193ac8e702fd0bcea54d9391f29f5bd692c318032b9c740aed"
+  "candidate_digest": "340d1ec69a00ee4ce3c1037dea1f38e0b76f40c84d791f081a20f9fe4f4f8ba8",
+  "taxonomy_digest": "cccec323f3234fd22efd485d473f294d4df923a87f1d986f20f1865e0034d185",
+  "stage5_1_digest": "d829fb2fdca139be35a2329b463a0e95d747c1520a069cbca540c89222b06546"
 }

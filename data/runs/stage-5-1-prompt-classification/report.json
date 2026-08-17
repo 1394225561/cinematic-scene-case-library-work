@@ -74,6 +74,9 @@
     "physics_continuity": 20,
     "unspecified_scene": 15
   },
+  "candidate_record_count": 175,
+  "unique_candidate_prompt_count": 175,
+  "cross_family_duplicate_candidate_count": 0,
   "near_duplicate_candidate_groups": {
     "format_normalized_groups": 75,
     "numeric_normalized_groups": 81
@@ -88,8 +91,8 @@
   "normalization_state_unchanged": true,
   "input_checkpoint_digest": "e0f1011ebd3e8981cafa78412bcd84db44be9b578954e2a1c7dc322ded290d4c",
   "classification_digest": "4a1eccc87b0733c29fc3536035996f10ebd54829ccce9bed7af6f8f33f65dd07",
-  "candidate_digest": "bfcfbe680c377444f0f4240d3cdee4c0b68e88c439950081cea4e1fc1c7caba9",
-  "taxonomy_digest": "ded2c8ddc8ce8ce69ceccdba3f1afde960e1711af48fa556b4277f0bee0f3e90",
+  "candidate_digest": "340d1ec69a00ee4ce3c1037dea1f38e0b76f40c84d791f081a20f9fe4f4f8ba8",
+  "taxonomy_digest": "cccec323f3234fd22efd485d473f294d4df923a87f1d986f20f1865e0034d185",
   "candidate_limit_per_family": 20,
   "checks": {
     "checkpoint_pass": true,
@@ -104,6 +107,7 @@
     "prompt_only_review": true,
     "no_final_prompt_generated": true,
     "score_quality_adjustment_bounded": true,
+    "candidate_cross_family_diversity": true,
     "input_states_unchanged": true
   },
   "artifacts": {
@@ -113,5 +117,5 @@
     "manifest": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-1-prompt-classification\\manifest.json",
     "report": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-1-prompt-classification\\report.json"
   },
-  "stage5_1_digest": "0cb7777403a23c193ac8e702fd0bcea54d9391f29f5bd692c318032b9c740aed"
+  "stage5_1_digest": "d829fb2fdca139be35a2329b463a0e95d747c1520a069cbca540c89222b06546"
 }

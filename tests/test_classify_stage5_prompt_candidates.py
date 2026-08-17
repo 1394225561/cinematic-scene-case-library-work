@@ -64,6 +64,15 @@ class Stage5PromptCandidateTests(unittest.TestCase):
         ranked = rank_candidates(records, "action_choreography", 10)
         self.assertEqual([item["prompt_sha256"] for item in ranked], ["a", "b"])
 
+    def test_candidate_diversity_only_breaks_exact_score_ties(self) -> None:
+        records = [
+            {"classification_status": "classified", "pattern_families": ["camera_control"], "prompt_content_score": 21, "score_dimensions": {"a": {"score": 2}}, "prompt_sha256": "used-higher"},
+            {"classification_status": "classified", "pattern_families": ["camera_control"], "prompt_content_score": 20, "score_dimensions": {"a": {"score": 2}}, "prompt_sha256": "new-lower"},
+            {"classification_status": "classified", "pattern_families": ["camera_control"], "prompt_content_score": 21, "score_dimensions": {"a": {"score": 2}}, "prompt_sha256": "new-equal"},
+        ]
+        ranked = rank_candidates(records, "camera_control", 3, {"used-higher"})
+        self.assertEqual([item["prompt_sha256"] for item in ranked], ["new-equal", "used-higher", "new-lower"])
+
     def test_dimension_gates_do_not_cross_credit_missing_evidence(self) -> None:
         candidate = row()
         candidate["camera_result_json"] = '{"segments": []}'

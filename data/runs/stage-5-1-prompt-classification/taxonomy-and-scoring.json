@@ -21,7 +21,7 @@
       "mixed_scene": "Mixed-scene source tag is retained as a review family.",
       "unspecified_scene": "No derived family can be supported without inventing scene meaning."
     },
-    "selection_policy": "Score Prompt construction only; asset counts, duplicate frequency, model frequency, and uninspected media are never quality evidence."
+    "selection_policy": "Score Prompt construction only; asset counts, duplicate frequency, model frequency, and uninspected media are never quality evidence. Cross-family diversity is used only after Prompt Content Score and minimum dimension score are exactly tied."
   },
   "scoring": {
     "version": "stage5-prompt-content-score-v2",
@@ -46,5 +46,6 @@
   },
   "classification_policy": "Only normalized records receive automatic Prompt Content Scores; manual-review records remain unscored and excluded records remain explicit.",
   "asset_policy": "asset_count_audit_only is retained for source mapping and never enters score or ordering.",
-  "near_duplicate_policy": "Near-duplicate groups remain candidate-only relationships; no records are merged or removed."
+  "near_duplicate_policy": "Near-duplicate groups remain candidate-only relationships; no records are merged or removed.",
+  "candidate_diversity_policy": "Within exact score ties, prefer Prompt hashes not already selected for an earlier family; this tie-break never outranks a higher Prompt Content Score or minimum dimension score."
 }

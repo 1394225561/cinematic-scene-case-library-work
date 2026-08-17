@@ -73,7 +73,7 @@ TAXONOMY = {
         "mixed_scene": "Mixed-scene source tag is retained as a review family.",
         "unspecified_scene": "No derived family can be supported without inventing scene meaning.",
     },
-    "selection_policy": "Score Prompt construction only; asset counts, duplicate frequency, model frequency, and uninspected media are never quality evidence.",
+    "selection_policy": "Score Prompt construction only; asset counts, duplicate frequency, model frequency, and uninspected media are never quality evidence. Cross-family diversity is used only after Prompt Content Score and minimum dimension score are exactly tied.",
 }
 
 
@@ -419,12 +419,19 @@ def load_near_duplicate_membership(path: Path, selected_hashes: set[str]) -> tup
     return dict(memberships), counts
 
 
-def rank_candidates(records: list[dict[str, Any]], family: str, limit: int) -> list[dict[str, Any]]:
+def rank_candidates(
+    records: list[dict[str, Any]],
+    family: str,
+    limit: int,
+    prior_selected_hashes: set[str] | None = None,
+) -> list[dict[str, Any]]:
+    prior_selected_hashes = prior_selected_hashes or set()
     eligible = [item for item in records if item["classification_status"] == "classified" and family in item["pattern_families"]]
     eligible.sort(
         key=lambda item: (
             -item["prompt_content_score"],
             -min(value["score"] for value in item["score_dimensions"].values()),
+            item["prompt_sha256"] in prior_selected_hashes,
             item["prompt_sha256"],
         )
     )
@@ -509,18 +516,26 @@ def classify(
             classified_records.append(base)
 
         candidate_records: list[dict[str, Any]] = []
+        selected_candidate_hashes: set[str] = set()
         for family in DERIVED_FAMILIES:
-            for rank, record in enumerate(rank_candidates(classified_records, family, candidates_per_family), 1):
+            family_candidates = rank_candidates(
+                classified_records,
+                family,
+                candidates_per_family,
+                prior_selected_hashes=selected_candidate_hashes,
+            )
+            for rank, record in enumerate(family_candidates, 1):
                 mapping = asset_metadata(source_assets.get(record["prompt_sha256"], []))
                 candidate_records.append(
                     {
                         "candidate_family": family,
                         "selection_rank": rank,
-                        "selection_rationale": "Ranked by Prompt Content Score, minimum dimension score, and Prompt SHA-256 only; source asset mapping is audit metadata.",
+                        "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
                         **record,
                         **mapping,
                     }
                 )
+            selected_candidate_hashes.update(item["prompt_sha256"] for item in family_candidates)
 
         classified_only = [item for item in classified_records if item["classification_status"] == "classified"]
         tier_counts = dict(sorted(Counter(item["case_tier"] for item in classified_only).items()))
@@ -561,6 +576,7 @@ def classify(
             "prompt_only_review": True,
             "no_final_prompt_generated": checkpoint_report.get("input_reports", {}).get("audit_failure_count") == 0,
             "score_quality_adjustment_bounded": all(item["score_penalty"] == min(4, len(item["shared_evidence_fields"])) for item in classified_only),
+            "candidate_cross_family_diversity": len(candidate_records) == len({item["prompt_sha256"] for item in candidate_records}),
             "input_states_unchanged": all(unchanged.values()),
         }
         taxonomy_payload = {
@@ -570,6 +586,7 @@ def classify(
             "classification_policy": "Only normalized records receive automatic Prompt Content Scores; manual-review records remain unscored and excluded records remain explicit.",
             "asset_policy": "asset_count_audit_only is retained for source mapping and never enters score or ordering.",
             "near_duplicate_policy": "Near-duplicate groups remain candidate-only relationships; no records are merged or removed.",
+            "candidate_diversity_policy": "Within exact score ties, prefer Prompt hashes not already selected for an earlier family; this tie-break never outranks a higher Prompt Content Score or minimum dimension score.",
         }
         classification_digest = sha256_text(canonical_json(classified_records))
         candidate_digest = sha256_text(canonical_json(candidate_records))
@@ -592,6 +609,9 @@ def classify(
             "score_penalty_counts": dict(sorted(score_penalties.items(), key=lambda item: int(item[0]))),
             "shared_evidence_field_counts": dict(sorted(shared_evidence_counts.items())),
             "candidate_counts_by_family": dict(sorted(Counter(item["candidate_family"] for item in candidate_records).items())),
+            "candidate_record_count": len(candidate_records),
+            "unique_candidate_prompt_count": len({item["prompt_sha256"] for item in candidate_records}),
+            "cross_family_duplicate_candidate_count": len(candidate_records) - len({item["prompt_sha256"] for item in candidate_records}),
             "near_duplicate_candidate_groups": near_counts,
             "near_duplicate_prompt_membership_count": len(near_membership),
             "source_mapping_error_count": len(source_mapping_errors),

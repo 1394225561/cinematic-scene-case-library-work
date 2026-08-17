@@ -611,8 +611,8 @@ Stage 5-1 检查点已完成：
 - 主场景标签和派生模式均为多标签；近似变体保留为 `candidate_only_not_merged`，未删除、未合并。
 - Prompt Content Score v2 仍为 8 个维度、每项 0–4 分；动作、物理、摄影、连续性维度要求各自证据；跨字段完全重复证据最多扣 4 分并阻止 `core_pattern`。
 - 案例层级分布：`core_pattern=1351`、`effective_variant=4560`、`special_scene=583`；人工复核 61 条不进入自动评分。
-- 候选清单按主要派生家族每类最多 20 条（未指定场景 15 条），排序只使用 Prompt Content Score、最低维度分数和 Prompt SHA-256；资产数量只保留 `asset_count_audit_only`。
-- 全量首跑与相同参数幂等重跑均为 `pass`，摘要 `0cb7777403a23c193ac8e702fd0bcea54d9391f29f5bd692c318032b9c740aed`；源库、4B-2 分层库和 4B-3 规范化库内容身份均未改变。
+- 候选清单按主要派生家族每类最多 20 条（未指定场景 15 条），共 175 条家族记录和 175 个不同 Prompt；排序先使用 Prompt Content Score 和最低维度分数，只在完全并列时优先尚未进入其他家族候选的 Prompt，最后按 SHA-256 稳定排序；资产数量只保留 `asset_count_audit_only`。
+- 全量首跑与相同参数幂等重跑均为 `pass`，摘要 `d829fb2fdca139be35a2329b463a0e95d747c1520a069cbca540c89222b06546`；源库、4B-2 分层库和 4B-3 规范化库内容身份均未改变。
 - 产物：`data/runs/stage-5-1-prompt-classification/taxonomy-and-scoring.json`、`classified-records.json`、`selection-candidates.json`、`manifest.json`、`report.json`。
 
 阶段验收：
@@ -772,7 +772,7 @@ cinematic-scene-case-library/
 - 用户审核通过 4B-3 全量并批准进入 4B-4；完成 460 条分层抽样和 61 条人工复核清单，6555 条逐条审计全部通过，已停止等待用户审核。
 - 用户审核通过 4B-4 并批准进入 4B-5；完成全量规范化检查点封存、6555 条哈希映射和进入阶段 5 的建议，当前停止等待用户审核。
 - 完成 Stage 5-1 首轮分类与 Prompt-only 评分后，发现字段存在性会放大高分；将评分升级为 v2，加入维度证据门槛、跨字段重复证据扣分和可复用性单次计分。
-- Stage 5-1 v2 全量运行与幂等重跑均通过：6555 个精确 Prompt 簇、6494 条自动评分、61 条人工复核、0 条排除；全套 59 项测试和 Python 内存编译通过，已停止等待用户审核分类体系、评分规则和候选清单。
+- Stage 5-1 v2 全量运行与幂等重跑均通过：6555 个精确 Prompt 簇、6494 条自动评分、61 条人工复核、0 条排除；修正满分并列导致的跨家族候选塌缩后，175 条家族候选对应 175 个不同 Prompt；全套 60 项测试和 Python 内存编译通过，已停止等待用户审核分类体系、评分规则和候选清单。
 
 ## 11. 中断恢复说明
 
@@ -787,6 +787,6 @@ cinematic-scene-case-library/
 
 ## 12. 当前下一步
 
-1. 等待用户审核 Stage 5-1 的多标签分类、Prompt Content Score v2、175 条候选家族记录和 61 条人工复核入口。
+1. 等待用户审核 Stage 5-1 的多标签分类、Prompt Content Score v2、175 条互异候选家族记录和 61 条人工复核入口。
 2. 用户批准后进入 Stage 5-2 精华案例最终筛选，为入选、保留和不入选记录补充可审计理由；不根据未检查媒体推断成片质量。
 3. 在 Stage 5-2 审核完成前不生成全量 Seedance/H3 最终稿，也不制作最终 Skill 安装包。
