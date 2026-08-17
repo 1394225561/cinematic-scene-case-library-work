@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "status": "pass",
-  "batch_id": "5bfab1cb157706832ad5ba86",
+  "batch_id": "e549fb74b3b85ad1303569e4",
   "batch_name": "stage-4b-3-approved-sample-semantic-normalization",
-  "manifest_sha256": "5bfab1cb157706832ad5ba86c7fe58c5e25471512285acaab88298852a489acd",
+  "manifest_sha256": "e549fb74b3b85ad1303569e42605bda2ed45779bd62e9339b3fdf7c885ac8f07",
   "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
   "preprocessed_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3",
   "stratification_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3",
@@ -78,7 +78,7 @@
     }
   },
   "final_prompt_generated_count": 0,
-  "logical_target_digest": "58e307f0cc8503e5346d81c8d9a11d910bb604e72963c7a302b80f4c302dec8c",
+  "logical_target_digest": "7d228a71814506437e12f6b69927a97c8a56748102c1136e8f8ed161c129b951",
   "review_sample": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-sample\\review-sample.json",
   "review_sample_count": 10,
   "non_normalized_manifest": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-sample\\non-normalized-manifest.json",
@@ -112,7 +112,7 @@
         "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
         "exists": true,
         "size": 32768,
-        "mtime_ns": 1786970107729125500,
+        "mtime_ns": 1786974024379084900,
         "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
       }
     ]
@@ -137,7 +137,7 @@
         "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
         "exists": true,
         "size": 32768,
-        "mtime_ns": 1786970212252328900,
+        "mtime_ns": 1786974197631403500,
         "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
       }
     ]

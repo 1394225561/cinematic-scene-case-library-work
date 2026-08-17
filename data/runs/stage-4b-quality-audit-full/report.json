@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "audit_version": "stage4b-quality-audit-v1",
+  "audit_config_sha256": "e06c58fea3b6d9e54c7133d9ccb4efe3bb2eee3421ccf090c34f80d6fe8ceb7e",
+  "status": "pass",
+  "normalizer_version": "stage4b-light-semantic-normalization-v6",
+  "normalization_logical_target_digest": "7e5cdc959b5102576494bd7c0cee4b032e7a2b92747bc7a5918a75c352740d16",
+  "selected_prompt_count": 6555,
+  "normalized_count": 6494,
+  "manual_review_count": 61,
+  "excluded_count": 0,
+  "sample_count": 460,
+  "sample_dimension_coverage": {
+    "complexity_queue": {
+      "complex": 388,
+      "standard": 40,
+      "simple": 29,
+      "manual_review": 3
+    },
+    "normalization_status": {
+      "normalized": 399,
+      "needs_manual_review": 61
+    },
+    "scene_tag": {
+      "action_interaction": 339,
+      "character_performance": 298,
+      "environment_establishing": 365,
+      "mixed_scene": 342,
+      "unspecified_scene": 70
+    },
+    "text_length_band": {
+      "long": 108,
+      "very_long": 136,
+      "standard": 171,
+      "short": 45
+    },
+    "structure_state": {
+      "multi_take": 71,
+      "single_take": 133,
+      "conflicted": 105,
+      "not_declared": 151
+    },
+    "duration_state": {
+      "asset_metadata_only": 281,
+      "multiple_metadata": 32,
+      "consistent": 68,
+      "conflict": 79
+    }
+  },
+  "manual_review_high_value_count": 27,
+  "check_counts": {
+    "prompt_and_strata_closure": {
+      "evaluated": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "full_universe": {
+      "evaluated": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "normalization_report_passed": {
+      "evaluated": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "source_hash_and_length": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "stratum_alignment": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "normalization_json": {
+      "evaluated": 104880,
+      "passed": 104880,
+      "failed": 0
+    },
+    "asset_mapping_closure": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "asset_media_policy": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "evidence_ranges_and_hashes": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "decision_evidence_links": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "model_syntax_isolation": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "transferability_policy": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "field_provenance": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "dialogue_verbatim": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "duration_and_conflict_preservation": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "reference_binding_policy": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "long_prompt_tail_coverage": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "compressed_candidate_tail_coverage": {
+      "evaluated": 6555,
+      "passed": 6555,
+      "failed": 0
+    },
+    "approved_regression_samples": {
+      "evaluated": 3,
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "failure_counts": {},
+  "failure_count": 0,
+  "regression_results": {
+    "086a04b7f0f8e168bfcbf3183684e1cf275d57e59a3c639dbdabc0713867d658": {
+      "label": "approved-dialogue-sample",
+      "passed": true,
+      "checks": {
+        "exact_dialogue": true,
+        "duration_4_seconds": true
+      }
+    },
+    "166a0440f6f01e02419b42f47d088e1919dedd1800b62b4b632e0047cb446ba0": {
+      "label": "approved-action-sample",
+      "passed": true,
+      "checks": {
+        "exact_japanese_dialogue": true,
+        "duration_conflict_unresolved": true
+      }
+    },
+    "00e4c15e723379bb862770bb9c4a46093978048a29e2426de31e3c39fb512c89": {
+      "label": "approved-environment-sample",
+      "passed": true,
+      "checks": {
+        "asset_metadata_only_10_seconds": true,
+        "no_dialogue": true
+      }
+    }
+  },
+  "source_state_unchanged": true,
+  "preprocessed_state_unchanged": true,
+  "stratification_state_unchanged": true,
+  "normalization_state_unchanged": true,
+  "checks": {
+    "source_files_unchanged": true,
+    "all_checks_passed": true
+  },
+  "sample_artifact": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-quality-audit-full\\audit-sample.json",
+  "manual_review_artifact": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-quality-audit-full\\manual-review.json",
+  "failure_artifact": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-quality-audit-full\\failures.json",
+  "audit_digest": "f2a029ed927193db4d6105a716c5ee511edcfd6c511879097d126684f78d8dd7"
+}

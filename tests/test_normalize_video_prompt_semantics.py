@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import sqlite3
 import sys
 import tempfile
@@ -13,7 +14,7 @@ SCRIPTS_DIR = Path(__file__).resolve().parents[1] / "scripts"
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
-from normalize_video_prompt_semantics import normalize, normalize_record
+from normalize_video_prompt_semantics import candidate_segments, normalize, normalize_record
 from preprocess_video_prompt_sample import preprocess
 from stratify_video_prompt_complexity import stratify
 
@@ -112,6 +113,15 @@ def direct_record(text: str, *, video: bool = True, damaged: bool = False, durat
 
 
 class NormalizeVideoPromptSemanticsTests(unittest.TestCase):
+    def test_compressed_candidates_cover_beginning_middle_and_end(self) -> None:
+        segments = [
+            {"text": f"action {index}", "start": index * 10, "end": index * 10 + 8}
+            for index in range(10)
+        ]
+        selected, compressed = candidate_segments(segments, re.compile("action"), 4)
+        self.assertTrue(compressed)
+        self.assertEqual([item["text"] for item in selected], ["action 0", "action 3", "action 6", "action 9"])
+
     def test_model_syntax_is_removed_and_reference_binding_stays_described_only(self) -> None:
         record = direct_record(
             'SINGLE TAKE. <<<image_1>>> - character Jax stands screen-left and turns toward camera. DIALOGUE: "Are you kidding me?" No music.'
@@ -163,6 +173,13 @@ class NormalizeVideoPromptSemanticsTests(unittest.TestCase):
         self.assertEqual(normalize_record(damaged)["normalization_status"], "needs_manual_review")
         short = direct_record("connect two clips")
         self.assertEqual(normalize_record(short)["normalization_status"], "needs_manual_review")
+
+    def test_long_prompt_without_tail_evidence_is_reserved_for_manual_review(self) -> None:
+        text = "Scene context: a room.\n" + ("Neutral source prose without extraction markers.\n" * 400)
+        result = normalize_record(direct_record(text))
+        self.assertEqual(result["normalization_status"], "needs_manual_review")
+        self.assertIn("very-long source tail has no retained evidence span for deterministic coverage", result["status_reasons"])
+        self.assertEqual(result["evidence"][-1]["evidence_kind"], "full_scan")
 
     def test_video_less_record_is_explicitly_excluded(self) -> None:
         record = direct_record("An image reference only.", video=False)

@@ -25,7 +25,7 @@ DEFAULT_PREPROCESSED_DATABASE = WORK_ROOT / "data" / "runs" / "stage-4b-preproce
 DEFAULT_STRATIFICATION_DATABASE = WORK_ROOT / "data" / "runs" / "stage-4b-stratification-final" / "stratification.sqlite3"
 DEFAULT_RUN_DIR = WORK_ROOT / "data" / "runs" / "stage-4b-semantic-normalization-sample"
 DEFAULT_BATCH_NAME = "stage-4b-3-approved-sample-semantic-normalization"
-NORMALIZER_VERSION = "stage4b-light-semantic-normalization-v4"
+NORMALIZER_VERSION = "stage4b-light-semantic-normalization-v6"
 EXPECTED_VIDEO_PROMPTS = 6555
 STATUS_CODES = ("normalized", "needs_manual_review", "excluded_with_reason")
 PROCESSING_CODES = ("completed", "failed")
@@ -73,6 +73,8 @@ CONFIG = {
         "constraints": 20,
     },
     "minimum_normalizable_chars": 80,
+    "candidate_selection_policy": "When a field exceeds its cap, retain deterministic source-ordered matches spread across the beginning, middle, and end; record full-scan evidence for omitted matches.",
+    "long_prompt_tail_policy": "A very-long source without any retained evidence ending at the source tail is held for manual review rather than presented as fully covered.",
     "model_syntax_policy": "Remove model-specific reference labels and adapter tokens from neutral summaries; retain provenance in material_references and evidence only.",
     "media_policy": "Corpus contains source metadata but no accessible media bytes; reference bindings therefore remain described_only.",
     "status_policy": "Damaged, failed, video-less, or semantically underdetermined records are explicit non-normalized statuses; no record is silently skipped.",
@@ -279,7 +281,33 @@ def candidate_segments(
             continue
         seen.add(key)
         selected.append(segment)
-    return selected[:maximum], len(selected) > maximum
+    if len(selected) <= maximum:
+        return selected, False
+    if maximum <= 0:
+        return [], True
+    if maximum == 1:
+        return [selected[0]], True
+    denominator = maximum - 1
+    last_index = len(selected) - 1
+    indexes = [
+        (position * last_index + denominator // 2) // denominator
+        for position in range(maximum)
+    ]
+    return [selected[index] for index in indexes], True
+
+
+EXTRACTION_PATTERNS = {
+    "objective": re.compile(r"\b(?:objective|goal|purpose|narrative\s+summary|scene\s+context|establish|show|stage|connect|edit|transform|presents?|holds?)\b", re.I),
+    "spatial_relations": re.compile(r"\b(?:screen[- ]?left|screen[- ]?right|left|right|front|behind|near|center|west|east|north|south|above|below|across|between|inside|outside|toward|away|diagonal|ground floor|side of|height|distance)\b", re.I),
+    "action_summary": re.compile(r"\b(?:fight|fighting|attack|strike|punch|kick|dodge|block|parry|grab|throw|slam|chase|run|walk|jump|fall|rise|turn|look|glide|cross|move|hold|rain|connect|edit|transform|shoot|says?|speaks?|react|reaction|deliver|stands?|standing|appears?|clears?|threads?|crawls?)\w*\b", re.I),
+    "performance_dialogue_reaction": re.compile(r"\b(?:performance|perform|reaction|reacts?|expression|emotion|gaze|eye contact|looks?|listens?|speaks?|says?|whispers?|shouts?|breathes?|hesitates?|smirk|blink|eyebrow|delivery|register|tone|voice|grin)\w*\b", re.I),
+    "camera_result": re.compile(r"\b(?:camera|lens|framing|shot|close[- ]?up|wide|angle|viewpoint|handheld|locked|stabilized|gimbal|zoom|drift|dolly|pan|tilt|focus|depth of field|reframe|parallax|shutter|focal)\w*\b", re.I),
+    "lighting": re.compile(r"\b(?:light|lighting|lit|illumination|sconce|amber|sodium|daylight|night|black sky|shadow|backlit|edge-lit|practical|haze|glow|neon|exposure|contrast|palette)\w*\b", re.I),
+    "sound": re.compile(r"\b(?:audio|sound|sfx|music|dialogue|voice|rumble|traffic|rain|thunder|hum|breath|rustle|creak|noise|ambience|ambient|mechanical)\w*\b", re.I),
+    "physics": re.compile(r"\b(?:force|momentum|gravity|friction|impact|fall|speed|steady|weight|mass|height|rail|road|wind|rain|motion|parallax|damage|intact|floor|collision|pressure|direction)\w*\b", re.I),
+    "continuity": re.compile(r"\b(?:throughout|remain|remains|always|never|fixed|consistent|same|one character|one train|one continuous|no cuts|no change|persist|returns|normal speed|slow motion)\w*\b", re.I),
+    "constraints": re.compile(r"\b(?:no|not|never|do not|must|only|without|exclude|excluded|avoid|prohibit|keep|lock|hard lock|negative)\w*\b", re.I),
+}
 
 
 def parse_fact_value(fact: dict[str, Any]) -> Any:
@@ -541,7 +569,7 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
         selected, compressed = candidate_segments(segments, pattern, limit)
         if compressed:
             evidence_ordinal = add_evidence(field_name, "compress", evidence_kind="full_scan")
-            add_decision(field_name, "compress", f"Lightweight normalization retained the first {limit} source-ordered matches and recorded the full-scan evidence; omitted matches remain available in the immutable source Prompt.", evidence_ordinal)
+            add_decision(field_name, "compress", f"Lightweight normalization retained {limit} source-ordered matches spread across the beginning, middle, and end, and recorded full-scan evidence; omitted matches remain available in the immutable source Prompt.", evidence_ordinal)
         for item in selected:
             evidence_ordinal = add_evidence(field_name, "direct", start=item["start"], end=item["end"])
             add_decision(field_name, "preserve", "Summary preserves a source-proven segment after removing model-specific syntax and normalizing whitespace.", evidence_ordinal)
@@ -627,7 +655,7 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
 
     objective_matches = choose(
         "objective",
-        re.compile(r"\b(?:objective|goal|purpose|narrative\s+summary|scene\s+context|establish|show|stage|connect|edit|transform|presents?|holds?)\b", re.I),
+        EXTRACTION_PATTERNS["objective"],
         2,
     )
     if not objective_matches and segments:
@@ -638,11 +666,11 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
 
     spatial_matches = choose(
         "spatial_relations",
-        re.compile(r"\b(?:screen[- ]?left|screen[- ]?right|left|right|front|behind|near|center|west|east|north|south|above|below|across|between|inside|outside|toward|away|diagonal|ground floor|side of|height|distance)\b", re.I),
+        EXTRACTION_PATTERNS["spatial_relations"],
     )
     action_matches = choose(
         "action_summary",
-        re.compile(r"\b(?:fight|fighting|attack|strike|punch|kick|dodge|block|parry|grab|throw|slam|chase|run|walk|jump|fall|rise|turn|look|glide|cross|move|hold|rain|connect|edit|transform|shoot|says?|speaks?|react|reaction|deliver|stands?|standing|appears?|clears?|threads?|crawls?)\w*\b", re.I),
+        EXTRACTION_PATTERNS["action_summary"],
     )
     causal_beats = []
     for order, item in enumerate(action_matches, 1):
@@ -673,7 +701,7 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
         dialogue_lines.append({"speaker": safe_speaker(value.get("speaker")), "line": key, "delivery": None})
     performance_matches = choose(
         "performance_dialogue_reaction",
-        re.compile(r"\b(?:performance|perform|reaction|reacts?|expression|emotion|gaze|eye contact|looks?|listens?|speaks?|says?|whispers?|shouts?|breathes?|hesitates?|smirk|blink|eyebrow|delivery|register|tone|voice|grin)\w*\b", re.I),
+        EXTRACTION_PATTERNS["performance_dialogue_reaction"],
     )
     performance = {
         "dialogue_lines": dialogue_lines,
@@ -681,12 +709,12 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
         "dialogue_scope": "ambiguous" if strata.get("dialogue_state") == "ambiguous" else ("detected" if dialogue_lines else "none"),
     }
 
-    camera_matches = choose("camera_result", re.compile(r"\b(?:camera|lens|framing|shot|close[- ]?up|wide|angle|viewpoint|handheld|locked|stabilized|gimbal|zoom|drift|dolly|pan|tilt|focus|depth of field|reframe|parallax|shutter|focal)\w*\b", re.I))
-    lighting_matches = choose("lighting", re.compile(r"\b(?:light|lighting|lit|illumination|sconce|amber|sodium|daylight|night|black sky|shadow|backlit|edge-lit|practical|haze|glow|neon|exposure|contrast|palette)\w*\b", re.I))
-    sound_matches = choose("sound", re.compile(r"\b(?:audio|sound|sfx|music|dialogue|voice|rumble|traffic|rain|thunder|hum|breath|rustle|creak|noise|ambience|ambient|mechanical)\w*\b", re.I))
-    physics_matches = choose("physics", re.compile(r"\b(?:force|momentum|gravity|friction|impact|fall|speed|steady|weight|mass|height|rail|road|wind|rain|motion|parallax|damage|intact|floor|collision|pressure|direction)\w*\b", re.I))
-    continuity_matches = choose("continuity", re.compile(r"\b(?:throughout|remain|remains|always|never|fixed|consistent|same|one character|one train|one continuous|no cuts|no change|persist|returns|normal speed|slow motion)\w*\b", re.I))
-    constraint_matches = choose("constraints", re.compile(r"\b(?:no|not|never|do not|must|only|without|exclude|excluded|avoid|prohibit|keep|lock|hard lock|negative)\w*\b", re.I))
+    camera_matches = choose("camera_result", EXTRACTION_PATTERNS["camera_result"])
+    lighting_matches = choose("lighting", EXTRACTION_PATTERNS["lighting"])
+    sound_matches = choose("sound", EXTRACTION_PATTERNS["sound"])
+    physics_matches = choose("physics", EXTRACTION_PATTERNS["physics"])
+    continuity_matches = choose("continuity", EXTRACTION_PATTERNS["continuity"])
+    constraint_matches = choose("constraints", EXTRACTION_PATTERNS["constraints"])
 
     missing_fields: list[dict[str, str]] = []
     if not objective_text:
@@ -738,11 +766,16 @@ def normalize_record(record: dict[str, Any]) -> dict[str, Any]:
     if strata.get("duration_state") in {"conflict", "multiple_metadata"} and not source_conflicts:
         uncertainties.append({"kind": "duration", "reason": "4B-2 flagged duration uncertainty; both source layers are retained."})
 
+    if status == "normalized" and len(text) > 12000 and not any(item.get("evidence_end") == len(text) for item in evidence):
+        manual_reasons.append("very-long source tail has no retained evidence span for deterministic coverage")
+        uncertainties.append({"kind": "long_prompt_tail", "reason": "The source tail remains immutable but no extracted evidence span reaches it."})
+
     if status == "normalized":
         semantic_signal_count = sum(bool(value) for value in (objective_text, subjects, spatial_matches, causal_beats, performance_matches, camera_matches, lighting_matches, sound_matches, physics_matches, continuity_matches, constraint_matches))
-        if len(text) < CONFIG["minimum_normalizable_chars"] or semantic_signal_count < 2:
+        if manual_reasons or len(text) < CONFIG["minimum_normalizable_chars"] or semantic_signal_count < 2:
             status = "needs_manual_review"
-            manual_reasons.append("source text is too short or semantically underdetermined for a reliable neutral summary")
+            if len(text) < CONFIG["minimum_normalizable_chars"] or semantic_signal_count < 2:
+                manual_reasons.append("source text is too short or semantically underdetermined for a reliable neutral summary")
     if not refs and "dense_references" in json_value(strata.get("risk_flags_json"), []):
         uncertainties.append({"kind": "reference_resolution", "reason": "4B-2 observed dense or unresolved reference syntax without a reliable role mapping."})
     if manual_reasons:

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "status": "pass",
-  "batch_id": "f62784a9ed4d8db2431cac0b",
+  "batch_id": "df45eda6600abe08aaee79b5",
   "batch_name": "stage-4b-3-full-video-semantic-normalization",
-  "manifest_sha256": "f62784a9ed4d8db2431cac0ba3620937c451e55862634617c62bb7a7cbb20928",
+  "manifest_sha256": "df45eda6600abe08aaee79b5cd5bf9274ec69d76d3dc374f8e5a4823d9f13d6a",
   "source_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3",
   "preprocessed_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-preprocessing-full\\preprocessed.sqlite3",
   "stratification_database": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-stratification-final\\stratification.sqlite3",
@@ -19,8 +19,8 @@
   "skipped": 6555,
   "failed": 0,
   "status_counts": {
-    "normalized": 6515,
-    "needs_manual_review": 40,
+    "normalized": 6494,
+    "needs_manual_review": 61,
     "excluded_with_reason": 0
   },
   "queue_counts": {
@@ -71,16 +71,16 @@
   },
   "transferability_status_counts": {
     "seedance": {
-      "portable_scene_intent": 6515,
-      "blocked_needs_manual_review": 40
+      "portable_scene_intent": 6494,
+      "blocked_needs_manual_review": 61
     },
     "h3": {
-      "portable_scene_intent": 6515,
-      "blocked_needs_manual_review": 40
+      "portable_scene_intent": 6494,
+      "blocked_needs_manual_review": 61
     }
   },
   "final_prompt_generated_count": 0,
-  "logical_target_digest": "6d1caaa0c2c30705e8435eb677cedc5b60014ce8c3355a57f4d733ff91113182",
+  "logical_target_digest": "7e5cdc959b5102576494bd7c0cee4b032e7a2b92747bc7a5918a75c352740d16",
   "review_sample": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-full\\review-sample.json",
   "review_sample_count": 58,
   "non_normalized_manifest": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-4b-semantic-normalization-full\\non-normalized-manifest.json",
@@ -114,7 +114,7 @@
         "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
         "exists": true,
         "size": 32768,
-        "mtime_ns": 1786970212252328900,
+        "mtime_ns": 1786974024379084900,
         "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
       }
     ]
@@ -139,7 +139,7 @@
         "path": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\project-corpus\\corpus.sqlite3-shm",
         "exists": true,
         "size": 32768,
-        "mtime_ns": 1786970221660734300,
+        "mtime_ns": 1786974197631403500,
         "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
       }
     ]

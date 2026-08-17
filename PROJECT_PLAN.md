@@ -309,7 +309,7 @@ cinematic-scene-case-library-work/
 
 ### 阶段 4：语料规范化与跨模型验证
 
-状态：阶段 4B-3 6555 条全量轻量语义规范化已完成并通过自动审计，等待用户审核；未进入 4B-4
+状态：阶段 4B-4 分层质量审计已完成并通过自动审计，等待用户审核；未进入阶段 5
 
 规范化层分为：
 
@@ -465,23 +465,23 @@ cinematic-scene-case-library-work/
 阶段 4B-3 样本实测结果：
 
 - 新增 `scripts/normalize_video_prompt_semantics.py`，独立输出 `prompt_normalizations`、`normalization_assets`、`normalization_evidence` 和 `normalization_decisions`；目标库不复制完整 Prompt。
-- 10 条回归样本首次运行 `processed=10`、`failed=0`，二次同参数运行 `processed=0`、`skipped=10`；v4 逻辑摘要保持 `58e307f0cc8503e5346d81c8d9a11d910bb604e72963c7a302b80f4c302dec8c`。
+- 10 条回归样本使用 v6 首次运行 `processed=10`、`failed=0`，二次同参数运行 `processed=0`、`skipped=10`；逻辑摘要保持 `7d228a71814506437e12f6b69927a97c8a56748102c1136e8f8ed161c129b951`。
 - 状态闭合为 `normalized=8`、`needs_manual_review=2`、`excluded_with_reason=0`。人工复核仅包含 24 字的 `connect these two clips` 欠定指令和 Unicode 损坏文本，不把可显式保留的时长、结构、引用或对白问题误判为处理失败。
 - 10 条记录映射回全部 206 个来源资产；14 个素材引用均标记为 `described_only`，因为语料库只有来源元数据而没有可访问媒体字节，没有伪造 Seedance 或 H3 媒体绑定。
 - 5 个来源冲突全部保持未解决：4 个时长冲突或多值观察、1 个单镜头/多镜头结构冲突；未擅自选择时长或镜头结构。
 - 三个已批准样本的关键回归事实保持：对白样本为 4 秒且逐字保留 `Are you kidding me?`；动作样本保留 Prompt 10 秒/资产 15 秒冲突和逐字日语对白；环境样本保留 `asset_metadata_only` 的 10 秒来源和无对白状态。
 - SQLite 含 848 条证据和 848 条变换决策；`integrity_check=ok`、外键错误 0、验证错误 0，源库、4B-1 库和 4B-2 库的内容身份均未改变。
-- v4 增加跨行引用残片清理和含模型标签的伪对白候选拒绝，避免模型语法进入中性字段；专项测试 7/7、全部测试 46/46、Python 内存编译 23/23 通过。审核产物为 `data/runs/stage-4b-semantic-normalization-sample/manifest.json`、`report.json`、`review-sample.json`、`non-normalized-manifest.json` 和 `semantic_normalization.sqlite3`。
+- v6 在 v4 的跨行引用残片清理和伪对白拒绝基础上，修正超限字段只保留前 N 条造成的长 Prompt 尾部覆盖风险；候选按首/中/尾确定性保留，超长尾部无证据的记录转人工复核。专项测试 9/9、全部测试 51/51、Python 内存编译 25/25 通过。审核产物为 `data/runs/stage-4b-semantic-normalization-sample/manifest.json`、`report.json`、`review-sample.json`、`non-normalized-manifest.json` 和 `semantic_normalization.sqlite3`。
 
 阶段 4B-3 全量实测结果：
 
-- 使用 `stage4b-light-semantic-normalization-v4` 和固定配置处理全部 6555 条视频相关唯一 Prompt；首跑 `processed=6555`、`failed=0`，二次同参数运行 `processed=0`、`skipped=6555`。
-- 三种终态完整闭合：`normalized=6515`、`needs_manual_review=40`、`excluded_with_reason=0`；人工复核包括 37 条语义欠定或过短来源文本、3 条 Unicode replacement 损坏文本。没有静默跳过或把来源问题伪装成成功摘要。
+- 使用 `stage4b-light-semantic-normalization-v6` 和固定配置处理全部 6555 条视频相关唯一 Prompt；首跑 `processed=6555`、`failed=0`，二次同参数运行 `processed=0`、`skipped=6555`。
+- 三种终态完整闭合：`normalized=6494`、`needs_manual_review=61`、`excluded_with_reason=0`；人工复核包括原有 37 条语义欠定或过短来源文本、3 条 Unicode replacement 损坏文本，以及 21 条长 Prompt 尾部无确定性证据跨度的记录。没有静默跳过或把来源问题伪装成成功摘要。
 - 复杂度队列与 4B-2 闭合：`complex=6069`、`standard=407`、`simple=76`、`manual_review=3`。
-- 目标 SQLite 含 6555 条规范化记录、102530 条来源资产映射、582285 条证据和 582285 条变换决策；`integrity_check=ok`、外键错误 0、验证错误 0，无 `prompt_text` 列。
-- 源库、4B-1 预处理库和 4B-2 分层库的内容身份均未改变；报告逻辑摘要为 `6d1caaa0c2c30705e8435eb677cedc5b60014ce8c3355a57f4d733ff91113182`。
-- 全量审核 JSON 只保留确定性分层样本 58 条；`non-normalized-manifest.json` 保留全部 40 条人工复核哈希与原因。约 594 MB 的 `semantic_normalization.sqlite3` 按 GitHub 单文件限制仅本地保留并可由脚本重建，不纳入版本库。
-- 全量产物为 `data/runs/stage-4b-semantic-normalization-full/manifest.json`、`report.json`、`review-sample.json` 和 `non-normalized-manifest.json`；等待用户审核后再进入 4B-4。
+- 目标 SQLite 含 6555 条规范化记录、102530 条来源资产映射、582306 条证据和 582306 条变换决策；`integrity_check=ok`、外键错误 0、验证错误 0，无 `prompt_text` 列。
+- 源库、4B-1 预处理库和 4B-2 分层库的内容身份均未改变；报告逻辑摘要为 `7e5cdc959b5102576494bd7c0cee4b032e7a2b92747bc7a5918a75c352740d16`。
+- 全量审核 JSON 只保留确定性分层样本 58 条；`non-normalized-manifest.json` 保留全部 61 条人工复核哈希与原因。约 595 MB 的 `semantic_normalization.sqlite3` 按 GitHub 单文件限制仅本地保留并可由脚本重建，不纳入版本库。
+- 全量产物为 `data/runs/stage-4b-semantic-normalization-full/manifest.json`、`report.json`、`review-sample.json` 和 `non-normalized-manifest.json`；已进入 4B-4 分层质量审计。
 
 ##### 4B-4：分层质量审计
 
@@ -495,6 +495,15 @@ cinematic-scene-case-library-work/
 - 对审计失败的规则只修复相应层并重新运行受影响记录
 
 建议至少审核每个主要分层 20 条，并对全部 `needs_manual_review` 中的高价值场景候选人工复核。抽样数量可在 4B-2 得到真实队列规模后再提交用户确认，不在当前阶段猜定总量。
+
+阶段 4B-4 实测结果：
+
+- 新增 `scripts/audit_stage4b_semantic_normalization.py` 和 `tests/test_audit_stage4b_semantic_normalization.py`；审计不复制源 Prompt 或全量中间库，只输出确定性哈希清单、抽样元数据和失败清单。
+- 全量闭合为 `6555` 条；分层抽样 `460` 条。复杂度队列、规范化状态、场景标签、文本长度、镜头结构和时长状态的每个主要值均至少抽取 20 条；仅有 3 条的 `manual_review` 队列全部纳入。
+- 全部 `61` 条 `needs_manual_review` 进入 `manual-review.json`，其中 `27` 条含动作、表演或环境高价值场景信号并进入主审核样本。
+- 逐条检查 `source_hash_and_length`、`asset_mapping_closure`、证据范围与 SHA-256、变换决策证据链接、字段来源、对白逐字保留、时长与结构冲突保留、引用 `described_only`、模型语法隔离、Seedance/H3 迁移状态和长 Prompt 尾部覆盖；6555 条全部通过，审计失败数为 `0`。
+- 三条已批准回归样本全部通过：4 秒英文对白、10/15 秒动作时长冲突与日语对白、10 秒环境元数据时长与无对白状态均保持。
+- 审计摘要为 `f2a029ed927193db4d6105a716c5ee511edcfd6c511879097d126684f78d8dd7`；产物为 `data/runs/stage-4b-quality-audit-full/manifest.json`、`report.json`、`audit-sample.json`、`manual-review.json` 和 `failures.json`。
 
 ##### 4B-5：全量规范化检查点
 

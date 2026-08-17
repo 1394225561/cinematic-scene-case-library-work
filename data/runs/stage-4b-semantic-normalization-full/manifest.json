@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "batch_name": "stage-4b-3-full-video-semantic-normalization",
-  "normalizer_version": "stage4b-light-semantic-normalization-v4",
-  "normalizer_config_sha256": "aee54fbae33eb1c6cefba3d590e943f8a57ec219a4231fc954a13e7d88b6e613",
+  "normalizer_version": "stage4b-light-semantic-normalization-v6",
+  "normalizer_config_sha256": "fdef65df637231d51aa9d5f4b5984474c13b4a9be095593952135ca5517c6cf1",
   "prompt_hashes": [
     "00171ab70b45a134174cb0ac1865ff284e1fa7ab9bf235d62b7408c6ba53bb67",
     "001974c55eb04ce39405bc668773ab703c6e6d493061d995719ca9239b53e77f",
