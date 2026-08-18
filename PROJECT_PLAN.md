@@ -1,6 +1,6 @@
 # Cinematic Scene Case Library 制作计划
 
-最后更新：2026-08-17
+最后更新：2026-08-18
 
 ## 1. 项目目标
 
@@ -603,7 +603,7 @@ cinematic-scene-case-library-work/
 
 ### 阶段 5：场景分类与精华案例筛选
 
-状态：5-1 场景分类与 Prompt-only 评分已完成，等待用户审核；尚未进入 5-2 精华案例最终筛选
+状态：5-1 场景分类与 Prompt-only 评分、5-2 精华案例最终筛选均已完成，等待用户审核
 
 步骤：
 
@@ -634,10 +634,23 @@ Stage 5-1 检查点已完成：
 - 完全重复文本只分析一次，但原始资产记录无删除、无丢失
 - 评分中不存在以重复生成次数替代内容质量判断的字段或隐性权重
 - 近似变体的合并、保留和排除均有可审计理由
+- Stage 5-2 的 175 条候选均有最终决策、理由和来源映射；24 条入选案例可追溯到 Stage 5-1 候选 digest。等待用户审核最终案例覆盖、配额和排除理由后，才进入阶段 6 范式抽象。
+
+Stage 5-2 实际结果：
+
+- 新增纯离线确定性筛选器 `scripts/select_stage5_final_cases.py`，只消费 Stage 5-1 候选，不读取或修改原始 Prompt 语料、规范化库和分层库。
+- 先通过 Stage 5-1 `candidate_digest`、`stage5_1_digest` 和候选数量闭合校验，再执行最终筛选；内容分数和最低维度分先于所有编辑性 tie-break。
+- 最终入选门槛为 `classified` + `normalized`、`core_pattern`/`effective_variant`、Prompt Content Score 至少 18、最低维度分至少 3、无来源冲突、无关键字段缺失且存在完整资产来源映射。
+- 默认每个可用场景家族保留 3 条最终案例；8 个主家族共入选 24 条。15 条 `unspecified_scene` 候选因结构不足明确记录为 `not_selected`，其余 136 条合格候选记录为 `retained_alternative`，未被静默丢弃。
+- 近似重复只保留一个全局代表；本次 24 条最终案例没有近似重复重叠。资产数量、重复生成次数、模型频率和未检查媒体均不参与质量或排序判断。
+- 最终案例不携带原始 Prompt 文本、历史 `@tag`、媒体 URL 或其他重资产；每条仍保留 Prompt SHA-256、完整资产 ID 映射、场景家族、评分证据、风险和筛选理由。
+- 全量运行状态为 `pass`；决策闭合 175/175，选中 24 条，审计替代 136 条，明确不选 15 条。相同参数幂等重跑保持相同 `selected_digest`、`decision_digest` 和 `stage5_2_digest`。
+- 新增 `tests/test_select_stage5_final_cases.py`，覆盖资产数量独立性、门槛、家族配额、近似重复抑制和分数优先级；全套 65 项测试通过。
+- 产物：`data/runs/stage-5-2-final-selection/final-cases.json`、`decision-records.json`、`manifest.json`、`report.json`。
 
 ### 阶段 6：范式抽象与唯一案例库 Skill 制作
 
-状态：未开始
+状态：候选 Skill 已生成并通过结构与边界验证，等待用户审核；尚未进入阶段 7 集成
 
 最终 Skill 预计包含：
 
@@ -648,7 +661,10 @@ cinematic-scene-case-library/
 │   └── openai.yaml
 └── references/
     ├── index.md
-    └── <按最终分类生成的案例文件>.md
+    ├── guidance-package-schema.md
+    ├── build-manifest.json
+    └── cases/
+        └── scene-case-<family>-<n>.md
 ```
 
 每个案例包含：
@@ -673,9 +689,19 @@ cinematic-scene-case-library/
 - 审核指导包 Schema、模型适配隔离、禁止复制字段和 Prompt-only 证据声明
 - 确认案例库只给出建议与交接片段，不生成或声称拥有 Seedance/H3 最终稿
 
+阶段 6 实际结果：
+
+- 使用 `skill-creator` 初始化候选 Skill 骨架并完成入口说明：`SKILL.md`、`agents/openai.yaml`、`references/index.md` 和 `references/guidance-package-schema.md`。
+- 新增可复现构建器 `scripts/build_stage6_skill.py`，从 Stage 5-2 `final-cases.json` 和 4B-3 规范化 SQLite 生成 24 个案例文件；案例只保留模型无关结构、变量槽位、可迁移约束、ACTING/CINEDANCE 交接和 Seedance/H3 隔离说明。
+- 每个案例包含 Prompt-only 证据、置信度限制、Prompt SHA-256、规范化 digest 和完整资产 ID 审计映射；资产 ID、历史时长、源 `@tag` 和模型专有语法均明确标为禁止下游复制。
+- 新增 `scripts/validate_stage6_skill.py`，在不安装第三方依赖的前提下完成入口 frontmatter、UI YAML 必要字段、索引链接、24 个案例、manifest 哈希、TODO、重资产和源 Prompt 边界检查，状态为 `pass`。
+- 新增 `tests/test_build_stage6_skill.py`，覆盖结构信号计数、源文本不复制和 slug 链接；全套测试由 65 项增加到 68 项，全部通过。
+- 官方 `skill-creator` `quick_validate.py` 已尝试运行，但当前环境缺少 `yaml` 包；按依赖审批约束未安装该包，已用标准库等价 validator 完成可复现检查。
+- 候选 Skill 目录为 `skill/cinematic-scene-case-library/`，不包含图片、视频、音频、缩略图或其他媒体文件；当前停止在阶段 6 用户审核点，尚未修改任何本地安装目录。
+
 ### 阶段 7：总编排集成与验证
 
-状态：未开始
+状态：已完成（候选补丁与离线验证通过，停止在用户审核点）
 
 步骤：
 
@@ -689,9 +715,17 @@ cinematic-scene-case-library/
 
 注意：`minimax-h3-director` 明确禁止作为 `cinema-studio-production` 的下游包装器。两条路径必须保持独立；任何改变该所有权关系的方案都属于后续独立架构决策，不能在本阶段擅自实施。
 
+阶段 7 实际结果：
+
+1. 新增 `integration/cinema-studio-production.patch.md` 与 `integration/minimax-h3-director.patch.md`，均为只读候选插入补丁；没有修改两个本地安装目录。补丁记录目标文件 SHA-256，阶段 8 应用前必须重新核对目标未漂移。
+2. 新增 `integration/stage7-routing-contract.json`，固定四类检索触发、完整可拍请求跳过、最多加载一个案例、冲突优先级、Seedance/H3 独立路径、职责字段分发和禁止复制字段。
+3. 新增 `integration/representative-tasks.json`，包含 Seedance 与 H3 各四类正向触发和一个完整可拍负向任务，并提供两个最小过滤交接夹具。
+4. 新增 `scripts/validate_stage7_integration.py` 与 `tests/test_validate_stage7_integration.py`；验证补丁锚点与目标哈希、24 个案例目录、8 个家族、路由决策、交接密度、最终所有权、历史标识和跨模型语法隔离。
+5. 阶段 7 验证通过：定向测试 4 项通过；全套测试 72 项通过；阶段 6 Skill validator 状态为 `pass`；阶段 7 validator 状态为 `pass`。未安装依赖、未写入本地 Skill 安装目录、未生成或检查媒体。
+
 ### 阶段 8：最终审核与安装
 
-状态：未开始
+状态：已完成
 
 步骤：
 
@@ -701,6 +735,15 @@ cinematic-scene-case-library/
 4. 安装案例库并应用已审核补丁。
 5. 对安装后的文件再次验证。
 6. 保留工作目录，除非用户明确要求清理。
+
+阶段 8 当前结果：
+
+- 已核对两个目标 Skill 的安装前 SHA-256 与阶段 7 补丁记录一致，两个补丁锚点均唯一，案例库安装目标不存在。
+- 已新增并通过 PowerShell 解析检查的 `scripts/install_stage8.ps1`，脚本包含目标哈希复核、原始文件备份、原子补丁、案例库复制、安装清单和失败回滚。
+- 已将候选 Skill 安装到 `C:\Users\Admin\.agents\skills\cinematic-scene-case-library`，共 29 个文件；未覆盖既有同名目录。
+- 已备份并原子更新 `cinema-studio-production/SKILL.md` 与 `minimax-h3-director/SKILL.md`；安装前与安装后哈希均写入 `data/runs/stage-8-install/installation-manifest.json`。
+- 安装后验证状态为 `pass`：案例库结构、24 个案例、索引、Schema、manifest 哈希、无媒体文件、补丁插入次数、职责所有权文本、备份一致性和无临时文件均通过。
+- 阶段 7 validator 已支持基线与已安装两种目标状态；修正后全套 72 项测试通过。工作目录和安装前备份均保留。
 
 ## 8. 抓取器技术约束
 
@@ -797,6 +840,20 @@ cinematic-scene-case-library/
 
 - 用户确认案例库应作为低权限、可选的检索增强层；已锁定 Seedance/H3 双路径、最终组装所有权、指导包字段、禁止复制项、Prompt-only 证据边界和代表性集成验收条件。此次只更新计划，不进入 Stage 5-2。
 
+### 2026-08-18
+
+- 开始并完成 Stage 5-2 精华案例最终筛选：校验 Stage 5-1 输入 digest 后，从 175 条候选确定性选出 24 条最终案例，8 个主场景家族各 3 条。
+- 为全部候选生成 `selected`、`retained_alternative` 或 `not_selected` 决策记录；保留家族配额、近似重复、门槛失败和来源映射理由，不把资产数量或未检查媒体当作质量证据。
+- 全量运行和幂等重跑均为 `pass`；全套 65 项测试通过。已停止在 Stage 5-2 用户审核点，尚未生成阶段 6 Skill 或 Seedance/H3 最终稿。
+- 开始并完成阶段 6 候选 Skill 制作：通过 `skill-creator` 初始化骨架，生成 24 个模型无关案例、渐进式索引、指导包 Schema 和构建 manifest。
+- 完成标准库 Skill validator：入口元数据、案例 ID/链接、manifest 哈希、无 TODO、无媒体文件和原始 Prompt 边界全部通过；官方 validator 因缺少 `yaml` 依赖未运行成功，未擅自安装依赖。
+- 全套测试增至 68 项并全部通过；已停止在阶段 6 用户审核点，尚未进入阶段 7 总编排集成，也未写入本地安装目录。
+- 开始并完成阶段 7 候选总编排集成：为 Seedance 与 H3 分别准备可选案例检索补丁，保持 H3 不经由 `cinema-studio-production` 包装，保持 CINEDANCE/H3 最终组装所有权不变。
+- 完成阶段 7 路由契约与代表性夹具：抽象、缺结构、Prompt 修复、显式查询均触发检索；完整可拍请求跳过；交接只保留职责片段，禁止来源标识、历史时长和异模型语法泄漏。
+- 阶段 7 定向验证与全套 72 项测试均通过；阶段 6 validator 与阶段 7 validator 均为 `pass`。停止在阶段 7 用户审核点，尚未应用补丁或进入阶段 8 安装。
+- 阶段 8 获用户明确批准后完成安装：案例库 29 个文件已写入本地 Skill 目录，Seedance/H3 两处补丁已应用并留存安装前备份与哈希清单。
+- 安装后 `validate_stage8_install.py`、安装目录版 Stage 6 validator、已安装状态版 Stage 7 validator 均为 `pass`；全套回归测试保持 72 项通过。
+
 ## 11. 中断恢复说明
 
 恢复工作时按以下顺序执行：
@@ -810,6 +867,5 @@ cinematic-scene-case-library/
 
 ## 12. 当前下一步
 
-1. 等待用户审核 Stage 5-1 的多标签分类、Prompt Content Score v2、175 条互异候选家族记录和 61 条人工复核入口。
-2. 用户批准后进入 Stage 5-2 精华案例最终筛选，为入选、保留和不入选记录补充可审计理由；不根据未检查媒体推断成片质量。
-3. 在 Stage 5-2 审核完成前不生成全量 Seedance/H3 最终稿，也不制作最终 Skill 安装包。
+1. 阶段 8 已完成；保留工作目录、安装清单和两个安装前备份，不自动清理阶段产物。
+2. 后续如需升级案例、回滚补丁或变更检索规则，应先创建新的审核阶段并重新核对目标哈希。

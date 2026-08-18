@@ -1,0 +1,91 @@
+{
+  "version": "stage7-representative-tasks-v1",
+  "tasks": [
+    {
+      "id": "seedance-abstract",
+      "target": "seedance",
+      "brief": "做一个压迫感很强的追逐镜头，但我还没有想好动作和机位。",
+      "signals": ["abstract_request"],
+      "expected": {"retrieve": true, "reason": "abstract_request", "family": "action_in_environment", "case_count": 1}
+    },
+    {
+      "id": "seedance-missing-structure",
+      "target": "seedance",
+      "brief": "两个人在狭窄楼梯间打斗，请帮我补齐可读的动作因果和空间关系。",
+      "signals": ["missing_structure"],
+      "expected": {"retrieve": true, "reason": "missing_structure", "family": "action_choreography", "case_count": 1}
+    },
+    {
+      "id": "seedance-repair",
+      "target": "seedance",
+      "brief": "修复这段 Seedance Prompt：镜头轴线不断跳，撞击也没有重量感。",
+      "signals": ["prompt_repair"],
+      "expected": {"retrieve": true, "reason": "prompt_repair", "family": "physics_continuity", "case_count": 1}
+    },
+    {
+      "id": "seedance-explicit-lookup",
+      "target": "seedance",
+      "brief": "请从案例库找一个角色从克制转为决绝的表演范式。",
+      "signals": ["explicit_lookup"],
+      "expected": {"retrieve": true, "reason": "explicit_lookup", "family": "character_performance", "case_count": 1}
+    },
+    {
+      "id": "seedance-complete-skip",
+      "target": "seedance",
+      "brief": "单镜头：A 在画左距门两步，听见门响后停步回头；摄影机从中景缓慢推到近景，保持轴线，最后定格在她握紧门把的手。",
+      "signals": ["concrete_shootable_complete"],
+      "expected": {"retrieve": false, "reason": "concrete_shootable_complete", "family": null, "case_count": 0}
+    },
+    {
+      "id": "h3-abstract",
+      "target": "h3",
+      "brief": "为 H3 做一个孤独、宏大的废墟建立镜头，场景结构还没定。",
+      "signals": ["abstract_request"],
+      "expected": {"retrieve": true, "reason": "abstract_request", "family": "environment_establishing", "case_count": 1}
+    },
+    {
+      "id": "h3-missing-structure",
+      "target": "h3",
+      "brief": "H3 对话场景只有台词，请补齐轮次、聆听和反应结构。",
+      "signals": ["missing_structure"],
+      "expected": {"retrieve": true, "reason": "missing_structure", "family": "dialogue_performance", "case_count": 1}
+    },
+    {
+      "id": "h3-repair",
+      "target": "h3",
+      "brief": "修复 H3 镜头：摄影机终点不清楚，运动速度也互相冲突。",
+      "signals": ["prompt_repair"],
+      "expected": {"retrieve": true, "reason": "prompt_repair", "family": "camera_control", "case_count": 1}
+    },
+    {
+      "id": "h3-explicit-lookup",
+      "target": "h3",
+      "brief": "从案例库找一个动作、环境和表演同时推进的混合场景参考，再由 H3 Director 组装。",
+      "signals": ["explicit_lookup"],
+      "expected": {"retrieve": true, "reason": "explicit_lookup", "family": "mixed_scene", "case_count": 1}
+    },
+    {
+      "id": "h3-complete-skip",
+      "target": "h3",
+      "brief": "T2VA：固定广角，角色从画右进入，在中央路标前停下并抬头；风先吹动外套再卷起尘土，摄影机全程不移动，结尾保持两秒。",
+      "signals": ["concrete_shootable_complete"],
+      "expected": {"retrieve": false, "reason": "concrete_shootable_complete", "family": null, "case_count": 0}
+    }
+  ],
+  "filtered_handoffs": [
+    {
+      "task_id": "seedance-missing-structure",
+      "case_id": "scene-case-action_choreography-01",
+      "acting-for-ai-video": ["目标是脱离封锁", "撞击前先有预判，受力后再失衡恢复"],
+      "cinedance-seedance-director": ["两人保持楼梯轴线", "接触点和重心转移按因果顺序可见"],
+      "final_owner": "cinedance-seedance-director"
+    },
+    {
+      "task_id": "h3-missing-structure",
+      "case_id": "scene-case-dialogue_performance-01",
+      "acting-for-ai-video": ["说话者用停顿改变策略", "听者先接收信息再给出可见反应"],
+      "minimax-h3-director": ["保持说话者与听者的空间关系", "由 H3 Director 决定 Context-IR 与真实媒体标签"],
+      "final_owner": "minimax-h3-director"
+    }
+  ]
+}

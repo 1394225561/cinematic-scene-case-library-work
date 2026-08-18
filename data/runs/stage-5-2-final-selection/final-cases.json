@@ -1,0 +1,4371 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "candidate_family": "action_choreography",
+      "selection_rank": 14,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "126e93913c44a0b1b94f0763908904ff53c9b7519ee57ac98bbcc6ae7dbdcb11",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 9805,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "5e7bb89b90ef4c88faa0eabed8c1aa566d5a19270598f3619d6cdcedf5dfe0f2",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 28,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "1258d035-2cac-4a3c-86c3-a491cebbb294",
+        "29d801b8-1f9b-4842-92d2-e5271dd6d265",
+        "2a8a43bf-82a4-4b6a-931e-b8c6e4b423b0",
+        "30deec8e-3ec2-4c9c-ae43-ccc2610868fa",
+        "34635e2f-901d-45d6-9aaf-86b0fe1e1653",
+        "41e5065b-8f02-474a-8a53-56c4909b4d4b",
+        "4612641f-5474-476c-8fa9-af0d3ab329ee",
+        "46a0726c-4fa7-4c85-88ff-35f1bb285702",
+        "4a8f824f-92b7-4c78-9664-86f1d558ec49",
+        "4aab8324-5a10-4871-be13-15c62f1cc1ad",
+        "4bec225d-21db-4f8c-8ad2-4877a83e0d0d",
+        "53c84e33-a2cc-48a6-b40e-a42a13f1ee5f",
+        "56015547-54b7-4d6a-9293-6bb5c6acea1d",
+        "5d5f9f58-019a-4f56-998b-5734cf9aee5b",
+        "6727eac4-166f-42d9-a674-c6a3b253bd67",
+        "892cb861-2a4b-46be-aca0-ce4607def0b8",
+        "8a25849e-9af0-4d67-875a-2dc20d959508",
+        "91dc81ec-7447-437b-acb3-7754c44ec242",
+        "a1232959-e27f-4e18-a966-402921cda353",
+        "bb8d3b40-252f-4905-84d3-96efbd0f13d2",
+        "c4b3b522-94f4-4136-9518-9daa5f55b971",
+        "ce0b5d51-45d7-4c79-8bfb-477b2587a36c",
+        "ce8889d0-edef-494e-9227-6c705332ef15",
+        "e95cc36d-85ee-44d1-98d3-c4de59e9b5f5",
+        "e98b4b73-b3c2-44c8-bad1-3ae8fdcaf4ff",
+        "ebe9e50e-dfa4-46f0-9ae9-00a2763082e0",
+        "ee91d140-3e8f-4e36-8c76-72c3a12c13cf",
+        "ffeb7e19-371a-44a3-875b-76e26aa5160d"
+      ],
+      "asset_count_audit_only": 28,
+      "folder_ids": [
+        "84c27211-d86e-4fee-ad24-9c825568e1d7"
+      ],
+      "folder_names": [
+        "Scene 72A"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-action_choreography-01",
+      "final_status": "selected",
+      "final_selection_rank": 1,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 1 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 0,
+        "source_prompt_chars": 9805,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "action_choreography",
+      "selection_rank": 6,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "0bbc307b26f4f8ebb673bfdb61e2371ada0851244ebe993df4a3a1088c9873f5",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 9049,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "high_marker_density"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "947a2e9006fb2be926b13e0ac388c1cfc3bed1bbe1054d5d713aff8c25a34c0d",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 4,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "23b5f2a4-d186-43e8-b495-a7035cf812d8",
+        "66659bd3-aaaf-4d24-b16a-506a17b09738",
+        "764e8a68-a717-46e6-a9ed-8245297ecaaa",
+        "8f724b28-c12f-450a-99a9-d43c2d7162c0"
+      ],
+      "asset_count_audit_only": 4,
+      "folder_ids": [
+        "2ed53e91-e54a-4a6b-8263-83dd6ee609de"
+      ],
+      "folder_names": [
+        "Scene 51 Statue Assault"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        9.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-action_choreography-02",
+      "final_status": "selected",
+      "final_selection_rank": 2,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 2 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 9049,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "action_choreography",
+      "selection_rank": 17,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "19a08b7ded63e6ab827910ab52b05d02a7324cef12535a65b8ad6db3442217e7",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 9310,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "high_marker_density"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "4d14cbce32e1d364625aaeaea912f88226bd8f47f4544bdfba8085662165eeeb",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 16,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "0c1bd899-5658-4f8f-8143-75a23505aea9",
+        "265eaf70-550d-4a1d-bbd6-c34bbbb70aa1",
+        "4979385f-623a-4c68-bcb5-ad03a9bc0b78",
+        "6abb6a5a-570a-4723-97c4-b3456506ebd6",
+        "76f57b5d-d461-4227-9cba-30590830440c",
+        "79ea6122-f58a-4658-a5f0-7a2e2b6bbeb5",
+        "7d3d2c08-5de5-458d-9caf-bca748a08eef",
+        "80511191-263d-4035-bf6d-079a1dd805ee",
+        "8474f8e9-7d77-4c68-b4ab-d95328800fd7",
+        "8ac18618-8944-4c7e-b3fb-524780ddaa8f",
+        "99f032db-4503-4269-bb7b-4ec1d42ab837",
+        "a76dd2ca-af4c-4808-b3bb-82aef614f0ae",
+        "abc09790-23a9-4c95-b130-bda3cdeca3ea",
+        "b5800558-e408-451b-af25-17dfd9c6e3d5",
+        "bf9aa481-e8f9-42fd-848e-c0446b351df4",
+        "d6344603-fdab-4e64-8664-899c64b65a45"
+      ],
+      "asset_count_audit_only": 16,
+      "folder_ids": [
+        "2ed53e91-e54a-4a6b-8263-83dd6ee609de"
+      ],
+      "folder_names": [
+        "Scene 51 Statue Assault"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-action_choreography-03",
+      "final_status": "selected",
+      "final_selection_rank": 3,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 3 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 9310,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "action_in_environment",
+      "selection_rank": 7,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "2889a52ed802235bee0e3e11ffcc8d78e56ba5e0be1e3ad6631e664b4188fbf8",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 11705,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "0b1f9542f6e3f3c65a8253c9e07c85316366f76b38c804ffe56984df86f8b42c",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 32,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "065dafa2-0d91-4670-b9bd-d5b9efab9907",
+        "0a104261-b19f-47cd-9080-5e67e1c12206",
+        "0cd1b3fe-2d58-4878-b991-2121e6afe6db",
+        "0e18e087-7132-40ea-9a1d-60e5e7bb9bca",
+        "1526c92b-597f-4869-a783-202fee7d31fa",
+        "4134867c-5d0a-4409-9dfc-47c66bf3d61f",
+        "4578a6b1-a1ef-4e7a-a79b-dbc96c2541b0",
+        "4bfb0419-8058-46fa-87aa-9437210066da",
+        "53c2f205-d26c-427a-9ec0-044177c3e864",
+        "53c47f3f-1500-4bab-aa00-a8d4bddd27aa",
+        "596656e9-214d-48b6-9a82-a596aaa5a8b4",
+        "5f55dccf-b9a6-4c5d-a6ca-a22bba5974d9",
+        "65c0c7d5-fa67-42da-b496-b4d21e4ba06d",
+        "66a6b85b-f451-4cb7-a068-ce4b251d87f8",
+        "7b4594b6-6831-4793-a2c3-14d099b9282d",
+        "8870dcd0-fc1e-47ae-a5a4-a8f5dfd85115",
+        "9702d17a-d204-41d0-8a7a-29abc422ba8f",
+        "a321d040-565a-407a-8b02-6cde69881e14",
+        "a39f15d7-0749-4d96-9918-f1834af50b18",
+        "aa479366-56c7-4593-ae0b-74831a20c2b9",
+        "b267259f-450b-49fc-b193-990325d7dabd",
+        "bfcb40fd-7829-4e8a-af16-f291db5f55a7",
+        "c0bddde4-1958-497b-ab7c-1a88a2627010",
+        "c12174d4-fb17-458d-b1a8-f15db0260eae",
+        "c337fc7e-8035-4e19-99a2-1f75ac7f341c",
+        "c56175cd-8d11-4e31-ac81-8d83073d639f",
+        "c7ccb404-a40f-48b4-aa2a-202fb9b7f84b",
+        "c809381d-7588-4506-a078-b0b7391c3df4",
+        "c839df74-eb03-4b7f-a575-bccd6dcd2291",
+        "dc420934-1367-4480-a1ec-88c96f6e91a2",
+        "ee4c5c15-f608-4b30-b548-c92efe596d3b",
+        "f32bb6bb-14c3-492d-86f6-80610fef6a9e"
+      ],
+      "asset_count_audit_only": 32,
+      "folder_ids": [
+        "5ca6d857-f0bb-48e5-9dc5-5394a3959006"
+      ],
+      "folder_names": [
+        "Scene 72B"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-action_in_environment-01",
+      "final_status": "selected",
+      "final_selection_rank": 4,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 1 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 0,
+        "source_prompt_chars": 11705,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "action_in_environment",
+      "selection_rank": 12,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "2be273490eb3403bc97d9608ebaba4afa575c2514a87b3e76c7381a7c935b84c",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 11020,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "high_marker_density"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "943134bc21608eca4714e647414ad667c4594f081ac6dff9f432cb9ea012f818",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 4,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "3d13a903-06b4-49b9-882a-9da19f35769f",
+        "4832dc0e-d4f6-4fb5-8ad1-29b7b6e90806",
+        "514ece7a-41af-45cb-8a2e-07ac0555dd4b",
+        "c77af197-4621-40b4-ac73-5b442a50b559"
+      ],
+      "asset_count_audit_only": 4,
+      "folder_ids": [
+        "2ed53e91-e54a-4a6b-8263-83dd6ee609de"
+      ],
+      "folder_names": [
+        "Scene 51 Statue Assault"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        9.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-action_in_environment-02",
+      "final_status": "selected",
+      "final_selection_rank": 5,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 2 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 11020,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "action_in_environment",
+      "selection_rank": 13,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "2eb89fb8b38854ddf056bbf2ac5741b1ce25a2b91c21e678b8e4a3b2afc73a96",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 17273,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references",
+        "very_long_prompt"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "d0a378b495967d5a3c8d21a4a66a611286cc846a389fdd8643e1a3831a6fb97e",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 43,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "03c72694-ad9a-4e1f-ad07-b92d6178c39f",
+        "0855d080-793b-4a29-96e2-7a4f0271374c",
+        "0b82b3f4-0d90-4476-9ada-a5830e3c3a93",
+        "0c9bf771-1862-4c39-bb2b-faf47d161366",
+        "1e35e154-66d5-4e3d-b7f3-f87cdd7136cc",
+        "2427b2c4-d7f7-4c89-818e-cf3453407267",
+        "25553374-3ad3-42af-879c-33f08290824e",
+        "27f5c0a9-786d-455e-a2f2-95ab15df901a",
+        "36e3a583-5614-4660-945e-11d9cc3326d5",
+        "39898e2d-5ae0-4bec-ab91-41b09ef5a8c1",
+        "3b08c33a-b8fa-4bc0-af79-249a32704b23",
+        "4311a097-07e8-4ddd-a88d-0cedb8b2c000",
+        "489207fe-1d02-4425-b4a3-2395769887ef",
+        "4fad67cd-7991-49c3-84f6-30a2d10091b2",
+        "510dad4d-1a4f-4ef6-aca5-7ea5326c5274",
+        "533e1471-8ccd-42ff-ac55-c99ae135e92a",
+        "5800cc72-f1ea-4d29-a00a-69e4dba17c9f",
+        "590d894c-74e6-43de-beb4-a599768b8596",
+        "6e918ec0-9b75-4f76-84aa-58b38326878c",
+        "730a11dc-e98a-46f4-902e-e7ee213c74d4",
+        "74d38bf7-4337-42b5-bf20-28888e320fdf",
+        "7605b2ac-8253-4828-85a4-501dac6ec1af",
+        "8177714d-1122-47e2-b982-444f416fa9a1",
+        "95a447d2-3cdd-4a6b-943d-d44a2728c36b",
+        "97eccc96-c729-4d7c-a483-fc2d005a39ce",
+        "af1b73f9-ecbb-4bf5-96af-3aa6e8072267",
+        "b1779bdc-aecb-44af-9a2a-d175a7f472c5",
+        "b32424e1-58ab-4b6a-9c10-c2e65fab4e82",
+        "beaff31f-c111-4f2e-b474-a0ff3b0dbc92",
+        "bf7e9d67-ace8-49fe-966c-1c97b01a114c",
+        "c032c8d4-d816-475e-9262-660688cef0ab",
+        "c6f174e6-c9c9-4084-95ef-baeafaa80c8f",
+        "cc3f6f5b-00fd-414c-af4c-9d17a1c14b9f",
+        "cd8b5e70-e894-450c-81fa-29bfa624fcaa",
+        "d1c6acb9-527f-4e4d-be2f-4e147c0d7bb4",
+        "d2ea779b-d4b5-4054-b577-88ccc2408de0",
+        "d8ed186b-198f-4fbc-9e04-2cc87f039eea",
+        "db5f84a5-f0e8-488c-b6f9-25e829c8ba28",
+        "e522f17d-1486-4ccc-b593-db8477c3ff00",
+        "e8ee5bab-ad10-430d-9802-b84c62e619c3",
+        "f4e6f2ac-10d7-47d7-acdb-c8d678e899a2",
+        "fc87f06c-c042-4a6c-a824-aede073f2bc4",
+        "ff2edeaa-b6af-4a1e-bf80-064e7bdd500f"
+      ],
+      "asset_count_audit_only": 43,
+      "folder_ids": [
+        "5ca6d857-f0bb-48e5-9dc5-5394a3959006"
+      ],
+      "folder_names": [
+        "Scene 72B"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        10.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-action_in_environment-03",
+      "final_status": "selected",
+      "final_selection_rank": 6,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 3 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 17273,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "character_performance",
+      "selection_rank": 9,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "3a3edee076d78380f895e75e3b547eec057a4a5d0b46291f084f56cafbd43615",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 8922,
+      "complexity_queue": "complex",
+      "structure_state": "multi_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "57e8471406d5bbdd692a360ccbe923c600d322785f8531aa5316d245a10a3f98",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 5,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "1ab8de97-5b6d-49e8-a551-37019f39c971",
+        "774888ac-8340-4784-b2b6-56f4632c44ba",
+        "90ef87fa-7db4-4d7a-aa37-4867f5a9682d",
+        "9c711acd-42f3-4e13-b4b9-c968fd999c59",
+        "f2f88f51-1b3b-4a61-ad6f-746b26bb00cf"
+      ],
+      "asset_count_audit_only": 5,
+      "folder_ids": [
+        "9e964860-5eea-4b60-a73d-84d774b94260"
+      ],
+      "folder_names": [
+        "Scene 32"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-character_performance-01",
+      "final_status": "selected",
+      "final_selection_rank": 7,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 1 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 0,
+        "source_prompt_chars": 8922,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "character_performance",
+      "selection_rank": 10,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "3be1958efd0486b3d5544a004867e4db97a99775a26b098abc0b05138811a59e",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 9262,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "high_marker_density"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "a9bdd03406de0d6c82d871f9fdc7dd0a014ca0f204457090a0ce87dfc86844f5",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 4,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "6a89c9fe-3b8a-4c91-9894-7ce5ab0a0741",
+        "aea3fb61-db7e-4d89-b119-7503903f2652",
+        "b76ab75c-7fab-42fe-b48e-74a271d142fb",
+        "c8be16c2-8725-454b-bb56-3a4be584ffa3"
+      ],
+      "asset_count_audit_only": 4,
+      "folder_ids": [
+        "2ed53e91-e54a-4a6b-8263-83dd6ee609de"
+      ],
+      "folder_names": [
+        "Scene 51 Statue Assault"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-character_performance-02",
+      "final_status": "selected",
+      "final_selection_rank": 8,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 2 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 9262,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "character_performance",
+      "selection_rank": 7,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "38eed8353c418d4a5f35e42a54f6601e6a7a2d3f139e108c044dec7457884380",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 12133,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references",
+        "very_long_prompt"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "82e282bf819c6c0821931ba54cbddb5e3c288a4e9f5f13c2d4ab2925e57316f1",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 24,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "02c2b5ed-c263-471d-876c-157a119f3fe7",
+        "1f4c72a5-0dac-4919-9991-0006f3966a13",
+        "2248bdaa-7a9c-4bdd-a8d5-22f7b081429b",
+        "26550ba9-39ca-4989-9359-384a0eae79ff",
+        "2b45e0dd-c035-44ca-956c-c60355b24222",
+        "340fde3c-c535-464c-8c95-892f6de7e000",
+        "52cff48a-ff55-4e92-9128-62d947b76827",
+        "590b0eef-4f6e-46e3-912a-e2b027932b93",
+        "737e14a2-f191-482d-8303-56f3998e308f",
+        "73b6a2f0-9aec-4725-835f-70552e6b99fc",
+        "74c8c0a8-17ee-4b30-8e41-ec0ce1fbcffa",
+        "7df5eb85-db63-434e-b00c-985040d8004e",
+        "7e91c160-21e1-4cb8-906b-1965edec7f8e",
+        "92ebb68c-61d1-49e9-949a-a6321a5fe331",
+        "9a995a1d-0131-4c81-bfe8-3c425bc4f4c8",
+        "a22fec14-607e-4ee3-b604-1772dce67e21",
+        "acd7c322-1396-48ef-93ab-b92f9008022a",
+        "af596c3c-679d-4e57-a5fc-70fd996b9381",
+        "bc2e2a36-fbd3-4ad7-abad-5cd880e55c66",
+        "bd56f1bb-806c-4344-b1bb-d741214ed5c2",
+        "c14f7bd4-dfc7-41e0-8af6-8bc92408162f",
+        "c79ce6a7-c6f3-4ac8-931b-790fe8b73ff3",
+        "ce471e65-e1f9-4e80-995b-72fb75110b37",
+        "f111c176-553e-42ae-bd83-e34dd0e2e68c"
+      ],
+      "asset_count_audit_only": 24,
+      "folder_ids": [
+        "db2c078e-6dd1-4d31-bb80-1ecd164efadb"
+      ],
+      "folder_names": [
+        "Scene 28"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-character_performance-03",
+      "final_status": "selected",
+      "final_selection_rank": 9,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 3 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 12133,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "dialogue_performance",
+      "selection_rank": 4,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "45abb83d334903849aef5002ede12ec75a281420223537e632f619ab7b60511e",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 10003,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "high_marker_density"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "6c64c6558d52c14afeeeec3fb262494d722123b1a74434b66b78bf549863383f",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 4,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "9e68b581-f95b-499d-9092-334cd2b89771",
+        "e0ae0e5a-b550-43cc-aca6-c43fe48b845a",
+        "e84ec888-1300-432f-ad86-bb9ecd73abe9",
+        "fd844310-87e3-4c23-b2c4-5ff56bf358a3"
+      ],
+      "asset_count_audit_only": 4,
+      "folder_ids": [
+        "2ed53e91-e54a-4a6b-8263-83dd6ee609de"
+      ],
+      "folder_names": [
+        "Scene 51 Statue Assault"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-dialogue_performance-01",
+      "final_status": "selected",
+      "final_selection_rank": 10,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 1 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 10003,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "dialogue_performance",
+      "selection_rank": 6,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "4877eb3098a4b5b16bb4a0854a26f9fbb0b816dc785d849af179107d903a54d7",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 10902,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references",
+        "unresolved_reference_occurrence"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "209205068c7f5acd001cdb888016725ee8acce66d1f7beccc95dcce28a92c4d7",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 24,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "0e09b494-99bf-46e7-bdf5-68dfa1064792",
+        "11fbe04b-f662-418b-bc3a-a30d5467eb37",
+        "1584872c-73c9-4f11-9db6-adc3b3064024",
+        "2653d333-0b8b-4d81-86c0-270e7f2f4e3f",
+        "38c94d88-6466-4d3d-a2d0-c5a320e18aad",
+        "38f135b0-8430-4468-a4b9-cd41ff2ce437",
+        "50d2b0c6-3476-468b-9b99-7ec44510c6bf",
+        "6ad81b49-0503-46af-b210-c83b3baf2144",
+        "790828b6-327b-4c3e-ac79-1791db21a4b9",
+        "7c1ca814-3ccf-4a86-b234-b2a04c544646",
+        "84a56cbc-9f0d-4348-9a69-0aa75ca86642",
+        "853690aa-9b83-4b3a-ba50-5e7328c9b890",
+        "90543b34-9a8c-4a58-9997-52b8d2a49ab6",
+        "91e42c14-94de-45bc-8923-b1a4110f3bf3",
+        "9cadca96-da27-4480-baa9-2e41b48e7e46",
+        "b36fd9af-3ff3-4e86-ad78-ab5a28b9c882",
+        "b65bd30b-102a-4b8b-8a1b-ba7d1cc4a534",
+        "c11ffb24-f4ea-4127-a6ff-6a3464c55821",
+        "cdaf0cb8-b6ec-4c4a-bf95-f95438883eb2",
+        "d5cb901a-63c3-4acd-96cd-f9cfd426c11d",
+        "d9590c9d-93e6-401d-94b5-e534ed73f7c2",
+        "e0a470e8-960e-46a2-ab23-b2b3457a0b63",
+        "e91cc30f-d664-4cc4-8b08-4c58c04f3666",
+        "ef6bf4ab-6c7b-463d-b2e5-4a9e6c8351b0"
+      ],
+      "asset_count_audit_only": 24,
+      "folder_ids": [
+        "84c27211-d86e-4fee-ad24-9c825568e1d7"
+      ],
+      "folder_names": [
+        "Scene 72A"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        8.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-dialogue_performance-02",
+      "final_status": "selected",
+      "final_selection_rank": 11,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 2 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 10902,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "dialogue_performance",
+      "selection_rank": 5,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "484651db56efa1ec4a2ee7a99644dad63ead557386caf1ce2d94e18383893359",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 12205,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references",
+        "very_long_prompt"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "e8ae97894c2dd3cb9c09e38494059d364fed39a0f253eeebbb4a265833e5a6f7",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 20,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "01af7efc-9aa4-4012-a88b-93cd7a9e3985",
+        "0268a615-18d5-477f-a011-92f4abbf96c7",
+        "153ca2fe-f8f9-46f2-aaf8-ad3887ad304e",
+        "4d4e767b-ea5a-445d-a1aa-f40d7c10aaae",
+        "5e2490a2-fff5-42b7-8a79-258a6dbfd5ff",
+        "665e18ca-6bba-4744-949b-a6488883f1d3",
+        "6b2d0af9-65fe-42df-be56-9b272842b5de",
+        "749a6199-8ab3-470e-ae4d-2606cbb1cc81",
+        "7ba61c01-ec81-4058-9f61-d818011b9d0e",
+        "7e632e81-f92e-449f-a502-650412e16f55",
+        "9b7eef26-c44c-48c3-a814-c3a15b60900f",
+        "a01f81a6-7f87-47c3-923f-93801aee9088",
+        "a16fba7b-400c-401b-8353-d5258fe3c33c",
+        "b1963ac2-68a2-4ab4-856c-990365023342",
+        "b3890e4b-92ef-4bce-ba24-924b12fa9307",
+        "ba9f3109-9ca1-473c-b7be-d965b090fca6",
+        "bab4550e-8cbc-4d8c-b976-8413e823ee0f",
+        "cccf85f3-cf34-4054-a347-9509bbe14934",
+        "fdd33c28-294f-4127-8f44-95e922296175",
+        "fec29787-d04d-487d-92a4-1e8d50de635f"
+      ],
+      "asset_count_audit_only": 20,
+      "folder_ids": [
+        "5ca6d857-f0bb-48e5-9dc5-5394a3959006"
+      ],
+      "folder_names": [
+        "Scene 72B"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        8.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-dialogue_performance-03",
+      "final_status": "selected",
+      "final_selection_rank": 12,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 3 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 12205,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "environment_establishing",
+      "selection_rank": 9,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "5f865f590962a1c15799ed27fc38d3842acb91c0ec23c131e23b904da53f706f",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 10249,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "84657b086d97cc3bcfbbbd22e096b0d976a362159705b96f3b346d91aa564559",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 16,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "0d3c71a6-2027-4792-b638-8831c9998861",
+        "0e9c1646-4565-4b96-a678-5e7d5e0600ba",
+        "14825f0d-42ed-4f33-9425-a168613efe23",
+        "18f0d607-01c4-49f7-99b8-fab54a5f6994",
+        "2322dbd8-b7bb-4eec-9fe1-336bfc929999",
+        "59946084-9999-47be-9cb7-63a75ff422d2",
+        "626abc10-aec1-49ac-a67d-3ebae18b591c",
+        "6d82d2e1-9559-4548-a5b1-5f9437117029",
+        "6f8c09d3-f247-49d2-9553-6ecab427829c",
+        "7c3b5796-636c-4905-9f65-4bf6e55f482f",
+        "84acd61c-95c2-45b0-8962-e68521cb2b00",
+        "905c6660-5fe3-47ec-9d61-21564f9a5643",
+        "9847081d-da31-4f3b-943a-75b654e5dd57",
+        "a13ffa1e-95a8-4cd6-b0ec-6a615596bbc7",
+        "a6d4b2f1-25a3-495d-95ac-f5f71658039f",
+        "af2a0410-9a25-4398-8e2c-5add73e2564c"
+      ],
+      "asset_count_audit_only": 16,
+      "folder_ids": [
+        "db2c078e-6dd1-4d31-bb80-1ecd164efadb"
+      ],
+      "folder_names": [
+        "Scene 28"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        12.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-environment_establishing-01",
+      "final_status": "selected",
+      "final_selection_rank": 13,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 1 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 0,
+        "source_prompt_chars": 10249,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "environment_establishing",
+      "selection_rank": 5,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "5c44b3000b2a446f400fa44863cbb338211f5d3710539fd010c72718dd277393",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 7754,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references",
+        "unresolved_reference_occurrence"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "e41c0631d3df962f5995bc7e6de6665cf866ccb860a3218a0442ad584721d214",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 23,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "0b36dc74-052d-4444-811a-164caadfc13c",
+        "123dd76b-aa05-497a-bfdd-85f584a184b5",
+        "16f267d5-83de-47d8-a8bd-2be5bb17b500",
+        "18fed041-0b67-4a72-ab96-eda99cb13345",
+        "2154d6bf-dd22-43fe-9f30-e783a372cd9a",
+        "2c07fe83-eb30-476f-b557-38278663dfe0",
+        "2e3ca931-26f5-4a96-b701-9eae23c31b42",
+        "6919d563-8ed1-4953-a4ad-e4237a84564e",
+        "6a170124-9282-487e-bf39-cb3e7f263e40",
+        "6ba4146a-6232-41a4-90c6-a8fb5e369594",
+        "75bf2181-38e7-475d-9d75-93b14cf12d06",
+        "79a652e0-5a58-494d-ae7f-7738fe4d712b",
+        "82115496-15bd-4885-92ab-9afdfea1d3ec",
+        "9155d078-ade0-466f-8a9d-cfab14ecbc76",
+        "9563d9d9-fdf6-4bff-bf8a-d9140f4fe0bf",
+        "b691c17e-8149-4cf6-874e-7152c6457ec7",
+        "b7d9ef9b-5510-408b-91e7-314f6406132d",
+        "d203c547-c032-4669-8797-6c4a6ef777cd",
+        "d51f305e-64b8-4030-aaa8-9bad6be2e6ec",
+        "d9eedb09-019c-4fad-8ec3-38d61f587c6c",
+        "ee13d9f5-8cdd-4b63-85ac-80653b405024",
+        "f073c7e8-12ef-4997-a803-f31aaa734b69",
+        "fb087a9d-afd6-4574-953f-ebbd44e06f93"
+      ],
+      "asset_count_audit_only": 23,
+      "folder_ids": [
+        "84c27211-d86e-4fee-ad24-9c825568e1d7"
+      ],
+      "folder_names": [
+        "Scene 72A"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        8.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-environment_establishing-02",
+      "final_status": "selected",
+      "final_selection_rank": 14,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 2 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 7754,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "environment_establishing",
+      "selection_rank": 20,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "72a5cfe70d955aaac61cd622a69bcac2cc37bcb03e9e699ad945cb484f036168",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 17750,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references",
+        "very_long_prompt"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "c3cf6b512dc4724d51000310db5d1f591e0fb2047567a21246282803424d0975",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 4,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "161503f3-8b89-4b4f-9e15-3dae22dd97a2",
+        "2d59ed04-b25f-40b7-9826-27522ba81867",
+        "440dad98-d318-43d4-81f6-187339f69378",
+        "f6195f6f-2a73-42dd-8a31-0a7746311653"
+      ],
+      "asset_count_audit_only": 4,
+      "folder_ids": [
+        "d07e400e-798f-4603-9891-7f7d557d517a"
+      ],
+      "folder_names": [
+        "Scene 36"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-environment_establishing-03",
+      "final_status": "selected",
+      "final_selection_rank": 15,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 3 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 17750,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "camera_control",
+      "selection_rank": 10,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "7bea017cc3e18d34b5a74edb6709a450531fb21b1a72adb0892416d2e2271e29",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 8164,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "4bf941985e96c24dd49811d627f05d194458e3530c9c00a950acd5a4f9a245f0",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 16,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "187aa59d-3ee3-4269-b74f-2ecf6c32ce10",
+        "2b2e1d93-bc79-4729-9140-d10b7ddb62ea",
+        "2c10a4eb-83e5-474f-a455-1358a9cf1b01",
+        "30fb9f76-8353-4758-b1d0-0efc1fb1889c",
+        "34290150-b8c8-492f-af98-cb3e86c0d8d8",
+        "34ce3060-79b8-43b4-9e84-b0825f2e9ed3",
+        "3742d154-6c56-43d5-8a1a-4b472b3f0d45",
+        "416e5698-d00a-4ccd-9694-735caf8ab679",
+        "43472032-7949-444a-9a1a-de2a82245b86",
+        "5df7a2fe-6e81-47b3-b06d-1bc751d4e4e7",
+        "69a66711-ca41-428d-a59a-bde8d34fbf99",
+        "98a10b72-23e7-428d-a0be-c25f9bf9389b",
+        "adc8d97f-f717-44d8-9acb-924c39bee8cd",
+        "c12b6ab6-d715-40fb-926f-cea5e1da78a8",
+        "cde84fe5-fe4e-410e-89ef-d4bff33bba8a",
+        "dd26bd16-3a3c-4f93-9727-f6bc0f8280d9"
+      ],
+      "asset_count_audit_only": 16,
+      "folder_ids": [
+        "5ca6d857-f0bb-48e5-9dc5-5394a3959006"
+      ],
+      "folder_names": [
+        "Scene 72B"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-camera_control-01",
+      "final_status": "selected",
+      "final_selection_rank": 16,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 1 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 0,
+        "source_prompt_chars": 8164,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "camera_control",
+      "selection_rank": 19,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "8909c13fd1fb4ca13d66c858b757ba9d11a98084b6db016601412496e977c50d",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 10036,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "82068bdfba0398c361931ebfbbf31d4da9ebcb69debfef87a98ad958d49e1d08",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 32,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "18a4ddc1-5745-44af-b7f8-7f60dcd18739",
+        "213d78e1-5c8b-4f6d-b60b-b222e09c3a9f",
+        "25c065fb-153f-4e60-afca-1888c156763f",
+        "2dd83c0f-6301-4eb4-a55d-52f8110f0129",
+        "49b31459-87af-4837-b3ed-35a258fdaafc",
+        "4de97b33-1731-4f84-a706-88878563d96b",
+        "50948cfc-1e5f-4e4c-b14f-180744587ee7",
+        "59e69fa9-376d-4f91-9440-e0a8ae1b9010",
+        "5dedb6c0-cd85-43bf-85e4-26a22944f4b1",
+        "654742cb-23da-4d3e-9f2f-a6ade79b4f08",
+        "6ed2f512-f83b-4416-a9dc-3534e46d2c8f",
+        "719dd597-319d-4ab5-a09b-7ec1d14a5821",
+        "73088681-81bc-4289-973b-73d67d22317f",
+        "81718d0c-9c1b-4754-85b1-51e950ad6043",
+        "84242c47-4fd9-4dea-8e34-2f1610e5a91e",
+        "87fabad9-b322-4070-9974-510626d40280",
+        "8a12466a-7301-4079-8c90-031f02ce6cfc",
+        "a2d342c6-3159-4199-9a74-ce55a997a838",
+        "abd87579-adc4-418a-9d86-47baa0173699",
+        "b37e9902-a37d-47f4-afb8-fbfe30d797fb",
+        "b45007a7-93ab-42a1-ba79-89d58bb5b8b7",
+        "b889488a-202a-4915-adc4-5f765dd3e347",
+        "bd5f9cb0-9649-4b75-adad-c09842c5f54f",
+        "ce17af5c-0584-48c2-a0c1-38ea76219969",
+        "db0fc12b-1de7-4fdd-b05b-ac2dbf8c5e53",
+        "dd349971-1cd7-4faa-9a20-bdff52022885",
+        "df70e5f5-b1d3-4628-aa3f-ef4750982f6a",
+        "e4d3483c-6b57-4726-86a2-bc2bafe89d21",
+        "e8938410-c2f2-4cc5-8634-a5e5a5175149",
+        "e8d1dd4a-712e-4e3a-8a29-84f539099e4d",
+        "f175142e-6316-44b4-a6c1-13e24d56062a",
+        "f988c521-4f31-41d4-9cda-ca198bf176dc"
+      ],
+      "asset_count_audit_only": 32,
+      "folder_ids": [
+        "5ca6d857-f0bb-48e5-9dc5-5394a3959006"
+      ],
+      "folder_names": [
+        "Scene 72B"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-camera_control-02",
+      "final_status": "selected",
+      "final_selection_rank": 17,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 2 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 0,
+        "source_prompt_chars": 10036,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "camera_control",
+      "selection_rank": 18,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "87a6360bace5e638fe02dd760a0386e360fa554073fd9a7164a68396b02fae5d",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 10123,
+      "complexity_queue": "complex",
+      "structure_state": "multi_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "dc75d3de26cd863ebf1601fa1eece441fb4af19b3e9e44e3348112663ded80f7",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 16,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "0beebe16-14ac-48c2-b6b9-0e5644792436",
+        "16ca5619-1b77-4c4d-9d84-77df9aaec181",
+        "193a329c-e448-4fc0-a902-735f47680468",
+        "3e75960f-b289-4500-8cd7-3a8d5bdaa768",
+        "45df6c42-46ea-427c-b822-6d8b80ec4264",
+        "5ca6a24a-89b6-4e4c-9830-ae0a7e08d775",
+        "5cbfe7ca-1d90-4acc-a8f0-69ea8f6cf97c",
+        "63f330e6-ed0e-45c9-baa1-c1126cfbe9ec",
+        "7b6899d5-0b00-4767-8d66-a64571735e95",
+        "886d9121-9bdf-407f-8de5-0577db8a7002",
+        "ac55092e-0242-4416-870d-d79b1cd5ae20",
+        "c3120722-29db-4569-831f-1289ef4b95fc",
+        "ccc5b768-9664-4267-ade3-3796e2b9470d",
+        "dec96d52-4658-48b9-ae77-c975c8ff373f",
+        "ded47bf4-4c22-463d-b56d-1029abaa876f",
+        "f0da9de6-edb5-4c99-9859-ec294332473d"
+      ],
+      "asset_count_audit_only": 16,
+      "folder_ids": [
+        "c2396e33-e5d1-49f3-83a4-43056d9dd705"
+      ],
+      "folder_names": [
+        "Scene 72: Roko vs Dagon"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        9.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-camera_control-03",
+      "final_status": "selected",
+      "final_selection_rank": 18,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 3 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 0,
+        "source_prompt_chars": 10123,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "physics_continuity",
+      "selection_rank": 17,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "a51650957bcb11d9c7df69e42bf998ed86da2c0676c9360337a3fa072b707504",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 4413,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "dense_references"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "db6996d02b097c2bbeb7f5122dc60c7f473f60935823c9151b1c465173b967f3",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 10,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "0ada4f5f-35a5-4c15-ac08-935f058919b9",
+        "2ca2d1c1-3089-4c87-9731-84e65d35138a",
+        "39d04deb-2d63-4a2f-ace1-0b4333ff437f",
+        "3e3c2f89-4b01-4fb5-87b6-423ab9880f10",
+        "868fae64-1a2d-499f-842e-23d15023dc9b",
+        "8e28bf0b-d909-4fd6-a697-842a50e8cd8c",
+        "a338faf2-5d3c-4ee4-81b8-abef46af5a91",
+        "ddb8a4f7-3de1-4ffd-b16a-7b606358e57b",
+        "f6060e95-c694-441a-ab29-d591910e9353",
+        "ffff2202-1a16-4569-84e6-c355221dcfbb"
+      ],
+      "asset_count_audit_only": 10,
+      "folder_ids": [
+        "db2c078e-6dd1-4d31-bb80-1ecd164efadb"
+      ],
+      "folder_names": [
+        "Scene 28"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-physics_continuity-01",
+      "final_status": "selected",
+      "final_selection_rank": 19,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 1 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 0,
+        "source_prompt_chars": 4413,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "physics_continuity",
+      "selection_rank": 9,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "9b791afd350646bb7143e3ea8b41595e717c1677bf1a62113edd9be88ac676a0",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 6082,
+      "complexity_queue": "standard",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "441473467e1eee118335f32accec805c587acbab4ab6039a51dd562112b58b8b",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 8,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "05366ab3-4194-4ea6-b1c1-eea258591a37",
+        "4e36cf26-ce43-486f-a621-bf9bd6ced2d3",
+        "79f1381c-8f3f-4733-9dec-3e5306578280",
+        "83caa775-259e-44ff-883f-3da465f6280c",
+        "94b403e9-888f-4de7-87c1-e82f102bc983",
+        "d264906e-1d64-41e2-b6ed-a334528b544d",
+        "dbe9af8e-46fd-441d-bdde-1453f748e728",
+        "e0bf773f-34ab-4503-86cc-929e11315ad1"
+      ],
+      "asset_count_audit_only": 8,
+      "folder_ids": [
+        "d966159c-31fe-42f7-9d70-19bccf8768b2"
+      ],
+      "folder_names": [
+        "Flashback 2"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        5.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-physics_continuity-02",
+      "final_status": "selected",
+      "final_selection_rank": 20,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 2 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 0,
+        "source_prompt_chars": 6082,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "physics_continuity",
+      "selection_rank": 7,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "97a1c9557ab36e9e55b1bb698bb73660d47621a5897ba99cfa61bce7f9502785",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 2390,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "asset_metadata_only",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "unresolved_reference_occurrence"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "0308a659c6e4cff2896715549a147cb928e153383a0d37148d43b55c4b18e2fb",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 3,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "31dde637-5861-4866-9d00-6f985ec083c0",
+        "7a86dbcf-e0b5-4199-b64f-71ffbcdf93de",
+        "ac51472c-5b6c-4e92-aa3b-88529b892d64"
+      ],
+      "asset_count_audit_only": 3,
+      "folder_ids": [
+        "3b5fff13-16d0-40bd-b588-5dc15d06e6d4"
+      ],
+      "folder_names": [
+        "Scene 66"
+      ],
+      "models": [],
+      "duration_seconds": [
+        8.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-physics_continuity-03",
+      "final_status": "selected",
+      "final_selection_rank": 21,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 3 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 2390,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "mixed_scene",
+      "selection_rank": 14,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "b83db2dcb1fba5c7e1e25087f9bb10f8dd1f17e67866707a3eef3c11b1a16221",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 8769,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "high_marker_density"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "042b65d97ceebaaee8276b1d5d969192d95a1b10d7ba97a920e7f0df07c3a668",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 4,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "34ca2647-1672-421d-b3d9-68e9f607e6c7",
+        "63539d5f-44c5-4cc0-85d7-63c6fefad442",
+        "6c82a600-9b6e-4f58-b991-328b51e87222",
+        "ed3826cb-92d1-4f63-a766-863b1585a417"
+      ],
+      "asset_count_audit_only": 4,
+      "folder_ids": [
+        "2ed53e91-e54a-4a6b-8263-83dd6ee609de"
+      ],
+      "folder_names": [
+        "Scene 51 Statue Assault"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-mixed_scene-01",
+      "final_status": "selected",
+      "final_selection_rank": 22,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 1 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 8769,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "mixed_scene",
+      "selection_rank": 17,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "bc740ea7c083fa2d4f332cee4c994ff567132aad02e48fbcc765b2b4c49c9947",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 11481,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "high_marker_density"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "c0dbbb4de28645b7e4c2db4dab2535a6dd4211edbae4fb60272f430d47fa39ab",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 12,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "063b95e3-0af1-41f4-9deb-2b177ff82496",
+        "187058aa-33d5-4a13-bb8a-fa986745a3dd",
+        "6a5f11e9-7813-428b-abf6-ac9db737298a",
+        "6ba47849-7f8a-44d1-aee7-975d85e825cc",
+        "6fd34e38-86e1-4a53-92fe-fc7c042a6803",
+        "85c0b848-e344-48af-9742-a26fed51cfa7",
+        "c5bb5305-2b80-4682-9684-86b76e8c33dd",
+        "c8090959-1c69-4d34-a643-ca428f362fb5",
+        "cfd52767-d9ad-4913-aa53-f56f14f0c40a",
+        "d3f307fd-50e2-4438-8553-ff621a91c6bc",
+        "d4b26b30-17c7-4a1e-bf81-9b38dc9b93b7",
+        "d723081d-f456-471a-9f90-066eea4db1c3"
+      ],
+      "asset_count_audit_only": 12,
+      "folder_ids": [
+        "2ed53e91-e54a-4a6b-8263-83dd6ee609de"
+      ],
+      "folder_names": [
+        "Scene 51 Statue Assault"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        15.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-mixed_scene-02",
+      "final_status": "selected",
+      "final_selection_rank": 23,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 2 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 11481,
+        "near_duplicate_group_count": 0
+      }
+    },
+    {
+      "candidate_family": "mixed_scene",
+      "selection_rank": 20,
+      "selection_rationale": "Ranked by Prompt Content Score and minimum dimension score; within exact score ties, prefer Prompt hashes not already selected for an earlier family, then Prompt SHA-256. Source asset mapping is audit metadata.",
+      "prompt_sha256": "be59a0cdbc309bd7bdb2afcd2c292b87ec61f0e0158efb8ae8f839ebb0b241d1",
+      "classification_status": "classified",
+      "normalization_status": "normalized",
+      "source_prompt_chars": 11946,
+      "complexity_queue": "complex",
+      "structure_state": "single_take",
+      "duration_state": "consistent",
+      "scene_tags": [
+        "action_interaction",
+        "character_performance",
+        "environment_establishing",
+        "mixed_scene"
+      ],
+      "risk_flags": [
+        "high_marker_density"
+      ],
+      "missing_fields": [],
+      "source_conflicts": [],
+      "normalization_digest": "71951790dfdfc5b5d0ee63a13cee35e39824ee0fff35c7ba01c43817468fa136",
+      "pattern_families": [
+        "action_choreography",
+        "action_in_environment",
+        "character_performance",
+        "dialogue_performance",
+        "environment_establishing",
+        "camera_control",
+        "physics_continuity",
+        "mixed_scene"
+      ],
+      "near_duplicate_groups": [],
+      "near_duplicate_decision": "not_grouped",
+      "asset_mapping_count_audit_only": 4,
+      "prompt_content_score": 32,
+      "score_maximum": 32,
+      "score_dimensions": {
+        "shootability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "objective",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts observable objective, scene content, spatial, camera, and continuity/constraint evidence."
+        },
+        "spatial_clarity": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity",
+            "spatial_relations",
+            "subjects_or_environment"
+          ],
+          "rationale": "Counts explicit placement and viewpoint evidence without inferring geography."
+        },
+        "action_causality": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "causal_links",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts action beats, source causal links, physical evidence, and continuity evidence."
+        },
+        "performance_detail": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "dialogue_lines",
+            "dialogue_scope",
+            "performance_segments"
+          ],
+          "rationale": "Counts explicit performance and dialogue evidence; voice wording alone is not treated as dialogue."
+        },
+        "camera_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "camera_result",
+            "continuity_or_constraints",
+            "spatial_relations"
+          ],
+          "rationale": "Counts explicit camera result, placement, and control locks."
+        },
+        "physics_plausibility": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "action_summary",
+            "constraints",
+            "continuity",
+            "physics"
+          ],
+          "rationale": "Counts explicit physics, action, constraints, and continuity evidence; it does not validate rendered physics."
+        },
+        "continuity_control": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "constraints",
+            "continuity",
+            "structure_state"
+          ],
+          "rationale": "Counts source continuity, constraints, and declared take structure."
+        },
+        "reusability": {
+          "score": 4,
+          "max_score": 4,
+          "evidence_fields": [
+            "missing_fields",
+            "scene_pattern_anchor",
+            "source_conflicts",
+            "transferability"
+          ],
+          "rationale": "Counts portable scene intent once, critical-field coverage, resolved source state, and an observable scene-pattern anchor."
+        }
+      },
+      "score_penalty": 0,
+      "shared_evidence_fields": [],
+      "case_tier": "core_pattern",
+      "critical_missing_fields": [],
+      "source_conflict_count": 0,
+      "asset_ids": [
+        "1eecf80a-1814-44d8-aeb9-82568cf9cc0c",
+        "68553d46-363d-480d-bc01-edbdcebef35f",
+        "a7a86f01-38d5-4e60-b550-983617420475",
+        "cd86ef1f-e735-4e64-bd5a-2e0d872688ff"
+      ],
+      "asset_count_audit_only": 4,
+      "folder_ids": [
+        "2ed53e91-e54a-4a6b-8263-83dd6ee609de"
+      ],
+      "folder_names": [
+        "Scene 51 Statue Assault"
+      ],
+      "models": [
+        "seedance_2_0"
+      ],
+      "duration_seconds": [
+        10.0
+      ],
+      "resolutions": [
+        "1080p"
+      ],
+      "case_id": "scene-case-mixed_scene-03",
+      "final_status": "selected",
+      "final_selection_rank": 24,
+      "selection_policy_version": "stage5-final-selection-v1",
+      "selection_reason_codes": [
+        "eligible",
+        "family_coverage",
+        "highest_priority_remaining"
+      ],
+      "selection_reason": "Selected as family representative 3 of 3 after the Prompt-only quality and source-integrity gates.",
+      "editorial_priority_factors": {
+        "minimum_dimension_score": 4,
+        "missing_field_count": 0,
+        "editorial_risk_count": 1,
+        "source_prompt_chars": 11946,
+        "near_duplicate_group_count": 0
+      }
+    }
+  ]
+}

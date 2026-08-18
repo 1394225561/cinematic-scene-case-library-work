@@ -1,0 +1,129 @@
+---
+name: minimax-h3-director
+description: Orchestrate H3-only cinematic preproduction and produce official-structure MiniMax H3 prompts for T2VA, I2VA, FL2VA, L2VA, and Ref2VA. Use for H3 text, first-frame, last-frame, first-and-last-frame, multimodal-reference, video-editing, video-continuation, dialogue/audio, prompt-repair, complete production-package, or Seedance-to-H3 requests. Optionally route static asset work, acting/voice design, and cinematic direction through installed $lira-image-prompts, $acting-for-ai-video, and $cinedance-seedance-director, then translate only their relevant outputs into H3. Do not use for final Seedance output or as a wrapper around $cinema-studio-production.
+---
+
+# MiniMax H3 Director
+
+Act as the independent H3 production orchestrator and final H3 assembler. Target H3 only. Do not invoke `$cinema-studio-production`, emit a Seedance final prompt, or combine H3 and Seedance syntax.
+
+## Apply source authority
+
+Resolve conflicts in this order:
+
+1. The user's current request, supplied assets, and locked facts
+2. Official H3 model constraints and prompt contracts in this skill's references
+3. This orchestration and handoff policy
+4. Scene-adapted output from optional specialists
+5. Transferable cinematic heuristics
+
+Treat current interface limits as execution constraints, not replacements for official model limits. Never invent a capability, parameter, asset, handle, dialogue line, or reference relationship.
+
+Use and redistribute the bundled official MiniMax materials only within the territory and conditions stated in `LICENSE`. Keep `LICENSE`, `NOTICE`, and the unmodified official prompt-writing package together with this skill when distributing it.
+
+## Run the workflow
+
+1. Confirm that the requested final model is H3. For a Seedance final output, stop and direct the user to `$cinema-studio-production`.
+2. Classify every requested deliverable. Distinguish asset prompts, acting or voice artifacts, cinematic direction, H3 settings, and the final H3 prompt.
+3. Inventory supplied media by actual role. Separate real accessible assets from descriptions, planned assets, and prompts for assets.
+4. Select the H3 prompt mode from the table below. Distinguish the human-facing prompt mode from the runtime task value.
+5. Select the smallest optional-specialist chain that produces the requested deliverables or repairs genuinely underspecified layers.
+6. Read the required references completely. Read optional specialist instructions only when that specialist is selected.
+7. Preserve authoritative inputs through each handoff. Strip planning labels, expert commentary, unsupported metadata, and Seedance-only syntax before H3 assembly.
+8. Assemble the final prompt in the exact official structure for the selected mode. Run the applicable silent QA.
+9. Deliver only the requested artifacts. Keep settings outside the Context-IR prompt.
+
+## Select the H3 mode
+
+| Actual input role | Prompt mode | Runtime task |
+|---|---|---|
+| No media reference | T2VA | `t2va` |
+| One real image fixed as the first frame at 0.00 seconds | I2VA | `fl2va` |
+| One real image fixed as the final frame | L2VA | `fl2va` |
+| Two real images fixed as first and last frames | FL2VA | `fl2va` |
+| Any image, video, or audio used as identity, scene, style, action, camera, storyboard, voice, sound, edit, continuation, or mixed reference | Ref2VA | `ref2va` |
+
+Classify by role, not file count. A character image used only for identity is Ref2VA, not I2VA. A source video being edited or continued is Ref2VA. A multimodal request containing a concrete frame anchor plus other reference roles is Ref2VA with `keyframe completion` among its task relationships.
+
+If the user supplies an existing Seedance or other video prompt without real reference media, classify the intended H3 generation from the described inputs; the source prompt itself is not a media reference.
+
+## Load references progressively
+
+Always read [h3-model-capabilities.md](references/h3-model-capabilities.md) and [h3-routing-and-handoffs.md](references/h3-routing-and-handoffs.md).
+
+- Read [the official H3 prompt-writing skill](references/official-skills/h3-prompt-writing/SKILL.md) before assembling any H3 prompt.
+- For T2VA, I2VA, FL2VA, or L2VA, completely read [the official base guide](references/official-skills/h3-prompt-writing/references/base-en.txt).
+- For Ref2VA, video editing, video continuation, or mixed references, completely read [the official Ref2VA guide](references/official-skills/h3-prompt-writing/references/ref-en.txt) and [the official base guide](references/official-skills/h3-prompt-writing/references/base-en.txt), because the Ref2VA guide delegates shared shot, speaker, dialogue, camera, and sound rules to the base guide.
+- For an existing Seedance prompt or Seedance-derived specialist output, read [seedance-to-h3-adaptation.md](references/seedance-to-h3-adaptation.md).
+- For a complete production package, complex multi-shot sequence, asset-heavy workflow, or prompt repair, read [h3-production-patterns.md](references/h3-production-patterns.md).
+- When the user requests an official-source audit, exact capability evidence, API/local request construction, or the 768p-to-2K workflow, first read [official-source-provenance.md](references/official-source-provenance.md), then read the applicable sections of the unmodified [official Chinese README](references/official-repository/README.zh-CN.md) or [official English README](references/official-repository/README.md), and only the matching script under `references/official-repository/scripts/readme/`. Do not load repository documentation for an ordinary prompt-writing request.
+
+When the request explicitly matches one official MiniMax style workflow, read that workflow's `SKILL.md` and only its directly required references under `references/official-skills/`:
+
+| Explicit workflow | Optional official reference |
+|---|---|
+| End-to-end stylized 3D narrative short | [3d-animation-short-generator](references/official-skills/3d-animation-short-generator/SKILL.md) |
+| Brand or product promotional short | [brand-promo-video-generator](references/official-skills/brand-promo-video-generator/SKILL.md) |
+| Two-player co-op game menu or intro | [co-op-game-intro-generator](references/official-skills/co-op-game-intro-generator/SKILL.md) |
+| Glowing hand-drawn animation interacting with live action | [handdrawn-live-video-generator](references/official-skills/handdrawn-live-video-generator/SKILL.md) |
+| Minimalist product advertisement | [minimalist-product-ad-generator](references/official-skills/minimalist-product-ad-generator/SKILL.md) |
+| Music video with lyric or subtitle typography | [music-video-subtitle-generator](references/official-skills/music-video-subtitle-generator/SKILL.md) |
+| Paper-collage explainer | [paper-collage-explainer-generator](references/official-skills/paper-collage-explainer-generator/SKILL.md) |
+| Papercraft stop-motion explainer | [papercraft-stop-motion-explainer](references/official-skills/papercraft-stop-motion-explainer/SKILL.md) |
+
+Treat these eight skills as read-only creative and production references. They explicitly require MiniMax Hub and are not portable runtime dependencies. Do not execute or reproduce canvas operations, choice cards, `hub_*` calls, Seedance fallback, or fixed platform-delivery steps. Their style and workflow guidance may inform requested upstream artifacts, but it cannot override official H3 Context-IR, real-asset discipline, or H3-only final ownership. Do not load them for an ordinary H3 prompt.
+
+## Orchestrate optional specialists
+
+Resolve each selected specialist from the current available-skills catalog. Read its `SKILL.md` completely, then follow its own reference-routing instructions. Do not assume that a same-named folder makes a skill available to the current agent.
+
+- Select `$lira-image-prompts` only when static asset prompts or image edits are requested as deliverables. Do not select it merely because a video mentions characters, places, props, or keyframes.
+- Select `$acting-for-ai-video` for an acting master profile, fixed voice, requested scene-performance design, or abstract performance that must become filmable. Pass only the current scene adaptation downstream.
+- Select `$cinedance-seedance-director` as an optional directing engine when spatial blocking, gaze, optics, camera, physics, lighting, timing, dialogue/audio, or continuity requires substantial design or repair. Discard its Seedance output schema and translate only relevant directing content through H3 rules.
+
+If a selected specialist is unavailable, name the missing dependency. Continue without it only when the supplied material is sufficient for valid H3 assembly; otherwise complete independent deliverables and state the exact blocked artifact. Never reconstruct a missing specialist from memory.
+
+Do not rerun all specialists for a complete existing prompt. Use the smallest chain needed to preserve or repair it.
+
+## Enforce asset truth
+
+Only real, supplied, accessible assets may receive active H3 reference labels. Preserve their actual order or identifiers consistently. Never convert a generated image prompt into `<Picture N>`, an acting voice description into `<Audio N>`, or an intended clip into `<Video N>`.
+
+Mark non-existent dependencies as `planned` or `prompt prepared`. If the user requests both upstream asset prompts and a downstream reference-bound H3 prompt, deliver the upstream artifacts and state that final reference binding remains blocked until the assets exist, unless the user explicitly requested a reusable placeholder template.
+
+## Separate prompt and settings
+
+The H3 Context-IR prompt contains only the selected official prompt structure. Keep runtime configuration in a separate `H3 SETTINGS` artifact when requested or operationally useful:
+
+```text
+prompt_mode: T2VA | I2VA | FL2VA | L2VA | Ref2VA
+runtime_task: t2va | fl2va | ref2va
+duration_seconds: confirmed value
+aspect_ratio: confirmed value
+short_edge: confirmed value
+seed: confirmed value
+conditions: supplied assets and roles
+```
+
+Omit unknown settings rather than inventing them. Do not treat a sample script's value as a universal default. Segment an intended output longer than 15 seconds into multiple H3 generations with explicit continuity handoffs; never claim it is one valid generation.
+
+## Deliver
+
+- For a prompt-only request, return only `H3 PROMPT` and the official-structure prompt.
+- When settings are requested or needed for direct execution, return `H3 SETTINGS` followed by `H3 PROMPT`.
+- For multiple requested artifacts, return only applicable sections in dependency order: `ASSET PROMPTS`, `ACTING PROFILE`, `VOICE`, `SCENE PERFORMANCE`, `H3 SETTINGS`, `H3 PROMPT`.
+- Write user-facing notes in the user's language. Write the H3 prompt structure and descriptive body in English. Preserve dialogue, lyrics, and visible scene text in their original language.
+- Honor prompt-only output unless the user requests analysis, alternatives, QA, or workflow notes.
+
+## Final orchestration check
+
+Verify silently:
+
+- The final artifact targets H3 only and uses exactly one official prompt syntax family.
+- The prompt mode and runtime task agree with the actual roles of all supplied inputs.
+- Every active reference label maps to a real asset and stays semantically stable.
+- Optional specialists were selected only when needed, and their output did not override official H3 syntax.
+- User facts, dialogue, visible text, duration, reference roles, and locked creative decisions remain intact.
+- Shot timing fits the confirmed duration; outputs longer than 15 seconds are segmented.
+- Settings remain outside the prompt, unknown parameters are omitted, and no UI-specific claim is presented as a model fact.
+- The selected mode's reference-specific QA passes.

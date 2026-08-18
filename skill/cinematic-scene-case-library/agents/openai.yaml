@@ -1,0 +1,7 @@
+interface:
+  display_name: "Cinematic Scene Case Library"
+  short_description: "Retrieve model-neutral cinematic scene patterns"
+  default_prompt: "Use $cinematic-scene-case-library to find a model-neutral scene pattern for an underspecified shot."
+
+policy:
+  allow_implicit_invocation: true

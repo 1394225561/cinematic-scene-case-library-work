@@ -1,0 +1,21 @@
+{
+  "stage": "8",
+  "status": "installed",
+  "installed_at_utc": "2026-08-18T13:13:04.1737546Z",
+  "source_skill": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\skill\\cinematic-scene-case-library",
+  "installed_skill": "C:\\Users\\Admin\\.agents\\skills\\cinematic-scene-case-library",
+  "installed_file_count": 29,
+  "installed_skill_manifest_sha256": "72419a08400c0eaa925eb75c58f930e8953ab35b71c93babdf0368e360be0a6f",
+  "target_before_sha256": {
+    "seedance": "891ddce7d62004900e6e67f5581d6dccfc9713dcc493ae2fc37ec92c26211034",
+    "h3": "98296eaab78dc44444ad5f6196e266fb96e62be26dc9dc96280320e2b80b291c"
+  },
+  "target_after_sha256": {
+    "seedance": "07fab7ea75c1d28cc607d153d97cb9aad558e038cc99e5b25170faf58d71f543",
+    "h3": "6d0d3b4563bd111e9497ed422378892577c043bb9034b7276596c0a580b25535"
+  },
+  "backups": [
+    "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-8-install\\backup\\cinema-studio-production.SKILL.md.before",
+    "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-8-install\\backup\\minimax-h3-director.SKILL.md.before"
+  ]
+}

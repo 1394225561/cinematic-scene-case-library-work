@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "selection_version": "stage5-final-selection-v1",
+  "input_stage5_1_digest": "d829fb2fdca139be35a2329b463a0e95d747c1520a069cbca540c89222b06546",
+  "input_candidate_digest": "340d1ec69a00ee4ce3c1037dea1f38e0b76f40c84d791f081a20f9fe4f4f8ba8",
+  "candidate_record_count": 175,
+  "selected_case_count": 24,
+  "selected_digest": "99b9425a3818129737e8bd700cedf8ebe01cf909e6d35f6aafcea36a93918d91",
+  "decision_digest": "38e2bb4c73c5ae726ae4f9133d8abc9b831bd1dfa5a12fa9c6589546f0de8305",
+  "stage5_2_digest": "6ea489d7867feca7aaef56b68de00fe1d6c7018dc6a20b6b247c9c14bdcb9c77"
+}

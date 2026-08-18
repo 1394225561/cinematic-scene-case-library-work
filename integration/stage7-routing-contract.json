@@ -1,0 +1,73 @@
+{
+  "version": "stage7-routing-contract-v1",
+  "case_library": "cinematic-scene-case-library",
+  "retrieval": {
+    "triggers": [
+      "abstract_request",
+      "missing_structure",
+      "prompt_repair",
+      "explicit_lookup"
+    ],
+    "skip_when": "concrete_shootable_complete",
+    "maximum_cases_normally_loaded": 1,
+    "return_type": "filtered_guidance_package"
+  },
+  "authority_order": [
+    "user_locked_facts",
+    "target_model_official_rules",
+    "owning_skill_rules_and_final_format",
+    "case_guidance"
+  ],
+  "paths": {
+    "seedance": [
+      "cinema-studio-production",
+      "cinematic-scene-case-library",
+      "optional_acting_or_cinedance",
+      "cinedance-seedance-director_final_assembly_and_qa"
+    ],
+    "h3": [
+      "minimax-h3-director",
+      "cinematic-scene-case-library",
+      "optional_specialists",
+      "minimax-h3-director_final_assembly_and_qa"
+    ]
+  },
+  "field_routes": {
+    "acting_handoff": "acting-for-ai-video",
+    "directing_handoff": {
+      "seedance": "cinedance-seedance-director",
+      "h3": "minimax-h3-director_or_selected_directing_expert"
+    },
+    "adapter_notes.seedance": "cinedance-seedance-director",
+    "adapter_notes.h3": "minimax-h3-director"
+  },
+  "final_owners": {
+    "seedance": "cinedance-seedance-director",
+    "h3": "minimax-h3-director"
+  },
+  "forbidden_downstream_fields": [
+    "complete_source_prompt",
+    "historical_at_tag",
+    "source_asset_id",
+    "media_url",
+    "historical_duration",
+    "generation_metadata",
+    "source_model_syntax",
+    "audit_provenance",
+    "prompt_content_score"
+  ],
+  "model_isolation": {
+    "seedance_rejects": [
+      "Context-IR",
+      "<Picture 1>",
+      "<Video 1>",
+      "<Audio 1>"
+    ],
+    "h3_rejects": [
+      "@source_tag",
+      "Seedance adapter",
+      "Seedance output schema"
+    ],
+    "h3_forbids_cinema_studio_wrapper": true
+  }
+}

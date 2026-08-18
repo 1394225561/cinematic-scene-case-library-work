@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "selection_version": "stage5-final-selection-v1",
+  "status": "pass",
+  "review_mode": "prompt_only",
+  "policy": {
+    "minimum_prompt_content_score": 18,
+    "minimum_dimension_score": 3,
+    "eligible_case_tiers": [
+      "core_pattern",
+      "effective_variant"
+    ],
+    "cases_per_family": 3,
+    "near_duplicate_policy": "Keep one representative globally; retain other candidates as alternatives.",
+    "asset_policy": "Asset IDs and counts remain source-audit metadata only; they never affect ordering.",
+    "media_policy": "No media was inspected; no rendered quality claim is made.",
+    "editorial_tiebreak_policy": "After content score and minimum dimension score, prefer fewer missing fields, fewer editorial risk flags, shorter source text, then SHA-256."
+  },
+  "input_stage5_1_digest": "d829fb2fdca139be35a2329b463a0e95d747c1520a069cbca540c89222b06546",
+  "input_candidate_digest": "340d1ec69a00ee4ce3c1037dea1f38e0b76f40c84d791f081a20f9fe4f4f8ba8",
+  "candidate_record_count": 175,
+  "selected_case_count": 24,
+  "decision_counts": {
+    "not_selected": 15,
+    "retained_alternative": 136,
+    "selected": 24
+  },
+  "selected_counts_by_family": {
+    "action_choreography": 3,
+    "action_in_environment": 3,
+    "camera_control": 3,
+    "character_performance": 3,
+    "dialogue_performance": 3,
+    "environment_establishing": 3,
+    "mixed_scene": 3,
+    "physics_continuity": 3
+  },
+  "decision_reason_counts": {
+    "case_tier_below_final_selection_gate": 15,
+    "critical_field_missing": 15,
+    "eligible": 24,
+    "family_coverage": 24,
+    "family_quota_exhausted": 136,
+    "highest_priority_remaining": 24,
+    "minimum_dimension_score_below_gate": 15,
+    "prompt_content_score_below_gate": 15
+  },
+  "near_duplicate_suppressed_count": 0,
+  "selected_prompt_hashes": [
+    "0bbc307b26f4f8ebb673bfdb61e2371ada0851244ebe993df4a3a1088c9873f5",
+    "126e93913c44a0b1b94f0763908904ff53c9b7519ee57ac98bbcc6ae7dbdcb11",
+    "19a08b7ded63e6ab827910ab52b05d02a7324cef12535a65b8ad6db3442217e7",
+    "2889a52ed802235bee0e3e11ffcc8d78e56ba5e0be1e3ad6631e664b4188fbf8",
+    "2be273490eb3403bc97d9608ebaba4afa575c2514a87b3e76c7381a7c935b84c",
+    "2eb89fb8b38854ddf056bbf2ac5741b1ce25a2b91c21e678b8e4a3b2afc73a96",
+    "38eed8353c418d4a5f35e42a54f6601e6a7a2d3f139e108c044dec7457884380",
+    "3a3edee076d78380f895e75e3b547eec057a4a5d0b46291f084f56cafbd43615",
+    "3be1958efd0486b3d5544a004867e4db97a99775a26b098abc0b05138811a59e",
+    "45abb83d334903849aef5002ede12ec75a281420223537e632f619ab7b60511e",
+    "484651db56efa1ec4a2ee7a99644dad63ead557386caf1ce2d94e18383893359",
+    "4877eb3098a4b5b16bb4a0854a26f9fbb0b816dc785d849af179107d903a54d7",
+    "5c44b3000b2a446f400fa44863cbb338211f5d3710539fd010c72718dd277393",
+    "5f865f590962a1c15799ed27fc38d3842acb91c0ec23c131e23b904da53f706f",
+    "72a5cfe70d955aaac61cd622a69bcac2cc37bcb03e9e699ad945cb484f036168",
+    "7bea017cc3e18d34b5a74edb6709a450531fb21b1a72adb0892416d2e2271e29",
+    "87a6360bace5e638fe02dd760a0386e360fa554073fd9a7164a68396b02fae5d",
+    "8909c13fd1fb4ca13d66c858b757ba9d11a98084b6db016601412496e977c50d",
+    "97a1c9557ab36e9e55b1bb698bb73660d47621a5897ba99cfa61bce7f9502785",
+    "9b791afd350646bb7143e3ea8b41595e717c1677bf1a62113edd9be88ac676a0",
+    "a51650957bcb11d9c7df69e42bf998ed86da2c0676c9360337a3fa072b707504",
+    "b83db2dcb1fba5c7e1e25087f9bb10f8dd1f17e67866707a3eef3c11b1a16221",
+    "bc740ea7c083fa2d4f332cee4c994ff567132aad02e48fbcc765b2b4c49c9947",
+    "be59a0cdbc309bd7bdb2afcd2c292b87ec61f0e0158efb8ae8f839ebb0b241d1"
+  ],
+  "selected_digest": "99b9425a3818129737e8bd700cedf8ebe01cf909e6d35f6aafcea36a93918d91",
+  "decision_digest": "38e2bb4c73c5ae726ae4f9133d8abc9b831bd1dfa5a12fa9c6589546f0de8305",
+  "checks": {
+    "input_stage5_1_pass": true,
+    "input_candidate_digest_verified": true,
+    "candidate_universe_closed": true,
+    "decision_universe_closed": true,
+    "selected_hashes_unique": true,
+    "selected_cases_have_source_mapping": true,
+    "selected_cases_pass_gate": true,
+    "family_quotas_respected": true,
+    "no_near_duplicate_selected": true,
+    "no_raw_prompt_text": true,
+    "prompt_only_review": true,
+    "no_final_prompt_generated": true
+  },
+  "artifacts": {
+    "final_cases": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-2-final-selection\\final-cases.json",
+    "decision_records": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-2-final-selection\\decision-records.json",
+    "manifest": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-2-final-selection\\manifest.json",
+    "report": "D:\\1_AIGC\\SeeDance\\cinematic-scene-case-library-work\\data\\runs\\stage-5-2-final-selection\\report.json"
+  },
+  "stage5_2_digest": "6ea489d7867feca7aaef56b68de00fe1d6c7018dc6a20b6b247c9c14bdcb9c77"
+}

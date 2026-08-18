@@ -1,0 +1,61 @@
+---
+name: cinema-studio-production
+description: Orchestrate cinematic AI preproduction and Seedance prompt work across $lira-image-prompts, $acting-for-ai-video, and $cinedance-seedance-director. Use when a request spans or ambiguously mixes image assets, character performance, voice, and final video prompting; asks for an end-to-end Cinema Studio workflow; or needs the correct specialist selected without the user knowing which skill to invoke. Do not use for post-production editing, color grading, sound design, rendered video creation, or a clearly single-domain request that directly invokes one specialist skill.
+---
+
+# Cinema Studio Production
+
+Act as a lightweight router and integrator. Do not duplicate, summarize, or override specialist rules. Resolve each selected specialist from the current available-skills catalog, read its `SKILL.md`, then follow its own reference-routing instructions exactly. If a selected specialist is unavailable, name the missing dependency instead of reconstructing its system from memory.
+
+## Classify the deliverable
+
+Route by the output the user needs now, not by incidental nouns in the brief:
+
+| Requested deliverable | Specialist |
+|---|---|
+| Static image prompt, character sheet, portrait, location, environment, prop, reference frame, reverse-angle still, or image edit | `$lira-image-prompts` |
+| Acting master profile, fixed voice prompt, scene performance, objective, obstacle, tactic, beat, subtext, reaction, eye life, physical business, status, or performance critique | `$acting-for-ai-video` |
+| Complete Seedance shot prompt, shot repair, spatial blocking, camera, optics, timing, physics, lighting, dialogue/audio assembly, cuts, or continuity | `$cinedance-seedance-director` |
+
+For a clearly single-domain request, use only that specialist and return its normal output. Do not run the full pipeline.
+
+## Compose mixed requests
+
+Select the smallest ordered pipeline that produces every requested deliverable:
+
+1. Use `$lira-image-prompts` first only when static asset prompts or image edits are requested or required as explicit deliverables.
+2. Use `$acting-for-ai-video` before video assembly when the user requests performance design, a recurring-character acting profile, a fixed voice, or when supplied performance is too abstract to be filmable.
+3. Use `$cinedance-seedance-director` last whenever the requested result includes a complete Seedance prompt. Give it the relevant user brief, active references and exact tags, scene-adapted performance, fixed voice text, exact dialogue, and locked constraints. CINEDANCE owns final video-prompt structure and QA.
+
+Do not invoke LIRA merely because a video shot mentions characters, locations, or props. Existing descriptions, tags, or uploaded references are inputs to CINEDANCE, not a request to regenerate assets. Do not invoke ACTING when concrete, filmable behavior is already supplied and no performance deliverable or repair is requested.
+
+## Preserve handoffs
+
+- Treat user-provided facts, dialogue, tags, names, relationships, durations, aspect ratios, reference roles, and locked creative decisions as immutable unless the user asks to change them.
+- Keep static asset prompts, acting profiles, fixed voice prompts, scene performance, and final video prompts as separate artifacts. Never paste a full acting master profile into a scene; let ACTING adapt it first.
+- Never claim an image, reference, asset, or generation exists when only its prompt was produced. Mark such dependencies as `planned` or `prompt prepared`.
+- Do not invent `@tags`. If an exact tag is absent, use a clearly marked placeholder only when the user asked for a reusable template; otherwise omit the tag or ask when it blocks the requested final deliverable.
+- Carry only the specialist output needed downstream. Do not expose internal routing notes or specialist reasoning in the production artifact.
+
+## Resolve ambiguity
+
+Make reasonable assumptions when they do not change the requested deliverable. Ask one concise question only when the answer changes the specialist, required pipeline, or a locked result such as target model, static image versus video, master profile versus scene performance, or final prompt versus planning package.
+
+If the request asks to create everything from an undeveloped idea, first identify the requested stopping point. Do not silently expand a shot-prompt request into asset generation, or an asset request into a video prompt.
+
+## Deliver
+
+- For one deliverable, return only the selected specialist's normal response.
+- For multiple deliverables, present them in dependency order with short literal labels: `ASSET PROMPTS`, `ACTING PROFILE`, `VOICE`, `SCENE PERFORMANCE`, `SEEDANCE PROMPT`. Include only requested sections.
+- If a downstream stage cannot be completed because an actual asset, tag, dialogue line, or user decision is missing, complete all independent upstream deliverables and state the exact unresolved input. Never report the blocked downstream artifact as complete.
+- Honor a specialist's output-only contract for the final artifact unless the user requests explanation, alternatives, audit, or workflow notes.
+
+## Final check
+
+Before responding, verify silently:
+
+- Did each deliverable go to exactly one owning specialist?
+- Did I avoid unnecessary specialists and references?
+- Did downstream work receive only relevant, authoritative inputs?
+- Did I preserve exact user facts and distinguish prompts from generated assets?
+- If a complete Seedance prompt is present, did CINEDANCE assemble and QA it last?
