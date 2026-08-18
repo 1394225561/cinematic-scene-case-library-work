@@ -869,3 +869,123 @@ cinematic-scene-case-library/
 
 1. 阶段 8 已完成；保留工作目录、安装清单和两个安装前备份，不自动清理阶段产物。
 2. 后续如需升级案例、回滚补丁或变更检索规则，应先创建新的审核阶段并重新核对目标哈希。
+
+## 13. 后续案例增补与版本更新流程
+
+当发现新的优秀 Prompt 案例时，不要直接把文本复制到已安装的
+`cinematic-scene-case-library`，也不要直接编辑
+`C:\Users\Admin\.agents\skills\cinematic-scene-case-library`。每次增补都创建一个独立的更新批次，经过同样的证据、规范化、筛选、构建、集成和安装审核。
+
+### 13.1 创建更新批次与登记来源
+
+1. 先创建唯一更新 ID，例如 `20260818-case-add-rooftop-duel`，并在
+   `data/runs/<update-id>/intake.json` 登记：发现日期、来源 URL 或本地文件、项目/文件夹上下文、Prompt 原文 SHA-256、来源资产 ID（仅审计）、来源模型元数据、是否检查媒体、版权/使用权限和登记人。
+2. 原始 Prompt 只进入工作目录的审计输入，不进入最终 Skill。不要把图片、视频、音频、缩略图、CDN URL、Base64 或登录凭据复制进批次。
+3. 如果案例来自用户自己提供的 Prompt，也要登记“用户提供”及其 SHA-256；用户锁定的事实与可公开来源证据分开保存。
+4. 记录 `source_snapshot`、脚本版本、配置版本和输入 digest。后续任何重跑都使用新的 run 目录或明确的检查点，不覆盖旧批次。
+
+### 13.2 做来源完整性和重复检查
+
+1. 检查 Prompt 非空、编码可读、来源字段完整；空 Prompt、损坏文本和字段冲突必须进入问题记录，不得静默跳过。
+2. 用 Prompt 原文 SHA-256 做精确去重。精确重复保留全部资产/来源映射，但只对唯一 Prompt 做一次结构分析。
+3. 对近似重复只建立候选聚类，不删除任何原始记录；相似度或重复次数不能替代内容质量，也不能直接证明成片质量。
+4. 从源文本中移除或标记媒体 URL、历史 `@tag`、资产 ID、历史时长和模型专有语法，原文仍保留在审计输入中以便追溯。
+
+### 13.3 按现有 4B/5-1 流程规范化和评分
+
+1. 使用与当前项目相同的五层规范化 Schema、字段证据规则、冲突保留规则和模型语法隔离规则。不要为单个新案例临时发明字段。
+2. 将新 Prompt 加入对应的规范化输入数据库，或在新的增量数据库中处理后按 Prompt hash 合并；保留旧数据库和旧 digest，禁止原地覆盖历史结果。
+3. 对视频相关 Prompt 运行确定性结构预处理、复杂度分层和语义规范化；`classified`、`normalized`、`manual_review`、`excluded` 等状态必须明确记录。
+4. 运行 Stage 5-1 v2 的多标签家族分类和 Prompt-only 评分。检查维度证据门槛、跨字段重复证据扣分、可复用性单次计分、来源冲突和关键字段缺失。
+5. 使用项目绑定的 Python 运行时，不自行安装依赖：
+
+   ```powershell
+   $py = 'C:\Users\Admin\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+   & $py scripts\classify_stage5_prompt_candidates.py `
+     --source-database <source-db> `
+     --stratification-database <stratification-db> `
+     --normalization-run <normalization-run> `
+     --checkpoint-run <checkpoint-run> `
+     --run-dir data\runs\<stage5-1-update-id>
+   ```
+
+6. 如果某个案例仍需人工复核，只能记录为人工复核入口；不得为了让它进入 Skill 而手动抬高分数或伪造结构证据。
+
+### 13.4 运行 Stage 5-2，决定案例去向
+
+把旧候选和新候选合并后，用相同版本的最终筛选器重新计算配额、近似重复和门槛。不要直接编辑 `final-cases.json`。
+
+```powershell
+& $py scripts\select_stage5_final_cases.py `
+  --input-run <combined-stage5-1-run> `
+  --run-dir data\runs\<stage5-2-update-id> `
+  --cases-per-family 3
+```
+
+每个新候选只能得到以下一种可审计结果：
+
+- `selected`：进入正式案例集，拥有新的稳定案例 ID、来源映射、选择理由和输入 digest。
+- `retained_alternative`：质量和结构合格，但因家族配额、近似重复或多样性规则暂不进入正式集；仍保留为可追溯备选。
+- `not_selected`：未通过门槛、证据不足、来源冲突未解决、近似重复被代表，或不属于当前范围；必须记录明确理由。
+
+当前正式集是 8 个主家族各 3 条。新案例不应自动把某个家族扩成 4 条；如果新案例优于现有正式案例，应让确定性筛选器产生“新案例 selected、旧案例 retained_alternative”的替换结果。除非用户单独批准扩容，否则不要改变家族配额。
+
+### 13.5 重建候选 Skill，而不是手工改案例文件
+
+1. 审核新的 `final-cases.json`、`decision-records.json`、`report.json`、输入 digest 和 24 条（或经批准的新配额）案例映射。
+2. 使用既有规范化数据库和最终筛选结果重建 Stage 6 Skill：
+
+   ```powershell
+   & $py scripts\build_stage6_skill.py `
+     --final-cases data\runs\<stage5-2-update-id>\final-cases.json `
+     --final-report data\runs\<stage5-2-update-id>\report.json `
+     --normalization-database <normalization-db> `
+     --skill-dir skill\cinematic-scene-case-library
+   ```
+
+3. 检查新增/替换案例的案例 ID、索引链接、变量槽位、模型无关骨架、ACTING/CINEDANCE 交接和禁止复制字段。不要把完整源 Prompt、历史标签、资产 ID、历史时长或异模型语法写入案例正文。
+4. 运行 Stage 6 validator，确认 frontmatter、`openai.yaml`、24 个案例（或已批准的配额）、manifest 哈希、索引链接、Schema、TODO 和无重资产检查均通过：
+
+   ```powershell
+   & $py scripts\validate_stage6_skill.py skill\cinematic-scene-case-library
+   ```
+
+5. 对每个被替换案例保留旧案例文件、旧 manifest 和替换理由；不要复用旧案例 ID 指向完全不同的场景语义。
+
+### 13.6 重新验证 Stage 7 集成
+
+1. 默认只替换案例内容，不修改路由契约；只有检索触发条件、字段所有权或模型隔离规则真的改变时，才另开集成设计变更。
+2. 使用新的案例库运行正向任务：抽象请求、缺结构、Prompt 修复、显式查询各至少一项；运行负向任务：完整且可拍的 Seedance/H3 请求至少各一项。
+3. 检查每个下游只收到职责相关片段：表演事实给 ACTING，空间/镜头/物理/连续性给 CINEDANCE 或 H3 导演，模型适配说明留在最终组装器。
+4. 检查 Prompt 密度、单案例默认加载、用户事实和官方模型规则优先级，以及 `@tag`、资产 ID、历史时长、媒体 URL、Seedance/H3 异语法零泄漏。
+5. 运行：
+
+   ```powershell
+   & $py scripts\validate_stage7_integration.py
+   & $py -m unittest discover -s tests -p 'test_*.py'
+   ```
+
+### 13.7 安全安装更新与回滚
+
+1. 当前 `scripts\install_stage8.ps1` 是首次安装脚本，会拒绝覆盖已存在的案例库目录；更新时不要直接重复运行，也不要使用 `-Force` 绕过保护。
+2. 先创建新的 Stage 8 更新脚本或经审核的更新流程，要求：读取当前安装清单、核对当前 Seedance/H3 文件哈希、备份当前案例库和两个目标 `SKILL.md`、在临时目录构建新版本、逐文件比较候选与临时版本，验证通过后再原子替换。
+3. 已存在的 Seedance/H3 检索章节只能被识别为“已安装且内容匹配”；不得重复插入第二份章节。若补丁内容发生变化，必须生成新的补丁版本和新的目标 before/after SHA-256。
+4. 安装更新后运行 Stage 8 validator，并检查：安装清单状态、逐文件候选/安装树哈希一致、案例数量、manifest、无媒体、备份一致、补丁插入次数、无临时文件。
+
+   ```powershell
+   & $py scripts\validate_stage8_install.py
+   ```
+
+5. 回滚只使用本次安装清单列出的备份和 before 哈希：先停止使用中的加载进程（如果有），恢复案例库目录和两个 `SKILL.md`，再运行 Stage 6/7/8 validator。不得从未登记的临时目录猜测恢复内容。
+6. 更新完成后提交一次 Git commit，提交内容至少包括新案例、筛选/构建产物、验证报告和计划变更；默认不 push。安装目录本身在 Git 工作区之外，不要把它当作提交来源。
+
+### 13.8 每次更新的最终检查表
+
+- [ ] 有唯一更新 ID、来源登记、Prompt SHA-256 和完整资产审计映射。
+- [ ] 原始文本不可变；精确重复、近似重复、空 Prompt 和冲突均有记录。
+- [ ] 使用同版本规范化 Schema、Stage 5-1 v2 评分和 Stage 5-2 确定性筛选。
+- [ ] `selected`、`retained_alternative`、`not_selected` 决策闭合，未静默丢弃候选。
+- [ ] 案例库由构建器重建，未手工复制完整源 Prompt 或历史模型字段。
+- [ ] Stage 6、Stage 7、Stage 8 validator 和全套测试通过。
+- [ ] 安装前哈希、备份、after 哈希、逐文件树哈希和回滚路径已登记。
+- [ ] Git commit 已创建；未执行未经用户要求的 push。
